@@ -1,0 +1,19 @@
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+.center-x {
+  display: flex;
+  justify-content: center;
+}
+.center-y {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

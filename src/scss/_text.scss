@@ -1,0 +1,30 @@
+.tt-left, .ttl {
+  text-align: left;
+}
+.tt-center, .ttc {
+  text-align: center;
+}
+.tt-right, .ttr {
+  text-align: right;
+}
+.tt-justify, .ttj {
+  text-align: justify;
+}
+.tt-caps {
+  text-transform: capitalize;
+}
+.tt-upcase {
+  text-transform: uppercase;
+}
+.tt-lowcase {
+  text-transform: lowercase;
+}
+.tt-none  {
+  text-transform: none;
+}
+.tt-overflow-n {
+  overflow-wrap: break-word;
+}
+.tt-overflow-y {
+  overflow-wrap: normal;
+}

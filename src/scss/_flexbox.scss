@@ -1,0 +1,159 @@
+// Flex direction
+.flex-dr {
+  flex-direction: row;
+}
+.flex-dl {
+  flex-direction: row-reverse;
+}
+.flex-dd {
+  flex-direction: column;
+}
+.flex-du {
+  flex-direction: column-reverse;
+}
+// Wrap mode
+.flex-wrap-n {
+  flex-wrap: nowrap;
+}
+.flex-wrap-y {
+  flex-wrap: wrap;
+}
+.flex-wrap-r {
+  flex-wrap: wrap-reverse;
+}
+// Justify main axis
+.flex-js {
+  justify-content: flex-start;
+}
+.flex-je {
+  justify-content: flex-end;
+}
+.flex-jc {
+  justify-content: center;
+}
+.flex-ja {
+  justify-content: space-around;
+}
+.flex-jb {
+  justify-content: space-between;
+}
+// Justify cross axis
+.flex-is {
+  align-items: flex-start;
+}
+.flex-ie {
+  align-items: flex-end;
+}
+.flex-ic {
+  align-items: center;
+}
+.flex-ib {
+  align-items: baseline;
+}
+.flex-ix {
+  align-items: stretch;
+}
+// Justify everything
+.flex-cs {
+  align-content: flex-start;
+}
+.flex-ce {
+  align-content: flex-end;
+}
+.flex-cc {
+  align-content: center;
+}
+.flex-cb {
+  align-content: space-between
+}
+.flex-ca {
+  align-content: space-around;
+}
+.flex-cx {
+  align-content: stretch;
+}
+// Justify self
+.flex-sa {
+  align-self: auto;
+}
+.flex-ss {
+  align-self: flex-start;
+}
+.flex-se {
+  align-self: flex-end;
+}
+.flex-sc {
+  align-self: center;
+}
+.flex-sb {
+  align-self: baseline;
+}
+.flex-sx {
+  align-self: stretch;
+}
+// Order
+.flex-order1 {
+  order: 1;
+}
+.flex-order2 {
+  order: 2;
+}
+.flex-order3 {
+  order: 3;
+}
+.flex-order4 {
+  order: 4;
+}
+.flex-order5 {
+  order: 5;
+}
+.flex-order6 {
+  order: 6;
+}
+.flex-order7 {
+  order: 7;
+}
+// Growth
+.flex-grow1 {
+  flex-grow: 1;
+}
+.flex-grow2 {
+  flex-grow: 2;
+}
+.flex-grow3 {
+  flex-grow: 3;
+}
+.flex-grow4 {
+  flex-grow: 4;
+}
+.flex-grow5 {
+  flex-grow: 5;
+}
+.flex-grow6 {
+  flex-grow: 6;
+}
+.flex-grow7 {
+  flex-grow: 7;
+}
+// Shrink
+.flex-shrink1 {
+  flex-shrink: 1;
+}
+.flex-shrink2 {
+  flex-shrink: 2;
+}
+.flex-shrink3 {
+  flex-shrink: 3;
+}
+.flex-shrink4 {
+  flex-shrink: 4;
+}
+.flex-shrink5 {
+  flex-shrink: 5;
+}
+.flex-shrink6 {
+  flex-shrink: 6;
+}
+.flex-shrink7 {
+  flex-shrink: 7;
+}

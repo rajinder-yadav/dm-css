@@ -1,0 +1,37 @@
+// Default font 'Roboto'
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Make sure 'npm i -D normalize.css'
+@import 'node_modules/normalize.css/normalize.css';
+
+// Calculation simplified when only bottom 
+// margin and padding need to be considered.
+* {
+  padding-top: 0;
+  margin-top: 0;
+}
+@import 'border';
+@import 'display';
+@import 'flexbox';
+@import 'font';
+@import 'grid';
+@import 'position';
+@import 'size';
+@import 'spacing';
+@import 'text';
+
+@import 'utility';
+@import 'responsive';
+//-------------------------------
+// Declared global variable here
+//-------------------------------
+
+//-----------------------------
+// Declare Global styles here
+//-----------------------------
+
+// NOTE: The Root element (rem) size is based off the font size of 18px.
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}

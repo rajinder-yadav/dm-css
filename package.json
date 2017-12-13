@@ -1,0 +1,19 @@
+{
+  "name": "dm-css",
+  "version": "0.0.1",
+  "description": "Dev Mentor CSS Notation",
+  "keywords": [
+    "css",
+    "layout",
+    "html",
+    "web"
+  ],
+  "author": "Rajinder Yadav <devguy.ca@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajinder-yadav/dm-css"
+  }
+}
+
+

@@ -1,0 +1,96 @@
+// Font size using Golden Ratio 1.618, calculated values truncated.
+.fh1 {
+  font-size: 1rem;
+}
+.fh2 {
+  font-size: 1.618rem;
+}
+.fh3 {
+  font-size: 3.236rem;
+}
+.fh4 {
+  font-size: 4.854rem;
+}
+.fh5 {
+  font-size: 6.472rem;
+}
+.fh6 {
+  font-size: 8.09rem;
+}
+.fh7 {
+  font-size: 9.708rem;
+}
+// Negative font height scaled
+.fh-1 {
+  font-size: 0.9rem;
+}
+.fh-2 {
+  font-size: 0.8rem;
+}
+.fh-3 {
+  font-size: 0.7rem;
+}
+.fh-4 {
+  font-size: 0.6rem;
+}
+.fh-5 {
+  font-size: 0.5rem;
+}
+.fh-6 {
+  font-size: 0.4rem;
+}
+.fh-7 {
+  font-size: 0.3rem;
+}
+// Font styles
+.fsn {
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+.fsi {
+  font-style: italic;
+}
+.fsb {
+  font-weight: bold;
+}
+.fsu {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.fss {
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+}
+.fsw {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+// Font weights 100 - 900
+.fw100 {
+  font-weight: 100;
+}
+.fw200 {
+  font-weight: 200;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw800 {
+  font-weight: 800;
+}
+.fw900 {
+  font-weight: 900;
+}
