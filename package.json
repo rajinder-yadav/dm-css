@@ -1,7 +1,7 @@
 {
   "name": "dm-css",
-  "version": "0.0.2",
-  "description": "Dev Mentor CSS Notation",
+  "version": "0.0.3",
+  "description": "Dev Mentor - Fast Compact CSS Toolkit for Designers",
   "keywords": [
     "css",
     "layout",
@@ -13,5 +13,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rajinder-yadav/dm-css"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }
