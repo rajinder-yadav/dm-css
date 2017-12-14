@@ -1,6 +1,6 @@
 {
   "name": "dm-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dev Mentor CSS Notation",
   "keywords": [
     "css",
@@ -15,5 +15,3 @@
     "url": "https://github.com/rajinder-yadav/dm-css"
   }
 }
-
-
