@@ -1,4 +1,4 @@
-# DevMentor CSS Notation
+# DM-CSS The Fast Compact CSS Toolkit for Designers
 <!-- TOC -->
 
 - [Introduction](#introduction)
@@ -18,6 +18,13 @@
 
 <!-- /TOC -->
 ## Introduction
+
+
+<link href="https://unpkg.com/dm-css@0.0.2/dm.css" rel="stylesheet">
+
+CSS styling made simple, fast and fun!
+
+DM-CSS is a robust CSS style notation library.
 
 Early rough draft.
 
