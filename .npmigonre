@@ -19,5 +19,9 @@ yarn-error.log*
 .DS_Store
 
 index.html
+index.css
+index.scss
 dm.scss
 bs-config.js
+package.dev.json
+package.pub.json

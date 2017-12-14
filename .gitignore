@@ -6,6 +6,7 @@ node_modules/
 tmp/
 typings/
 .nyc_output/
+css/
 
 *.bak
 *.log
@@ -15,7 +16,10 @@ yarn-error.log*
 .vscode
 .DS_Store
 
+package.dev.json
+package.pub.json
 bs-config.js
 index.html
+index.scss
 dm.scss
 dm.css
