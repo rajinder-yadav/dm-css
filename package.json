@@ -1,12 +1,16 @@
 {
   "name": "dm-css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dev Mentor - Fast Compact CSS Toolkit for Designers",
   "keywords": [
     "css",
     "layout",
     "html",
     "web"
+  ],
+  "files": [
+    "css/dm.css",
+    "css/dm.min.css"
   ],
   "author": "Rajinder Yadav <devguy.ca@gmail.com>",
   "license": "GPL-3.0",
