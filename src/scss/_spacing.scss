@@ -1,4 +1,29 @@
 // Padding using Golden Ratio. Multiplier 1.618, values truncated.
+.p0 {
+  padding: 0 !important;
+}
+.p1 {
+  padding: 0.25rem;
+}
+.p2 {
+  padding: 0.404rem;
+}
+.p3 {
+  padding: 0.654rem;
+}
+.p4 {
+  padding: 1.058rem;
+}
+.p5 {
+  padding: 1.713rem;
+}
+.p6 {
+  padding: 2.771rem;
+}
+.p7 {
+  padding: 4.483rem;
+}
+// Padding top
 .pt0 {
   padding-top: 0 !important;
 }
@@ -170,6 +195,31 @@
 }
 .px-auto {
   padding: 0 auto;
+}
+// Margin
+.m0 {
+  margin: 0 !important;
+}
+.m1 {
+  margin: 0.25rem;
+}
+.m2 {
+  margin: 0.404rem;
+}
+.m3 {
+  margin: 0.654rem;
+}
+.m4 {
+  margin: 1.058rem;
+}
+.m5 {
+  margin: 1.713rem;
+}
+.m6 {
+  margin: 2.771rem;
+}
+.m7 {
+  margin: 4.483rem;
 }
 // Margin top
 .mt0 {
