@@ -1,4 +1,4 @@
-# DM-CSS The Fast Compact CSS Toolkit for Designers
+# DM-CSS a CSS Toolkit for everyone
 <!-- TOC -->
 
 - [Introduction](#introduction)
@@ -17,10 +17,10 @@
   - [Border left-right sides](#border-left-right-sides)
   - [Border top-bottom sides](#border-top-bottom-sides)
   - [Removing Borders](#removing-borders)
-  - [Border radius](#border-radius)
-- [Border corner radius](#border-corner-radius)
-  - [Equale radius corners](#equale-radius-corners)
+- [Border radius](#border-radius)
   - [Corner radius](#corner-radius)
+  - [Equale radius corners](#equale-radius-corners)
+  - [Corner radius](#corner-radius-1)
   - [Side face radius](#side-face-radius)
   - [Border line style](#border-line-style)
   - [Circle radius](#circle-radius)
@@ -248,7 +248,7 @@ You can also use a combination to remove only one side like this:
 <div class="b2 br0"> ... </div>
 ```
 
-### Border radius
+## Border radius
 
 Border corners can be given a radius to round out the corners.
 
@@ -256,7 +256,7 @@ The border radius takes a value from 0 to 7, which follows a Golden Ratio scale.
 
 A radius value of "0" (zero) will reset "round" borders to have square corners.
 
-## Border corner radius
+### Corner radius
 
 When using borders, you may specify a radius value for each corner.
 
@@ -481,18 +481,27 @@ Text transform
 
 ## Display
 
-- show
-- hide
-- d-none
-- d-inline
-- d-inline-block
-- d-block
-- d-table
-- d-table-cell
-- d-flex
-- d-inline-flex
-- d-grid
-- d-inline-grid
+The following CSS display settings are supported.
+
+You can hide and show the DOM node with the following styles.
+
+```html
+<div class="show"> ... </div>
+<div class="hide"> ... </div>
+```
+
+**Note:** Styles "**hide**" is an alias for "**d-none**".
+
+```html
+<div class="d-none"> ... </div>
+<div class="d-inline"> ... </div>
+<div class="d-inline-block"> ... </div>
+<div class="d-block"> ... </div>
+<div class="d-flex"> ... </div>
+<div class="d-inline-flex"> ... </div>
+<div class="d-grid"> ... </div>
+<div class="d-inline-grid"> ... </div>
+```
 
 ## Flexbox
 
