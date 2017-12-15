@@ -2,9 +2,11 @@
 <!-- TOC -->
 
 - [Introduction](#introduction)
+- [CSS Resets](#css-resets)
   - [Benefits](#benefits)
   - [Basic usage](#basic-usage)
 - [Setup](#setup)
+  - [Starter HTML file](#starter-html-file)
   - [Install as NPM module](#install-as-npm-module)
   - [Use the CDN](#use-the-cdn)
 - [CSS Borders](#css-borders)
@@ -52,6 +54,14 @@ DM-CSS is a Style-Notation CSS layout and design Toolkit.
 
 It brings consistency to your Web page coding and allows you to quickly add CSS styles that are easy to read.
 
+## CSS Resets
+
+DM-CSS resets CSS style setting using "normalize.css" a well accepted cross-browser library. It also set top padding and margin values to "0" (zero), as this make calculation straight forward.
+
+The global box model is changed to use border-box, this make it easy for calculation and does not allow margin and padding value to grow the box size.
+
+The Root font family is set to "Roboto" with a height of 16px. This is the base (root) value other CSS heights are calculated off using the "**rem**" CSS unit.
+
 ### Benefits
 
 Some of the features of DM-CSS Toolkit you will enjoy right away.
@@ -86,6 +96,43 @@ The Style-Notation read from left to right above adds the following CSS styles.
 As you can see DM-CSS Style-Notation are powerful and can be combined together to increase productivity.
 
 ## Setup
+
+In your root HTML file, it is a good idea to add the following responsive viewport meta tag.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+
+DM-CSS requires HTML5 doctype.
+
+```html
+<!doctype html>
+<html lang="en">
+  ...
+</html>
+```
+
+### Starter HTML file
+
+You can use the following HTML file to start off with.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- DM-CSS Toolkit -->
+    <link href="https://unpkg.com/dm-css@0.0.4/dm.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hello, Inter-Web!</h1>
+  </body>
+</html>
+```
 
 There are two ways to install DM-CSS Toolkit as a dependency in your project.
 
@@ -452,6 +499,8 @@ A font scale of 1 has a font height of the root element.
 
 Higher scale values get progressively bigger, this is reverse of HTML heading values.
 
+<small>(*) The image below is not to scale due to have markup works, it is used for illustration.</small>
+
 ![font heights](images/font-heights.png)
 
 ```html
@@ -472,6 +521,7 @@ The scale reduces root font height successively by a factor of **0.10**.
 
 You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
 
+<small>(*) The image below is not to scale due to have markup works, it is used for illustration.</small>
 ![font heights](images/font-heights2.png)
 
 ```html
