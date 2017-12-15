@@ -31,6 +31,14 @@
   - [Z-Index](#z-index)
 - [Size](#size)
 - [Spacing](#spacing)
+  - [Padding](#padding)
+  - [Padding top](#padding-top)
+  - [Padding bottom](#padding-bottom)
+  - [Padding left](#padding-left)
+  - [Padding right](#padding-right)
+  - [Padding Y](#padding-y)
+  - [Padding X](#padding-x)
+  - [Margins](#margins)
 - [Font](#font)
   - [Height scaling up](#height-scaling-up)
   - [Height scaling down](#height-scaling-down)
@@ -498,29 +506,156 @@ Basic usage:
 
 ## Spacing
 
-- pt0
+The box model that DM-CSS uses is the border-box, for more info see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
-- p[1-7]
+The Style-Notation for spacing allow set the margin and padding value used by an element.
 
-- pt
-- pb
-- pl
-- pr
-- py
-- px
-- py-auto
-- px-auto
+**Pro Tip**:
+In CSS, inline elements like "**\<p\>**" or "**\<span\>**" inherit their height values for margin and padding from surrounding text. You cannot change the height value for margin or padding for an inline element.
 
-- m0
-- m1[1-7]
-- mt
-- mb
-- ml
-- mr
-- my
-- mx
-- my-auto
-- mx-auto
+If you want to be able to change their property, you much change their display property from "**inline**" to "**inline-block**".
+
+```html
+<p class="d-inline-block"> ... </p>
+<span class="d-inline-block"> ... </span>
+```
+
+Make sure you have a good understanding of CSS display types. How block and inline element get rendered and ultimitaely how this will affect setting their width and height.
+
+- Padding and margin scale values range from 0 to 7.
+- Scale value follow the Golden Ratio.
+
+### Padding
+
+|Notation|Padding|
+|-|-|
+|p|Pad all sides|
+|pt|Pad top|
+|pb|Pad bottom|
+|pl|Pad left|
+|pr|Pad right|
+
+```html
+<div class="p0">0</div>
+<div class="p1">1</div>
+<div class="p2">2</div>
+<div class="p3">3</div>
+<div class="p4">4</div>
+<div class="p5">5</div>
+<div class="p6">6</div>
+<div class="p7">7</div>
+```
+
+### Padding top
+
+![pad top](/images/pad-top.png)
+
+```html
+<div class="pt0">0</div>
+<div class="pt1">1</div>
+<div class="pt2">2</div>
+<div class="pt3">3</div>
+<div class="pt4">4</div>
+<div class="pt5">5</div>
+<div class="pt6">6</div>
+<div class="pt7">7</div>
+```
+
+### Padding bottom
+
+![pad bottom](/images/pad-bottom.png)
+
+```html
+<div class="pb0">0</div>
+<div class="pb1">1</div>
+<div class="pb2">2</div>
+<div class="pb3">3</div>
+<div class="pb4">4</div>
+<div class="pb5">5</div>
+<div class="pb6">6</div>
+<div class="pb7">7</div>
+```
+
+### Padding left
+
+![pad left](/images/pad-left.png)
+
+```html
+<div class="pl0">0</div>
+<div class="pl1">1</div>
+<div class="pl2">2</div>
+<div class="pl3">3</div>
+<div class="pl4">4</div>
+<div class="pl5">5</div>
+<div class="pl6">6</div>
+<div class="pl7">7</div>
+```
+
+### Padding right
+
+![pad right](/images/pad-right.png)
+
+```html
+<div class="pr0">0</div>
+<div class="pr1">1</div>
+<div class="pr2">2</div>
+<div class="pr3">3</div>
+<div class="pr4">4</div>
+<div class="pr5">5</div>
+<div class="pr6">6</div>
+<div class="pr7">7</div>
+```
+
+### Padding Y
+
+![pad y](/images/pad-y.png)
+
+```html
+<span class="py0">0</span>|<br/>
+<span class="py1">1</span>|<br/>
+<span class="py2">2</span>|<br/>
+<span class="py3">3</span>|<br/>
+<span class="py4">4</span>|<br/>
+<span class="py5">5</span>|<br/>
+<span class="py6">6</span>|<br/>
+<span class="py7">7</span>|<br/>
+```
+
+### Padding X
+
+![pad x](/images/pad-x.png)
+
+```html
+<span class="px0">0</span>|<br/>
+<span class="px1">1</span>|<br/>
+<span class="px2">2</span>|<br/>
+<span class="px3">3</span>|<br/>
+<span class="px4">4</span>|<br/>
+<span class="px5">5</span>|<br/>
+<span class="px6">6</span>|<br/>
+<span class="px7">7</span>|<br/>
+```
+
+### Margins
+
+|Notation|Margin|
+|-|-|
+|m|Margin all sides|
+|mt|Margin top|
+|mb|Margin bottom|
+|ml|Margin left|
+|mr|Margin right|
+
+```html
+<div class="m0">0</div>
+<div class="m1">1</div>
+<div class="m2">2</div>
+<div class="m3">3</div>
+<div class="m4">4</div>
+<div class="m5">5</div>
+<div class="m6">6</div>
+<div class="m7">7</div>
+```
 
 ## Font
 
