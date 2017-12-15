@@ -49,6 +49,8 @@
   - [Text transformation styles](#text-transformation-styles)
   - [Text overflow wrapping](#text-overflow-wrapping)
 - [Utility](#utility)
+  - [Visibility](#visibility)
+  - [Centering](#centering)
 - [Display](#display)
 - [Flexbox](#flexbox)
 - [Grid](#grid)
@@ -790,17 +792,30 @@ This control if wrapping should occur when text overflows.
 
 ## Utility
 
-- visible
-- invisible
-- center-x
-- center-y
-- center
+Here are some useful Style-Notation.
+
+### Visibility
+
+Hide or show an element without affecting layout.
+
+```html
+<div class="visible"> ... </div>
+<div class="invisible"> ... </div>
+```
+
+### Centering
+
+```html
+<div class="center-y"> ... </div>
+<div class="center-x"> ... </div>
+<div class="center"> ... </div>
+```
 
 ## Display
 
-The following CSS display settings are supported.
+You can hide and show the DOM node with the following styles. This will cause the element to be removed from the DOM and will affect layout.
 
-You can hide and show the DOM node with the following styles.
+All descendant elements of hidden element are also removed.
 
 ```html
 <div class="show"> ... </div>
