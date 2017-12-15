@@ -35,6 +35,9 @@
   - [Font styles](#font-styles)
   - [Font weight](#font-weight)
 - [Text](#text)
+  - [Text justification](#text-justification)
+  - [Text transformation styles](#text-transformation-styles)
+  - [Text overflow wrapping](#text-overflow-wrapping)
 - [Utility](#utility)
 - [Display](#display)
 - [Flexbox](#flexbox)
@@ -523,21 +526,49 @@ The weight start at a value of 100 and go up by 100 upto 900 (light to dark). No
 
 ## Text
 
-Text transform
+Here are a few handy CS styles for working with text.
 
-|Notation|Notation|Text transform|
+### Text justification
+
+The following Style-Notations are used to justify text.
+
+|Notation Short|Notation Long|Text transform|
+|-|-|-|
 |ttl|tt-left|Left align|
 |ttc|tt-center|Center text|
 |ttr|tt-right|Right align|
 |ttj|tt-justify|Justify text|
 
-- tt-caps
-- tt-upcase
-- tt-lowcase
-- tt-none
+![text justify](images/text-justify.png)
 
-- tt-overflow-y
-- tt-overflow-n
+```html
+<div class="ttl">This text is left justified</div>
+<div class="ttc">This text is centered</div>
+<div class="ttr">This text is right justified</div>
+<div class="ttj">This text is fully justified, more text to wrap around and justify</div>
+```
+
+### Text transformation styles
+
+![tt](images/text-transform.png)
+
+```html
+<div class="tt-caps">text has been transformed</div>
+<div class="tt-upcase">text has been transformed</div>
+<div class="tt-lowcase">TEXT HAS BEEN TRANSFORMED</div>
+<div class="tt-none">Text has NOT been transformed</div>
+```
+
+Style-Notation "**tt-none**" should be used to reset existing text style when they are not desired.
+
+### Text overflow wrapping
+
+This control if wrapping should occur when text overflows.
+
+```html
+<div class="tt-overflow-y"> ... </div>
+<div class="tt-overflow-n"> ... </div>
+```
 
 ## Utility
 
