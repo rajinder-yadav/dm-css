@@ -30,6 +30,10 @@
 - [Size](#size)
 - [Spacing](#spacing)
 - [Font](#font)
+  - [Height scaling up](#height-scaling-up)
+  - [Height scaling down](#height-scaling-down)
+  - [Font styles](#font-styles)
+  - [Font weight](#font-weight)
 - [Text](#text)
 - [Utility](#utility)
 - [Display](#display)
@@ -437,8 +441,47 @@ Fixed width
 
 ## Font
 
-- fh[1-7]
-- fh-[1-7]
+Font heights follow a Golden Ratio scale from 1 to 7.
+
+### Height scaling up
+
+A font scale of 1 has a font height of the root element.
+
+Higher scale values get progressively bigger, this is reverse of HTML heading values.
+
+![font heights](images/font-heights.png)
+
+```html
+<div class="fh1">Font height 1</div>
+<div class="fh2">Font height 2</div>
+<div class="fh3">Font height 3</div>
+<div class="fh4">Font height 4</div>
+<div class="fh5">Font height 5</div>
+<div class="fh6">Font height 6</div>
+<div class="fh7">Font height 7</div>
+```
+
+### Height scaling down
+
+When font height is scaled down, the values become a fraction of the root element font height.
+
+The scale reduces root font height successively by a factor of **0.10**.
+
+You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
+
+![font heights](images/font-heights2.png)
+
+```html
+<div class="fh-1">Font height 1</div>
+<div class="fh-2">Font height 2</div>
+<div class="fh-3">Font height 3</div>
+<div class="fh-4">Font height 4</div>
+<div class="fh-5">Font height 5</div>
+<div class="fh-6">Font height 6</div>
+<div class="fh-7">Font height 7</div>
+```
+
+### Font styles
 
 |Notation|Font style|
 |-|-|
@@ -449,9 +492,34 @@ Fixed width
 |fss|Strike-through|
 |fsw|Wavy underline|
 
-Font weight
+![font style](images/font-styles.png)
 
-- fw[100-900]
+```html
+<div class="fsn">Font style none</div>
+<div class="fsb">Font style bold</div>
+<div class="fsi">Font style italic</div>
+<div class="fsu">Font style underline</div>
+<div class="fss">Font style strike-through</div>
+<div class="fsw">Font style wavy underline</div>
+```
+
+### Font weight
+
+The font weight will depend on the font being used.
+
+The weight start at a value of 100 and go up by 100 upto 900 (light to dark). Not all value maybe be valid, as it will depend on the font being used.
+
+```html
+<div class="fw100"> ... </div>
+<div class="fw200"> ... </div>
+<div class="fw300"> ... </div>
+<div class="fw400"> ... </div>
+<div class="fw500"> ... </div>
+<div class="fw600"> ... </div>
+<div class="fw700"> ... </div>
+<div class="fw800"> ... </div>
+<div class="fw900"> ... </div>
+```
 
 ## Text
 
