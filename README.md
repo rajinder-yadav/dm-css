@@ -126,7 +126,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://unpkg.com/dm-css@0.0.4/dm.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.4/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -152,10 +152,14 @@ npm install --save dm-css
 To use a CDN, add the following **\<link\>** Tag to your **index.html** file.
 
 ```html
-<link href="https://unpkg.com/dm-css@0.0.4/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-**Note**: It is advisable not to use the CDN in production if you require 100% availability.
+Example usage for DM-CSS NPM version 0.0.5.
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.4/css/dm.min.css" rel="stylesheet">
+```
 
 Early rough draft.
 
@@ -433,6 +437,12 @@ There are four pill styles for curved borders.
 
 ## Position
 
+```html
+<span class="relative"> ... </span>
+<span class="absolute"> ... </span>
+<span class="fixed"> ... </span>
+```
+
 |Notation|Position|CSS property|
 |-|-|-|
 |pos-t|Top|top: 0|
@@ -440,15 +450,23 @@ There are four pill styles for curved borders.
 |pos-l|Left|left: 0|
 |pos-r|Right|right: 0|
 
+```html
+<span class="pos-t"> ... </span>
+<span class="pos-b"> ... </span>
+<span class="pos-l"> ... </span>
+<span class="pos-r"> ... </span>
+```
+
 ### Z-Index
 
 The default z-index has a value of 1.
 
-- z[1-4]
-
-- relative
-- absolute
-- fixed
+```html
+<span class="z1"> ... </span>
+<span class="z2"> ... </span>
+<span class="z3"> ... </span>
+<span class="z4"> ... </span>
+```
 
 ## Size
 
