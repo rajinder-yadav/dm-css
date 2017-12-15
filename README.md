@@ -470,16 +470,31 @@ The default z-index has a value of 1.
 
 ## Size
 
-Fixed width
+Scale value for width and height range from 10% 10 100% and increment by 10.
 
-- w[0-100]
-- h[0-100]
+|Notation|Description|
+|-|-|
+|w|Set width|
+|h|Set height|
+|w-min| Set minimum width|
+|w-max| Set maximum width|
+|h-min| Set minimum height|
+|h-max| Set maximum height|
 
-- w-min
-- w-max
+Basic usage:
 
-- h-min
-- h-max
+```html
+<div class="w10"> ... </div>
+<div class="w20"> ... </div>
+<div class="w30"> ... </div>
+<div class="w40"> ... </div>
+<div class="w50"> ... </div>
+<div class="w60"> ... </div>
+<div class="w70"> ... </div>
+<div class="w80"> ... </div>
+<div class="w90"> ... </div>
+<div class="w100"> ... </div>
+```
 
 ## Spacing
 
