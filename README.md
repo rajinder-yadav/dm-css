@@ -9,17 +9,22 @@
   - [Use the CDN](#use-the-cdn)
 - [CSS Borders](#css-borders)
   - [Border values](#border-values)
-  - [Removing Borders](#removing-borders)
+  - [Border Style-Notation](#border-style-notation)
   - [Border top](#border-top)
   - [Border bottom](#border-bottom)
   - [Border left](#border-left)
   - [Border right](#border-right)
   - [Border left-right sides](#border-left-right-sides)
   - [Border top-bottom sides](#border-top-bottom-sides)
-  - [Border circle radius](#border-circle-radius)
-  - [Border Pill styles](#border-pill-styles)
+  - [Removing Borders](#removing-borders)
+  - [Border radius](#border-radius)
 - [Border corner radius](#border-corner-radius)
+  - [Equale radius corners](#equale-radius-corners)
+  - [Corner radius](#corner-radius)
+  - [Side face radius](#side-face-radius)
   - [Border line style](#border-line-style)
+  - [Circle radius](#circle-radius)
+  - [Pill styles borders](#pill-styles-borders)
 - [Position](#position)
   - [Z-Index](#z-index)
 - [Size](#size)
@@ -104,31 +109,38 @@ DM-CSS Introduce class notation for applying CSS styling.
 
 ## CSS Borders
 
-The default border style is solid. The notation provides the flexibility to add and remove borders.
+The border Style-Notation provides the flexibility to add and remove borders.
 
-An element can be given borders on
+- The default border line style is solid.
 
-1. All sides
-1. No sides
-1. One side (top, bottom, left ,right)
-1. Two sides (top-bottom or left-right)
+An element can be given borders on:
+
+- All sides
+- No sides
+- One side (top, bottom, left ,right)
+- Two sides (top-bottom or left-right)
 
 ### Border values
 
-The value for the border denote the thickness of the border line. The supported values range from 0 to 4.
+The value for the border denote the thickness of the border line.
 
-A value of '0' (zero) indicates no border.
+The supported values range from 0 to 4.
 
-For borders on all sides use notation, "**b[1-4]**".
+A value of "0" (zero) indicates no border. You would use this to remove borders from a element that may already have borders.
 
 ![borders](images/borders.png)
 
 ```html
+<div class="b0"> ... </div>
 <div class="b1"> ... </div>
 <div class="b2"> ... </div>
 <div class="b3"> ... </div>
 <div class="b4"> ... </div>
 ```
+
+### Border Style-Notation
+
+Each requires a border thinkness value from 0 to 4.
 
 |Notation|Side|
 |-|-|
@@ -140,12 +152,86 @@ For borders on all sides use notation, "**b[1-4]**".
 |bx|Border left and right|
 |by|Border top and bottom|
 
-### Removing Borders
+### Border top
 
-You may want to remove borders. To do this use a value of "0" (zero) with one of the notations listed above.
+![border](images/border-top.png)
 
 ```html
-<div class="b0"> ... </div>
+<div class="bt0"> ... </div>
+<div class="bt1"> ... </div>
+<div class="bt2"> ... </div>
+<div class="bt3"> ... </div>
+<div class="bt4"> ... </div>
+```
+
+### Border bottom
+
+![border](images/border-bottom.png)
+
+```html
+<div class="bb0"> ... </div>
+<div class="bb1"> ... </div>
+<div class="bb2"> ... </div>
+<div class="bb3"> ... </div>
+<div class="bb4"> ... </div>
+```
+
+### Border left
+
+![border](images/border-left.png)
+
+```html
+<div class="bl0"> ... </div>
+<div class="bl1"> ... </div>
+<div class="bl2"> ... </div>
+<div class="bl3"> ... </div>
+<div class="bl4"> ... </div>
+```
+
+### Border right
+
+![border](images/border-right.png)
+
+```html
+<div class="br0"> ... </div>
+<div class="br1"> ... </div>
+<div class="br2"> ... </div>
+<div class="br3"> ... </div>
+<div class="br4"> ... </div>
+```
+
+### Border left-right sides
+
+![bx1](images/bx.png)
+
+```html
+<div class="bx0"> ... </div>
+<div class="bx1"> ... </div>
+<div class="bx2"> ... </div>
+<div class="bx3"> ... </div>
+<div class="bx4"> ... </div>
+```
+
+### Border top-bottom sides
+
+![by1](images/by.png)
+
+```html
+<div class="by0"> ... </div>
+<div class="by1"> ... </div>
+<div class="by2"> ... </div>
+<div class="by3"> ... </div>
+<div class="by4"> ... </div>
+```
+
+### Removing Borders
+
+There may be times you want to remove borders.
+
+To do this use a value of "0" (zero) with one of border Style-Notation.
+
+```html
+<div class="b0 "> ... </div>
 <div class="bt0"> ... </div>
 <div class="bb0"> ... </div>
 <div class="bl0"> ... </div>
@@ -159,129 +245,43 @@ You can also use a combination to remove only one side like this:
 ![bro](images/br0.png)
 
 ```html
-<div class="b3 br0"> ... </div>
+<div class="b2 br0"> ... </div>
 ```
 
-### Border top
+### Border radius
 
-```html
-<div class="bt0"> ... </div>
-<div class="bt1"> ... </div>
-<div class="bt2"> ... </div>
-<div class="bt3"> ... </div>
-<div class="bt4"> ... </div>
-```
+Border corners can be given a radius to round out the corners.
 
-### Border bottom
+The border radius takes a value from 0 to 7, which follows a Golden Ratio scale.
 
-```html
-<div class="bb0"> ... </div>
-<div class="bb1"> ... </div>
-<div class="bb2"> ... </div>
-<div class="bb3"> ... </div>
-<div class="bb4"> ... </div>
-```
-
-### Border left
-
-```html
-<div class="bl0"> ... </div>
-<div class="bl1"> ... </div>
-<div class="bl2"> ... </div>
-<div class="bl3"> ... </div>
-<div class="bl4"> ... </div>
-```
-
-### Border right
-
-```html
-<div class="br0"> ... </div>
-<div class="br1"> ... </div>
-<div class="br2"> ... </div>
-<div class="br3"> ... </div>
-<div class="br4"> ... </div>
-```
-
-### Border left-right sides
-
-![bx1](images/bx1.png)
-
-```html
-<div class="bx0"> ... </div>
-<div class="bx1"> ... </div>
-<div class="bx2"> ... </div>
-<div class="bx3"> ... </div>
-<div class="bx4"> ... </div>
-```
-
-### Border top-bottom sides
-
-![by1](images/by1.png)
-
-```html
-<div class="by0"> ... </div>
-<div class="by1"> ... </div>
-<div class="by2"> ... </div>
-<div class="by3"> ... </div>
-<div class="by4"> ... </div>
-```
-
-### Border circle radius
-
-To draw a circular border, use notation "**circle**". The element must have its CSS height and width property set.
-
-Do not forget to include the border notation, "**b**", as it governs the border property on an element, whereas "**circle**" sets the border radius value.
-
-The "**circle**" notation set the circle radius to 50%.
-
-Below are three boxes with the dimensions of: 80x40, 80x80, 40x80
-
-![circles](images/circles.png)
-
-```html
-<div class="box1 b circle"></div>
-<div class="box2 b circle"></div>
-<div class="box3 b circle"></div>
-```
-
-```css
-.box {
-  width: 80px;
-  height: 80px;
-}
-```
-
-### Border Pill styles
-
-There are four pill styles for curved borders.
-
-![pills](images/pills.png)
-
-```html
-<div class="b pill1"></div>
-<div class="b pill2"></div>
-<div class="b pill3"></div>
-<div class="b pill4"></div>
-```
+A radius value of "0" (zero) will reset "round" borders to have square corners.
 
 ## Border corner radius
 
-You may specify border corner radius, the values range from 1 to 7. These radius size follow a Golden ratio.
+When using borders, you may specify a radius value for each corner.
 
-A radius value of "0" (zero) will reset border to have square corners.
+### Equale radius corners
+
+![radius](images/radius.png)
 
 ```html
-<div class="b radius0"></div>
-<div class="b radius1"></div>
-<div class="b radius2"></div>
-<div class="b radius3"></div>
-<div class="b radius4"></div>
-<div class="b radius5"></div>
-<div class="b radius6"></div>
-<div class="b radius7"></div>
+<div class="b1 radius0"> ... </div>
+<div class="b1 radius1"> ... </div>
+<div class="b1 radius2"> ... </div>
+<div class="b1 radius3"> ... </div>
+<div class="b1 radius4"> ... </div>
+<div class="b1 radius5"> ... </div>
+<div class="b1 radius6"> ... </div>
+<div class="b1 radius7"> ... </div>
 ```
 
-You can also set the border values for each corner using one of the following notations.
+Since the radius use a Golden Ratio, corner radius will look different for larger dimensions as shown below.
+
+![radius2](images/radius2.png)
+
+### Corner radius
+
+You can set the border values for each corner using one of the following Style-Notation.
 
 |Notation|Radius side|
 |-|-|
@@ -290,6 +290,19 @@ You can also set the border values for each corner using one of the following no
 |bl-radius|Bottom left|
 |br-radius|Bottom right|
 
+![corner-radius](images/corner-radius.png)
+
+```html
+<div class="b1 tl-radius0">TL</div>
+<div class="b1 tr-radius1">TR</div>
+<div class="b1 bl-radius2">BL</div>
+<div class="b1 br-radius3">BR</div>
+```
+
+### Side face radius
+
+The face radius covers a side of the box to have round corners.
+
 |Notation|Radius sides|
 |-|-|
 |t-radius|Top face|
@@ -297,24 +310,77 @@ You can also set the border values for each corner using one of the following no
 |l-radius|Left face|
 |r-radius|Right face|
 
+![face-radius](images/face-radius.png)
+
+```html
+<div class="b1 t-radius5">T</div>
+<div class="b1 b-radius5">B</div>
+<div class="b1 l-radius5">L</div>
+<div class="b1 r-radius5">R</div>
+```
+
 ### Border line style
 
 You can change the border line style from solid to dashed.
 
+![dashes](images/dashes.png)
+
 ```html
-<div class="b dash"></div>
-<div class="b t-dash"></div>
-<div class="b b-dash"></div>
-<div class="b l-dash"></div>
-<div class="b r-dash"></div>
-<div class="b x-dash"></div>
-<div class="b y-dash"></div>
+<div class="b2   dash"> ... </div>
+<div class="b2 t-dash"> ... </div>
+<div class="b2 b-dash"> ... </div>
+<div class="b2 l-dash"> ... </div>
+<div class="b2 r-dash"> ... </div>
+<div class="b2 x-dash"> ... </div>
+<div class="b2 y-dash"> ... </div>
+```
+
+### Circle radius
+To draw a circular border, use Style-Notation "**circle**".
+
+- The element must have its CSS height and width property set.
+
+Do not forget to include the border notation, "**b**", as it governs the border property on an element, whereas "**circle**" sets the border radius value.
+
+- The "**circle**" notation set the circle radius to 50%.
+- In some cases the element CSS display property may need to set to:
+  - block
+  - inline-block
+  - inline-flex
+
+Below are three boxes with dimensions of: 80x40, 80x80, 40x80
+
+```css
+.box1 { width: 80px; height: 40px; }
+.box2 { width: 80px; height: 80px; }
+.box2 { width: 40px; height: 80px; }
+```
+
+![circles](images/circles.png)
+
+```html
+<div class="box1 b1 circle"> ... </div>
+<div class="box2 b1 circle"> ... </div>
+<div class="box3 b1 circle"> ... </div>
+```
+
+### Pill styles borders
+
+There are four pill styles for curved borders.
+
+![pills](images/pills.png)
+
+```html
+<div class="b1 pill1"> ... </div>
+<div class="b1 pill2"> ... </div>
+<div class="b1 pill3"> ... </div>
+<div class="b1 pill4"> ... </div>
 ```
 
 ## Position
 
 |Notation|Position|CSS property|
-|-|-|
+|-|-|-|
 |pos-t|Top|top: 0|
 |pos-b|Bottom|bottom: 0|
 |pos-l|Left|left: 0|
