@@ -10,6 +10,17 @@
   padding-top: 0;
   margin-top: 0;
 }
+// The Root element (rem) size is based off the font size of 16px.
+// Reset box model to use border-box calculation.
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @import 'border';
 @import 'display';
 @import 'flexbox';
@@ -29,9 +40,3 @@
 //-----------------------------
 // Declare Global styles here
 //-----------------------------
-
-// NOTE: The Root element (rem) size is based off the font size of 18px.
-:root {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-}
