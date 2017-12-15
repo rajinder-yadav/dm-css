@@ -9,6 +9,7 @@
 }
 .tt-justify, .ttj {
   text-align: justify;
+  text-justify: auto;
 }
 .tt-caps {
   text-transform: capitalize;
@@ -20,7 +21,7 @@
   text-transform: lowercase;
 }
 .tt-none  {
-  text-transform: none;
+  text-transform: none !important;
 }
 .tt-overflow-n {
   overflow-wrap: break-word;
