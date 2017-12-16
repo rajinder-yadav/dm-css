@@ -1,4 +1,7 @@
-# DM-CSS a CSS Toolkit for everyone
+# CSS Styling for Everyone!
+
+![DM-CSS](images/dm-css-logo.png)
+
 <!-- TOC -->
 
 - [Introduction](#introduction)
@@ -21,9 +24,9 @@
   - [Removing Borders](#removing-borders)
 - [Border radius](#border-radius)
   - [Corner radius](#corner-radius)
-  - [Equale radius corners](#equale-radius-corners)
+  - [Equal radius corners](#equal-radius-corners)
   - [Corner radius](#corner-radius-1)
-  - [Side face radius](#side-face-radius)
+  - [Face radius](#face-radius)
   - [Border line style](#border-line-style)
   - [Circle radius](#circle-radius)
   - [Pill styles borders](#pill-styles-borders)
@@ -54,6 +57,7 @@
 - [Display](#display)
 - [Flexbox](#flexbox)
 - [Grid](#grid)
+- [Responsive Design](#responsive-design)
 
 <!-- /TOC -->
 ## Introduction
@@ -62,48 +66,51 @@ Powerful CSS styling made simple, fast and fun!
 
 DM-CSS is a Style-Notation CSS layout and design Toolkit.
 
-It brings consistency to your Web page coding and allows you to quickly add CSS styles that are easy to read.
+It brings consistency to your HTML/JSX coding and allows you to quickly add CSS styles that are easy to read.
+
+Works with Angular, React and Vue.js.
 
 ## CSS Resets
 
-DM-CSS resets CSS style setting using "normalize.css" a well accepted cross-browser library. It also set top padding and margin values to "0" (zero), as this make calculation straight forward.
+DM-CSS resets CSS style setting using "normalize.css" a well accepted cross-browser library. The top padding and margin values are set to "0" (zero), to make calculation straight forward.
 
-The global box model is changed to use border-box, this make it easy for calculation and does not allow margin and padding value to grow the box size.
+The global box model is changed to use "**border-box**". This makes it easy for layout calculation and does not allow margin and padding values to grow outside the element box size.
 
-The Root font family is set to "Roboto" with a height of 16px. This is the base (root) value other CSS heights are calculated off using the "**rem**" CSS unit.
+The Root font family is set to "Roboto" with a height of 16px. This is the base (root) value other values are calculated off. This is done by using the "**rem**" CSS unit.
 
 ### Benefits
 
 Some of the features of DM-CSS Toolkit you will enjoy right away.
 
-- Small size
-- Fast loading
+- Small size (~72KB).
+- Fast loading.
 - Robust and compact Style-Notation.
 - Consistent, easy to use and learn.
 - Designed for Designer, yet developer friendly!
-- No side effect, works like your own custom CSS styles.
+- No side effects, works like your own custom CSS styles.
 
 ### Basic usage
 
 DM-CSS Style-Notation are added to the "**class**" attribute of the HTML Tag.
 
-For example if you want to center text and capitalize it, the Style-Notation would look like the following.
+For example, if you want to center text and capitalize it, add a dashed border and give is a width of 20%, the Style-Notation would look like the following.
+
+
+![centered text](images/intro.png)
 
 ```html
 <div class="ttc tt-upcase b1 dash w20">centered text</div>
 ```
 
-![centered text](images/intro.png)
+The Style-Notation read from left to right adds the following CSS styles.
 
-The Style-Notation read from left to right above adds the following CSS styles.
-
-1. Text transform center.
+1. Center text.
 1. Text transform uppercase.
 1. Draw a border 1px wide.
 1. Set border line style to dashed (default is solid).
-1. Set div element to take up 20% of the available width.
+1. Set "**\<div\>**" element to take up 20% of the available width.
 
-As you can see DM-CSS Style-Notation are powerful and can be combined together to increase productivity.
+As you can see the Style-Notation are powerful and can be combined together to increase productivity.
 
 ## Setup
 
@@ -151,7 +158,7 @@ There are two ways to install DM-CSS Toolkit as a dependency in your project.
 
 ### Install as NPM module
 
-From your project root, type:
+From your Node.js based project root, type:
 
 ```sh
 npm install --save dm-css
@@ -159,7 +166,7 @@ npm install --save dm-css
 
 ### Use the CDN
 
-To use a CDN, add the following **\<link\>** Tag to your **index.html** file.
+To use the CDN, add the following **\<link\>** Tag to your **index.html** file, and enter the version of your choice.
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
@@ -170,10 +177,6 @@ Example usage for DM-CSS NPM version 0.0.5.
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.5/css/dm.min.css" rel="stylesheet">
 ```
-
-Early rough draft.
-
-DM-CSS Introduce class notation for applying CSS styling.
 
 ## CSS Borders
 
@@ -190,9 +193,9 @@ An element can be given borders on:
 
 ### Border values
 
-The value for the border denote the thickness of the border line.
+The postfix value for a border denotes the thickness of the border line.
 
-The supported values range from 0 to 4.
+The supported values range is from 0 to 4.
 
 A value of "0" (zero) indicates no border. You would use this to remove borders from a element that may already have borders.
 
@@ -208,7 +211,7 @@ A value of "0" (zero) indicates no border. You would use this to remove borders 
 
 ### Border Style-Notation
 
-Each requires a border thinkness value from 0 to 4.
+Border thinkness value ranger from 0 to 4.
 
 |Notation|Side|
 |-|-|
@@ -296,7 +299,7 @@ Each requires a border thinkness value from 0 to 4.
 
 There may be times you want to remove borders.
 
-To do this use a value of "0" (zero) with one of border Style-Notation.
+To do this, use a value of "0" (zero) with one of border Style-Notation.
 
 ```html
 <div class="b0 "> ... </div>
@@ -308,7 +311,7 @@ To do this use a value of "0" (zero) with one of border Style-Notation.
 <div class="bx0"> ... </div>
 ```
 
-You can also use a combination to remove only one side like this:
+You can use a combination of styles to remove only one side of the border.
 
 ![bro](images/br0.png)
 
@@ -320,15 +323,15 @@ You can also use a combination to remove only one side like this:
 
 Border corners can be given a radius to round out the corners.
 
-The border radius takes a value from 0 to 7, which follows a Golden Ratio scale.
+The border radius values range from 0 to 7. This scale follows the Golden Ratio.
 
 A radius value of "0" (zero) will reset "round" borders to have square corners.
 
 ### Corner radius
 
-When using borders, you may specify a radius value for each corner.
+When using borders, you may specify a radius value for each corner, shown later.
 
-### Equale radius corners
+### Equal radius corners
 
 ![radius](images/radius.png)
 
@@ -343,15 +346,15 @@ When using borders, you may specify a radius value for each corner.
 <div class="b1 radius7"> ... </div>
 ```
 
-Since the radius use a Golden Ratio, corner radius will look different for larger dimensions as shown below.
+Since the radius use a Golden Ratio, corner radius will look different for different dimensions as shown below.
 
 ![radius2](images/radius2.png)
 
 ### Corner radius
 
-You can set the border values for each corner using one of the following Style-Notation.
+You can set the individual border value for each corner using one of the following Style-Notation.
 
-|Notation|Radius side|
+|Notation|Radius corner|
 |-|-|
 |tl-radius|Top left|
 |tr-radius|Top right|
@@ -367,7 +370,7 @@ You can set the border values for each corner using one of the following Style-N
 <div class="b1 br-radius3">BR</div>
 ```
 
-### Side face radius
+### Face radius
 
 The face radius covers a side of the box to have round corners.
 
@@ -404,19 +407,14 @@ You can change the border line style from solid to dashed.
 ```
 
 ### Circle radius
+
 To draw a circular border, use Style-Notation "**circle**".
 
-- The element must have its CSS height and width property set.
+You must include the border notation, "**b**", as it governs the border property on an element, whereas "**circle**" sets the border radius value.
 
-Do not forget to include the border notation, "**b**", as it governs the border property on an element, whereas "**circle**" sets the border radius value.
+- The "**circle**" notation uses a radius of 50%.
 
-- The "**circle**" notation set the circle radius to 50%.
-- In some cases the element CSS display property may need to set to:
-  - block
-  - inline-block
-  - inline-flex
-
-Below are three boxes with dimensions of: 80x40, 80x80, 40x80
+Below are three boxes with dimensions of: 80x40, 80x80, 40x80.
 
 ```css
 .box1 { width: 80px; height: 40px; }
@@ -446,6 +444,8 @@ There are four pill styles for curved borders.
 ```
 
 ## Position
+
+An element static position property can be changed.
 
 ```html
 <span class="relative"> ... </span>
@@ -480,7 +480,7 @@ The default z-index has a value of 1.
 
 ## Size
 
-Scale value for width and height range from 10% 10 100% and increment by 10.
+Scale value for width and height range from 10% to 100% and incremented by 10.
 
 |Notation|Description|
 |-|-|
@@ -508,24 +508,22 @@ Basic usage:
 
 ## Spacing
 
-The box model that DM-CSS uses is the border-box, for more info see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
+The box model that DM-CSS uses is the "**border-box**". For more info see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
-The Style-Notation for spacing allow set the margin and padding value used by an element.
+The Style-Notation for spacing allows setting the margin and padding used by an element.
+
+- Padding and margin scale values range from 0 to 7.
+- Scale value follow the Golden Ratio.
 
 **Pro Tip**:
-In CSS, inline elements like "**\<p\>**" or "**\<span\>**" inherit their height values for margin and padding from surrounding text. You cannot change the height value for margin or padding for an inline element.
-
-If you want to be able to change their property, you much change their display property from "**inline**" to "**inline-block**".
+In CSS, inline elements like "**\<p\>**" or "**\<span\>**" inherit their height values for margin and padding from surrounding text. You cannot change the height value for margin or padding for an inline element. If you want to be able to change these properties, you must change their display property from "**inline**" to "**inline-block**".
 
 ```html
 <p class="d-inline-block"> ... </p>
 <span class="d-inline-block"> ... </span>
 ```
 
-Make sure you have a good understanding of CSS display types. How block and inline element get rendered and ultimitaely how this will affect setting their width and height.
-
-- Padding and margin scale values range from 0 to 7.
-- Scale value follow the Golden Ratio.
+Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimitaely how this will affect setting their width and height.
 
 ### Padding
 
@@ -663,13 +661,13 @@ Make sure you have a good understanding of CSS display types. How block and inli
 
 Font heights follow a Golden Ratio scale from 1 to 7.
 
+A font scale of 1 has a font height equal to the root element.
+
 ### Height scaling up
 
-A font scale of 1 has a font height of the root element.
+Higher scale values result progressively larger fonts, this is reverse of HTML heading values.
 
-Higher scale values get progressively bigger, this is reverse of HTML heading values.
-
-<small>(*) The image below is not to scale due to have markup works, it is used for illustration.</small>
+<small>(*) The image below is not to scale due to how markup works, it is used for illustration.</small>
 
 ![font heights](images/font-heights.png)
 
@@ -685,9 +683,9 @@ Higher scale values get progressively bigger, this is reverse of HTML heading va
 
 ### Height scaling down
 
-When font height is scaled down, the values become a fraction of the root element font height.
+When font height is scaled down, the values become a fraction of the root font height.
 
-The scale reduces root font height successively by a factor of **0.10**.
+The scale reduces font height successively by a factor of **10%**.
 
 You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
 
@@ -730,7 +728,7 @@ You will notice in the Style-Notation, scaled down fonts have a leading "-" dash
 
 The font weight will depend on the font being used.
 
-The weight start at a value of 100 and go up by 100 upto 900 (light to dark). Not all value maybe be valid, as it will depend on the font being used.
+The weight range is from 100 to 900, and increases (thin to stronger). Not all values maybe be valid, as it depend on the font being used.
 
 ```html
 <div class="fw100"> ... </div>
@@ -805,6 +803,8 @@ Hide or show an element without affecting layout.
 
 ### Centering
 
+Vertical, horizontal and full centering.
+
 ```html
 <div class="center-y"> ... </div>
 <div class="center-x"> ... </div>
@@ -837,4 +837,12 @@ All descendant elements of hidden element are also removed.
 
 ## Flexbox
 
+- WIP
+
 ## Grid
+
+- WIP
+
+## Responsive Design
+
+- WIP
