@@ -189,13 +189,6 @@
   padding-left: 4.483rem;
   padding-right: 4.483rem;
 }
-// Auto
-.py-auto {
-  vertical-align: middle;
-}
-.px-auto {
-  padding: inherit auto;
-}
 // Margin
 .m0 {
   margin: 0 !important;
@@ -394,5 +387,11 @@
 }
 .mx-auto {
   margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
   margin-right: auto;
 }
