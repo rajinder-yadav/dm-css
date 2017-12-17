@@ -191,7 +191,7 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 0.0.5.
+Example usage for DM-CSS NPM version 0.0.8.
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.8/css/dm.min.css" rel="stylesheet">
