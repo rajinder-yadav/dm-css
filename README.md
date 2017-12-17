@@ -6,6 +6,7 @@
 
 - [Introduction](#introduction)
 - [CSS Resets](#css-resets)
+  - [Box models](#box-models)
   - [Benefits](#benefits)
   - [Basic usage](#basic-usage)
 - [Setup](#setup)
@@ -97,6 +98,20 @@ The global box model is changed to use "**border-box**". This makes it easy for 
 
 The Root font family is set to "Roboto" with a height of 16px. This is the base (root) value other values are calculated off. This is done by using the "**rem**" CSS unit.
 
+### Box models
+
+DM-CSS default to using the "**border-box**" box model. You can however change this.
+
+The long-form and short-form Style-Notation for selecting the box model.
+
+```html
+<div class="contentbox"> ... </div>
+<div class="borderbox"> ... </div>
+
+<div class="cbox"> ... </div>
+<div class="bbox"> ... </div>
+```
+
 ### Benefits
 
 Some of the features of DM-CSS Toolkit you will enjoy right away.
@@ -162,7 +177,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.9/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.10/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -191,10 +206,10 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 0.0.9.
+Example usage for DM-CSS NPM version 0.0.10.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.9/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.10/css/dm.min.css" rel="stylesheet">
 ```
 
 ## CSS Borders
@@ -746,6 +761,7 @@ The scale reduces font height successively by a factor of **10%**.
 You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
 
 <small>(*) The image below is not to scale due to have markup works, it is used for illustration.</small>
+
 ![font heights](images/font-heights2.png)
 
 ```html
@@ -936,7 +952,7 @@ Working with ordered and unorder lists.
 <div class="list-square"> ... </div>
 <div class="list-alpha"> ... </div>
 <div class="list-roman"> ... </div>
-<div class="list-number"> ... </div>
+<div class="list-decimal"> ... </div>
 ```
 
 ### Bullet placement
