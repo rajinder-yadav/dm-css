@@ -1,24 +1,24 @@
 // Flex direction
-.flex-dr {
+.flex-r {
   flex-direction: row;
 }
-.flex-dl {
+.flex-l {
   flex-direction: row-reverse;
 }
-.flex-dd {
+.flex-d {
   flex-direction: column;
 }
-.flex-du {
+.flex-u {
   flex-direction: column-reverse;
 }
 // Wrap mode
-.flex-wrap-n {
+.flex-nowrap {
   flex-wrap: nowrap;
 }
-.flex-wrap-y {
+.flex-wrap {
   flex-wrap: wrap;
 }
-.flex-wrap-r {
+.flex-rwrap {
   flex-wrap: wrap-reverse;
 }
 // Justify main axis
@@ -92,25 +92,25 @@
   align-self: stretch;
 }
 // Order
-.flex-order1 {
+.flex-1 {
   order: 1;
 }
-.flex-order2 {
+.flex-2 {
   order: 2;
 }
-.flex-order3 {
+.flex-3 {
   order: 3;
 }
-.flex-order4 {
+.flex-4 {
   order: 4;
 }
-.flex-order5 {
+.flex-5 {
   order: 5;
 }
-.flex-order6 {
+.flex-6 {
   order: 6;
 }
-.flex-order7 {
+.flex-7 {
   order: 7;
 }
 // Growth
