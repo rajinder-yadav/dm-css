@@ -162,7 +162,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.7/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.8/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -194,7 +194,7 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 Example usage for DM-CSS NPM version 0.0.5.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.7/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.8/css/dm.min.css" rel="stylesheet">
 ```
 
 ## CSS Borders
