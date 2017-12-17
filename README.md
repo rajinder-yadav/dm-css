@@ -1,6 +1,10 @@
 # Power Packed CSS Styling for Everyone!
 
+![Version](https://img.shields.io/badge/dm--css-v0.0.10-blue.svg)
+![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
+![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
+![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 
 ![DM-CSS](images/dm-css-logo.png)
 
