@@ -13,7 +13,7 @@
 .list-roman {
   list-style-type: lower-roman;
 }
-.list-number {
+.list-decimal {
   list-style-type: decimal;
 }
 .list-alpha {
@@ -28,13 +28,13 @@
 }
 // Control placement row or column
 .list-row {
-  display: list-item inline !important;
+  display: inline !important;
   li {
     display: inline !important;
   }
 }
 .list-col {
-  display: initial !important;
+  display: block !important;
   li {
     display:list-item block !important;
   }
