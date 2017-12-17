@@ -1,7 +1,7 @@
 describe('Borders', () => {
 
   before(() => {
-    cy.visit('http://localhost:3000/test/display.html');
+    cy.visit('/test/web-pages/display.html');
   });
 
   it('None', () => {

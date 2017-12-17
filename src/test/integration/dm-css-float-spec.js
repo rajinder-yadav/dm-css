@@ -1,7 +1,7 @@
 describe('Borders', () => {
 
   before(() => {
-    cy.visit('http://localhost:3000/test/float.html');
+    cy.visit('/test/web-pages/float.html');
   });
 
   it('Float long left', () => {
