@@ -1,16 +1,31 @@
-.tt-left, .ttl {
+// Justification
+.ttl {
   text-align: left;
 }
-.tt-center, .ttc {
+.ttc {
   text-align: center;
 }
-.tt-right, .ttr {
+.ttr {
   text-align: right;
 }
-.tt-justify, .ttj {
+.ttj {
   text-align: justify;
   text-justify: auto;
 }
+// Vertical alignment
+.ttvt {
+  vertical-align: top;
+}
+.ttvm {
+  vertical-align: middle;
+}
+.ttvbl {
+  vertical-align: baseline;
+}
+.ttvb {
+  vertical-align: bottom;
+}
+// Character transformation
 .tt-caps {
   text-transform: capitalize;
 }
@@ -23,9 +38,47 @@
 .tt-none  {
   text-transform: none !important;
 }
-.tt-overflow-n {
+// Text wrapping
+.tt-wrap {
   overflow-wrap: break-word;
 }
-.tt-overflow-y {
+.tt-nowrap {
   overflow-wrap: normal;
+}
+// How to deal with overflow content
+.tt-overflow {
+  overflow: visible;
+}
+.tt-overflow-auto {
+  overflow: auto;
+}
+.tt-clip {
+  overflow: hidden
+}
+.tt-scroll {
+  overflow: scroll;
+}
+.tt-overflowy {
+  overflow-y: visible;
+}
+.tt-overflowy-auto {
+  overflow-y: auto;
+}
+.tt-clipy {
+  overflow-y: hidden
+}
+.tt-scrolly {
+  overflow-y: scroll;
+}
+.tt-overflowx-auto {
+  overflow-x: auto;
+}
+.tt-overflowx {
+  overflow-x: visible;
+}
+.tt-clipx {
+  overflow-x: hidden
+}
+.tt-scrollx {
+  overflow-x: scroll;
 }
