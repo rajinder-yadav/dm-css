@@ -1,4 +1,4 @@
-# CSS Styling for Everyone!
+# Power Packed CSS Styling for Everyone!
 
 ![DM-CSS](images/dm-css-logo.png)
 
@@ -49,13 +49,32 @@
   - [Font weight](#font-weight)
 - [Text](#text)
   - [Text justification](#text-justification)
+  - [Text vertical alignmen](#text-vertical-alignmen)
   - [Text transformation styles](#text-transformation-styles)
-  - [Text overflow wrapping](#text-overflow-wrapping)
+  - [Text wrapping](#text-wrapping)
+  - [Text overflow](#text-overflow)
 - [Utility](#utility)
   - [Visibility](#visibility)
   - [Centering](#centering)
 - [Display](#display)
+- [Lists](#lists)
+  - [Bullet styles](#bullet-styles)
+  - [Bullet placement](#bullet-placement)
+- [List orientation](#list-orientation)
+  - [List style reset](#list-style-reset)
+- [Floats](#floats)
+  - [Clearfix](#clearfix)
+- [Lists](#lists-1)
 - [Flexbox](#flexbox)
+  - [Direction](#direction)
+  - [Wrap mode](#wrap-mode)
+  - [Justify main axis](#justify-main-axis)
+  - [Justify cross axis](#justify-cross-axis)
+  - [Vertical align content](#vertical-align-content)
+  - [Item vertical align](#item-vertical-align)
+  - [Ordering](#ordering)
+  - [Growing](#growing)
+  - [Shrinking](#shrinking)
 - [Grid](#grid)
 - [Responsive Design](#responsive-design)
 
@@ -396,14 +415,28 @@ You can change the border line style from solid to dashed.
 
 ![dashes](images/dashes.png)
 
+**Border dash**
+
 ```html
-<div class="b2   dash"> ... </div>
-<div class="b2 t-dash"> ... </div>
-<div class="b2 b-dash"> ... </div>
-<div class="b2 l-dash"> ... </div>
-<div class="b2 r-dash"> ... </div>
-<div class="b2 x-dash"> ... </div>
-<div class="b2 y-dash"> ... </div>
+<div class="b2 dash"> ... </div>
+<div class="b2 dasht"> ... </div>
+<div class="b2 dashb"> ... </div>
+<div class="b2 dashl"> ... </div>
+<div class="b2 dashr"> ... </div>
+<div class="b2 dashx"> ... </div>
+<div class="b2 dashy"> ... </div>
+```
+
+**Border dot**
+
+```html
+<div class="b2 dot"> ... </div>
+<div class="b2 dott"> ... </div>
+<div class="b2 dotb"> ... </div>
+<div class="b2 dotl"> ... </div>
+<div class="b2 dotr"> ... </div>
+<div class="b2 dotx"> ... </div>
+<div class="b2 doty"> ... </div>
 ```
 
 ### Circle radius
@@ -451,6 +484,7 @@ An element static position property can be changed.
 <span class="relative"> ... </span>
 <span class="absolute"> ... </span>
 <span class="fixed"> ... </span>
+<span class="static"> ... </span>
 ```
 
 |Notation|Position|CSS property|
@@ -510,6 +544,8 @@ Basic usage:
 
 The box model that DM-CSS uses is the "**border-box**". For more info see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
+![border box](images/box-model.png)
+
 The Style-Notation for spacing allows setting the margin and padding used by an element.
 
 - Padding and margin scale values range from 0 to 7.
@@ -534,6 +570,8 @@ Make sure you have a good understanding of CSS display types. How block and inli
 |pb|Pad bottom|
 |pl|Pad left|
 |pr|Pad right|
+|py|Pad top and bottom|
+|px|Pad left and right|
 
 ```html
 <div class="p0">0</div>
@@ -645,6 +683,12 @@ Make sure you have a good understanding of CSS display types. How block and inli
 |mb|Margin bottom|
 |ml|Margin left|
 |mr|Margin right|
+|mx|Margins left and right|
+|my|Margins top and bottom|
+|my-auto|Auto margins left and right|
+|mx-auto|Auto margins top and bottom|
+|ml-auto|Auto margins left |
+|mr-auto|Auto margins right|
 
 ```html
 <div class="m0">0</div>
@@ -679,6 +723,18 @@ Higher scale values result progressively larger fonts, this is reverse of HTML h
 <div class="fh5">Font height 5</div>
 <div class="fh6">Font height 6</div>
 <div class="fh7">Font height 7</div>
+```
+
+There are also 7 Headings, which as like the regular HTML heading tags.
+
+```html
+<div class="h1">Font height 1</div>
+<div class="h2">Font height 2</div>
+<div class="h3">Font height 3</div>
+<div class="h4">Font height 4</div>
+<div class="h5">Font height 5</div>
+<div class="h6">Font height 6</div>
+<div class="h7">Font height 7</div>
 ```
 
 ### Height scaling down
@@ -750,12 +806,12 @@ Here are a few handy CS styles for working with text.
 
 The following Style-Notations are used to justify text.
 
-|Notation Short|Notation Long|Text transform|
-|-|-|-|
-|ttl|tt-left|Left align|
-|ttc|tt-center|Center text|
-|ttr|tt-right|Right align|
-|ttj|tt-justify|Justify text|
+|Notation|Text transform|
+|-|-|
+|ttl|Left align|
+|ttc||Center text|
+|ttr|Right align|
+|ttj|Justify text|
 
 ![text justify](images/text-justify.png)
 
@@ -764,6 +820,15 @@ The following Style-Notations are used to justify text.
 <div class="ttc">This text is centered</div>
 <div class="ttr">This text is right justified</div>
 <div class="ttj">This text is fully justified, more text to wrap around and justify</div>
+```
+
+### Text vertical alignmen
+
+```html
+<div class="ttvt"> ... </div>
+<div class="ttvm"> ... </div>
+<div class="ttvbl"> ... </div>
+<div class="ttvb"> ... </div>
 ```
 
 ### Text transformation styles
@@ -779,13 +844,36 @@ The following Style-Notations are used to justify text.
 
 Style-Notation "**tt-none**" should be used to reset existing text style when they are not desired.
 
-### Text overflow wrapping
+### Text wrapping
 
-This control if wrapping should occur when text overflows.
+This control if wrapping should occur when text overflows its content box.
 
 ```html
-<div class="tt-overflow-y"> ... </div>
-<div class="tt-overflow-n"> ... </div>
+<div class="tt-wrap"> ... </div>
+<div class="tt-nowrap"> ... </div>
+```
+
+### Text overflow
+
+```html
+<div class="tt-overflow"> ... </div>
+<div class="tt-overflow-auto"> ... </div>
+<div class="tt-clip"> ... </div>
+<div class="tt-scroll"> ... </div>
+```
+
+```html
+<div class="tt-overflowy"> ... </div>
+<div class="tt-overflowy-auto"> ... </div>
+<div class="tt-clipy"> ... </div>
+<div class="tt-scrolly"> ... </div>
+```
+
+```html
+<div class="tt-overflowx"> ... </div>
+<div class="tt-overflowx-auto"> ... </div>
+<div class="tt-clipx"> ... </div>
+<div class="tt-scrollx"> ... </div>
 ```
 
 ## Utility
@@ -806,8 +894,8 @@ Hide or show an element without affecting layout.
 Vertical, horizontal and full centering.
 
 ```html
-<div class="center-y"> ... </div>
-<div class="center-x"> ... </div>
+<div class="centery"> ... </div>
+<div class="centerx"> ... </div>
 <div class="center"> ... </div>
 ```
 
@@ -835,9 +923,162 @@ All descendant elements of hidden element are also removed.
 <div class="d-inline-grid"> ... </div>
 ```
 
+## Lists
+
+Working with ordered and unorder lists.
+
+### Bullet styles
+
+```html
+<div class="list-none"> ... </div>
+<div class="list-disc"> ... </div>
+<div class="list-circle"> ... </div>
+<div class="list-square"> ... </div>
+<div class="list-alpha"> ... </div>
+<div class="list-roman"> ... </div>
+<div class="list-number"> ... </div>
+```
+
+### Bullet placement
+
+```html
+<div class="list-inside"> ... </div>
+<div class="list-outside"> ... </div>
+```
+
+## List orientation
+
+```html
+<div class="list-row"> ... </div>
+<div class="list-col"> ... </div>
+```
+
+### List style reset
+
+```html
+<div class="list-reset"> ... </div>
+```
+
+## Floats
+
+The long-form and its short-form.
+
+```html
+<div class="float-l"> ... </div>
+<div class="float-r"> ... </div>
+<div class="float-n"> ... </div>
+
+<div class="fll"> ... </div>
+<div class="flr"> ... </div>
+<div class="fln"> ... </div>
+```
+
+### Clearfix
+
+```html
+<div class="cf"> ... </div>
+```
+
+## Lists
+
 ## Flexbox
 
-- WIP
+The Flexbox Style-Notation make it easy to do layout.
+
+### Direction
+
+```html
+<div class="flex-l"> ... </div>
+<div class="flex-r"> ... </div>
+<div class="flex-u"> ... </div>
+<div class="flex-d"> ... </div>
+```
+
+### Wrap mode
+
+```html
+<div class="flex-wrap"> ... </div>
+<div class="flex-nowrap"> ... </div>
+<div class="flex-rwrap"> ... </div>
+```
+
+### Justify main axis
+
+```html
+<div class="flex-js"> ... </div>
+<div class="flex-je"> ... </div>
+<div class="flex-jc"> ... </div>
+<div class="flex-ja"> ... </div>
+<div class="flex-jb"> ... </div>
+```
+
+### Justify cross axis
+
+```html
+<div class="flex-is"> ... </div>
+<div class="flex-ie"> ... </div>
+<div class="flex-ic"> ... </div>
+<div class="flex-ib"> ... </div>
+<div class="flex-ix"> ... </div>
+```
+
+### Vertical align content
+
+```html
+<div class="flex-cs"> ... </div>
+<div class="flex-ce"> ... </div>
+<div class="flex-cc"> ... </div>
+<div class="flex-cb"> ... </div>
+<div class="flex-ca"> ... </div>
+<div class="flex-cx"> ... </div>
+```
+
+### Item vertical align
+
+```html
+<div class="flex-sa"> ... </div>
+<div class="flex-ss"> ... </div>
+<div class="flex-se"> ... </div>
+<div class="flex-sc"> ... </div>
+<div class="flex-sb"> ... </div>
+<div class="flex-sx"> ... </div>
+```
+
+### Ordering
+
+```html
+<div class="flex-1"> ... </div>
+<div class="flex-2"> ... </div>
+<div class="flex-3"> ... </div>
+<div class="flex-4"> ... </div>
+<div class="flex-5"> ... </div>
+<div class="flex-6"> ... </div>
+<div class="flex-7"> ... </div>
+```
+
+### Growing
+
+```html
+<div class="flex-grow1"> ... </div>
+<div class="flex-grow2"> ... </div>
+<div class="flex-grow3"> ... </div>
+<div class="flex-grow4"> ... </div>
+<div class="flex-grow5"> ... </div>
+<div class="flex-grow6"> ... </div>
+<div class="flex-grow7"> ... </div>
+```
+
+### Shrinking
+
+```html
+<div class="flex-shrink1"> ... </div>
+<div class="flex-shrink2"> ... </div>
+<div class="flex-shrink3"> ... </div>
+<div class="flex-shrink4"> ... </div>
+<div class="flex-shrink5"> ... </div>
+<div class="flex-shrink6"> ... </div>
+<div class="flex-shrink7"> ... </div>
+```
 
 ## Grid
 
