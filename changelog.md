@@ -1,5 +1,21 @@
 # Change Log
 
+## 0.0.6 (2017-12-16)
+
+- Added support for float
+- Added support for list
+- New border line dot style
+- Changed dash notation
+- Changed Flexbox notations
+- New notation, position static
+- Removed erroneous auto padding
+- Added new left, right margin
+- Simplied text notation
+- Added new text notations
+- Renamed font file to typography
+- Simplified notation for center
+- Added new scetion to README
+
 ## 0.0.5 (2017-12-15)
 
 - Updated CSS resets, using border-box, font height changed.
