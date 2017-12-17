@@ -1,0 +1,57 @@
+.list-none {
+  list-style-type: none;
+}
+.list-disc {
+  list-style-type: disc;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-circle {
+  list-style-type: circle;
+}
+.list-roman {
+  list-style-type: lower-roman;
+}
+.list-number {
+  list-style-type: decimal;
+}
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+// Location of bullet
+.list-inside {
+  list-style-position: inside;
+}
+.list-outside {
+  list-style-position: outside;
+}
+// Control placement row or column
+.list-row {
+  display: list-item inline !important;
+  li {
+    display: inline !important;
+  }
+}
+.list-col {
+  display: initial !important;
+  li {
+    display:list-item block !important;
+  }
+}
+ul.list-reset {
+  display: block !important;
+  list-style-type: initial !important;
+  list-style-position: initial !important;
+  li {
+    display:list-item block !important;
+  }
+}
+ol.list-reset {
+  display: block !important;
+  list-style-type: decimal !important;
+  list-style-position: initial !important;
+  li {
+    display:list-item block !important;
+  }
+}
