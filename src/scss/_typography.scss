@@ -1,3 +1,32 @@
+// Heading scaled values arrived by eye-balling.
+h1, .h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h2, .h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+h3, .h3 {
+  font-size: 1.50rem;
+  font-weight: bold;
+}
+h4, .h4 {
+  font-size: 1.25rem; 
+  font-weight: bold;
+}
+h5, .h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+h6, .h6 {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.h7 {
+  font-size: 0.65rem;
+  font-weight: bold;
+}
 // Font size using Golden Ratio 1.618, calculated values truncated.
 .fh1 {
   font-size: 1rem;
