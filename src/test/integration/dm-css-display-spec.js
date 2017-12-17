@@ -1,4 +1,4 @@
-describe('Borders', () => {
+describe('Display', () => {
 
   before(() => {
     cy.visit('/test/web-pages/display.html');

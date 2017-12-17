@@ -1,4 +1,4 @@
-describe('Borders', () => {
+describe('Borders size all sides', () => {
 
   before(() => {
     cy.visit('/test/web-pages/border.html');
@@ -39,6 +39,13 @@ describe('Borders', () => {
       .should('have.css', 'border-left-width', '4px')
       .should('have.css', 'border-right-width', '4px');
   });
+});
+
+describe('Borders size top', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
+  });
 
   it('Border top size 1px', () => {
     cy.get('#bt0')
@@ -59,6 +66,13 @@ describe('Borders', () => {
   it('Border top size 4px', () => {
     cy.get('#bt4')
       .should('have.css', 'border-top-width', '4px');
+  });
+});
+
+describe('Borders size bottom', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
   });
 
   it('Border bottom size 1px', () => {
@@ -81,6 +95,13 @@ describe('Borders', () => {
     cy.get('#bb4')
       .should('have.css', 'border-bottom-width', '4px');
   });
+});
+
+describe('Borders size left', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
+  });
 
   it('Border left size 1px', () => {
     cy.get('#bl0')
@@ -102,6 +123,13 @@ describe('Borders', () => {
     cy.get('#bl4')
       .should('have.css', 'border-left-width', '4px');
   });
+});
+
+describe('Borders size right', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
+  });
 
   it('Border right size 1px', () => {
     cy.get('#br0')
@@ -122,6 +150,13 @@ describe('Borders', () => {
   it('Border right size 4px', () => {
     cy.get('#br4')
       .should('have.css', 'border-right-width', '4px');
+  });
+});
+
+describe('Borders size faces', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
   });
 
   it('Border left-right size 1px', () => {
@@ -175,41 +210,55 @@ describe('Borders', () => {
       .should('have.css', 'border-top-width', '4px')
       .should('have.css', 'border-bottom-width', '4px');
   });
+});
 
-  it('Circle radius', () => {
+describe('Borders special radius', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
+  });
+
+  it('Circle', () => {
     cy.get('#circle')
       .should('have.css', 'border-top-left-radius', '50%')
       .should('have.css', 'border-top-right-radius', '50%')
       .should('have.css', 'border-bottom-left-radius', '50%')
       .should('have.css', 'border-bottom-right-radius', '50%');
   });
-  it('Piill1 radius', () => {
+  it('Piill1', () => {
     cy.get('#pill1')
       .should('have.css', 'border-top-left-radius', '10% 50%')
       .should('have.css', 'border-top-right-radius', '10% 50%')
       .should('have.css', 'border-bottom-left-radius', '10% 50%')
       .should('have.css', 'border-bottom-right-radius', '10% 50%');
   });
-  it('Piill2 radius', () => {
+  it('Piill2', () => {
     cy.get('#pill2')
       .should('have.css', 'border-top-left-radius', '15% 50%')
       .should('have.css', 'border-top-right-radius', '15% 50%')
       .should('have.css', 'border-bottom-left-radius', '15% 50%')
       .should('have.css', 'border-bottom-right-radius', '15% 50%');
   });
-  it('Piill1 radius', () => {
+  it('Piill1', () => {
     cy.get('#pill3')
       .should('have.css', 'border-top-left-radius', '20% 50%')
       .should('have.css', 'border-top-right-radius', '20% 50%')
       .should('have.css', 'border-bottom-left-radius', '20% 50%')
       .should('have.css', 'border-bottom-right-radius', '20% 50%');
   });
-  it('Piill1 radius', () => {
+  it('Piill1 ', () => {
     cy.get('#pill4')
       .should('have.css', 'border-top-left-radius', '25% 50%')
       .should('have.css', 'border-top-right-radius', '25% 50%')
       .should('have.css', 'border-bottom-left-radius', '25% 50%')
       .should('have.css', 'border-bottom-right-radius', '25% 50%');
+  });
+});
+
+describe('Borders radius', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
   });
 
   it('Radius0', () => {
@@ -267,6 +316,13 @@ describe('Borders', () => {
       .should('have.css', 'border-top-right-radius', '71.184px')
       .should('have.css', 'border-bottom-left-radius', '71.184px')
       .should('have.css', 'border-bottom-right-radius', '71.184px');
+  });
+});
+
+describe('Borders corner radius', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
   });
 
   it('TL Radius0', () => {
@@ -399,6 +455,13 @@ describe('Borders', () => {
   it('BR Radius7', () => {
     cy.get('#br-radius7')
       .should('have.css', 'border-bottom-right-radius', '71.184px');
+  });
+});
+
+describe('Borders face radius', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
   });
 
   it('T Radius0', () => {
@@ -570,6 +633,14 @@ describe('Borders', () => {
       .should('have.css', 'border-left-style', 'dashed')
       .should('have.css', 'border-right-style', 'dashed');
   });
+});
+
+describe('Borders line styles', () => {
+
+  before(() => {
+    cy.visit('/test/web-pages/border.html');
+  });
+
   it('Border style top dash', () => {
     cy.get('#dasht')
       .should('have.css', 'border-top-style', 'dashed');
