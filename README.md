@@ -1,5 +1,7 @@
 # Power Packed CSS Styling for Everyone!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
+
 ![DM-CSS](images/dm-css-logo.png)
 
 <!-- TOC -->
