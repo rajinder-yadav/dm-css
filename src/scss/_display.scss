@@ -5,33 +5,11 @@
 .d-none, .hide {
   display: none !important;
 }
-.d-inline {
-  display: inline !important;
-}
-.d-inline-block {
-  display: inline-block !important;
-}
-.d-block {
-  display: block !important;
-}
-.d-flex {
-  display: flex !important;
-}
-.d-inline-flex {
-  display: inline-flex !important;
-}
-.d-grid {
-  display: grid !important;
-}
-.d-inline-grid {
-  display: inline-grid !important;
-}
-.d-table {
-  display: table !important;
-}
-.d-table-row {
-  display: table-row !important;
-}
-.d-table-cell {
-  display: table-cell !important;
+
+$display_notations: inline, inline-block, block, flex, inline-flex, grid, inline-grid, table, table-row, table-cell;
+
+@each $n in $display_notations {
+  .d-#{$n} {
+    display: $n !important;
+  }
 }
