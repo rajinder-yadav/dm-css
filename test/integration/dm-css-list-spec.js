@@ -175,7 +175,7 @@ describe("List Style-Notation", () => {
     });
   });
 
-  context("List orientation", () => {
+  context("List reset", () => {
 
     it("reset row ol", () => {
       cy.get("ol.list-row.list-reset")
