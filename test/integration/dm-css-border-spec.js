@@ -3,7 +3,7 @@ describe("Border Style-Notation", () => {
     cy.visit("/test/web-pages/border.html");
   });
 
-  context("Borders size all sides", () => {
+  context("Border size all sides", () => {
     it("None", () => {
       cy.get("#b0")
         .should("have.class", "b0")
@@ -46,7 +46,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders size top", () => {
+  context("Border size top", () => {
 
     it("Border top size 1px", () => {
       cy.get("#bt0")
@@ -75,7 +75,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders size bottom", () => {
+  context("Border size bottom", () => {
 
     it("Border bottom size 1px", () => {
       cy.get("#bb0")
@@ -104,7 +104,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders size left", () => {
+  context("Border size left", () => {
 
     it("Border left size 1px", () => {
       cy.get("#bl0")
@@ -133,7 +133,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders size right", () => {
+  context("Border size right", () => {
 
     it("Border right size 1px", () => {
       cy.get("#br0")
@@ -162,7 +162,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders size faces", () => {
+  context("Border size faces", () => {
 
     it("Border left-right size 1px", () => {
       cy.get("#bx0")
@@ -227,7 +227,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders special radius", () => {
+  context("Border special radius", () => {
 
     it("Circle", () => {
       cy.get("#circle")
@@ -237,7 +237,7 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-bottom-left-radius", "50%")
         .should("have.css", "border-bottom-right-radius", "50%");
     });
-    it("Piill1", () => {
+    it("Pill1", () => {
       cy.get("#pill1")
         .should("have.class", "pill1")
         .should("have.css", "border-top-left-radius", "10% 50%")
@@ -245,7 +245,7 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-bottom-left-radius", "10% 50%")
         .should("have.css", "border-bottom-right-radius", "10% 50%");
     });
-    it("Piill2", () => {
+    it("Pill2", () => {
       cy.get("#pill2")
         .should("have.class", "pill2")
         .should("have.css", "border-top-left-radius", "15% 50%")
@@ -253,7 +253,7 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-bottom-left-radius", "15% 50%")
         .should("have.css", "border-bottom-right-radius", "15% 50%");
     });
-    it("Piill1", () => {
+    it("Pill1", () => {
       cy.get("#pill3")
         .should("have.class", "pill3")
         .should("have.css", "border-top-left-radius", "20% 50%")
@@ -261,7 +261,7 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-bottom-left-radius", "20% 50%")
         .should("have.css", "border-bottom-right-radius", "20% 50%");
     });
-    it("Piill1 ", () => {
+    it("Pill1 ", () => {
       cy.get("#pill4")
         .should("have.class", "pill4")
         .should("have.css", "border-top-left-radius", "25% 50%")
@@ -271,7 +271,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders radius", () => {
+  context("Border radius", () => {
 
     it("Radius0", () => {
       cy.get("#radius0")
@@ -339,7 +339,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders corner radius", () => {
+  context("Border corner radius", () => {
 
     it("TL Radius0", () => {
       cy.get("#tl-radius0")
@@ -506,7 +506,7 @@ describe("Border Style-Notation", () => {
     });
   });
 
-  context("Borders face radius", () => {
+  context("Border face radius", () => {
 
     it("T Radius0", () => {
       cy.get("#t-radius0")
@@ -560,8 +560,8 @@ describe("Border Style-Notation", () => {
     it("B Radius0", () => {
       cy.get("#b-radius0")
         .should("have.class", "b-radius0")
-        .should("have.css", "border-top-left-radius", "0px")
-        .should("have.css", "border-top-right-radius", "0px");
+        .should("have.css", "border-bottom-left-radius", "0px")
+        .should("have.css", "border-bottom-right-radius", "0px");
     });
     it("B Radius1", () => {
       cy.get("#b-radius1")
@@ -702,6 +702,10 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-top-right-radius", "71.184px")
         .should("have.css", "border-bottom-right-radius", "71.184px");
     });
+  });
+
+  context("Borders line styles", () => {
+
     it("Border style dash", () => {
       cy.get("#dash")
         .should("have.class", "dash")
@@ -710,10 +714,6 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-left-style", "dashed")
         .should("have.css", "border-right-style", "dashed");
     });
-  });
-
-  context("Borders line styles", () => {
-
     it("Border style top dash", () => {
       cy.get("#dasht")
         .should("have.class", "dasht")
