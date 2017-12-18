@@ -5,15 +5,15 @@
   visibility: hidden !important;
 }
 .centerx {
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }
 .centery {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
 }
 .center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }

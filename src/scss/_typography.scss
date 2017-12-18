@@ -1,75 +1,75 @@
 // Heading scaled values arrived by eye-balling.
 h1, .h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2rem !important;
+  font-weight: bold !important;
 }
 h2, .h2 {
-  font-size: 1.75rem;
-  font-weight: bold;
+  font-size: 1.75rem !important;
+  font-weight: bold !important;
 }
 h3, .h3 {
-  font-size: 1.50rem;
-  font-weight: bold;
+  font-size: 1.50rem !important;
+  font-weight: bold !important;
 }
 h4, .h4 {
-  font-size: 1.25rem; 
-  font-weight: bold;
+  font-size: 1.25rem !important; 
+  font-weight: bold !important;
 }
 h5, .h5 {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1rem !important;
+  font-weight: bold !important;
 }
 h6, .h6 {
-  font-size: 0.85rem;
-  font-weight: bold;
+  font-size: 0.85rem !important;
+  font-weight: bold !important;
 }
 .h7 {
-  font-size: 0.65rem;
-  font-weight: bold;
+  font-size: 0.65rem !important;
+  font-weight: bold !important;
 }
 // Font size using Golden Ratio 1.618, calculated values truncated.
 .fh1 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 .fh2 {
-  font-size: 1.618rem;
+  font-size: 1.618rem !important;
 }
 .fh3 {
-  font-size: 3.236rem;
+  font-size: 3.236rem !important;
 }
 .fh4 {
-  font-size: 4.854rem;
+  font-size: 4.854rem !important;
 }
 .fh5 {
-  font-size: 6.472rem;
+  font-size: 6.472rem !important;
 }
 .fh6 {
-  font-size: 8.09rem;
+  font-size: 8.09rem !important;
 }
 .fh7 {
-  font-size: 9.708rem;
+  font-size: 9.708rem !important;
 }
 // Negative font height scaled
 .fh-1 {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
 }
 .fh-2 {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 .fh-3 {
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
 }
 .fh-4 {
-  font-size: 0.6rem;
+  font-size: 0.6rem !important;
 }
 .fh-5 {
-  font-size: 0.5rem;
+  font-size: 0.5rem !important;
 }
 .fh-6 {
-  font-size: 0.4rem;
+  font-size: 0.4rem !important;
 }
 .fh-7 {
-  font-size: 0.3rem;
+  font-size: 0.3rem !important;
 }
 // Font styles
 .fsn {
@@ -78,48 +78,48 @@ h6, .h6 {
   text-decoration: none !important;
 }
 .fsi {
-  font-style: italic;
+  font-style: italic !important;
 }
 .fsb {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .fsu {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
 }
 .fss {
-  text-decoration-line: line-through;
-  text-decoration-style: solid;
+  text-decoration-line: line-through !important;
+  text-decoration-style: solid !important;
 }
 .fsw {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
+  text-decoration-line: underline !important;
+  text-decoration-style: wavy !important;
 }
 // Font weights 100 - 900
 .fw100 {
-  font-weight: 100;
+  font-weight: 100 !important;
 }
 .fw200 {
-  font-weight: 200;
+  font-weight: 200 !important;
 }
 .fw300 {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 .fw400 {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 .fw500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 .fw600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .fw700 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .fw800 {
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 .fw900 {
-  font-weight: 900;
+  font-weight: 900 !important;
 }

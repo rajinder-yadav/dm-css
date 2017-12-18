@@ -1,26 +1,26 @@
 // Floats
 .float-l, .fll {
-  float: left;
+  float: left !important;
 }
 .float-r, .flr {
-  float: right;
+  float: right !important;
 }
 .float-n, .fln {
-  float: none;
+  float: none !important;
 }
 // Clearfix hack http://cssmojo.com/the-very-latest-clearfix-reloaded/
 .cf:before,
 .cf:after {
-    content: " ";
-    display: table;
+    content: " " !important;
+    display: table !important;
 }
 .cf:after {
-    clear: both;
+    clear: both !important;
 }
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    *zoom: 1;
+    *zoom: 1 !important;
 }

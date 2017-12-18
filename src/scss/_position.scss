@@ -1,37 +1,37 @@
 // Position
 .pos-t {
-  top: 0;
+  top: 0 !important;
 }
 .pos-b {
-  bottom: 0;
+  bottom: 0 !important;
 }
 .pos-l {
-  left: 0;
+  left: 0 !important;
 }
 .pos-r {
-  right: 0;
+  right: 0 !important;
 }
 .z1 {
-  z-index: 1;
+  z-index: 1 !important;
 }
 .z2 {
-  z-index: 2;
+  z-index: 2 !important;
 }
 .z3 {
-  z-index: 3;
+  z-index: 3 !important;
 }
 .z4 {
-  z-index: 4;
+  z-index: 4 !important;
 }
 .fixed {
-  position: fixed;
+  position: fixed !important;
 }
 .absolute {
-  position: absolute;
+  position: absolute !important;
 }
 .relative {
-  position: relative;
+  position: relative !important;
 }
 .static {
-  position: static;
+  position: static !important;
 }

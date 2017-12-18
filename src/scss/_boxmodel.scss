@@ -1,6 +1,6 @@
 .cbox, .contentbox {
-  box-sizing: content-box;
+  box-sizing: content-box !important;
 }
 .bbox, .borderbox {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }

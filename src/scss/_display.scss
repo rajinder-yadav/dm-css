@@ -6,23 +6,32 @@
   display: none !important;
 }
 .d-inline {
-  display: inline;
+  display: inline !important;
 }
 .d-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 .d-block {
-  display: block;
+  display: block !important;
 }
 .d-flex {
-  display: flex;
+  display: flex !important;
 }
 .d-inline-flex {
-  display: inline-flex;
+  display: inline-flex !important;
 }
 .d-grid {
-  display: grid;
+  display: grid !important;
 }
 .d-inline-grid {
-  display: inline-grid;
+  display: inline-grid !important;
+}
+.d-table {
+  display: table !important;
+}
+.d-table-row {
+  display: table-row !important;
+}
+.d-table-cell {
+  display: table-cell !important;
 }

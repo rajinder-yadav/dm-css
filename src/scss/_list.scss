@@ -1,30 +1,30 @@
 .list-none {
-  list-style-type: none;
+  list-style-type: none !important;
 }
 .list-disc {
-  list-style-type: disc;
+  list-style-type: disc !important;
 }
 .list-square {
-  list-style-type: square;
+  list-style-type: square !important;
 }
 .list-circle {
-  list-style-type: circle;
+  list-style-type: circle !important;
 }
 .list-roman {
-  list-style-type: lower-roman;
+  list-style-type: lower-roman !important;
 }
 .list-decimal {
-  list-style-type: decimal;
+  list-style-type: decimal !important;
 }
 .list-alpha {
-  list-style-type: lower-alpha;
+  list-style-type: lower-alpha !important;
 }
 // Location of bullet
 .list-inside {
-  list-style-position: inside;
+  list-style-position: inside !important;
 }
 .list-outside {
-  list-style-position: outside;
+  list-style-position: outside !important;
 }
 // Control placement row or column
 .list-row {

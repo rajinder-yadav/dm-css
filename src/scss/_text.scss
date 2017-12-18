@@ -1,84 +1,92 @@
 // Justification
 .ttl {
-  text-align: left;
+  text-align: left !important;
 }
 .ttc {
-  text-align: center;
+  text-align: center !important;
 }
 .ttr {
-  text-align: right;
+  text-align: right !important;
 }
 .ttj {
-  text-align: justify;
-  text-justify: auto;
+  text-align: justify !important;
+  text-justify: auto !important;
 }
 // Vertical alignment
 .ttvt {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 .ttvm {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 .ttvbl {
-  vertical-align: baseline;
+  vertical-align: baseline !important;
 }
 .ttvb {
-  vertical-align: bottom;
+  vertical-align: bottom !important;
 }
+.ttvtb {
+  vertical-align: text-bottom !important;
+}
+.ttvtt {
+  vertical-align: text-top !important;
+}
+
 // Character transformation
 .tt-caps {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 .tt-upcase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 .tt-lowcase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 .tt-none  {
   text-transform: none !important;
 }
 // Text wrapping
 .tt-wrap {
-  overflow-wrap: break-word;
+  overflow-wrap: break-word !important;
 }
 .tt-nowrap {
-  overflow-wrap: normal;
+  overflow-wrap: normal !important;
+  white-space: nowrap !important;
 }
 // How to deal with overflow content
 .tt-overflow {
-  overflow: visible;
+  overflow: visible !important;
 }
 .tt-overflow-auto {
-  overflow: auto;
+  overflow: auto !important;
 }
 .tt-clip {
-  overflow: hidden
+  overflow: hidden !important;
 }
 .tt-scroll {
-  overflow: scroll;
+  overflow: scroll !important;
 }
 .tt-overflowy {
-  overflow-y: visible;
+  overflow-y: visible !important;
 }
 .tt-overflowy-auto {
-  overflow-y: auto;
+  overflow-y: auto !important;
 }
 .tt-clipy {
-  overflow-y: hidden
+  overflow-y: hidden !important;
 }
 .tt-scrolly {
-  overflow-y: scroll;
+  overflow-y: scroll !important;
 }
 .tt-overflowx-auto {
-  overflow-x: auto;
+  overflow-x: auto !important;
 }
 .tt-overflowx {
-  overflow-x: visible;
+  overflow-x: visible !important;
 }
 .tt-clipx {
-  overflow-x: hidden
+  overflow-x: hidden !important;
 }
 .tt-scrollx {
-  overflow-x: scroll;
+  overflow-x: scroll !important;
 }
