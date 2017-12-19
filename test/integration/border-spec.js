@@ -47,7 +47,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border size top", () => {
-
     it("Border top size 1px", () => {
       cy.get("#bt0")
         .should("have.class", "bt0")
@@ -76,7 +75,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border size bottom", () => {
-
     it("Border bottom size 1px", () => {
       cy.get("#bb0")
         .should("have.class", "bb0")
@@ -105,7 +103,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border size left", () => {
-
     it("Border left size 1px", () => {
       cy.get("#bl0")
         .should("have.class", "bl0")
@@ -134,7 +131,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border size right", () => {
-
     it("Border right size 1px", () => {
       cy.get("#br0")
         .should("have.class", "br0")
@@ -163,7 +159,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border size faces", () => {
-
     it("Border left-right size 1px", () => {
       cy.get("#bx0")
         .should("have.class", "bx0")
@@ -228,7 +223,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border special radius", () => {
-
     it("Circle", () => {
       cy.get("#circle")
         .should("have.class", "circle")
@@ -272,7 +266,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border radius", () => {
-
     it("Radius0", () => {
       cy.get("#radius0")
         .should("have.class", "radius0")
@@ -340,7 +333,6 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border corner radius", () => {
-
     it("TL Radius0", () => {
       cy.get("#tl-radius0")
         .should("have.class", "tl-radius0")
