@@ -45,5 +45,53 @@ describe("Size", () => {
         .should("have.css", "bottom", "0px")
         .should("have.css", "right", "0px");
     });
+    it("Static", () => {
+      cy.get("#static")
+        .should("have.class", "absolute static")
+        .should("have.css", "position", "static");
+    });
+  });
+  context("Fixed", () => {
+    it("Top right", () => {
+      cy.get("#f1>div:first")
+        .should("have.class", "fixed")
+        .should("have.css", "position", "fixed")
+        .should("have.css", "top", "0px")
+        .should("have.css", "right", "0px");
+    });
+    it("Bottom right", () => {
+      cy.get("#f2>div:first")
+        .should("have.class", "fixed")
+        .should("have.css", "position", "fixed")
+        .should("have.css", "bottom", "0px")
+        .should("have.css", "right", "0px");
+    });
+  });
+
+  context("Z Index", () => {
+    it("z1 z0", () => {
+      cy.get("#z1>div:first")
+        .should("have.class", "z1");
+      cy.get("#z1>div:first").next()
+        .should("have.class", "z0");
+    });
+    it("z2 z0", () => {
+      cy.get("#z2>div:first")
+        .should("have.class", "z2");
+      cy.get("#z2>div:first").next()
+        .should("have.class", "z0");
+    });
+    it("z3 z0", () => {
+      cy.get("#z3>div:first")
+        .should("have.class", "z3");
+      cy.get("#z3>div:first").next()
+        .should("have.class", "z0");
+    });
+    it("z4 z0", () => {
+      cy.get("#z4>div:first")
+        .should("have.class", "z4");
+      cy.get("#z4>div:first").next()
+        .should("have.class", "z0");
+    });
   });
 });

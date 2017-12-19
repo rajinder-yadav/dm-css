@@ -16,21 +16,50 @@
       height: 100px;
       background-color: rgb(127, 255, 212);
     }
-    .bg {
+    .bg1 {
       background-color: red;
     }
+    .bg2 {
+      background-color: blue;
+    }
   </style>
+  <h3>Position</h3>
   <div id="tl" class="container b1 relative">
-    <div class="pos-t pos-l absolute b1 bg w10 h10"></div>
+    <div class="pos-t pos-l absolute b1 bg1 w10 h10"></div>
   </div>
   <div id="tr" class="container b1 relative">
-    <div class="pos-t pos-r absolute b1 bg w10 h10"></div>
+    <div class="pos-t pos-r absolute b1 bg1 w10 h10"></div>
   </div>
   <div id="bl" class="container b1 relative">
-    <div class="pos-b pos-l absolute b1 bg w10 h10"></div>
+    <div class="pos-b pos-l absolute b1 bg1 w10 h10"></div>
   </div>
   <div id="br" class="container b1 relative">
-    <div class="pos-b pos-r absolute b1 bg w10 h10"></div>
+    <div class="pos-b pos-r absolute b1 bg1 w10 h10"></div>
+  </div>
+  <div id="static" class="pos-b pos-r absolute static b1 bg1 w10 h10">Static</div>
+
+  <div id="f1" class="b1">
+    <div class="fixed pos-t pos-r b1 bg1 w10 h10">Top Right</div>
+  </div>
+  <div id="f2" class="b1">
+    <div class="fixed pos-b pos-r b1 bg1 w10 h10">Bottom Right</div>
+  </div>
+  <h3>Z Index</h3>
+  <div id="z1" class="container relative mt2">
+    <div class="pos-t pos-l absolute z1 b1 bg1 w20 h20"></div>
+    <div class="pos-t pos-l absolute z0 b1 bg2 w30 h30"></div>
+  </div>
+  <div id="z2" class="container relative mt2">
+    <div class="pos-t pos-l absolute z2 b1 bg1 w20 h20"></div>
+    <div class="pos-t pos-l absolute z0 b1 bg2 w30 h30"></div>
+  </div>
+  <div id="z3" class="container relative mt2">
+    <div class="pos-t pos-l absolute z3 b1 bg1 w20 h20"></div>
+    <div class="pos-t pos-l absolute z0 b1 bg2 w30 h30"></div>
+  </div>
+  <div id="z4" class="container relative mt2">
+    <div class="pos-t pos-l absolute z4 b1 bg1 w20 h20"></div>
+    <div class="pos-t pos-l absolute z0 b1 bg2 w30 h30"></div>
   </div>
 </body>
 </html>
