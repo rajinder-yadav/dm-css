@@ -91,69 +91,15 @@
 .flex-sx {
   align-self: stretch !important;
 }
-// Order
-.flex-1 {
-  order: 1 !important;
-}
-.flex-2 {
-  order: 2 !important;
-}
-.flex-3 {
-  order: 3 !important;
-}
-.flex-4 {
-  order: 4 !important;
-}
-.flex-5 {
-  order: 5 !important;
-}
-.flex-6 {
-  order: 6 !important;
-}
-.flex-7 {
-  order: 7 !important;
-}
-// Growth
-.flex-grow1 {
-  flex-grow: 1 !important;
-}
-.flex-grow2 {
-  flex-grow: 2 !important;
-}
-.flex-grow3 {
-  flex-grow: 3 !important;
-}
-.flex-grow4 {
-  flex-grow: 4 !important;
-}
-.flex-grow5 {
-  flex-grow: 5 !important;
-}
-.flex-grow6 {
-  flex-grow: 6 !important;
-}
-.flex-grow7 {
-  flex-grow: 7 !important;
-}
-// Shrink
-.flex-shrink1 {
-  flex-shrink: 1 !important;
-}
-.flex-shrink2 {
-  flex-shrink: 2 !important;
-}
-.flex-shrink3 {
-  flex-shrink: 3 !important;
-}
-.flex-shrink4 {
-  flex-shrink: 4 !important;
-}
-.flex-shrink5 {
-  flex-shrink: 5 !important;
-}
-.flex-shrink6 {
-  flex-shrink: 6 !important;
-}
-.flex-shrink7 {
-  flex-shrink: 7 !important;
+// Flex order, grow, shrink
+@for $n from 1 through 7 {
+  .flex-#{$n} {
+    order: $n !important;
+  }
+  .flex-g#{$n} {
+    flex-grow: $n !important;
+  }
+  .flex-s#{$n} {
+    flex-shrink: $n !important;
+  }
 }

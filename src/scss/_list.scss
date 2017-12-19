@@ -1,23 +1,15 @@
-.list-none {
-  list-style-type: none !important;
-}
-.list-disc {
-  list-style-type: disc !important;
-}
-.list-square {
-  list-style-type: square !important;
-}
-.list-circle {
-  list-style-type: circle !important;
-}
-.list-roman {
-  list-style-type: lower-roman !important;
-}
-.list-decimal {
-  list-style-type: decimal !important;
+// List bullet styles
+$bullet_notations: none, disc, square, circle, decimal;
+@each $b in $bullet_notations {
+  .list-#{$b} {
+    list-style-type: $b !important;
+  }
 }
 .list-alpha {
   list-style-type: lower-alpha !important;
+}
+.list-roman {
+  list-style-type: lower-roman !important;
 }
 // Location of bullet
 .list-inside {
@@ -26,7 +18,7 @@
 .list-outside {
   list-style-position: outside !important;
 }
-// Control placement row or column
+// List orientation row or column
 .list-row {
   display: inline !important;
   li {

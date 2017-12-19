@@ -1,4 +1,4 @@
-// Position
+// Position values
 .pos-t {
   top: 0 !important;
 }
@@ -11,18 +11,13 @@
 .pos-r {
   right: 0 !important;
 }
-.z1 {
-  z-index: 1 !important;
+// Z index positions
+@for $n from 0 through 4 {
+  .z#{$n} {
+    z-index: $n !important;
+  }
 }
-.z2 {
-  z-index: 2 !important;
-}
-.z3 {
-  z-index: 3 !important;
-}
-.z4 {
-  z-index: 4 !important;
-}
+// Position
 .fixed {
   position: fixed !important;
 }

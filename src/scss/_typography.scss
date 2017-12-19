@@ -1,75 +1,31 @@
 // Heading scaled values arrived by eye-balling.
-h1, .h1 {
-  font-size: 2rem !important;
-  font-weight: bold !important;
-}
-h2, .h2 {
-  font-size: 1.75rem !important;
-  font-weight: bold !important;
-}
-h3, .h3 {
-  font-size: 1.50rem !important;
-  font-weight: bold !important;
-}
-h4, .h4 {
-  font-size: 1.25rem !important; 
-  font-weight: bold !important;
-}
-h5, .h5 {
-  font-size: 1rem !important;
-  font-weight: bold !important;
-}
-h6, .h6 {
-  font-size: 0.85rem !important;
-  font-weight: bold !important;
+$heading_scale: 2, 1.75, 1.5, 1.25, 1, 0.85;
+@each $hval in $heading_scale {
+  $i: index($heading_scale, $hval);
+  h#{$i}, .h#{$i} {
+    font-size: #{$hval}rem !important;
+    font-weight: bold !important;
+  }
 }
 .h7 {
   font-size: 0.65rem !important;
   font-weight: bold !important;
 }
 // Font size using Golden Ratio 1.618, calculated values truncated.
-.fh1 {
-  font-size: 1rem !important;
+$fheight_pscale: 1, 1.618, 3.236, 4.854, 6.472, 8.09, 9.708;
+@each $fval in $fheight_pscale {
+  $i: index($fheight_pscale, $fval);
+  .fh#{$i} {
+    font-size: #{$fval}rem !important;
+  }
 }
-.fh2 {
-  font-size: 1.618rem !important;
-}
-.fh3 {
-  font-size: 3.236rem !important;
-}
-.fh4 {
-  font-size: 4.854rem !important;
-}
-.fh5 {
-  font-size: 6.472rem !important;
-}
-.fh6 {
-  font-size: 8.09rem !important;
-}
-.fh7 {
-  font-size: 9.708rem !important;
-}
-// Negative font height scaled
-.fh-1 {
-  font-size: 0.9rem !important;
-}
-.fh-2 {
-  font-size: 0.8rem !important;
-}
-.fh-3 {
-  font-size: 0.7rem !important;
-}
-.fh-4 {
-  font-size: 0.6rem !important;
-}
-.fh-5 {
-  font-size: 0.5rem !important;
-}
-.fh-6 {
-  font-size: 0.4rem !important;
-}
-.fh-7 {
-  font-size: 0.3rem !important;
+
+$fheight_nscale: 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3;
+@each $fval in $fheight_nscale {
+  $i: index($fheight_nscale, $fval);
+  .fh-#{$i} {
+    font-size: #{$fval}rem !important;
+  }
 }
 // Font styles
 .fsn {
@@ -96,30 +52,8 @@ h6, .h6 {
   text-decoration-style: wavy !important;
 }
 // Font weights 100 - 900
-.fw100 {
-  font-weight: 100 !important;
-}
-.fw200 {
-  font-weight: 200 !important;
-}
-.fw300 {
-  font-weight: 300 !important;
-}
-.fw400 {
-  font-weight: 400 !important;
-}
-.fw500 {
-  font-weight: 500 !important;
-}
-.fw600 {
-  font-weight: 600 !important;
-}
-.fw700 {
-  font-weight: 700 !important;
-}
-.fw800 {
-  font-weight: 800 !important;
-}
-.fw900 {
-  font-weight: 900 !important;
+@for $n from 1 through 9 {
+  .fw#{$n * 100} {
+    font-weight: $n * 100 !important;
+  }
 }
