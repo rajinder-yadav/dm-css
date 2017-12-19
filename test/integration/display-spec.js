@@ -57,4 +57,19 @@ describe("Display", () => {
       .should("have.class", "d-inline-grid")
       .should("have.css", "display", "inline-grid");
   });
+  it("table", () => {
+    cy.get("#d-table")
+      .should("have.class", "d-table")
+      .should("have.css", "display", "table");
+  });
+  it("table-row", () => {
+    cy.get("#d-table-row")
+      .should("have.class", "d-table-row")
+      .should("have.css", "display", "table-row");
+  });
+  it("table-cell", () => {
+    cy.get("#d-table-cell")
+      .should("have.class", "d-table-cell")
+      .should("have.css", "display", "table-cell");
+  });
 });
