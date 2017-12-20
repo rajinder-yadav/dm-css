@@ -10,7 +10,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "border-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#bb1>div:first")
+      cy.get("#bb1>div:first-child")
         .should("have.css", "box-sizing", "border-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "100px")
@@ -21,7 +21,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "border-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#bb2>div:first")
+      cy.get("#bb2>div:first-child")
         .should("have.css", "box-sizing", "border-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "98px")
@@ -32,7 +32,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "border-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#bb3>div:first")
+      cy.get("#bb3>div:first-child")
         .should("have.css", "box-sizing", "border-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "98px")
@@ -46,7 +46,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "content-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#cb1>div:first")
+      cy.get("#cb1>div:first-child")
         .should("have.css", "box-sizing", "content-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "100px")
@@ -57,7 +57,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "content-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#cb2>div:first")
+      cy.get("#cb2>div:first-child")
         .should("have.css", "box-sizing", "content-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "100px")
@@ -68,7 +68,7 @@ describe("Size", () => {
         .should("have.css", "box-sizing", "content-box")
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
-      cy.get("#cb3>div:first")
+      cy.get("#cb3>div:first-child")
         .should("have.css", "box-sizing", "content-box")
         .should("have.class", "w100 h100")
         .should("have.css", "height", "100px")
