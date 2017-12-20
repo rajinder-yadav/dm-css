@@ -1,14 +1,14 @@
 // Flex direction
-.flex-r {
+.flex-r, .flex-row {
   flex-direction: row !important;
 }
-.flex-l {
+.flex-l, .flex-rrow {
   flex-direction: row-reverse !important;
 }
-.flex-d {
+.flex-d, .flex-col {
   flex-direction: column !important;
 }
-.flex-u {
+.flex-u, .flex-rcol {
   flex-direction: column-reverse !important;
 }
 // Wrap mode
