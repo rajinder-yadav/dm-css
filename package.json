@@ -1,6 +1,6 @@
 {
   "name": "dm-css",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Dyno Might CSS - Fast Compact CSS Toolkit for everyone!",
   "keywords": [
     "css",
@@ -10,7 +10,8 @@
   ],
   "files": [
     "css/dm.css",
-    "css/dm.min.css"
+    "css/dm.min.css",
+    "css/dm.prefix.css"
   ],
   "author": "Rajinder Yadav <devguy.ca@gmail.com>",
   "license": "GPL-3.0",
