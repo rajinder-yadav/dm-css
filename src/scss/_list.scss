@@ -1,37 +1,37 @@
 // List bullet styles
 $bullet_notations: none, disc, square, circle, decimal;
 @each $b in $bullet_notations {
-  .list-#{$b} {
+  .li-#{$b} {
     list-style-type: $b !important;
   }
 }
-.list-alpha {
+.li-alpha {
   list-style-type: lower-alpha !important;
 }
-.list-roman {
+.li-roman {
   list-style-type: lower-roman !important;
 }
 // Location of bullet
-.list-inside {
+.li-inside {
   list-style-position: inside !important;
 }
-.list-outside {
+.li-outside {
   list-style-position: outside !important;
 }
 // List orientation row or column
-.list-row {
+.li-row {
   display: inline !important;
   li {
     display: inline !important;
   }
 }
-.list-col {
+.li-col {
   display: block !important;
   li {
     display:list-item block !important;
   }
 }
-ul.list-reset {
+ul.li-reset {
   display: block !important;
   list-style-type: initial !important;
   list-style-position: initial !important;
@@ -39,7 +39,7 @@ ul.list-reset {
     display:list-item block !important;
   }
 }
-ol.list-reset {
+ol.li-reset {
   display: block !important;
   list-style-type: decimal !important;
   list-style-position: initial !important;

@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone!
 
-![Version](https://img.shields.io/badge/dm--css-v0.0.10-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v0.1.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -183,7 +183,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.10/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@0.1.0/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -212,10 +212,10 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 0.0.10.
+Example usage for DM-CSS NPM version 0.1.0.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@0.0.10/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@0.1.0/css/dm.min.css" rel="stylesheet">
 ```
 
 ## CSS Borders
@@ -253,7 +253,7 @@ A value of "0" (zero) indicates no border. You would use this to remove borders 
 
 Border thinkness value ranger from 0 to 4.
 
-|Notation|Side|
+|Notation|Border sides|
 |-|-|
 |b|Border all sides|
 |bt|Border top|
@@ -396,18 +396,18 @@ You can set the individual border value for each corner using one of the followi
 
 |Notation|Radius corner|
 |-|-|
-|tl-radius|Top left|
-|tr-radius|Top right|
-|bl-radius|Bottom left|
-|br-radius|Bottom right|
+|tl-radius-tl|Top left|
+|tr-radius-tr|Top right|
+|bl-radius-bl|Bottom left|v
+|br-radius-bl|Bottom right|
 
 ![corner-radius](images/corner-radius.png)
 
 ```html
-<div class="b1 tl-radius0">TL</div>
-<div class="b1 tr-radius1">TR</div>
-<div class="b1 bl-radius2">BL</div>
-<div class="b1 br-radius3">BR</div>
+<div class="b1 tl-radius5">TL</div>
+<div class="b1 tr-radius5">TR</div>
+<div class="b1 bl-radius5">BL</div>
+<div class="b1 br-radius5">BR</div>
 ```
 
 ### Face radius
@@ -508,12 +508,21 @@ An element static position property can be changed.
 <span class="static"> ... </span>
 ```
 
-|Notation|Position|CSS property|
+|Notation|Alias|Position|
 |-|-|-|
-|pos-t|Top|top: 0|
-|pos-b|Bottom|bottom: 0|
-|pos-l|Left|left: 0|
-|pos-r|Right|right: 0|
+|top|pos-t|Top|
+|bottom|pos-b|Bottom|
+|left|pos-l|Left|
+|right|pos-r|Right|
+
+```html
+<span class="top"> ... </span>
+<span class="bottom"> ... </span>
+<span class="left"> ... </span>
+<span class="right"> ... </span>
+```
+
+Alias for positioning.
 
 ```html
 <span class="pos-t"> ... </span>
@@ -524,41 +533,57 @@ An element static position property can be changed.
 
 ### Z-Index
 
-The default z-index has a value of 1.
+The default z-index value is 0, and goes up.
+
+Positive z-index values.
 
 ```html
+<span class="z0"> ... </span>
 <span class="z1"> ... </span>
 <span class="z2"> ... </span>
 <span class="z3"> ... </span>
 <span class="z4"> ... </span>
+<span class="z5"> ... </span>
+<span class="z6"> ... </span>
+<span class="z7"> ... </span>
+```
+
+```html
+<span class="z-1"> ... </span>
+<span class="z-2"> ... </span>
+<span class="z-3"> ... </span>
+<span class="z-4"> ... </span>
+<span class="z-5"> ... </span>
+<span class="z-6"> ... </span>
+<span class="z-7"> ... </span>
 ```
 
 ## Size
 
 Scale value for width and height range from 10% to 100% and incremented by 10.
 
-|Notation|Description|
+|Notation|Size dimension|
 |-|-|
-|w|Set width|
-|h|Set height|
-|w-min| Set minimum width|
-|w-max| Set maximum width|
-|h-min| Set minimum height|
-|h-max| Set maximum height|
+|w|Set width percentage|
+|h|Set height percentage|
+|wmin| Set minimum width percentage|
+|wmax| Set maximum width percentage|
+|hmin| Set minimum height percentage|
+|hmax| Set maximum height percentage|
 
 Basic usage:
 
 ```html
-<div class="w10"> ... </div>
-<div class="w20"> ... </div>
-<div class="w30"> ... </div>
-<div class="w40"> ... </div>
-<div class="w50"> ... </div>
-<div class="w60"> ... </div>
-<div class="w70"> ... </div>
-<div class="w80"> ... </div>
-<div class="w90"> ... </div>
-<div class="w100"> ... </div>
+<div class="wp10"> ... </div>
+<div class="wp20"> ... </div>
+<div class="wp30"> ... </div>
+<div class="wp40"> ... </div>
+<div class="wp50"> ... </div>
+<div class="wp60"> ... </div>
+<div class="wp70"> ... </div>
+<div class="wp80"> ... </div>
+<div class="wp90"> ... </div>
+<div class="wp100"> ... </div>
 ```
 
 ## Spacing
@@ -584,7 +609,7 @@ Make sure you have a good understanding of CSS display types. How block and inli
 
 ### Padding
 
-|Notation|Padding|
+|Notation|Padding Sides|
 |-|-|
 |p|Pad all sides|
 |pt|Pad top|
@@ -697,7 +722,7 @@ Make sure you have a good understanding of CSS display types. How block and inli
 
 ### Margins
 
-|Notation|Margin|
+|Notation|Margin Sides|
 |-|-|
 |m|Margin all sides|
 |mt|Margin top|
@@ -706,10 +731,13 @@ Make sure you have a good understanding of CSS display types. How block and inli
 |mr|Margin right|
 |mx|Margins left and right|
 |my|Margins top and bottom|
-|my-auto|Auto margins left and right|
-|mx-auto|Auto margins top and bottom|
-|ml-auto|Auto margins left |
-|mr-auto|Auto margins right|
+
+|Notation|Alias|Margin Sides|
+|-|-|-|
+|mya|my-auto|Auto margins left and right|
+|mxa|mx-auto|Auto margins top and bottom|
+|mla|ml-auto|Auto margins left |
+|mra|mr-auto|Auto margins right|
 
 ```html
 <div class="m0">0</div>
@@ -782,7 +810,7 @@ You will notice in the Style-Notation, scaled down fonts have a leading "-" dash
 
 ### Font styles
 
-|Notation|Font style|
+|Notation|Font styles|
 |-|-|
 |fsn|Font style none, reset all styles|
 |fsb|Bold|
@@ -831,7 +859,7 @@ The following Style-Notations are used to justify text.
 |Notation|Text transform|
 |-|-|
 |ttl|Left align|
-|ttc||Center text|
+|ttc|Center text|
 |ttr|Right align|
 |ttj|Justify text|
 
@@ -952,47 +980,57 @@ Working with ordered and unorder lists.
 ### Bullet styles
 
 ```html
-<div class="list-none"> ... </div>
-<div class="list-disc"> ... </div>
-<div class="list-circle"> ... </div>
-<div class="list-square"> ... </div>
-<div class="list-alpha"> ... </div>
-<div class="list-roman"> ... </div>
-<div class="list-decimal"> ... </div>
+<div class="li-none"> ... </div>
+<div class="li-disc"> ... </div>
+<div class="li-circle"> ... </div>
+<div class="li-square"> ... </div>
+<div class="li-alpha"> ... </div>
+<div class="li-roman"> ... </div>
+<div class="li-decimal"> ... </div>
 ```
 
 ### Bullet placement
 
 ```html
-<div class="list-inside"> ... </div>
-<div class="list-outside"> ... </div>
+<div class="li-inside"> ... </div>
+<div class="li-outside"> ... </div>
 ```
 
 ## List orientation
 
 ```html
-<div class="list-row"> ... </div>
-<div class="list-col"> ... </div>
+<div class="li-row"> ... </div>
+<div class="li-col"> ... </div>
 ```
 
 ### List style reset
 
 ```html
-<div class="list-reset"> ... </div>
+<div class="li-reset"> ... </div>
 ```
 
 ## Floats
 
 The long-form and its short-form.
 
+|Notation|Alias|Float direction|
+|-|-|-|
+|fll|float-l|Float left|
+|flr|float-r|Float right|
+|fln|float-n|Float none
+
+```html
+<div class="fll"> ... </div>
+<div class="flr"> ... </div>
+<div class="fln"> ... </div>
+```
+
+Alias
+
 ```html
 <div class="float-l"> ... </div>
 <div class="float-r"> ... </div>
 <div class="float-n"> ... </div>
-
-<div class="fll"> ... </div>
-<div class="flr"> ... </div>
-<div class="fln"> ... </div>
 ```
 
 ### Clearfix
@@ -1009,6 +1047,22 @@ The Flexbox Style-Notation make it easy to do layout.
 
 ### Direction
 
+|Notation|Alias|Alias|Direction|
+|-|-|-|-|
+|fbl|flex-l|flex-row|Row (left)|
+|fbr|flex-r|flex-rrow|Row reverse (right)|
+|fbd|flex-d|flex-col|Column (down)|
+|fbu|flex-u|flex-rcol|Column reverse (up)|
+
+```html
+<div class="fbl"> ... </div>
+<div class="fbr"> ... </div>
+<div class="fbu"> ... </div>
+<div class="fbd"> ... </div>
+```
+
+Short alias for direction
+
 ```html
 <div class="flex-l"> ... </div>
 <div class="flex-r"> ... </div>
@@ -1016,7 +1070,24 @@ The Flexbox Style-Notation make it easy to do layout.
 <div class="flex-d"> ... </div>
 ```
 
+Descriptive alias for direction
+
+```html
+<div class="flex-row"> ... </div>
+<div class="flex-rrow"> ... </div>
+<div class="flex-col"> ... </div>
+<div class="flex-rcol"> ... </div>
+```
+
 ### Wrap mode
+
+```html
+<div class="fbw"> ... </div>
+<div class="fbnw"> ... </div>
+<div class="fbrw"> ... </div>
+```
+
+Alias for wrap modes.
 
 ```html
 <div class="flex-wrap"> ... </div>
@@ -1025,6 +1096,16 @@ The Flexbox Style-Notation make it easy to do layout.
 ```
 
 ### Justify main axis
+
+```html
+<div class="fbjs"> ... </div>
+<div class="fbje"> ... </div>
+<div class="fbjc"> ... </div>
+<div class="fbja"> ... </div>
+<div class="fbjb"> ... </div>
+```
+
+Alias for main-asix justify.
 
 ```html
 <div class="flex-js"> ... </div>
@@ -1037,6 +1118,16 @@ The Flexbox Style-Notation make it easy to do layout.
 ### Justify cross axis
 
 ```html
+<div class="fbis"> ... </div>
+<div class="fbie"> ... </div>
+<div class="fbic"> ... </div>
+<div class="fbib"> ... </div>
+<div class="fbix"> ... </div>
+```
+
+Alias for cross-axis justify.
+
+```html
 <div class="flex-is"> ... </div>
 <div class="flex-ie"> ... </div>
 <div class="flex-ic"> ... </div>
@@ -1045,6 +1136,17 @@ The Flexbox Style-Notation make it easy to do layout.
 ```
 
 ### Vertical align content
+
+```html
+<div class="fbcs"> ... </div>
+<div class="fbce"> ... </div>
+<div class="fbcc"> ... </div>
+<div class="fbcb"> ... </div>
+<div class="fbca"> ... </div>
+<div class="fbcx"> ... </div>
+```
+
+Alias content vertical align.
 
 ```html
 <div class="flex-cs"> ... </div>
@@ -1058,6 +1160,17 @@ The Flexbox Style-Notation make it easy to do layout.
 ### Item vertical align
 
 ```html
+<div class="fbsa"> ... </div>
+<div class="fbss"> ... </div>
+<div class="fbse"> ... </div>
+<div class="fbsc"> ... </div>
+<div class="fbsb"> ... </div>
+<div class="fbsx"> ... </div>
+```
+
+Alias item vertical align.
+
+```html
 <div class="flex-sa"> ... </div>
 <div class="flex-ss"> ... </div>
 <div class="flex-se"> ... </div>
@@ -1068,6 +1181,92 @@ The Flexbox Style-Notation make it easy to do layout.
 
 ### Ordering
 
+Positive order positions.
+
+```html
+<div class="fbo1"> ... </div>
+<div class="fbo2"> ... </div>
+<div class="fbo3"> ... </div>
+<div class="fbo4"> ... </div>
+<div class="fbo5"> ... </div>
+<div class="fbo6"> ... </div>
+<div class="fbo7"> ... </div>
+```
+
+Alias for item ordering.
+
+```html
+<div class="order1"> ... </div>
+<div class="order2"> ... </div>
+<div class="order3"> ... </div>
+<div class="order4"> ... </div>
+<div class="order5"> ... </div>
+<div class="order6"> ... </div>
+<div class="order7"> ... </div>
+```
+
+Negative order positions.
+
+```html
+<div class="fbo-1"> ... </div>
+<div class="fbo-2"> ... </div>
+<div class="fbo-3"> ... </div>
+<div class="fbo-4"> ... </div>
+<div class="fbo-5"> ... </div>
+<div class="fbo-6"> ... </div>
+<div class="fbo-7"> ... </div>
+```
+
+Alias negative order positions.
+
+```html
+<div class="order-1"> ... </div>
+<div class="order-2"> ... </div>
+<div class="order-3"> ... </div>
+<div class="order-4"> ... </div>
+<div class="order-5"> ... </div>
+<div class="order-6"> ... </div>
+<div class="order-7"> ... </div>
+```
+
+### Growing
+
+```html
+<div class="fb1"> ... </div>
+<div class="fb2"> ... </div>
+<div class="fb3"> ... </div>
+<div class="fb4"> ... </div>
+<div class="fb5"> ... </div>
+<div class="fb6"> ... </div>
+<div class="fb7"> ... </div>
+```
+
+Alias flex grow values.
+
+```html
+<div class="flex1"> ... </div>
+<div class="flex2"> ... </div>
+<div class="flex3"> ... </div>
+<div class="flex4"> ... </div>
+<div class="flex5"> ... </div>
+<div class="flex6"> ... </div>
+<div class="flex7"> ... </div>
+```
+
+### Shrinking
+
+```html
+<div class="fb-1"> ... </div>
+<div class="fb-2"> ... </div>
+<div class="fb-3"> ... </div>
+<div class="fb-4"> ... </div>
+<div class="fb-5"> ... </div>
+<div class="fb-6"> ... </div>
+<div class="fb-7"> ... </div>
+```
+
+Alias flex shrink values.
+
 ```html
 <div class="flex-1"> ... </div>
 <div class="flex-2"> ... </div>
@@ -1076,30 +1275,6 @@ The Flexbox Style-Notation make it easy to do layout.
 <div class="flex-5"> ... </div>
 <div class="flex-6"> ... </div>
 <div class="flex-7"> ... </div>
-```
-
-### Growing
-
-```html
-<div class="flex-grow1"> ... </div>
-<div class="flex-grow2"> ... </div>
-<div class="flex-grow3"> ... </div>
-<div class="flex-grow4"> ... </div>
-<div class="flex-grow5"> ... </div>
-<div class="flex-grow6"> ... </div>
-<div class="flex-grow7"> ... </div>
-```
-
-### Shrinking
-
-```html
-<div class="flex-shrink1"> ... </div>
-<div class="flex-shrink2"> ... </div>
-<div class="flex-shrink3"> ... </div>
-<div class="flex-shrink4"> ... </div>
-<div class="flex-shrink5"> ... </div>
-<div class="flex-shrink6"> ... </div>
-<div class="flex-shrink7"> ... </div>
 ```
 
 ## Grid

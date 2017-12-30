@@ -1,20 +1,26 @@
 // Position values
-.pos-t {
+.pos-t, .top {
   top: 0 !important;
 }
-.pos-b {
+.pos-b, .bottom {
   bottom: 0 !important;
 }
-.pos-l {
+.pos-l, .left {
   left: 0 !important;
 }
-.pos-r {
+.pos-r, .right {
   right: 0 !important;
 }
 // Z index positions
-@for $n from 0 through 4 {
+.z0 {
+  z-index: 0 !important;
+}
+@for $n from 1 through 7 {
   .z#{$n} {
     z-index: $n !important;
+  }
+  .z-#{$n} {
+    z-index: -#{$n} !important;
   }
 }
 // Position
