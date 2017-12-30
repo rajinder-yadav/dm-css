@@ -579,16 +579,16 @@ Scale value for width and height range from 10% to 100% and incremented by 10.
 Basic usage:
 
 ```html
-<div class="wp10"> ... </div>
-<div class="wp20"> ... </div>
-<div class="wp30"> ... </div>
-<div class="wp40"> ... </div>
-<div class="wp50"> ... </div>
-<div class="wp60"> ... </div>
-<div class="wp70"> ... </div>
-<div class="wp80"> ... </div>
-<div class="wp90"> ... </div>
-<div class="wp100"> ... </div>
+<div class="w10"> ... </div>
+<div class="w20"> ... </div>
+<div class="w30"> ... </div>
+<div class="w40"> ... </div>
+<div class="w50"> ... </div>
+<div class="w60"> ... </div>
+<div class="w70"> ... </div>
+<div class="w80"> ... </div>
+<div class="w90"> ... </div>
+<div class="w100"> ... </div>
 ```
 
 ## Spacing
