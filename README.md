@@ -122,7 +122,7 @@ The long-form and short-form Style-Notation for selecting the box model.
 
 Some of the features of DM-CSS Toolkit you will enjoy right away.
 
-- Small size (~72KB).
+- Small size (~25KB).
 - Fast loading.
 - Robust and compact Style-Notation.
 - Consistent, easy to use and learn.
