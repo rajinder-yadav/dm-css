@@ -89,7 +89,7 @@
 
 Powerful CSS styling made simple, fast and fun!
 
-DM-CSS is a Style-Notation CSS layout and design Toolkit.
+DM-CSS is a Style-Notation CSS layout and design Toolkit, was designed specifically to use concise and memorable Style-Notation.
 
 It brings consistency to your HTML/JSX coding and allows you to quickly add CSS styles that are easy to read.
 
@@ -131,6 +131,7 @@ Some of the features of DM-CSS Toolkit you will enjoy right away.
 - Consistent, easy to use and learn.
 - Designed for Designer, yet developer friendly!
 - No side effects, works like your own custom CSS styles.
+- Tested with hundreds of test cases (370+).
 
 ### Basic usage
 
