@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.0.3 (2017-12-30)
+## 1.0.5 (2017-12-30)
 
 - Added Github badges.
 - Test name corrected.

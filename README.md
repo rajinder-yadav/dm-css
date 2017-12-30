@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone!
 
-![Version](https://img.shields.io/badge/dm--css-v1.0.4-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v1.0.5-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -186,7 +186,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.4/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.5/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -215,10 +215,10 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 1.0.4.
+Example usage for DM-CSS NPM version 1.0.5.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.4/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.5/css/dm.min.css" rel="stylesheet">
 ```
 
 ## CSS Borders
