@@ -4,7 +4,7 @@ describe("Float", () => {
     cy.visit("/test/web-pages/float.html");
   });
 
-  it("Float long left", () => {
+  it("Float alias left", () => {
     cy.get("#float-l")
       .should("have.class", "float-l")
       .should("have.css", "float", "left");
@@ -14,7 +14,7 @@ describe("Float", () => {
       .should("have.class", "fll")
       .should("have.css", "float", "left");
   });
-  it("Float long right", () => {
+  it("Float alias right", () => {
     cy.get("#float-r")
       .should("have.class", "float-r")
       .should("have.css", "float", "right");
@@ -24,7 +24,7 @@ describe("Float", () => {
       .should("have.class", "flr")
       .should("have.css", "float", "right");
   });
-  it("Float long none", () => {
+  it("Float alias none", () => {
     cy.get("#float-n")
       .should("have.class", "float-n")
       .should("have.css", "float", "none");

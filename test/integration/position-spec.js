@@ -5,7 +5,7 @@ describe("Size", () => {
   });
 
   context("Position", () => {
-    it("tl", () => {
+    it("Top left", () => {
       cy.get("#tl")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -15,7 +15,7 @@ describe("Size", () => {
         .should("have.css", "top", "0px")
         .should("have.css", "left", "0px");
     });
-    it("tr", () => {
+    it("Top right", () => {
       cy.get("#tr")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -25,7 +25,7 @@ describe("Size", () => {
         .should("have.css", "top", "0px")
         .should("have.css", "right", "0px");
     });
-    it("bl", () => {
+    it("Bottom left", () => {
       cy.get("#bl")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -35,7 +35,7 @@ describe("Size", () => {
         .should("have.css", "bottom", "0px")
         .should("have.css", "left", "0px");
     });
-    it("br", () => {
+    it("Bottom right", () => {
       cy.get("#br")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -45,7 +45,7 @@ describe("Size", () => {
         .should("have.css", "bottom", "0px")
         .should("have.css", "right", "0px");
     });
-    it("Top left", () => {
+    it("Top left - alias", () => {
       cy.get("#topleft")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -55,7 +55,7 @@ describe("Size", () => {
         .should("have.css", "top", "0px")
         .should("have.css", "left", "0px");
     });
-    it("Top right", () => {
+    it("Top right - alias", () => {
       cy.get("#topright")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -65,7 +65,7 @@ describe("Size", () => {
         .should("have.css", "top", "0px")
         .should("have.css", "right", "0px");
     });
-    it("Bottom left", () => {
+    it("Bottom left - alias", () => {
       cy.get("#bottomleft")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -75,7 +75,7 @@ describe("Size", () => {
         .should("have.css", "bottom", "0px")
         .should("have.css", "left", "0px");
     });
-    it("Bottom right", () => {
+    it("Bottom right - alias", () => {
       cy.get("#bottomright")
         .should("have.class", "relative")
         .should("have.css", "position", "relative");
@@ -91,7 +91,7 @@ describe("Size", () => {
         .should("have.css", "position", "static");
     });
   });
-  context("Fixed", () => {
+  context("Fixed position", () => {
     it("Top right", () => {
       cy.get("#f1>div:first-child")
         .should("have.class", "fixed")
@@ -109,43 +109,43 @@ describe("Size", () => {
   });
 
   context("Z Index positive", () => {
-    it("z1 z0", () => {
+    it("Index 1", () => {
       cy.get("#z1>div:first-child")
         .should("have.class", "z1");
       cy.get("#z1>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z2 z0", () => {
+    it("Index 2", () => {
       cy.get("#z2>div:first-child")
         .should("have.class", "z2");
       cy.get("#z2>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z3 z0", () => {
+    it("Index 3", () => {
       cy.get("#z3>div:first-child")
         .should("have.class", "z3");
       cy.get("#z3>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z4 z0", () => {
+    it("Index 4", () => {
       cy.get("#z4>div:first-child")
         .should("have.class", "z4");
       cy.get("#z4>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z5 z0", () => {
+    it("Index 5", () => {
       cy.get("#z5>div:first-child")
         .should("have.class", "z5");
       cy.get("#z5>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z6 z0", () => {
+    it("Index 6", () => {
       cy.get("#z6>div:first-child")
         .should("have.class", "z6");
       cy.get("#z6>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z7 z0", () => {
+    it("Index 7", () => {
       cy.get("#z7>div:first-child")
         .should("have.class", "z7");
       cy.get("#z7>div:first-child").next()
@@ -154,43 +154,43 @@ describe("Size", () => {
   });
 
   context("Z Index negative", () => {
-    it("z-1 z0", () => {
+    it("Index -1", () => {
       cy.get("#z-1>div:first-child")
         .should("have.class", "z-1");
       cy.get("#z-1>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z-2 z0", () => {
+    it("Index -2", () => {
       cy.get("#z-2>div:first-child")
         .should("have.class", "z-2");
       cy.get("#z-2>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z-3 z0", () => {
+    it("Index -3", () => {
       cy.get("#z-3>div:first-child")
         .should("have.class", "z-3");
       cy.get("#z-3>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z-4 z0", () => {
+    it("Index -4", () => {
       cy.get("#z-4>div:first-child")
         .should("have.class", "z-4");
       cy.get("#z-4>div:first-child").next()
         .should("have.class", "z0");
   });
-    it("z-5 z0", () => {
+    it("Index -5", () => {
       cy.get("#z-5>div:first-child")
         .should("have.class", "z-5");
       cy.get("#z-5>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z-6 z0", () => {
+    it("Index -6", () => {
       cy.get("#z-6>div:first-child")
         .should("have.class", "z-6");
       cy.get("#z-6>div:first-child").next()
         .should("have.class", "z0");
     });
-    it("z-7 z0", () => {
+    it("Index -7", () => {
       cy.get("#z-7>div:first-child")
         .should("have.class", "z-7");
       cy.get("#z-7>div:first-child").next()
