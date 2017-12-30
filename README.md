@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone!
 
-![Version](https://img.shields.io/badge/dm--css-v1.0.3-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v1.0.4-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -26,16 +26,16 @@
   - [Border bottom](#border-bottom)
   - [Border left](#border-left)
   - [Border right](#border-right)
-  - [Border left-right sides](#border-left-right-sides)
-  - [Border top-bottom sides](#border-top-bottom-sides)
+  - [Border top and bottom sides](#border-top-and-bottom-sides)
+  - [Border left and right sides](#border-left-and-right-sides)
   - [Removing Borders](#removing-borders)
-- [Border radius](#border-radius)
-  - [Corner radius](#corner-radius)
-  - [Equal radius corners](#equal-radius-corners)
-  - [Corner radius](#corner-radius-1)
-  - [Face radius](#face-radius)
+- [Border Radius](#border-radius)
+  - [Corner Radius](#corner-radius)
+  - [Equal Radius corners](#equal-radius-corners)
+  - [Corner Radius](#corner-radius-1)
+  - [Face Radius](#face-radius)
   - [Border line style](#border-line-style)
-  - [Circle radius](#circle-radius)
+  - [Circle Radius](#circle-radius)
   - [Pill styles borders](#pill-styles-borders)
 - [Position](#position)
   - [Z-Index](#z-index)
@@ -46,8 +46,8 @@
   - [Padding bottom](#padding-bottom)
   - [Padding left](#padding-left)
   - [Padding right](#padding-right)
-  - [Padding Y](#padding-y)
-  - [Padding X](#padding-x)
+  - [Padding top and bottom sides](#padding-top-and-bottom-sides)
+  - [Padding left and right sides](#padding-left-and-right-sides)
   - [Margins](#margins)
 - [Font](#font)
   - [Height scaling up](#height-scaling-up)
@@ -56,7 +56,7 @@
   - [Font weight](#font-weight)
 - [Text](#text)
   - [Text justification](#text-justification)
-  - [Text vertical alignmen](#text-vertical-alignmen)
+  - [Text vertical alignments](#text-vertical-alignments)
   - [Text transformation styles](#text-transformation-styles)
   - [Text wrapping](#text-wrapping)
   - [Text overflow](#text-overflow)
@@ -71,7 +71,6 @@
   - [List style reset](#list-style-reset)
 - [Floats](#floats)
   - [Clearfix](#clearfix)
-- [Lists](#lists-1)
 - [Flexbox](#flexbox)
   - [Direction](#direction)
   - [Wrap mode](#wrap-mode)
@@ -108,14 +107,18 @@ The Root font family is set to "Roboto" with a height of 16px. This is the base 
 
 DM-CSS default to using the "**border-box**" box model. You can however change this.
 
-The long-form and short-form Style-Notation for selecting the box model.
+Change to using "content-box" and "border-box" respectively.
+
+```html
+<div class="cbox"> ... </div>
+<div class="bbox"> ... </div>
+```
+
+The long-form of the Style-Notation for selecting the box model is shown also.
 
 ```html
 <div class="contentbox"> ... </div>
 <div class="borderbox"> ... </div>
-
-<div class="cbox"> ... </div>
-<div class="bbox"> ... </div>
 ```
 
 ### Benefits
@@ -183,7 +186,7 @@ You can use the following HTML file to start off with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.3/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.4/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Inter-Web!</h1>
@@ -212,10 +215,10 @@ To use the CDN, add the following **\<link\>** Tag to your **index.html** file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 1.0.3.
+Example usage for DM-CSS NPM version 1.0.4.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.3/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.4/css/dm.min.css" rel="stylesheet">
 ```
 
 ## CSS Borders
@@ -251,7 +254,7 @@ A value of "0" (zero) indicates no border. You would use this to remove borders 
 
 ### Border Style-Notation
 
-Border thinkness value ranger from 0 to 4.
+Border thickness value ranger from 0 to 4.
 
 |Notation|Border sides|
 |-|-|
@@ -260,8 +263,8 @@ Border thinkness value ranger from 0 to 4.
 |bb|Border bottom|
 |bl|Border left|
 |br|Border right|
-|bx|Border left and right|
 |by|Border top and bottom|
+|bx|Border left and right|
 
 ### Border top
 
@@ -311,19 +314,7 @@ Border thinkness value ranger from 0 to 4.
 <div class="br4"> ... </div>
 ```
 
-### Border left-right sides
-
-![bx1](images/bx.png)
-
-```html
-<div class="bx0"> ... </div>
-<div class="bx1"> ... </div>
-<div class="bx2"> ... </div>
-<div class="bx3"> ... </div>
-<div class="bx4"> ... </div>
-```
-
-### Border top-bottom sides
+### Border top and bottom sides
 
 ![by1](images/by.png)
 
@@ -333,6 +324,18 @@ Border thinkness value ranger from 0 to 4.
 <div class="by2"> ... </div>
 <div class="by3"> ... </div>
 <div class="by4"> ... </div>
+```
+
+### Border left and right sides
+
+![bx1](images/bx.png)
+
+```html
+<div class="bx0"> ... </div>
+<div class="bx1"> ... </div>
+<div class="bx2"> ... </div>
+<div class="bx3"> ... </div>
+<div class="bx4"> ... </div>
 ```
 
 ### Removing Borders
@@ -359,7 +362,7 @@ You can use a combination of styles to remove only one side of the border.
 <div class="b2 br0"> ... </div>
 ```
 
-## Border radius
+## Border Radius
 
 Border corners can be given a radius to round out the corners.
 
@@ -367,11 +370,11 @@ The border radius values range from 0 to 7. This scale follows the Golden Ratio.
 
 A radius value of "0" (zero) will reset "round" borders to have square corners.
 
-### Corner radius
+### Corner Radius
 
 When using borders, you may specify a radius value for each corner, shown later.
 
-### Equal radius corners
+### Equal Radius corners
 
 ![radius](images/radius.png)
 
@@ -390,16 +393,16 @@ Since the radius use a Golden Ratio, corner radius will look different for diffe
 
 ![radius2](images/radius2.png)
 
-### Corner radius
+### Corner Radius
 
 You can set the individual border value for each corner using one of the following Style-Notation.
 
 |Notation|Radius corner|
 |-|-|
-|tl-radius-tl|Top left|
-|tr-radius-tr|Top right|
-|bl-radius-bl|Bottom left|v
-|br-radius-bl|Bottom right|
+|tl-radius|Top left|
+|tr-radius|Top right|
+|bl-radius|Bottom left|v
+|br-radius|Bottom right|
 
 ![corner-radius](images/corner-radius.png)
 
@@ -410,7 +413,7 @@ You can set the individual border value for each corner using one of the followi
 <div class="b1 br-radius5">BR</div>
 ```
 
-### Face radius
+### Face Radius
 
 The face radius covers a side of the box to have round corners.
 
@@ -460,7 +463,7 @@ You can change the border line style from solid to dashed.
 <div class="b2 doty"> ... </div>
 ```
 
-### Circle radius
+### Circle Radius
 
 To draw a circular border, use Style-Notation "**circle**".
 
@@ -548,6 +551,8 @@ Positive z-index values.
 <span class="z7"> ... </span>
 ```
 
+Nagative z-index values.
+
 ```html
 <span class="z-1"> ... </span>
 <span class="z-2"> ... </span>
@@ -605,7 +610,7 @@ In CSS, inline elements like "**\<p\>**" or "**\<span\>**" inherit their height 
 <span class="d-inline-block"> ... </span>
 ```
 
-Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimitaely how this will affect setting their width and height.
+Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimately how this will affect setting their width and height.
 
 ### Padding
 
@@ -690,7 +695,7 @@ Make sure you have a good understanding of CSS display types. How block and inli
 <div class="pr7">7</div>
 ```
 
-### Padding Y
+### Padding top and bottom sides
 
 ![pad y](/images/pad-y.png)
 
@@ -705,7 +710,7 @@ Make sure you have a good understanding of CSS display types. How block and inli
 <span class="py7">7</span>|<br/>
 ```
 
-### Padding X
+### Padding left and right sides
 
 ![pad x](/images/pad-x.png)
 
@@ -729,13 +734,12 @@ Make sure you have a good understanding of CSS display types. How block and inli
 |mb|Margin bottom|
 |ml|Margin left|
 |mr|Margin right|
-|mx|Margins left and right|
 |my|Margins top and bottom|
+|mx|Margins left and right|
 
 |Notation|Alias|Margin Sides|
 |-|-|-|
-|mya|my-auto|Auto margins left and right|
-|mxa|mx-auto|Auto margins top and bottom|
+|mxa|mx-auto|Auto margins left and right|
 |mla|ml-auto|Auto margins left |
 |mra|mr-auto|Auto margins right|
 
@@ -872,7 +876,12 @@ The following Style-Notations are used to justify text.
 <div class="ttj">This text is fully justified, more text to wrap around and justify</div>
 ```
 
-### Text vertical alignmen
+### Text vertical alignments
+
+- Vertical align top.
+- Vertical align middle.
+- Vertical align baseline.
+- Vertical align bottom.
 
 ```html
 <div class="ttvt"> ... </div>
@@ -884,6 +893,11 @@ The following Style-Notations are used to justify text.
 ### Text transformation styles
 
 ![tt](images/text-transform.png)
+
+- Capitialize text.
+- Make all text upper-case.
+- Mark all text lower-case.
+- Remove any text transform previously set.
 
 ```html
 <div class="tt-caps">text has been transformed</div>
@@ -904,6 +918,8 @@ This control if wrapping should occur when text overflows its content box.
 ```
 
 ### Text overflow
+
+How to display text that is bigger than its diaplay container.
 
 ```html
 <div class="tt-overflow"> ... </div>
@@ -943,6 +959,10 @@ Hide or show an element without affecting layout.
 
 Vertical, horizontal and full centering.
 
+- Center vertically.
+- Center horizontally.
+- Center vertically and horizontally.
+
 ```html
 <div class="centery"> ... </div>
 <div class="centerx"> ... </div>
@@ -975,7 +995,7 @@ All descendant elements of hidden element are also removed.
 
 ## Lists
 
-Working with ordered and unorder lists.
+Working with ordered and unordered lists.
 
 ### Bullet styles
 
@@ -997,6 +1017,9 @@ Working with ordered and unorder lists.
 ```
 
 ## List orientation
+
+- Display list along a row (horizontal).
+- Display list down a column (vertical).
 
 ```html
 <div class="li-row"> ... </div>
@@ -1039,8 +1062,6 @@ Alias
 <div class="cf"> ... </div>
 ```
 
-## Lists
-
 ## Flexbox
 
 The Flexbox Style-Notation make it easy to do layout.
@@ -1061,7 +1082,7 @@ The Flexbox Style-Notation make it easy to do layout.
 <div class="fbd"> ... </div>
 ```
 
-Short alias for direction
+Short alias for direction.
 
 ```html
 <div class="flex-l"> ... </div>
@@ -1070,7 +1091,7 @@ Short alias for direction
 <div class="flex-d"> ... </div>
 ```
 
-Descriptive alias for direction
+Descriptive alias for direction.
 
 ```html
 <div class="flex-row"> ... </div>
@@ -1080,6 +1101,10 @@ Descriptive alias for direction
 ```
 
 ### Wrap mode
+
+- Flex wrap.
+- Flex no wrap.
+- Flex reverse wrap.
 
 ```html
 <div class="fbw"> ... </div>
@@ -1096,6 +1121,12 @@ Alias for wrap modes.
 ```
 
 ### Justify main axis
+
+- Justify start.
+- Justify end.
+- Justify center.
+- Justify space around.
+- Justify space between.
 
 ```html
 <div class="fbjs"> ... </div>
@@ -1117,6 +1148,12 @@ Alias for main-asix justify.
 
 ### Justify cross axis
 
+- Justify items start.
+- Justify items end.
+- Justify items center.
+- Justify items baseline.
+- Justify items stretch (eXpand).
+
 ```html
 <div class="fbis"> ... </div>
 <div class="fbie"> ... </div>
@@ -1137,12 +1174,19 @@ Alias for cross-axis justify.
 
 ### Vertical align content
 
+- Align content start.
+- Align content end.
+- Align content center.
+- Align content space around.
+- Align content space between.
+- Align content stretch (eXpand).
+
 ```html
 <div class="fbcs"> ... </div>
 <div class="fbce"> ... </div>
 <div class="fbcc"> ... </div>
-<div class="fbcb"> ... </div>
 <div class="fbca"> ... </div>
+<div class="fbcb"> ... </div>
 <div class="fbcx"> ... </div>
 ```
 
@@ -1158,6 +1202,13 @@ Alias content vertical align.
 ```
 
 ### Item vertical align
+
+- Align self auto.
+- Align self start.
+- Align self end.
+- Align self center.
+- Align self baseline.
+- Align self stretch (eXpand).
 
 ```html
 <div class="fbsa"> ... </div>
@@ -1231,6 +1282,8 @@ Alias negative order positions.
 
 ### Growing
 
+Grow a flexbox item.
+
 ```html
 <div class="fb1"> ... </div>
 <div class="fb2"> ... </div>
@@ -1254,6 +1307,8 @@ Alias flex grow values.
 ```
 
 ### Shrinking
+
+Shrink a flexbox item.
 
 ```html
 <div class="fb-1"> ... </div>
