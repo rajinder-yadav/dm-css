@@ -1,9 +1,10 @@
 # Change Log
 
-## 1.0.7 (2017-12-31)
+## 1.0.8 (2017-12-31)
 
 - Import fix for dependency when using NPM install.
 - Font height now using Perfect third scale.
+- Heading height changed to use Major Third scale.
 
 ## 1.0.5 (2017-12-30)
 
