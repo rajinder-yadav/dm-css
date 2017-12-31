@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.0.7 (2017-12-31)
+
+- Import fix for dependency when using NPM install.
+- Font height now using Perfect third scale.
+
 ## 1.0.5 (2017-12-30)
 
 - Added Github badges.
