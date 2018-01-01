@@ -53,85 +53,85 @@ describe("Text", () => {
 
   context("Text transform", () => {
     it("Capatialize", () => {
-      cy.get(".tt-caps")
+      cy.get(".ttcaps")
         .should("have.css", "text-transform", "capitalize");
     });
     it("Uppercase", () => {
-      cy.get(".tt-upcase")
+      cy.get(".ttupcase")
         .should("have.css", "text-transform", "uppercase");
     });
     it("Lowercase", () => {
-      cy.get(".tt-lowcase")
+      cy.get(".ttlowcase")
         .should("have.css", "text-transform", "lowercase");
     });
     it("None", () => {
-      cy.get(".tt-none")
+      cy.get(".ttnone")
         .should("have.css", "text-transform", "none");
     });
   });
 
   context("Text Wrapping", () => {
     it("Wrap", () => {
-      cy.get(".tt-wrap")
+      cy.get(".ttwrap")
         .should("have.css", "overflow-wrap", "break-word");
     });
     it("No wrap", () => {
-      cy.get(".tt-nowrap")
+      cy.get(".ttnowrap")
         .should("have.css", "overflow-wrap", "normal");
     });
   });
 
   context("Overflow control", () => {
     it("Overflow", () => {
-      cy.get(".tt-overflow")
+      cy.get(".ttoverflow")
         .should("have.css", "overflow-x", "visible")
         .should("have.css", "overflow-y", "visible");
     });
     it("Overflow auto", () => {
-      cy.get(".tt-overflow-auto")
+      cy.get(".ttoverflow-auto")
         .should("have.css", "overflow-x", "auto")
         .should("have.css", "overflow-y", "auto");
     });
     it("Clip", () => {
-      cy.get(".tt-clip")
+      cy.get(".ttclip")
         .should("have.css", "overflow-x", "hidden")
         .should("have.css", "overflow-y", "hidden");
     });
     it("Scroll", () => {
-      cy.get(".tt-scroll")
+      cy.get(".ttscroll")
         .should("have.css", "overflow-x", "scroll")
         .should("have.css", "overflow-y", "scroll");
     });
     it("Overflow y", () => {
-      cy.get(".tt-overflowy")
+      cy.get(".ttoverflowy")
         .should("have.css", "overflow-y", "visible");
     });
     it("Overflow y auto", () => {
-      cy.get(".tt-overflowy-auto")
+      cy.get(".ttoverflowy-auto")
         .should("have.css", "overflow-y", "auto");
     });
     it("Clip y", () => {
-      cy.get(".tt-clipy")
+      cy.get(".ttclipy")
         .should("have.css", "overflow-y", "hidden");
     });
     it("Scroll y", () => {
-      cy.get(".tt-scrolly")
+      cy.get(".ttscrolly")
         .should("have.css", "overflow-y", "scroll");
     });
     it("Overflow x", () => {
-      cy.get(".tt-overflowx")
+      cy.get(".ttoverflowx")
         .should("have.css", "overflow-x", "visible");
     });
     it("Overflow x auto", () => {
-      cy.get(".tt-overflowx-auto")
+      cy.get(".ttoverflowx-auto")
         .should("have.css", "overflow-x", "auto");
     });
     it("Clip x", () => {
-      cy.get(".tt-clipx")
+      cy.get(".ttclipx")
         .should("have.css", "overflow-x", "hidden");
     });
     it("Scroll x", () => {
-      cy.get(".tt-scrollx")
+      cy.get(".ttscrollx")
         .should("have.css", "overflow-x", "scroll");
     });
   });

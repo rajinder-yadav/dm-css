@@ -31,62 +31,67 @@
 .ttvtt {
   vertical-align: text-top !important;
 }
-
+.ttsub {
+  vertical-align: sub !important;
+}
+.ttsuper {
+  vertical-align: super !important;
+}
 // Character transformation
-.tt-caps {
+.ttcaps {
   text-transform: capitalize !important;
 }
-.tt-upcase {
+.ttupcase {
   text-transform: uppercase !important;
 }
-.tt-lowcase {
+.ttlowcase {
   text-transform: lowercase !important;
 }
-.tt-none  {
+.ttnone  {
   text-transform: none !important;
 }
 // Text wrapping
-.tt-wrap {
+.ttwrap {
   overflow-wrap: break-word !important;
 }
-.tt-nowrap {
+.ttnowrap {
   overflow-wrap: normal !important;
   white-space: nowrap !important;
 }
 // How to deal with overflow content
-.tt-overflow {
+.ttoverflow {
   overflow: visible !important;
 }
-.tt-overflow-auto {
+.ttoverflow-auto {
   overflow: auto !important;
 }
-.tt-clip {
+.ttclip {
   overflow: hidden !important;
 }
-.tt-scroll {
+.ttscroll {
   overflow: scroll !important;
 }
-.tt-overflowy {
+.ttoverflowy {
   overflow-y: visible !important;
 }
-.tt-overflowy-auto {
+.ttoverflowy-auto {
   overflow-y: auto !important;
 }
-.tt-clipy {
+.ttclipy {
   overflow-y: hidden !important;
 }
-.tt-scrolly {
+.ttscrolly {
   overflow-y: scroll !important;
 }
-.tt-overflowx {
+.ttoverflowx {
   overflow-x: visible !important;
 }
-.tt-overflowx-auto {
+.ttoverflowx-auto {
   overflow-x: auto !important;
 }
-.tt-clipx {
+.ttclipx {
   overflow-x: hidden !important;
 }
-.tt-scrollx {
+.ttscrollx {
   overflow-x: scroll !important;
 }
