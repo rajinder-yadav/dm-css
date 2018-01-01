@@ -6,52 +6,52 @@ describe("List Style-Notation", () => {
 
   context("Ordered Lists", () => {
     it("none ol", () => {
-      cy.get("ol.li-none")
-        .should("have.class", "li-none")
+      cy.get("ol.lsnone")
+        .should("have.class", "lsnone")
         .should("have.css", "list-style-type", "none");
-      cy.get("ol.li-none>li:first-child")
+      cy.get("ol.lsnone>li:first-child")
         .should("have.css", "list-style-type", "none");
     });
     it("disc ol", () => {
-      cy.get("ol.li-disc")
-        .should("have.class", "li-disc")
+      cy.get("ol.lsdisc")
+        .should("have.class", "lsdisc")
         .should("have.css", "list-style-type", "disc");
-      cy.get("ol.li-disc>li:first-child")
+      cy.get("ol.lsdisc>li:first-child")
         .should("have.css", "list-style-type", "disc");
     });
     it("square ol", () => {
-      cy.get("ol.li-square")
-        .should("have.class", "li-square")
+      cy.get("ol.lssquare")
+        .should("have.class", "lssquare")
         .should("have.css", "list-style-type", "square");
-      cy.get("ol.li-square>li:first-child")
+      cy.get("ol.lssquare>li:first-child")
         .should("have.css", "list-style-type", "square");
     });
     it("circle ol", () => {
-      cy.get("ol.li-circle")
-        .should("have.class", "li-circle")
+      cy.get("ol.lscircle")
+        .should("have.class", "lscircle")
         .should("have.css", "list-style-type", "circle");
-      cy.get("ol.li-circle>li:first-child")
+      cy.get("ol.lscircle>li:first-child")
         .should("have.css", "list-style-type", "circle");
     });
     it("lower-roman ol", () => {
-      cy.get("ol.li-roman")
-        .should("have.class", "li-roman")
+      cy.get("ol.lsroman")
+        .should("have.class", "lsroman")
         .should("have.css", "list-style-type", "lower-roman");
-      cy.get("ol.li-roman>li:first-child")
+      cy.get("ol.lsroman>li:first-child")
         .should("have.css", "list-style-type", "lower-roman");
     });
     it("decimal ol", () => {
-      cy.get("ol.li-decimal")
-        .should("have.class", "li-decimal")
+      cy.get("ol.lsdecimal")
+        .should("have.class", "lsdecimal")
         .should("have.css", "list-style-type", "decimal");
-      cy.get("ol.li-decimal>li:first-child")
+      cy.get("ol.lsdecimal>li:first-child")
         .should("have.css", "list-style-type", "decimal");
     });
     it("lower-alpha ol", () => {
-      cy.get("ol.li-alpha")
-        .should("have.class", "li-alpha")
+      cy.get("ol.lsalpha")
+        .should("have.class", "lsalpha")
         .should("have.css", "list-style-type", "lower-alpha");
-      cy.get("ol.li-alpha>li:first-child")
+      cy.get("ol.lsalpha>li:first-child")
         .should("have.css", "list-style-type", "lower-alpha");
     });
   });
@@ -59,52 +59,52 @@ describe("List Style-Notation", () => {
   context("Unordered Lists", () => {
 
     it("none ul", () => {
-      cy.get("ul.li-none")
-        .should("have.class", "li-none")
+      cy.get("ul.lsnone")
+        .should("have.class", "lsnone")
         .should("have.css", "list-style-type", "none");
-      cy.get("ul.li-none>li:first-child")
+      cy.get("ul.lsnone>li:first-child")
         .should("have.css", "list-style-type", "none");
     });
     it("disc ul", () => {
-      cy.get("ul.li-disc")
-        .should("have.class", "li-disc")
+      cy.get("ul.lsdisc")
+        .should("have.class", "lsdisc")
         .should("have.css", "list-style-type", "disc");
-      cy.get("ul.li-disc>li:first-child")
+      cy.get("ul.lsdisc>li:first-child")
         .should("have.css", "list-style-type", "disc");
     });
     it("square ul", () => {
-      cy.get("ul.li-square")
-        .should("have.class", "li-square")
+      cy.get("ul.lssquare")
+        .should("have.class", "lssquare")
         .should("have.css", "list-style-type", "square");
-      cy.get("ul.li-square>li:first-child")
+      cy.get("ul.lssquare>li:first-child")
         .should("have.css", "list-style-type", "square");
     });
     it("circle ul", () => {
-      cy.get("ul.li-circle")
-        .should("have.class", "li-circle")
+      cy.get("ul.lscircle")
+        .should("have.class", "lscircle")
         .should("have.css", "list-style-type", "circle");
-      cy.get("ul.li-circle>li:first-child")
+      cy.get("ul.lscircle>li:first-child")
         .should("have.css", "list-style-type", "circle");
     });
     it("lower-roman ul", () => {
-      cy.get("ul.li-roman")
-        .should("have.class", "li-roman")
+      cy.get("ul.lsroman")
+        .should("have.class", "lsroman")
         .should("have.css", "list-style-type", "lower-roman");
-      cy.get("ul.li-roman>li:first-child")
+      cy.get("ul.lsroman>li:first-child")
         .should("have.css", "list-style-type", "lower-roman");
     });
     it("decimal ul", () => {
-      cy.get("ul.li-decimal")
-        .should("have.class", "li-decimal")
+      cy.get("ul.lsdecimal")
+        .should("have.class", "lsdecimal")
         .should("have.css", "list-style-type", "decimal");
-      cy.get("ul.li-decimal>li:first-child")
+      cy.get("ul.lsdecimal>li:first-child")
         .should("have.css", "list-style-type", "decimal");
     });
     it("lower-alpha ul", () => {
-      cy.get("ul.li-alpha")
-        .should("have.class", "li-alpha")
+      cy.get("ul.lsalpha")
+        .should("have.class", "lsalpha")
         .should("have.css", "list-style-type", "lower-alpha");
-      cy.get("ul.li-alpha>li:first-child")
+      cy.get("ul.lsalpha>li:first-child")
         .should("have.css", "list-style-type", "lower-alpha");
     });
   });
@@ -112,32 +112,32 @@ describe("List Style-Notation", () => {
   context("Bullet placement", () => {
 
     it("inside ol", () => {
-      cy.get("ol.li-inside")
-        .should("have.class", "li-inside")
+      cy.get("ol.lsinside")
+        .should("have.class", "lsinside")
         .should("have.css", "list-style-position", "inside");
-      cy.get("ol.li-inside>li:first-child")
+      cy.get("ol.lsinside>li:first-child")
         .should("have.css", "list-style-position", "inside");
     });
     it("outside ol", () => {
-      cy.get("ol.li-outside")
-        .should("have.class", "li-outside")
+      cy.get("ol.lsoutside")
+        .should("have.class", "lsoutside")
         .should("have.css", "list-style-position", "outside");
-      cy.get("ol.li-outside>li:first-child")
+      cy.get("ol.lsoutside>li:first-child")
         .should("have.css", "list-style-position", "outside");
     });
 
     it("inside ul", () => {
-      cy.get("ul.li-inside")
-        .should("have.class", "li-inside")
+      cy.get("ul.lsinside")
+        .should("have.class", "lsinside")
         .should("have.css", "list-style-position", "inside");
-      cy.get("ul.li-inside>li:first-child")
+      cy.get("ul.lsinside>li:first-child")
         .should("have.css", "list-style-position", "inside");
     });
     it("outside ul", () => {
-      cy.get("ul.li-outside")
-        .should("have.class", "li-outside")
+      cy.get("ul.lsoutside")
+        .should("have.class", "lsoutside")
         .should("have.css", "list-style-position", "outside");
-      cy.get("ul.li-outside>li:first-child")
+      cy.get("ul.lsoutside>li:first-child")
         .should("have.css", "list-style-position", "outside");
     });
   });
@@ -145,32 +145,32 @@ describe("List Style-Notation", () => {
   context("List orientation", () => {
 
     it("row ol", () => {
-      cy.get("ol.li-row")
-        .should("have.class", "li-row")
+      cy.get("ol.lsrow")
+        .should("have.class", "lsrow")
         .should("have.css", "display", "inline");
-      cy.get("ol.li-row>li:first-child")
+      cy.get("ol.lsrow>li:first-child")
         .should("have.css", "display", "inline");
     });
     it("row ul", () => {
-      cy.get("ul.li-row")
-        .should("have.class", "li-row")
+      cy.get("ul.lsrow")
+        .should("have.class", "lsrow")
         .should("have.css", "display", "inline");
-      cy.get("ul.li-row>li:first-child")
+      cy.get("ul.lsrow>li:first-child")
         .should("have.css", "display", "inline");
     });
 
     it("col ol", () => {
-      cy.get("ol.li-col")
-        .should("have.class", "li-col")
+      cy.get("ol.lscol")
+        .should("have.class", "lscol")
         .should("have.css", "display", "block");
-      cy.get("ol.li-col>li:first-child")
+      cy.get("ol.lscol>li:first-child")
         .should("have.css", "display", "list-item");
     });
     it("col ul", () => {
-      cy.get("ul.li-col")
-        .should("have.class", "li-col")
+      cy.get("ul.lscol")
+        .should("have.class", "lscol")
         .should("have.css", "display", "block");
-      cy.get("ul.li-col>li:first-child")
+      cy.get("ul.lscol>li:first-child")
         .should("have.css", "display", "list-item");
     });
   });
@@ -178,17 +178,75 @@ describe("List Style-Notation", () => {
   context("List reset", () => {
 
     it("reset row ol", () => {
-      cy.get("ol.li-row.li-reset")
-        .should("have.class", "li-reset")
+      cy.get("ol.lsrow.lsreset")
+        .should("have.class", "lsreset")
         .should("have.css", "display", "block");
-      cy.get("ol.li-row.li-reset>li:first-child")
+      cy.get("ol.lsrow.lsreset>li:first-child")
         .should("have.css", "display", "list-item");
     });
     it("reset col ul", () => {
-      cy.get("ul.li-row.li-reset")
-        .should("have.class", "li-reset")
+      cy.get("ul.lsrow.lsreset")
+        .should("have.class", "lsreset")
         .should("have.css", "display", "block");
-      cy.get("ul.li-row.li-reset>li:first-child")
+      cy.get("ul.lsrow.lsreset>li:first-child")
+        .should("have.css", "display", "list-item");
+    });
+    it("Sanity check order list", () => {
+      // Sanity check normal order list properties
+      cy.get("#ollist")
+        .should("not.have.class", "lsreset")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "block");
+      // Sanity check normal order list item properties
+      cy.get("#ollist>li:first-child")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "list-item");
+    });
+    it("Reset order row and reset", () => {
+      cy.get("#olrowreset")
+        .should("have.class", "lsreset")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "block");
+      cy.get("#olrowreset")
+        .parent()
+        .should("have.class", "lsrow");
+      cy.get("#olrowreset>li:first-child")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "list-item");
+    });
+    it("Reset order col and reset", () => {
+      cy.get("#olcolreset")
+        .should("have.class", "lsreset")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "block");
+      cy.get("#olcolreset")
+        .parent()
+        .should("have.class", "lscol");
+      cy.get("#olcolreset>li:first-child")
+        .should("have.css", "list-style-type", "decimal")
+        .should("have.css", "display", "list-item");
+    });
+    it("Sanity check unorder list", () => {
+      // Sanity check normal order list properties
+      cy.get("#ullist")
+        .should("not.have.class", "lsreset")
+        .should("have.css", "list-style-type", "disc")
+        .should("have.css", "display", "block");
+      // Sanity check normal order list item properties
+      cy.get("#ullist>li:first-child")
+        .should("have.css", "list-style-type", "disc")
+        .should("have.css", "display", "list-item");
+    });
+    it("Reset unordered col and reset", () => {
+      cy.get("#ulcolreset")
+        .should("have.class", "lsreset")
+        .should("have.css", "list-style-type", "disc")
+        .should("have.css", "display", "block");
+      cy.get("#ulcolreset")
+        .parent()
+        .should("have.class", "lscol");
+      cy.get("#ulcolreset>li:first-child")
+        .should("have.css", "list-style-type", "disc")
         .should("have.css", "display", "list-item");
     });
   });
