@@ -12,13 +12,13 @@
 
 - [Introduction](#introduction)
 - [CSS Resets](#css-resets)
-  - [Box models](#box-models)
   - [Benefits](#benefits)
   - [Basic usage](#basic-usage)
 - [Setup](#setup)
   - [Starter HTML file](#starter-html-file)
   - [Install as NPM module](#install-as-npm-module)
   - [Use the CDN](#use-the-cdn)
+  - [Box Model](#box-model)
 - [CSS Borders](#css-borders)
   - [Border values](#border-values)
   - [Border Style-Notation](#border-style-notation)
@@ -30,13 +30,13 @@
   - [Border left and right sides](#border-left-and-right-sides)
   - [Removing Borders](#removing-borders)
 - [Border Radius](#border-radius)
+- [Radius on all corners](#radius-on-all-corners)
   - [Corner Radius](#corner-radius)
-  - [Equal Radius corners](#equal-radius-corners)
-  - [Corner Radius](#corner-radius-1)
   - [Face Radius](#face-radius)
   - [Border line style](#border-line-style)
   - [Circle Radius](#circle-radius)
   - [Pill styles borders](#pill-styles-borders)
+- [Positioning an Element](#positioning-an-element)
 - [Position](#position)
   - [Z-Index](#z-index)
 - [Size](#size)
@@ -51,6 +51,7 @@
   - [Margins](#margins)
 - [Font](#font)
   - [Height scaling up](#height-scaling-up)
+  - [Heading](#heading)
   - [Height scaling down](#height-scaling-down)
   - [Font styles](#font-styles)
   - [Font weight](#font-weight)
@@ -65,7 +66,7 @@
   - [Centering](#centering)
 - [Display](#display)
 - [Lists](#lists)
-  - [Bullet styles](#bullet-styles)
+  - [Bullet marks](#bullet-marks)
   - [Bullet placement](#bullet-placement)
 - [List orientation](#list-orientation)
   - [List style reset](#list-style-reset)
@@ -89,56 +90,37 @@
 
 Powerful CSS styling made simple, fast and fun!
 
-DM-CSS is a Style-Notation CSS layout and design Toolkit, was designed specifically to use concise and memorable Style-Notation.
+Dyno Might CSS (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It was designed specifically to use simple and memorable Style-Notation that is specified in the "__class__" attribute.
 
-It brings consistency to your HTML/JSX coding and allows you to quickly add CSS styles that are easy to read.
+Dyno Might CSS brings consistency to your HTML/JSX coding and allows you to quickly add CSS styles that are easy to read.
 
-Works with Angular, React and Vue.js.
+Works with HTML, Angular, React and Vue.js.
 
 ## CSS Resets
 
-DM-CSS resets CSS style setting using "normalize.css" a well accepted cross-browser library. The top padding and margin values are set to "0" (zero), to make calculation straight forward.
+Dyno Might CSS resets CSS style setting using "__normalize.css__", a well accepted cross-browser library. The top padding and margin values are set to "0" (zero), to make calculation straight forward.
 
-The global box model is changed to use "**border-box**". This makes it easy for layout calculation and does not allow margin and padding values to grow outside the element box size.
+The global Box Model is changed to use "__border-box__". This makes it easy for layout calculation and does not allow margin and padding values to grow outside the element box size.
 
-The Root font family is set to "Roboto" with a height of 16px. This is the base (root) value other values are calculated off. This is done by using the "**rem**" CSS unit.
-
-### Box models
-
-DM-CSS default to using the "**border-box**" box model. You can however change this.
-
-Change to using "content-box" and "border-box" respectively.
-
-```html
-<div class="cbox"> ... </div>
-<div class="bbox"> ... </div>
-```
-
-The long-form of the Style-Notation for selecting the box model is shown also.
-
-```html
-<div class="contentbox"> ... </div>
-<div class="borderbox"> ... </div>
-```
+The Root Font family is set to "Roboto" with a height of 16px. This is the base (root) value used to calculate the size off other elements off. This is done by using the "__rem__" CSS unit.
 
 ### Benefits
 
-Some of the features of DM-CSS Toolkit you will enjoy right away.
+Some of the features of Dyno Might CSS Toolkit you will enjoy.
 
 - Small size (~25KB).
-- Fast loading.
+- Fast loading and blazing execution.
 - Robust and compact Style-Notation.
-- Consistent, easy to use and learn.
+- Consistent, easy to use and learn styles.
 - Designed for Designer, yet developer friendly!
 - No side effects, works like your own custom CSS styles.
-- Tested with hundreds of test cases (370+).
+- Tested with hundreds of Test cases (370+).
 
 ### Basic usage
 
-DM-CSS Style-Notation are added to the "**class**" attribute of the HTML Tag.
+Dyno Might CSS Style-Notation are added to the "__class__" attribute of an element's HTML Tag.
 
-For example, if you want to center text and capitalize it, add a dashed border and give is a width of 20%, the Style-Notation would look like the following.
-
+For example, let us say we want to center text and capitalize it. We also want a dashed border with a width of 20% of available space. The Style-Notation would look like the following.
 
 ![centered text](images/intro.png)
 
@@ -148,13 +130,13 @@ For example, if you want to center text and capitalize it, add a dashed border a
 
 The Style-Notation read from left to right adds the following CSS styles.
 
-1. Center text.
+1. Center text (text transform).
 1. Text transform uppercase.
 1. Draw a border 1px wide.
 1. Set border line style to dashed (default is solid).
-1. Set "**\<div\>**" element to take up 20% of the available width.
+1. Set "__\<div\>__" element to take up 20% of available width.
 
-As you can see the Style-Notation are powerful and can be combined together to increase productivity.
+Notice how the Style-Notation are powerful and can be combined together to increase productivity. Also context switching from HTLM/JSX code to a style sheet is reduced for all core CSS styles.
 
 ## Setup
 
@@ -164,7 +146,7 @@ In your root HTML file, it is a good idea to add the following responsive viewpo
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 ```
 
-DM-CSS requires HTML5 doctype.
+Dyno Might CSS requires HTML5 doctype.
 
 ```html
 <!doctype html>
@@ -175,13 +157,13 @@ DM-CSS requires HTML5 doctype.
 
 ### Starter HTML file
 
-You can use the following HTML file to start off with.
+You can use the following HTML file to start with.
 
 ```html
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>Dyno Might CSS</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -190,19 +172,19 @@ You can use the following HTML file to start off with.
     <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.10/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, Inter-Web!</h1>
+    <h1>Hello, Word Wide Web!</h1>
   </body>
 </html>
 ```
 
-There are two ways to install DM-CSS Toolkit as a dependency in your project.
+There are two ways to install the Dyno Might CSS Toolkit as a dependency in your project.
 
 1. Install as a NPM module.
 1. Use the CDN.
 
 ### Install as NPM module
 
-From your Node.js based project root, type:
+From a Node.js based project root, type:
 
 ```sh
 npm install --save dm-css
@@ -210,23 +192,36 @@ npm install --save dm-css
 
 ### Use the CDN
 
-To use the CDN, add the following **\<link\>** Tag to your **index.html** file, and enter the version of your choice.
+To use the CDN, add the following __\<link\>__ Tag to your __index.html__ file, and enter the version of your choice.
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for DM-CSS NPM version 1.0.10.
+Example usage for Dyno Might CSS version 1.0.10.
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.10/css/dm.min.css" rel="stylesheet">
 ```
 
+### Box Model
+
+Dyno Might CSS defaults to using the "__border-box__" Box Model. You can however change this.
+
+Style-Notations for using "content-box" and "border-box" respectively.
+
+```html
+<div class="cbox"> ... </div>
+<div class="bbox"> ... </div>
+```
+
+__Recommendation__: Don't change the default Box Model for new projects.
+
 ## CSS Borders
 
-The border Style-Notation provides the flexibility to add and remove borders.
+The Border Style-Notation provides the flexibility to add and remove borders.
 
-- The default border line style is solid.
+- The default border line style is a solid line.
 
 An element can be given borders on:
 
@@ -239,7 +234,7 @@ An element can be given borders on:
 
 The postfix value for a border denotes the thickness of the border line.
 
-The supported values range is from 0 to 4.
+- The supported values range is from 0 to 7.
 
 A value of "0" (zero) indicates no border. You would use this to remove borders from a element that may already have borders.
 
@@ -251,21 +246,24 @@ A value of "0" (zero) indicates no border. You would use this to remove borders 
 <div class="b2"> ... </div>
 <div class="b3"> ... </div>
 <div class="b4"> ... </div>
+<div class="b5"> ... </div>
+<div class="b6"> ... </div>
+<div class="b7"> ... </div>
 ```
 
 ### Border Style-Notation
 
-Border thickness value ranger from 0 to 4.
+Border thickness value ranger from 0 to 7.
 
-|Notation|Border sides|
-|-|-|
-|b|Border all sides|
-|bt|Border top|
-|bb|Border bottom|
-|bl|Border left|
-|br|Border right|
-|by|Border top and bottom|
-|bx|Border left and right|
+|Notation|Values|Border sides|
+|-|-|-|
+|b|0-7|Border on all sides|
+|bt|0-7|Border on top|
+|bb|0-7|Border on bottom|
+|bl|0-7|Border on left|
+|br|0-7|Border on right|
+|by|0-7|Border on top and bottom|
+|bx|0-7|Border on left and right|
 
 ### Border top
 
@@ -277,6 +275,9 @@ Border thickness value ranger from 0 to 4.
 <div class="bt2"> ... </div>
 <div class="bt3"> ... </div>
 <div class="bt4"> ... </div>
+<div class="bt5"> ... </div>
+<div class="bt6"> ... </div>
+<div class="bt7"> ... </div>
 ```
 
 ### Border bottom
@@ -289,6 +290,9 @@ Border thickness value ranger from 0 to 4.
 <div class="bb2"> ... </div>
 <div class="bb3"> ... </div>
 <div class="bb4"> ... </div>
+<div class="bb5"> ... </div>
+<div class="bb6"> ... </div>
+<div class="bb7"> ... </div>
 ```
 
 ### Border left
@@ -301,6 +305,9 @@ Border thickness value ranger from 0 to 4.
 <div class="bl2"> ... </div>
 <div class="bl3"> ... </div>
 <div class="bl4"> ... </div>
+<div class="bl5"> ... </div>
+<div class="bl6"> ... </div>
+<div class="bl7"> ... </div>
 ```
 
 ### Border right
@@ -313,6 +320,9 @@ Border thickness value ranger from 0 to 4.
 <div class="br2"> ... </div>
 <div class="br3"> ... </div>
 <div class="br4"> ... </div>
+<div class="br5"> ... </div>
+<div class="br6"> ... </div>
+<div class="br7"> ... </div>
 ```
 
 ### Border top and bottom sides
@@ -325,6 +335,9 @@ Border thickness value ranger from 0 to 4.
 <div class="by2"> ... </div>
 <div class="by3"> ... </div>
 <div class="by4"> ... </div>
+<div class="by5"> ... </div>
+<div class="by6"> ... </div>
+<div class="by7"> ... </div>
 ```
 
 ### Border left and right sides
@@ -337,16 +350,19 @@ Border thickness value ranger from 0 to 4.
 <div class="bx2"> ... </div>
 <div class="bx3"> ... </div>
 <div class="bx4"> ... </div>
+<div class="bx5"> ... </div>
+<div class="bx6"> ... </div>
+<div class="bx7"> ... </div>
 ```
 
 ### Removing Borders
 
-There may be times you want to remove borders.
+There may be times you wish to remove a border from one or all sides.
 
 To do this, use a value of "0" (zero) with one of border Style-Notation.
 
 ```html
-<div class="b0 "> ... </div>
+<div class="b0"> ... </div>
 <div class="bt0"> ... </div>
 <div class="bb0"> ... </div>
 <div class="bl0"> ... </div>
@@ -355,92 +371,105 @@ To do this, use a value of "0" (zero) with one of border Style-Notation.
 <div class="bx0"> ... </div>
 ```
 
-You can use a combination of styles to remove only one side of the border.
-
-![bro](images/br0.png)
+You can use a combination of border styles to add then remove borders.
 
 ```html
 <div class="b2 br0"> ... </div>
 ```
 
+![bro](images/br0.png)
+
+Add borders to all sides and clear the border on the right side.
+
 ## Border Radius
 
-Border corners can be given a radius to round out the corners.
+Border corners can be given a radius value to round out the corners.
 
-The border radius values range from 0 to 7. This scale follows the Golden Ratio.
+- The border radius values range from 0 to 7.
+- This scale follows the Golden Ratio.
 
 A radius value of "0" (zero) will reset "round" borders to have square corners.
 
-### Corner Radius
+|Notation|Values|Radius side|
+|-|-|-|
+|r|0-7|All radius|
 
-When using borders, you may specify a radius value for each corner, shown later.
-
-### Equal Radius corners
+## Radius on all corners
 
 ![radius](images/radius.png)
 
 ```html
-<div class="b1 radius0"> ... </div>
-<div class="b1 radius1"> ... </div>
-<div class="b1 radius2"> ... </div>
-<div class="b1 radius3"> ... </div>
-<div class="b1 radius4"> ... </div>
-<div class="b1 radius5"> ... </div>
-<div class="b1 radius6"> ... </div>
-<div class="b1 radius7"> ... </div>
+<div class="b1 r0"> ... </div>
+<div class="b1 r1"> ... </div>
+<div class="b1 r2"> ... </div>
+<div class="b1 r3"> ... </div>
+<div class="b1 r4"> ... </div>
+<div class="b1 r5"> ... </div>
+<div class="b1 r6"> ... </div>
+<div class="b1 r7"> ... </div>
 ```
 
-Since the radius use a Golden Ratio, corner radius will look different for different dimensions as shown below.
+Radius size is always consistent as shown below for larger dimensions.
 
 ![radius2](images/radius2.png)
 
 ### Corner Radius
 
-You can set the individual border value for each corner using one of the following Style-Notation.
+You can set the border value for each individula corner using the following Style-Notation.
 
-|Notation|Radius corner|
-|-|-|
-|tl-radius|Top left|
-|tr-radius|Top right|
-|bl-radius|Bottom left|v
-|br-radius|Bottom right|
+|Notation|Values|Radius corner|
+|-|-|-|
+|rtl|0-7|Top left|
+|rtr|0-7|Top right|
+|rbl|0-7|Bottom left|
+|rbr|0-7|Bottom right|
 
 ![corner-radius](images/corner-radius.png)
 
 ```html
-<div class="b1 tl-radius5">TL</div>
-<div class="b1 tr-radius5">TR</div>
-<div class="b1 bl-radius5">BL</div>
-<div class="b1 br-radius5">BR</div>
+<div class="b1 rtl5">Top left radius</div>
+<div class="b1 rtr5">Top right radius</div>
+<div class="b1 rbl5">Bottom left radius</div>
+<div class="b1 rbr5">Bottom right radius</div>
 ```
 
 ### Face Radius
 
-The face radius covers a side of the box to have round corners.
+The face radius covers each side of the Box Model to have round corners.
 
-|Notation|Radius sides|
-|-|-|
-|t-radius|Top face|
-|b-radius|Bottom face|
-|l-radius|Left face|
-|r-radius|Right face|
+|Notation|Values|Radius face|
+|-|-|-|
+|rt|0-7|Top face|
+|rb|0-7|Bottom face|
+|rl|0-7|Left face|
+|rr|0-7|Right face|
 
 ![face-radius](images/face-radius.png)
 
 ```html
-<div class="b1 t-radius5">T</div>
-<div class="b1 b-radius5">B</div>
-<div class="b1 l-radius5">L</div>
-<div class="b1 r-radius5">R</div>
+<div class="b1 rt5">Radius top face</div>
+<div class="b1 rb5">Radius bottom face</div>
+<div class="b1 rl5">Radius left face</div>
+<div class="b1 rr5">Radius right face</div>
 ```
 
 ### Border line style
 
-You can change the border line style from solid to dashed.
+Border line style dashed.
+
+|Notation|Border line style side|
+|-|-|
+|dash|All sides|
+|dasht|Dash on top|
+|dashb|Dash on bottom|
+|dashl|Dash on left|
+|dashr|Dash on right|
+|dashy|Dash on top and bottom|
+|dashx|Dash on left and right|
+
+__Border dash__
 
 ![dashes](images/dashes.png)
-
-**Border dash**
 
 ```html
 <div class="b2 dash"> ... </div>
@@ -452,7 +481,19 @@ You can change the border line style from solid to dashed.
 <div class="b2 dashy"> ... </div>
 ```
 
-**Border dot**
+__Border dot__
+
+Border line style dotted.
+
+|Notation|Border line style side|
+|-|-|
+|dot|All sides|
+|dott|Dot on top|
+|dotb|Dot on bottom|
+|dotl|Dot on left|
+|dotr|Dot on right|
+|doty|Dot on top and bottom|
+|datx|Dot on left and right|
 
 ```html
 <div class="b2 dot"> ... </div>
@@ -466,13 +507,17 @@ You can change the border line style from solid to dashed.
 
 ### Circle Radius
 
-To draw a circular border, use Style-Notation "**circle**".
+To draw a circular border, use Style-Notation "__circle__".
 
-You must include the border notation, "**b**", as it governs the border property on an element, whereas "**circle**" sets the border radius value.
+You must include the border notation, "__b__", as it governs the border property on an element, whereas "__circle__" sets the border radius value.
 
-- The "**circle**" notation uses a radius of 50%.
+- The "__circle__" notation uses a radius of 50%.
 
-Below are three boxes with dimensions of: 80x40, 80x80, 40x80.
+|Notation|Radius side|
+|-|-|
+|circle|All sized 50% radius value|
+
+Below are three boxes with pixel dimensions of: 80x40, 80x80, 40x80.
 
 ```css
 .box1 { width: 80px; height: 40px; }
@@ -492,6 +537,10 @@ Below are three boxes with dimensions of: 80x40, 80x80, 40x80.
 
 There are four pill styles for curved borders.
 
+|Notation|Values|Pill shape|
+|-|-|-|
+|pill|1-4|Pill shared radius|
+
 ![pills](images/pills.png)
 
 ```html
@@ -501,23 +550,36 @@ There are four pill styles for curved borders.
 <div class="b1 pill4"> ... </div>
 ```
 
+## Positioning an Element
+
+Most browsers all an element to be re-positioned relative to its default position, relative to another element, or fixed to a given location.
+
+Dyno Might CSS make positioning elements simple.
+
 ## Position
 
-An element static position property can be changed.
+An element position property can be changed to one of the following CSS styles.
+
+|Notation|Flow positioning|
+|-|-|
+|absolute|Position according to closest relative positioned ancestor|
+|fixed|Position relative to the Viewport|
+|relative|Position relative to natural position using offset value|
+|static|Default, use natural positioning|
 
 ```html
-<span class="relative"> ... </span>
 <span class="absolute"> ... </span>
 <span class="fixed"> ... </span>
+<span class="relative"> ... </span>
 <span class="static"> ... </span>
 ```
 
-|Notation|Alias|Position|
+|Notation|Position value|
 |-|-|-|
-|top|pos-t|Top|
-|bottom|pos-b|Bottom|
-|left|pos-l|Left|
-|right|pos-r|Right|
+|top|Top value of zero|
+|bottom|Bottom value of zero|
+|left|Left value of zero|
+|right|Right value of zero|
 
 ```html
 <span class="top"> ... </span>
@@ -526,18 +588,23 @@ An element static position property can be changed.
 <span class="right"> ... </span>
 ```
 
-Alias for positioning.
-
-```html
-<span class="pos-t"> ... </span>
-<span class="pos-b"> ... </span>
-<span class="pos-l"> ... </span>
-<span class="pos-r"> ... </span>
-```
-
 ### Z-Index
 
-The default z-index value is 0, and goes up.
+Specify the Z order of element positioning. Positive Z values move an element infront of stacked element, while negative Z value move an element behind stacked elements.
+
+|Notation|Values|Z Index|
+|-|-|-|
+|z|0-7|Positive Z order|
+|z-|1-7|Negative Z order|
+|zauto||Automatic positive Z order|
+
+For automatic Z order positioning use "__zauto__", successive element are given a positive increasing Z order.
+
+```html
+<span class="zauto"> ... </span>
+```
+
+The default z-index value is 0, and goes up to 7.
 
 Positive z-index values.
 
@@ -566,18 +633,18 @@ Nagative z-index values.
 
 ## Size
 
+Set the size of the element "__viewport__".
+
 Scale value for width and height range from 10% to 100% and incremented by 10.
 
-|Notation|Size dimension|
-|-|-|
-|w|Set width percentage|
-|h|Set height percentage|
-|wmin| Set minimum width percentage|
-|wmax| Set maximum width percentage|
-|hmin| Set minimum height percentage|
-|hmax| Set maximum height percentage|
-
-Basic usage:
+|Notation|Values|Size dimension|
+|-|-|-|
+|w|10-100|Set width percentage|
+|h|10-100|Set height percentage|
+|wmin|10-100|Set minimum width percentage|
+|wmax|10-100|Set maximum width percentage|
+|hmin|10-100|Set minimum height percentage|
+|hmax|10-100|Set maximum height percentage|
 
 ```html
 <div class="w10"> ... </div>
@@ -592,178 +659,227 @@ Basic usage:
 <div class="w100"> ... </div>
 ```
 
+Clear and reset an element minimum and maximum viewport size values.
+
+|Notation|Size dimension reset|
+|-|-|
+|hauto|Height set to auto|
+|wauto|Width set to auto|
+|hnomax|Height has no max value|
+|wnomax|Width has no max value|
+
+```html
+<div class="hauto"> ... </div>
+<div class="wauto"> ... </div>
+<div class="hnomax"> ... </div>
+<div class="wnomax"> ... </div>
+```
+
 ## Spacing
 
-The box model that DM-CSS uses is the "**border-box**". For more info see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
+The Box Model that Dyno Might CSS uses is "__border-box__". For more info on Box Model see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
 ![border box](images/box-model.png)
 
 The Style-Notation for spacing allows setting the margin and padding used by an element.
 
 - Padding and margin scale values range from 0 to 7.
-- Scale value follow the Golden Ratio.
+- Scale values follow the Golden Ratio.
 
-**Pro Tip**:
-In CSS, inline elements like "**\<p\>**" or "**\<span\>**" inherit their height values for margin and padding from surrounding text. You cannot change the height value for margin or padding for an inline element. If you want to be able to change these properties, you must change their display property from "**inline**" to "**inline-block**".
+__Pro Sizing Tip__
+
+In CSS, inline elements like "__\<span\>__" or "__\<i\>__" inherit their height values for margin and padding from surrounding text. The height value for margin or padding for an __inline__ element cannot be changed. To be able to change these properties, you must change their display property from "__inline__" to "__inline-block__".
 
 ```html
 <p class="d-inline-block"> ... </p>
 <span class="d-inline-block"> ... </span>
 ```
 
-Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimately how this will affect setting their width and height.
+Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimately how this will affect setting their width and height. Otherwise this can lead to some confusion as it will seem the style changes are not working.
 
 ### Padding
 
-|Notation|Padding Sides|
-|-|-|
-|p|Pad all sides|
-|pt|Pad top|
-|pb|Pad bottom|
-|pl|Pad left|
-|pr|Pad right|
-|py|Pad top and bottom|
-|px|Pad left and right|
+|Notation|Values|Padding sides|
+|-|-|-|
+|p|0-7|Pad all sides|
+|pt|0-7|Pad top|
+|pb|0-7|Pad bottom|
+|pl|0-7|Pad left|
+|pr|0-7|Pad right|
+|py|0-7|Pad top and bottom|
+|px|0-7|Pad left and right|
+
+Add padding to all sides, value range from 0 to 7 and follow the Golden Ratio.
 
 ```html
-<div class="p0">0</div>
-<div class="p1">1</div>
-<div class="p2">2</div>
-<div class="p3">3</div>
-<div class="p4">4</div>
-<div class="p5">5</div>
-<div class="p6">6</div>
-<div class="p7">7</div>
+<div class="p0">Padding size 0</div>
+<div class="p1">Padding size 1</div>
+<div class="p2">Padding size 2</div>
+<div class="p3">Padding size 3</div>
+<div class="p4">Padding size 4</div>
+<div class="p5">Padding size 5</div>
+<div class="p6">Padding size 6</div>
+<div class="p7">Padding size 7</div>
 ```
 
 ### Padding top
 
+Add padding to the top.
+
 ![pad top](/images/pad-top.png)
 
 ```html
-<div class="pt0">0</div>
-<div class="pt1">1</div>
-<div class="pt2">2</div>
-<div class="pt3">3</div>
-<div class="pt4">4</div>
-<div class="pt5">5</div>
-<div class="pt6">6</div>
-<div class="pt7">7</div>
+<div class="pt0">Padding top size 0</div>
+<div class="pt1">Padding top size 1</div>
+<div class="pt2">Padding top size 2</div>
+<div class="pt3">Padding top size 3</div>
+<div class="pt4">Padding top size 4</div>
+<div class="pt5">Padding top size 5</div>
+<div class="pt6">Padding top size 6</div>
+<div class="pt7">Padding top size 7</div>
 ```
 
 ### Padding bottom
 
+Add padding to the bottom.
+
 ![pad bottom](/images/pad-bottom.png)
 
 ```html
-<div class="pb0">0</div>
-<div class="pb1">1</div>
-<div class="pb2">2</div>
-<div class="pb3">3</div>
-<div class="pb4">4</div>
-<div class="pb5">5</div>
-<div class="pb6">6</div>
-<div class="pb7">7</div>
+<div class="pb0">Padding bottom size 0</div>
+<div class="pb1">Padding bottom size 1</div>
+<div class="pb2">Padding bottom size 2</div>
+<div class="pb3">Padding bottom size 3</div>
+<div class="pb4">Padding bottom size 4</div>
+<div class="pb5">Padding bottom size 5</div>
+<div class="pb6">Padding bottom size 6</div>
+<div class="pb7">Padding bottom size 7</div>
 ```
 
 ### Padding left
 
+Add padding to the left.
+
 ![pad left](/images/pad-left.png)
 
 ```html
-<div class="pl0">0</div>
-<div class="pl1">1</div>
-<div class="pl2">2</div>
-<div class="pl3">3</div>
-<div class="pl4">4</div>
-<div class="pl5">5</div>
-<div class="pl6">6</div>
-<div class="pl7">7</div>
+<div class="pl0">Padding left size 0</div>
+<div class="pl1">Padding left size 1</div>
+<div class="pl2">Padding left size 2</div>
+<div class="pl3">Padding left size 3</div>
+<div class="pl4">Padding left size 4</div>
+<div class="pl5">Padding left size 5</div>
+<div class="pl6">Padding left size 6</div>
+<div class="pl7">Padding left size 7</div>
 ```
 
 ### Padding right
 
+Add padding to the right.
+
 ![pad right](/images/pad-right.png)
 
 ```html
-<div class="pr0">0</div>
-<div class="pr1">1</div>
-<div class="pr2">2</div>
-<div class="pr3">3</div>
-<div class="pr4">4</div>
-<div class="pr5">5</div>
-<div class="pr6">6</div>
-<div class="pr7">7</div>
+<div class="pr0">Padding right size 0</div>
+<div class="pr1">Padding right size 1</div>
+<div class="pr2">Padding right size 2</div>
+<div class="pr3">Padding right size 3</div>
+<div class="pr4">Padding right size 4</div>
+<div class="pr5">Padding right size 5</div>
+<div class="pr6">Padding right size 6</div>
+<div class="pr7">Padding right size 7</div>
 ```
 
 ### Padding top and bottom sides
 
+Add padding to the both the top and bottom sides.
+
 ![pad y](/images/pad-y.png)
 
 ```html
-<span class="py0">0</span>|<br/>
-<span class="py1">1</span>|<br/>
-<span class="py2">2</span>|<br/>
-<span class="py3">3</span>|<br/>
-<span class="py4">4</span>|<br/>
-<span class="py5">5</span>|<br/>
-<span class="py6">6</span>|<br/>
-<span class="py7">7</span>|<br/>
+<span class="py0">Padding top and bottom size 0</span>
+<span class="py1">Padding top and bottom size 1</span>
+<span class="py2">Padding top and bottom size 2</span>
+<span class="py3">Padding top and bottom size 3</span>
+<span class="py4">Padding top and bottom size 4</span>
+<span class="py5">Padding top and bottom size 5</span>
+<span class="py6">Padding top and bottom size 6</span>
+<span class="py7">Padding top and bottom size 7</span>
 ```
 
 ### Padding left and right sides
 
+Add padding to the both the left and right sides.
+
 ![pad x](/images/pad-x.png)
 
 ```html
-<span class="px0">0</span>|<br/>
-<span class="px1">1</span>|<br/>
-<span class="px2">2</span>|<br/>
-<span class="px3">3</span>|<br/>
-<span class="px4">4</span>|<br/>
-<span class="px5">5</span>|<br/>
-<span class="px6">6</span>|<br/>
-<span class="px7">7</span>|<br/>
+<span class="px0">Padding left and right size 0</span>
+<span class="px1">Padding left and right size 1</span>
+<span class="px2">Padding left and right size 2</span>
+<span class="px3">Padding left and right size 3</span>
+<span class="px4">Padding left and right size 4</span>
+<span class="px5">Padding left and right size 5</span>
+<span class="px6">Padding left and right size 6</span>
+<span class="px7">Padding left and right size 7</span>
 ```
 
 ### Margins
 
-|Notation|Margin Sides|
-|-|-|
-|m|Margin all sides|
-|mt|Margin top|
-|mb|Margin bottom|
-|ml|Margin left|
-|mr|Margin right|
-|my|Margins top and bottom|
-|mx|Margins left and right|
+Set the margin area surrounding an element.
 
-|Notation|Alias|Margin Sides|
+|Notation|Values|Margin sides|
 |-|-|-|
-|mxa|mx-auto|Auto margins left and right|
-|mla|ml-auto|Auto margins left |
-|mra|mr-auto|Auto margins right|
+|m|0-7|Margin all sides|
+|mt|0-7|Margin top|
+|mb|0-7|Margin bottom|
+|ml|0-7|Margin left|
+|mr|0-7|Margin right|
+|my|0-7|Margins top and bottom|
+|mx|0-7|Margins left and right|
+
+Add margin to all side, size values range from 0 to 7 and follow the Golden Ratio.
 
 ```html
-<div class="m0">0</div>
-<div class="m1">1</div>
-<div class="m2">2</div>
-<div class="m3">3</div>
-<div class="m4">4</div>
-<div class="m5">5</div>
-<div class="m6">6</div>
-<div class="m7">7</div>
+<div class="m0">Margin size 0</div>
+<div class="m1">Margin size 1</div>
+<div class="m2">Margin size 2</div>
+<div class="m3">Margin size 3</div>
+<div class="m4">Margin size 4</div>
+<div class="m5">Margin size 5</div>
+<div class="m6">Margin size 6</div>
+<div class="m7">Margin size 7</div>
+```
+
+Set margin to auto, size is determined from available space.
+
+|Notation|Margin location|
+|-|-|
+|mxa|Auto margins left and right|
+|mla|Auto margins left |
+|mra|Auto margins right|
+
+```html
+<div class="mxa">Auto</div>
+<div class="mla">Auto left</div>
+<div class="mra">Auto right</div>
 ```
 
 ## Font
 
-Font heights follow a Perfect Third scale, ranging from 1 to 7.
+Font heights follows the "__Perfect Third__" scale, ranging from 1 to 7.
 
-A font scale of 1 has a font height equal to the root element.
+A font scale of 1 has a font height equal to the root element, which is set to 16px from the font family of Roboto.
+
+|Notation|Values|Font scaling|
+|-|-|-|
+|fh |1-7|Increase font size|
+|fh-|1-7|Reduce font size|
+|h  |1-7|Heading|
 
 ### Height scaling up
 
-Higher scale values result progressively larger fonts, this is reverse of HTML heading values.
+Higher scale values result in progressively larger fonts. Note this is the reverse of HTML heading values.
 
 ![font heights](images/font-heights.png)
 
@@ -777,9 +893,11 @@ Higher scale values result progressively larger fonts, this is reverse of HTML h
 <div class="fh7">Font height 7</div>
 ```
 
-There are also 7 Headings, which display as the regular HTML heading tags.
+### Heading
 
-- Heading have been changed to use the Major Third scale.
+There are also 7 Headings Style-Notations, which display as the regular HTML heading tags.
+
+- Heading have been changed to use the "__Major Third__" scale.
 - For headings you can also use the regular HTML __h1__ to __h6__ tags.
 
 ![font heights](images/headings.png)
@@ -792,13 +910,22 @@ There are also 7 Headings, which display as the regular HTML heading tags.
 <div class="h5">Font height 5</div>
 <div class="h6">Font height 6</div>
 <div class="h7">Font height 7</div>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
 ```
+
+__Note__: Style-Notation provides and extra heading value for __h7__.
 
 ### Height scaling down
 
-When font height is scaled down, the values become a fraction of the root font height.
+When a font height is scaled down, the values become a fraction of the root font height.
 
-The scale reduces font height successively by a factor of **10%**.
+The negative scale reduces font height successively by a factor of __10%__.
 
 You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
 
@@ -838,9 +965,15 @@ You will notice in the Style-Notation, scaled down fonts have a leading "-" dash
 
 ### Font weight
 
-The font weight will depend on the font being used.
+The font weight will depend on the font being used. It is used to determine the thickness of the displayed character.
 
-The weight range is from 100 to 900, and increases (thin to stronger). Not all values maybe be valid, as it depend on the font being used.
+The weight range is from 100 to 900, and increases thickness (thin to bolder). Not all values maybe be valid, as it depends on the font set being used.
+
+__Note__: Values increment by 100.
+
+|Notation|Values|Font weight|
+|-|-|-|
+|fw|100-900|Set the font boldness (thickness) value|
 
 ```html
 <div class="fw100"> ... </div>
@@ -864,9 +997,9 @@ The following Style-Notations are used to justify text.
 
 |Notation|Text transform|
 |-|-|
-|ttl|Left align|
+|ttl|Left align text|
 |ttc|Center text|
-|ttr|Right align|
+|ttr|Right align text|
 |ttj|Justify text|
 
 ![text justify](images/text-justify.png)
@@ -878,70 +1011,112 @@ The following Style-Notations are used to justify text.
 <div class="ttj">This text is fully justified, more text to wrap around and justify</div>
 ```
 
+__Note__: For text justification to work, the test must span multiple lines.
+
 ### Text vertical alignments
 
-- Vertical align top.
-- Vertical align middle.
-- Vertical align baseline.
-- Vertical align bottom.
+Specify the vertical alignment of an inline or table-cell box.
+
+|Notation|Vertical alignment|
+|-|-|
+|ttvt|Vertical align top|
+|ttvm|Vertical align middle|
+|ttvbl|Vertical align baseline|
+|ttvb|Vertical align bottom|
+|ttsub|Vertical align sub-script|
+|ttsuper|Vertical align super-script|
 
 ```html
 <div class="ttvt"> ... </div>
 <div class="ttvm"> ... </div>
 <div class="ttvbl"> ... </div>
 <div class="ttvb"> ... </div>
+<div class="ttsub"> ... </div>
+<div class="ttsuper"> ... </div>
 ```
 
 ### Text transformation styles
 
 ![tt](images/text-transform.png)
 
-- Capitialize text.
-- Make all text upper-case.
-- Mark all text lower-case.
-- Remove any text transform previously set.
+|Notation|Text transform|
+|-|-|
+|ttcaps|Capitialize text|
+|ttupcase|Make all text upper-case|
+|ttlowcase|Mark all text lower-case|
+|ttnone|Remove any text transform previously set|
 
 ```html
-<div class="tt-caps">text has been transformed</div>
-<div class="tt-upcase">text has been transformed</div>
-<div class="tt-lowcase">TEXT HAS BEEN TRANSFORMED</div>
-<div class="tt-none">Text has NOT been transformed</div>
+<div class="ttcaps">text has been transformed</div>
+<div class="ttupcase">text has been transformed</div>
+<div class="ttlowcase">TEXT HAS BEEN TRANSFORMED</div>
+<div class="ttnone">Text has NOT been transformed</div>
 ```
 
-Style-Notation "**tt-none**" should be used to reset existing text style when they are not desired.
+Style-Notation "__ttnone__" should be used to reset existing text style when they are not desired.
 
 ### Text wrapping
 
-This control if wrapping should occur when text overflows its content box.
+This control if wrapping should occur when text overflows its viewport.
+
+|Notation|Text flow mode|
+|-|-|
+|ttwrap|Wrap text outside its viewport|
+|ttnowrap|Allow text to flow outside its viewport|
 
 ```html
-<div class="tt-wrap"> ... </div>
-<div class="tt-nowrap"> ... </div>
+<div class="ttwrap"> ... </div>
+<div class="ttnowrap"> ... </div>
 ```
 
 ### Text overflow
 
-How to display text that is bigger than its diaplay container.
+Specify text overflow behaviour when it is bigger than its display viewport.
+
+|Notation|Text flow mode|
+|-|-|
+|ttoverflow|Allow text to overflow viewport|
+|ttoverflow-auto|Add a scroll-bar when text overflows|
+|ttclip|Hide overflowed text outside viewport|
+|ttscroll|Add a scroll-bar when text overflows|
 
 ```html
-<div class="tt-overflow"> ... </div>
-<div class="tt-overflow-auto"> ... </div>
-<div class="tt-clip"> ... </div>
-<div class="tt-scroll"> ... </div>
+<div class="ttoverflow"> Allow overflow </div>
+<div class="ttoverflow-auto"> Add scroll-bar when needed </div>
+<div class="ttclip"> Clip text outside viewport </div>
+<div class="ttscroll"> Add scroll-bar </div>
 ```
 
-```html
-<div class="tt-overflowy"> ... </div>
-<div class="tt-overflowy-auto"> ... </div>
-<div class="tt-clipy"> ... </div>
-<div class="tt-scrolly"> ... </div>
-```
+Text overflow control for vertical direction, when lines wrap around.
+
+|Notation|Text vertical flow mode|
+|-|-|
+|ttoverflowy|Allow text to overflow viewport|
+|ttoverflowy-auto|Add a scroll-bar when text overflows|
+|ttclipy|Hide overflowed text outside viewport|
+|ttscrolly|Add a scroll-bar when text overflows|
 
 ```html
-<div class="tt-overflowx"> ... </div>
-<div class="tt-overflowx-auto"> ... </div>
-<div class="tt-clipx"> ... </div>
-<div class="tt-scrollx"> ... </div>
+<div class="ttoverflowy"> ... </div>
+<div class="ttoverflowy-auto"> ... </div>
+<div class="ttclipy"> ... </div>
+<div class="ttscrolly"> ... </div>
+```
+
+Text overflow control for horizontal direction.
+
+|Notation|Text horizontal flow mode|
+|-|-|
+|ttoverflowx|Allow text to overflow viewport|
+|ttoverflowx-auto|Add a scroll-bar when text overflows|
+|ttclipx|Hide overflowed text outside viewport|
+|ttscrollx|Add a scroll-bar when text overflows|
+
+```html
+<div class="ttoverflowx"> ... </div>
+<div class="ttoverflowx-auto"> ... </div>
+<div class="ttclipx"> ... </div>
+<div class="ttscrollx"> ... </div>
 ```
 
 ## Utility
@@ -950,7 +1125,12 @@ Here are some useful Style-Notation.
 
 ### Visibility
 
-Hide or show an element without affecting layout.
+Hide or show an element without affecting layout. Other displayed element will not get repositioned.
+
+|Notation|Visibility|
+|-|-|
+|visible|Display element and its descendents|
+|invisible|Hide element and its descendents|
 
 ```html
 <div class="visible"> ... </div>
@@ -961,14 +1141,16 @@ Hide or show an element without affecting layout.
 
 Vertical, horizontal and full centering.
 
-- Center vertically.
-- Center horizontally.
-- Center vertically and horizontally.
+|Notation|Centering|
+|-|-|
+|center|Center vertically|
+|centery|Center vertically and horizontally|
+|centerx|Center horizontally|
 
 ```html
+<div class="center"> ... </div>
 <div class="centery"> ... </div>
 <div class="centerx"> ... </div>
-<div class="center"> ... </div>
 ```
 
 ## Display
@@ -977,72 +1159,116 @@ You can hide and show the DOM node with the following styles. This will cause th
 
 All descendant elements of hidden element are also removed.
 
+|Notation|Visibility|
+|-|-|
+|show|Add and display element and its descendents|
+|hide|Hide and remove element and its descendents|
+
 ```html
 <div class="show"> ... </div>
 <div class="hide"> ... </div>
 ```
 
-**Note:** Styles "**hide**" is an alias for "**d-none**".
+__Note:__ Styles "__hide__" is an alias for "__dnone__".
+
+|Notation|CSS display style|
+|-|-|
+|dnone|none|
+|dinline|inline|
+|dinline-block|inline-block|
+|dblock|block|
+|dflex|flex|
+|dinline-flex|inline-flex|
+|dgrid|grid|
+|dinline-grid|inline-grid|
+
 
 ```html
-<div class="d-none"> ... </div>
-<div class="d-inline"> ... </div>
-<div class="d-inline-block"> ... </div>
-<div class="d-block"> ... </div>
-<div class="d-flex"> ... </div>
-<div class="d-inline-flex"> ... </div>
-<div class="d-grid"> ... </div>
-<div class="d-inline-grid"> ... </div>
+<div class="dnone"> ... </div>
+<div class="dinline"> ... </div>
+<div class="dinline-block"> ... </div>
+<div class="dblock"> ... </div>
+<div class="dflex"> ... </div>
+<div class="dinline-flex"> ... </div>
+<div class="dgrid"> ... </div>
+<div class="dinline-grid"> ... </div>
 ```
 
 ## Lists
 
-Working with ordered and unordered lists.
+Style to apply to both order and unordered list and its list items.
 
-### Bullet styles
+### Bullet marks
+
+|Notation|Bullet style|
+|-|-|
+|lsnone|No bullet|
+|lsdisc|Dot shaped bullet|
+|lscircle|Circle outlined bullet|
+|lssquare|Square shaped bullet|
+|lsalpha|Lower case alpha bullets|
+|lsroman|Lower case Roman numbers bullets|
+|lsdecimal|Counting number bullets|
 
 ```html
-<div class="li-none"> ... </div>
-<div class="li-disc"> ... </div>
-<div class="li-circle"> ... </div>
-<div class="li-square"> ... </div>
-<div class="li-alpha"> ... </div>
-<div class="li-roman"> ... </div>
-<div class="li-decimal"> ... </div>
+<div class="lsnone"> ... </div>
+<div class="lsdisc"> ... </div>
+<div class="lscircle"> ... </div>
+<div class="lssquare"> ... </div>
+<div class="lsalpha"> ... </div>
+<div class="lsroman"> ... </div>
+<div class="lsdecimal"> ... </div>
 ```
 
 ### Bullet placement
 
+Placement of the bullet for list items.
+
+|Notation|List orientation|
+|-|-|
+|lsinside|Bullet placed on the inside|
+|lsoutside|Bullet placed on the outside|
+
 ```html
-<div class="li-inside"> ... </div>
-<div class="li-outside"> ... </div>
+<div class="lsinside"> Inside </div>
+<div class="lsoutside"> Outside </div>
 ```
 
 ## List orientation
 
-- Display list along a row (horizontal).
-- Display list down a column (vertical).
+Change list orientation and hide bullets.
+
+|Notation|List orientation|
+|-|-|
+|lsrow|Display list along a row (horizontal)|
+|lscol|Display list down a column (vertical)|
 
 ```html
-<div class="li-row"> ... </div>
-<div class="li-col"> ... </div>
+<div class="lsrow"> Horizontal without bullets </div>
+<div class="lscol"> Vertical without bullets </div>
 ```
 
 ### List style reset
 
+Reset list style, undoing applied list style changes.
+
+|Notation|List style|
+|-|-|
+|lsreset|Clears back to their defaults|
+
 ```html
-<div class="li-reset"> ... </div>
+<div class="lsreset"> ... </div>
 ```
 
 ## Floats
 
-The long-form and its short-form.
+Positioning element by floating to the one side.
 
-|Notation|Alias|Float direction|
+|Notation|Float direction|
 |-|-|-|
-|fll|float-l|Float left|
-|flr|float-r|Float right|
-|fln|float-n|Float none
+|fll|Float left|
+|flr|Float right|
+|fln|Float none|
 
 ```html
 <div class="fll"> ... </div>
@@ -1050,15 +1276,13 @@ The long-form and its short-form.
 <div class="fln"> ... </div>
 ```
 
-Alias
-
-```html
-<div class="float-l"> ... </div>
-<div class="float-r"> ... </div>
-<div class="float-n"> ... </div>
-```
-
 ### Clearfix
+
+Apply clearfix settings.
+
+|Notation|Clear float|
+|-|-|-|
+|cf| Clearfix|
 
 ```html
 <div class="cf"> ... </div>
@@ -1066,16 +1290,16 @@ Alias
 
 ## Flexbox
 
-The Flexbox Style-Notation make it easy to do layout.
+The Style-Notation for Flexbox make it easy to do layout.
 
 ### Direction
 
-|Notation|Alias|Alias|Direction|
-|-|-|-|-|
-|fbl|flex-l|flex-row|Row (left)|
-|fbr|flex-r|flex-rrow|Row reverse (right)|
-|fbd|flex-d|flex-col|Column (down)|
-|fbu|flex-u|flex-rcol|Column reverse (up)|
+|Notation|Direction|
+|-|-|
+|fbl|Row (left)|
+|fbr|Row reverse (right)|
+|fbd|Column (down)|
+|fbu|Column reverse (up)|
 
 ```html
 <div class="fbl"> ... </div>
@@ -1084,29 +1308,14 @@ The Flexbox Style-Notation make it easy to do layout.
 <div class="fbd"> ... </div>
 ```
 
-Short alias for direction.
-
-```html
-<div class="flex-l"> ... </div>
-<div class="flex-r"> ... </div>
-<div class="flex-u"> ... </div>
-<div class="flex-d"> ... </div>
-```
-
-Descriptive alias for direction.
-
-```html
-<div class="flex-row"> ... </div>
-<div class="flex-rrow"> ... </div>
-<div class="flex-col"> ... </div>
-<div class="flex-rcol"> ... </div>
-```
-
 ### Wrap mode
 
-- Flex wrap.
-- Flex no wrap.
-- Flex reverse wrap.
+|Notation|Wrap mode|
+|-|-|
+|fbw|Flex wrap|
+|fbnw|Flex no wrap|
+|fbrw|Flex reverse wrap|
+
 
 ```html
 <div class="fbw"> ... </div>
@@ -1114,21 +1323,15 @@ Descriptive alias for direction.
 <div class="fbrw"> ... </div>
 ```
 
-Alias for wrap modes.
-
-```html
-<div class="flex-wrap"> ... </div>
-<div class="flex-nowrap"> ... </div>
-<div class="flex-rwrap"> ... </div>
-```
-
 ### Justify main axis
 
-- Justify start.
-- Justify end.
-- Justify center.
-- Justify space around.
-- Justify space between.
+|Notation|Justification along Main Axis|
+|-|-|
+|fbjs|Justify start|
+|fbje|Justify end|
+|fbjc|Justify center|
+|fbja|Justify space around|
+|fbjb|Justify space between|
 
 ```html
 <div class="fbjs"> ... </div>
@@ -1138,23 +1341,15 @@ Alias for wrap modes.
 <div class="fbjb"> ... </div>
 ```
 
-Alias for main-asix justify.
-
-```html
-<div class="flex-js"> ... </div>
-<div class="flex-je"> ... </div>
-<div class="flex-jc"> ... </div>
-<div class="flex-ja"> ... </div>
-<div class="flex-jb"> ... </div>
-```
-
 ### Justify cross axis
 
-- Justify items start.
-- Justify items end.
-- Justify items center.
-- Justify items baseline.
-- Justify items stretch (eXpand).
+|Notation|Justification Cross Axis|
+|-|-|
+|fbis|Justify items start|
+|fbie|Justify items end|
+|fbic|Justify items center|
+|fbib|Justify items baseline|
+|fbix|Justify items stretch (eXpand)|
 
 ```html
 <div class="fbis"> ... </div>
@@ -1164,24 +1359,16 @@ Alias for main-asix justify.
 <div class="fbix"> ... </div>
 ```
 
-Alias for cross-axis justify.
-
-```html
-<div class="flex-is"> ... </div>
-<div class="flex-ie"> ... </div>
-<div class="flex-ic"> ... </div>
-<div class="flex-ib"> ... </div>
-<div class="flex-ix"> ... </div>
-```
-
 ### Vertical align content
 
-- Align content start.
-- Align content end.
-- Align content center.
-- Align content space around.
-- Align content space between.
-- Align content stretch (eXpand).
+|Notation|Align content|
+|-|-|
+|fbcs|Align content start|
+|fbce|Align content end|
+|fbcc|Align content center|
+|fbca|Align content space around|
+|fbcb|Align content space between|
+|fbcx|Align content stretch (eXpand)|
 
 ```html
 <div class="fbcs"> ... </div>
@@ -1192,25 +1379,16 @@ Alias for cross-axis justify.
 <div class="fbcx"> ... </div>
 ```
 
-Alias content vertical align.
-
-```html
-<div class="flex-cs"> ... </div>
-<div class="flex-ce"> ... </div>
-<div class="flex-cc"> ... </div>
-<div class="flex-cb"> ... </div>
-<div class="flex-ca"> ... </div>
-<div class="flex-cx"> ... </div>
-```
-
 ### Item vertical align
 
-- Align self auto.
-- Align self start.
-- Align self end.
-- Align self center.
-- Align self baseline.
-- Align self stretch (eXpand).
+|Notation|Item self alignment|
+|-|-|
+|fbsa|Align self auto|
+|fbss|Align self start|
+|fbse|Align self end|
+|fbsc|Align self center|
+|fbsb|Align self baseline|
+|fbsx|Align self stretch (eXpand)|
 
 ```html
 <div class="fbsa"> ... </div>
@@ -1221,20 +1399,14 @@ Alias content vertical align.
 <div class="fbsx"> ... </div>
 ```
 
-Alias item vertical align.
-
-```html
-<div class="flex-sa"> ... </div>
-<div class="flex-ss"> ... </div>
-<div class="flex-se"> ... </div>
-<div class="flex-sc"> ... </div>
-<div class="flex-sb"> ... </div>
-<div class="flex-sx"> ... </div>
-```
-
 ### Ordering
 
 Positive order positions.
+
+|Notation|Values|Flex item order|
+|-|-|-|
+|fbo|0-7|Flex item positive order|
+|fbo-|1-7|Flex item negative order|
 
 ```html
 <div class="fbo1"> ... </div>
@@ -1244,18 +1416,6 @@ Positive order positions.
 <div class="fbo5"> ... </div>
 <div class="fbo6"> ... </div>
 <div class="fbo7"> ... </div>
-```
-
-Alias for item ordering.
-
-```html
-<div class="order1"> ... </div>
-<div class="order2"> ... </div>
-<div class="order3"> ... </div>
-<div class="order4"> ... </div>
-<div class="order5"> ... </div>
-<div class="order6"> ... </div>
-<div class="order7"> ... </div>
 ```
 
 Negative order positions.
@@ -1270,21 +1430,14 @@ Negative order positions.
 <div class="fbo-7"> ... </div>
 ```
 
-Alias negative order positions.
-
-```html
-<div class="order-1"> ... </div>
-<div class="order-2"> ... </div>
-<div class="order-3"> ... </div>
-<div class="order-4"> ... </div>
-<div class="order-5"> ... </div>
-<div class="order-6"> ... </div>
-<div class="order-7"> ... </div>
-```
-
 ### Growing
 
 Grow a flexbox item.
+
+|Notation|Values|Flex item order|
+|-|-|-|
+|fb|0-7|Flex item grow|
+|fb-|1-7|Flex item shrink|
 
 ```html
 <div class="fb1"> ... </div>
@@ -1294,18 +1447,6 @@ Grow a flexbox item.
 <div class="fb5"> ... </div>
 <div class="fb6"> ... </div>
 <div class="fb7"> ... </div>
-```
-
-Alias flex grow values.
-
-```html
-<div class="flex1"> ... </div>
-<div class="flex2"> ... </div>
-<div class="flex3"> ... </div>
-<div class="flex4"> ... </div>
-<div class="flex5"> ... </div>
-<div class="flex6"> ... </div>
-<div class="flex7"> ... </div>
 ```
 
 ### Shrinking
@@ -1320,18 +1461,6 @@ Shrink a flexbox item.
 <div class="fb-5"> ... </div>
 <div class="fb-6"> ... </div>
 <div class="fb-7"> ... </div>
-```
-
-Alias flex shrink values.
-
-```html
-<div class="flex-1"> ... </div>
-<div class="flex-2"> ... </div>
-<div class="flex-3"> ... </div>
-<div class="flex-4"> ... </div>
-<div class="flex-5"> ... </div>
-<div class="flex-6"> ... </div>
-<div class="flex-7"> ... </div>
 ```
 
 ## Grid
