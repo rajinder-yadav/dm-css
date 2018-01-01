@@ -1,17 +1,20 @@
 // Position values
-.pos-t, .top {
+.top {
   top: 0 !important;
 }
-.pos-b, .bottom {
+.bottom {
   bottom: 0 !important;
 }
-.pos-l, .left {
+.left {
   left: 0 !important;
 }
-.pos-r, .right {
+.right {
   right: 0 !important;
 }
 // Z index positions
+.zauto {
+  z-index: auto !important;
+}
 .z0 {
   z-index: 0 !important;
 }

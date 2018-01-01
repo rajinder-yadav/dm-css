@@ -197,4 +197,15 @@ describe("Size", () => {
         .should("have.class", "z0");
     });
   });
+
+  context("Z index auto", () => {
+    it("Index auto", () => {
+      cy.get("#zauto")
+        .should("have.class", "zauto");
+      cy.get("#zauto>div:first-child")
+        .should("have.class", "zauto");
+      cy.get("#zauto>div:first-child").next()
+        .should("have.class", "zauto");
+    });
+  });
 });
