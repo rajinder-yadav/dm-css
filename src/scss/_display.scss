@@ -9,7 +9,7 @@
 $display_notations: none, inline, inline-block, block, flex, inline-flex, grid, inline-grid, table, table-row, table-cell;
 
 @each $n in $display_notations {
-  .d-#{$n} {
+  .d#{$n} {
     display: $n !important;
   }
 }
