@@ -1,108 +1,108 @@
 // Flex direction
-.flex-r, .flex-row, .fbr {
+.fbr {
   flex-direction: row !important;
 }
-.flex-l, .flex-rrow, .fbl {
+.fbl {
   flex-direction: row-reverse !important;
 }
-.flex-d, .flex-col, .fbd {
+.fbd {
   flex-direction: column !important;
 }
-.flex-u, .flex-rcol, .fbu {
+.fbu {
   flex-direction: column-reverse !important;
 }
 // Wrap mode
-.flex-nowrap, .fbnw {
+.fbnw {
   flex-wrap: nowrap !important;
 }
-.flex-wrap, .fbw {
+.fbw {
   flex-wrap: wrap !important;
 }
-.flex-rwrap, .fbrw {
+.fbrw {
   flex-wrap: wrap-reverse !important;
 }
 // Justify main axis
-.flex-js, .fbjs {
+.fbjs {
   justify-content: flex-start !important;
 }
-.flex-je, .fbje {
+.fbje {
   justify-content: flex-end !important;
 }
-.flex-jc, .fbjc {
+.fbjc {
   justify-content: center !important;
 }
-.flex-ja, .fbja {
+.fbja {
   justify-content: space-around !important;
 }
-.flex-jb, .fbjb {
+.fbjb {
   justify-content: space-between !important;
 }
 // Justify cross axis
-.flex-is, .fbis {
+.fbis {
   align-items: flex-start !important;
 }
-.flex-ie, .fbie {
+.fbie {
   align-items: flex-end !important;
 }
-.flex-ic, .fbic {
+.fbic {
   align-items: center !important;
 }
-.flex-ib, .fbic {
+.fbic {
   align-items: baseline !important;
 }
-.flex-ix, .fbix {
+.fbix {
   align-items: stretch !important;
 }
 // Justify everything
-.flex-cs, .fbcs {
+.fbcs {
   align-content: flex-start !important;
 }
-.flex-ce, .fbce {
+.fbce {
   align-content: flex-end !important;
 }
-.flex-cc, .fbcc {
+.fbcc {
   align-content: center !important;
 }
-.flex-cb, .fbcb {
+.fbcb {
   align-content: space-between !important;
 }
-.flex-ca, .fbca {
+.fbca {
   align-content: space-around !important;
 }
-.flex-cx, .fbcx {
+.fbcx {
   align-content: stretch !important;
 }
 // Justify self
-.flex-sa, .fbsa {
+.fbsa {
   align-self: auto !important;
 }
-.flex-ss, .fbss {
+.fbss {
   align-self: flex-start !important;
 }
-.flex-se, .fbse {
+.fbse {
   align-self: flex-end !important;
 }
-.flex-sc, .fbsc {
+.fbsc {
   align-self: center !important;
 }
-.flex-sb, .fbsb {
+.fbsb {
   align-self: baseline !important;
 }
-.flex-sx, .fbsx {
+.fbsx {
   align-self: stretch !important;
 }
 // Flex order, grow, shrink
 @for $n from 1 through 7 {
-  .order#{$n}, .fbo#{$n} {
+  .fbo#{$n} {
     order: $n !important;
   }
-  .order-#{$n}, .fbo-#{$n} {
+  .fbo-#{$n} {
     order: -#{$n} !important;
   }
-  .flex#{$n}, .fb#{$n} {
+  .fb#{$n} {
     flex-grow: $n !important;
   }
-  .flex-#{$n}, .fb-#{$n} {
+  .fb-#{$n} {
     flex-shrink: $n !important;
   }
 }
