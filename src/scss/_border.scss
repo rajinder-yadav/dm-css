@@ -1,5 +1,5 @@
 // Border edges
-@for $size from 0 through 4 {
+@for $size from 0 through 7 {
   .b#{$size} { 
     border: #{$size}px solid !important;
   }
@@ -45,34 +45,34 @@ $radius_scale: 0, 0.25, 0.404, 0.654, 1.051, 1.700, 2.75, 4.449;
 @each $rval in $radius_scale {
   $i: index($radius_scale, $rval);
 
-  .radius#{$i - 1} {
+  .r#{$i - 1} {
     border-radius: #{$rval}rem !important; 
   }
-  .tl-radius#{$i - 1} {
+  .rtl#{$i - 1} {
     border-top-left-radius: #{$rval}rem !important; 
   }
-  .tr-radius#{$i - 1} {
+  .rtr#{$i - 1} {
     border-top-right-radius: #{$rval}rem !important; 
   }
-  .bl-radius#{$i - 1} {
+  .rbl#{$i - 1} {
     border-bottom-left-radius: #{$rval}rem !important; 
   }
-  .br-radius#{$i - 1} {
+  .rbr#{$i - 1} {
     border-bottom-right-radius: #{$rval}rem !important; 
   }
-  .l-radius#{$i - 1} {
+  .rl#{$i - 1} {
     border-top-left-radius: #{$rval}rem !important; 
     border-bottom-left-radius: #{$rval}rem !important; 
   }
-  .r-radius#{$i - 1} {
+  .rr#{$i - 1} {
     border-top-right-radius: #{$rval}rem !important; 
     border-bottom-right-radius: #{$rval}rem !important; 
   }
-  .t-radius#{$i - 1} {
+  .rt#{$i - 1} {
     border-top-left-radius: #{$rval}rem !important; 
     border-top-right-radius: #{$rval}rem !important; 
   }
-  .b-radius#{$i - 1} {
+  .rb#{$i - 1} {
     border-bottom-left-radius: #{$rval}rem !important; 
     border-bottom-right-radius: #{$rval}rem !important; 
   }

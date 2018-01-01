@@ -44,6 +44,30 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-left-width", "4px")
         .should("have.css", "border-right-width", "4px");
     });
+    it("Border size 5px", () => {
+      cy.get("#b5")
+        .should("have.class", "b5")
+        .should("have.css", "border-top-width", "5px")
+        .should("have.css", "border-bottom-width", "5px")
+        .should("have.css", "border-left-width", "5px")
+        .should("have.css", "border-right-width", "5px");
+    });
+    it("Border size 6px", () => {
+      cy.get("#b6")
+        .should("have.class", "b6")
+        .should("have.css", "border-top-width", "6px")
+        .should("have.css", "border-bottom-width", "6px")
+        .should("have.css", "border-left-width", "6px")
+        .should("have.css", "border-right-width", "6px");
+    });
+    it("Border size 7px", () => {
+      cy.get("#b7")
+        .should("have.class", "b7")
+        .should("have.css", "border-top-width", "7px")
+        .should("have.css", "border-bottom-width", "7px")
+        .should("have.css", "border-left-width", "7px")
+        .should("have.css", "border-right-width", "7px");
+    });
   });
 
   context("Border size top", () => {
@@ -71,6 +95,21 @@ describe("Border Style-Notation", () => {
       cy.get("#bt4")
         .should("have.class", "bt4")
         .should("have.css", "border-top-width", "4px");
+    });
+    it("Border top size 5px", () => {
+      cy.get("#bt5")
+        .should("have.class", "bt5")
+        .should("have.css", "border-top-width", "5px");
+    });
+    it("Border top size 6px", () => {
+      cy.get("#bt6")
+        .should("have.class", "bt6")
+        .should("have.css", "border-top-width", "6px");
+    });
+    it("Border top size 7px", () => {
+      cy.get("#bt7")
+        .should("have.class", "bt7")
+        .should("have.css", "border-top-width", "7px");
     });
   });
 
@@ -100,6 +139,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "bb4")
         .should("have.css", "border-bottom-width", "4px");
     });
+    it("Border bottom size 5px", () => {
+      cy.get("#bb5")
+        .should("have.class", "bb5")
+        .should("have.css", "border-bottom-width", "5px");
+    });
+    it("Border bottom size 6px", () => {
+      cy.get("#bb6")
+        .should("have.class", "bb6")
+        .should("have.css", "border-bottom-width", "6px");
+    });
+    it("Border bottom size 7px", () => {
+      cy.get("#bb7")
+        .should("have.class", "bb7")
+        .should("have.css", "border-bottom-width", "7px");
+    });
   });
 
   context("Border size left", () => {
@@ -128,6 +182,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "bl4")
         .should("have.css", "border-left-width", "4px");
     });
+    it("Border left size 5px", () => {
+      cy.get("#bl5")
+        .should("have.class", "bl5")
+        .should("have.css", "border-left-width", "5px");
+    });
+    it("Border left size 6px", () => {
+      cy.get("#bl6")
+        .should("have.class", "bl6")
+        .should("have.css", "border-left-width", "6px");
+    });
+    it("Border left size 7px", () => {
+      cy.get("#bl7")
+        .should("have.class", "bl7")
+        .should("have.css", "border-left-width", "7px");
+    });
   });
 
   context("Border size right", () => {
@@ -155,6 +224,21 @@ describe("Border Style-Notation", () => {
       cy.get("#br4")
         .should("have.class", "br4")
         .should("have.css", "border-right-width", "4px");
+    });
+    it("Border right size 5px", () => {
+      cy.get("#br5")
+        .should("have.class", "br5")
+        .should("have.css", "border-right-width", "5px");
+    });
+    it("Border right size 6px", () => {
+      cy.get("#br6")
+        .should("have.class", "br6")
+        .should("have.css", "border-right-width", "6px");
+    });
+    it("Border right size 7px", () => {
+      cy.get("#br7")
+        .should("have.class", "br7")
+        .should("have.css", "border-right-width", "7px");
     });
   });
 
@@ -189,6 +273,24 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-left-width", "4px")
         .should("have.css", "border-right-width", "4px");
     });
+    it("Border left-right size 5px", () => {
+      cy.get("#bx5")
+        .should("have.class", "bx5")
+        .should("have.css", "border-left-width", "5px")
+        .should("have.css", "border-right-width", "5px");
+    });
+    it("Border left-right size 6px", () => {
+      cy.get("#bx6")
+        .should("have.class", "bx6")
+        .should("have.css", "border-left-width", "6px")
+        .should("have.css", "border-right-width", "6px");
+    });
+    it("Border left-right size 7px", () => {
+      cy.get("#bx7")
+        .should("have.class", "bx7")
+        .should("have.css", "border-left-width", "7px")
+        .should("have.css", "border-right-width", "7px");
+    });
 
     it("Border top-bottom size 1px", () => {
       cy.get("#by0")
@@ -219,6 +321,24 @@ describe("Border Style-Notation", () => {
         .should("have.class", "by4")
         .should("have.css", "border-top-width", "4px")
         .should("have.css", "border-bottom-width", "4px");
+    });
+    it("Border top-bottom size 5px", () => {
+      cy.get("#by5")
+        .should("have.class", "by5")
+        .should("have.css", "border-top-width", "5px")
+        .should("have.css", "border-bottom-width", "5px");
+    });
+    it("Border top-bottom size 6px", () => {
+      cy.get("#by6")
+        .should("have.class", "by6")
+        .should("have.css", "border-top-width", "6px")
+        .should("have.css", "border-bottom-width", "6px");
+    });
+    it("Border top-bottom size 7px", () => {
+      cy.get("#by7")
+        .should("have.class", "by7")
+        .should("have.css", "border-top-width", "7px")
+        .should("have.css", "border-bottom-width", "7px");
     });
   });
 
@@ -266,65 +386,65 @@ describe("Border Style-Notation", () => {
   });
 
   context("Border radius", () => {
-    it("Radius0", () => {
-      cy.get("#radius0")
-        .should("have.class", "radius0")
+    it("r0", () => {
+      cy.get("#r0")
+        .should("have.class", "r0")
         .should("have.css", "border-top-left-radius", "0px")
         .should("have.css", "border-top-right-radius", "0px")
         .should("have.css", "border-bottom-left-radius", "0px")
         .should("have.css", "border-bottom-right-radius", "0px");
     });
-    it("Radius1", () => {
-      cy.get("#radius1")
-        .should("have.class", "radius1")
+    it("r1", () => {
+      cy.get("#r1")
+        .should("have.class", "r1")
         .should("have.css", "border-top-left-radius", "4px")
         .should("have.css", "border-top-right-radius", "4px")
         .should("have.css", "border-bottom-left-radius", "4px")
         .should("have.css", "border-bottom-right-radius", "4px");
     });
-    it("Radius2", () => {
-      cy.get("#radius2")
-        .should("have.class", "radius2")
+    it("r2", () => {
+      cy.get("#r2")
+        .should("have.class", "r2")
         .should("have.css", "border-top-left-radius", "6.464px")
         .should("have.css", "border-top-right-radius", "6.464px")
         .should("have.css", "border-bottom-left-radius", "6.464px")
         .should("have.css", "border-bottom-right-radius", "6.464px");
     });
-    it("Radius3", () => {
-      cy.get("#radius3")
-        .should("have.class", "radius3")
+    it("r3", () => {
+      cy.get("#r3")
+        .should("have.class", "r3")
         .should("have.css", "border-top-left-radius", "10.464px")
         .should("have.css", "border-top-right-radius", "10.464px")
         .should("have.css", "border-bottom-left-radius", "10.464px")
         .should("have.css", "border-bottom-right-radius", "10.464px");
     });
-    it("Radius4", () => {
-      cy.get("#radius4")
-        .should("have.class", "radius4")
+    it("r4", () => {
+      cy.get("#r4")
+        .should("have.class", "r4")
         .should("have.css", "border-top-left-radius", "16.816px")
         .should("have.css", "border-top-right-radius", "16.816px")
         .should("have.css", "border-bottom-left-radius", "16.816px")
         .should("have.css", "border-bottom-right-radius", "16.816px");
     });
-    it("Radius5", () => {
-      cy.get("#radius5")
-        .should("have.class", "radius5")
+    it("r5", () => {
+      cy.get("#r5")
+        .should("have.class", "r5")
         .should("have.css", "border-top-left-radius", "27.2px")
         .should("have.css", "border-top-right-radius", "27.2px")
         .should("have.css", "border-bottom-left-radius", "27.2px")
         .should("have.css", "border-bottom-right-radius", "27.2px");
     });
-    it("Radius6", () => {
-      cy.get("#radius6")
-        .should("have.class", "radius6")
+    it("r6", () => {
+      cy.get("#r6")
+        .should("have.class", "r6")
         .should("have.css", "border-top-left-radius", "44px")
         .should("have.css", "border-top-right-radius", "44px")
         .should("have.css", "border-bottom-left-radius", "44px")
         .should("have.css", "border-bottom-right-radius", "44px");
     });
-    it("Radius7", () => {
-      cy.get("#radius7")
-        .should("have.class", "radius7")
+    it("r7", () => {
+      cy.get("#r7")
+        .should("have.class", "r7")
         .should("have.css", "border-top-left-radius", "71.184px")
         .should("have.css", "border-top-right-radius", "71.184px")
         .should("have.css", "border-bottom-left-radius", "71.184px")
@@ -334,166 +454,166 @@ describe("Border Style-Notation", () => {
 
   context("Border corner radius", () => {
     it("TL Radius0", () => {
-      cy.get("#tl-radius0")
-        .should("have.class", "tl-radius0")
+      cy.get("#rtl0")
+        .should("have.class", "rtl0")
         .should("have.css", "border-top-left-radius", "0px");
     });
     it("TL Radius1", () => {
-      cy.get("#tl-radius1")
-        .should("have.class", "tl-radius1")
+      cy.get("#rtl1")
+        .should("have.class", "rtl1")
         .should("have.css", "border-top-left-radius", "4px");
     });
     it("TL Radius2", () => {
-      cy.get("#tl-radius2")
-          .should("have.class", "tl-radius2")
+      cy.get("#rtl2")
+          .should("have.class", "rtl2")
           .should("have.css", "border-top-left-radius", "6.464px");
     });
     it("TL Radius3", () => {
-      cy.get("#tl-radius3")
-        .should("have.class", "tl-radius3")
+      cy.get("#rtl3")
+        .should("have.class", "rtl3")
         .should("have.css", "border-top-left-radius", "10.464px");
     });
     it("TL Radius4", () => {
-      cy.get("#tl-radius4")
-        .should("have.class", "tl-radius4")
+      cy.get("#rtl4")
+        .should("have.class", "rtl4")
         .should("have.css", "border-top-left-radius", "16.816px");
     });
     it("TL Radius5", () => {
-      cy.get("#tl-radius5")
-        .should("have.class", "tl-radius5")
+      cy.get("#rtl5")
+        .should("have.class", "rtl5")
         .should("have.css", "border-top-left-radius", "27.2px");
     });
     it("TL Radius6", () => {
-      cy.get("#tl-radius6")
-        .should("have.class", "tl-radius6")
+      cy.get("#rtl6")
+        .should("have.class", "rtl6")
         .should("have.css", "border-top-left-radius", "44px");
     });
     it("TL Radius7", () => {
-      cy.get("#tl-radius7")
-        .should("have.class", "tl-radius7")
+      cy.get("#rtl7")
+        .should("have.class", "rtl7")
         .should("have.css", "border-top-left-radius", "71.184px");
     });
 
     it("TR Radius0", () => {
-      cy.get("#tr-radius0")
-        .should("have.class", "tr-radius0")
+      cy.get("#rtr0")
+        .should("have.class", "rtr0")
         .should("have.css", "border-top-right-radius", "0px");
     });
     it("TR Radius1", () => {
-      cy.get("#tr-radius1")
-        .should("have.class", "tr-radius1")
+      cy.get("#rtr1")
+        .should("have.class", "rtr1")
         .should("have.css", "border-top-right-radius", "4px");
     });
     it("TR Radius2", () => {
-      cy.get("#tr-radius2")
-        .should("have.class", "tr-radius2")
+      cy.get("#rtr2")
+        .should("have.class", "rtr2")
         .should("have.css", "border-top-right-radius", "6.464px");
     });
     it("TR Radius3", () => {
-      cy.get("#tr-radius3")
-        .should("have.class", "tr-radius3")
+      cy.get("#rtr3")
+        .should("have.class", "rtr3")
         .should("have.css", "border-top-right-radius", "10.464px");
     });
     it("TR Radius4", () => {
-      cy.get("#tr-radius4")
-        .should("have.class", "tr-radius4")
+      cy.get("#rtr4")
+        .should("have.class", "rtr4")
         .should("have.css", "border-top-right-radius", "16.816px");
     });
     it("TR Radius5", () => {
-      cy.get("#tr-radius5")
-        .should("have.class", "tr-radius5")
+      cy.get("#rtr5")
+        .should("have.class", "rtr5")
         .should("have.css", "border-top-right-radius", "27.2px");
     });
     it("TR Radius6", () => {
-      cy.get("#tr-radius6")
-        .should("have.class", "tr-radius6")
+      cy.get("#rtr6")
+        .should("have.class", "rtr6")
         .should("have.css", "border-top-right-radius", "44px");
     });
     it("TR Radius7", () => {
-      cy.get("#tr-radius7")
-        .should("have.class", "tr-radius7")
+      cy.get("#rtr7")
+        .should("have.class", "rtr7")
         .should("have.css", "border-top-right-radius", "71.184px");
     });
 
     it("BL Radius0", () => {
-      cy.get("#bl-radius0")
-        .should("have.class", "bl-radius0")
+      cy.get("#rbl0")
+        .should("have.class", "rbl0")
         .should("have.css", "border-bottom-left-radius", "0px");
     });
     it("BL Radius1", () => {
-      cy.get("#bl-radius1")
-        .should("have.class", "bl-radius1")
+      cy.get("#rbl1")
+        .should("have.class", "rbl1")
         .should("have.css", "border-bottom-left-radius", "4px");
     });
     it("BL Radius2", () => {
-      cy.get("#bl-radius2")
-        .should("have.class", "bl-radius2")
+      cy.get("#rbl2")
+        .should("have.class", "rbl2")
         .should("have.css", "border-bottom-left-radius", "6.464px");
     });
     it("BL Radius3", () => {
-      cy.get("#bl-radius3")
-        .should("have.class", "bl-radius3")
+      cy.get("#rbl3")
+        .should("have.class", "rbl3")
         .should("have.css", "border-bottom-left-radius", "10.464px");
     });
     it("BL Radius4", () => {
-      cy.get("#bl-radius4")
-        .should("have.class", "bl-radius4")
+      cy.get("#rbl4")
+        .should("have.class", "rbl4")
         .should("have.css", "border-bottom-left-radius", "16.816px");
     });
     it("BL Radius5", () => {
-      cy.get("#bl-radius5")
-        .should("have.class", "bl-radius5")
+      cy.get("#rbl5")
+        .should("have.class", "rbl5")
         .should("have.css", "border-bottom-left-radius", "27.2px");
     });
     it("BL Radius6", () => {
-      cy.get("#bl-radius6")
-        .should("have.class", "bl-radius6")
+      cy.get("#rbl6")
+        .should("have.class", "rbl6")
         .should("have.css", "border-bottom-left-radius", "44px");
     });
     it("BL Radius7", () => {
-      cy.get("#bl-radius7")
-        .should("have.class", "bl-radius7")
+      cy.get("#rbl7")
+        .should("have.class", "rbl7")
         .should("have.css", "border-bottom-left-radius", "71.184px");
     });
 
     it("BR Radius0", () => {
-      cy.get("#br-radius0")
-        .should("have.class", "br-radius0")
+      cy.get("#rbr0")
+        .should("have.class", "rbr0")
         .should("have.css", "border-bottom-right-radius", "0px");
     });
     it("BR Radius1", () => {
-      cy.get("#br-radius1")
-        .should("have.class", "br-radius1")
+      cy.get("#rbr1")
+        .should("have.class", "rbr1")
         .should("have.css", "border-bottom-right-radius", "4px");
     });
     it("BR Radius2", () => {
-      cy.get("#br-radius2")
-        .should("have.class", "br-radius2")
+      cy.get("#rbr2")
+        .should("have.class", "rbr2")
         .should("have.css", "border-bottom-right-radius", "6.464px");
     });
     it("BR Radius3", () => {
-      cy.get("#br-radius3")
-        .should("have.class", "br-radius3")
+      cy.get("#rbr3")
+        .should("have.class", "rbr3")
         .should("have.css", "border-bottom-right-radius", "10.464px");
     });
     it("BR Radius4", () => {
-      cy.get("#br-radius4")
-        .should("have.class", "br-radius4")
+      cy.get("#rbr4")
+        .should("have.class", "rbr4")
         .should("have.css", "border-bottom-right-radius", "16.816px");
     });
     it("BR Radius5", () => {
-      cy.get("#br-radius5")
-        .should("have.class", "br-radius5")
+      cy.get("#rbr5")
+        .should("have.class", "rbr5")
         .should("have.css", "border-bottom-right-radius", "27.2px");
     });
     it("BR Radius6", () => {
-      cy.get("#br-radius6")
-        .should("have.class", "br-radius6")
+      cy.get("#rbr6")
+        .should("have.class", "rbr6")
         .should("have.css", "border-bottom-right-radius", "44px");
     });
     it("BR Radius7", () => {
-      cy.get("#br-radius7")
-        .should("have.class", "br-radius7")
+      cy.get("#rbr7")
+        .should("have.class", "rbr7")
         .should("have.css", "border-bottom-right-radius", "71.184px");
     });
   });
@@ -501,196 +621,196 @@ describe("Border Style-Notation", () => {
   context("Border face radius", () => {
 
     it("T Radius0", () => {
-      cy.get("#t-radius0")
-        .should("have.class", "t-radius0")
+      cy.get("#rt0")
+        .should("have.class", "rt0")
         .should("have.css", "border-top-left-radius", "0px")
         .should("have.css", "border-top-right-radius", "0px");
     });
     it("T Radius1", () => {
-      cy.get("#t-radius1")
-        .should("have.class", "t-radius1")
+      cy.get("#rt1")
+        .should("have.class", "rt1")
         .should("have.css", "border-top-left-radius", "4px")
         .should("have.css", "border-top-right-radius", "4px");
     });
     it("T Radius2", () => {
-      cy.get("#t-radius2")
-        .should("have.class", "t-radius2")
+      cy.get("#rt2")
+        .should("have.class", "rt2")
         .should("have.css", "border-top-left-radius", "6.464px")
         .should("have.css", "border-top-right-radius", "6.464px");
     });
     it("T Radius3", () => {
-      cy.get("#t-radius3")
-        .should("have.class", "t-radius3")
+      cy.get("#rt3")
+        .should("have.class", "rt3")
         .should("have.css", "border-top-left-radius", "10.464px")
         .should("have.css", "border-top-right-radius", "10.464px");
     });
     it("T Radius4", () => {
-      cy.get("#t-radius4")
-        .should("have.class", "t-radius4")
+      cy.get("#rt4")
+        .should("have.class", "rt4")
         .should("have.css", "border-top-left-radius", "16.816px")
         .should("have.css", "border-top-right-radius", "16.816px");
     });
     it("T Radius5", () => {
-      cy.get("#t-radius5")
-        .should("have.class", "t-radius5")
+      cy.get("#rt5")
+        .should("have.class", "rt5")
         .should("have.css", "border-top-left-radius", "27.2px")
         .should("have.css", "border-top-right-radius", "27.2px");
     });
     it("T Radius6", () => {
-      cy.get("#t-radius6")
-        .should("have.class", "t-radius6")
+      cy.get("#rt6")
+        .should("have.class", "rt6")
         .should("have.css", "border-top-left-radius", "44px")
         .should("have.css", "border-top-right-radius", "44px");
     });
     it("T Radius7", () => {
-      cy.get("#t-radius7")
-        .should("have.class", "t-radius7")
+      cy.get("#rt7")
+        .should("have.class", "rt7")
         .should("have.css", "border-top-left-radius", "71.184px")
         .should("have.css", "border-top-right-radius", "71.184px");
     });
 
     it("B Radius0", () => {
-      cy.get("#b-radius0")
-        .should("have.class", "b-radius0")
+      cy.get("#rb0")
+        .should("have.class", "rb0")
         .should("have.css", "border-bottom-left-radius", "0px")
         .should("have.css", "border-bottom-right-radius", "0px");
     });
     it("B Radius1", () => {
-      cy.get("#b-radius1")
-        .should("have.class", "b-radius1")
+      cy.get("#rb1")
+        .should("have.class", "rb1")
         .should("have.css", "border-bottom-left-radius", "4px")
         .should("have.css", "border-bottom-right-radius", "4px");
     });
     it("B Radius2", () => {
-      cy.get("#b-radius2")
-        .should("have.class", "b-radius2")
+      cy.get("#rb2")
+        .should("have.class", "rb2")
         .should("have.css", "border-bottom-left-radius", "6.464px")
         .should("have.css", "border-bottom-right-radius", "6.464px");
     });
     it("B Radius3", () => {
-      cy.get("#b-radius3")
-        .should("have.class", "b-radius3")
+      cy.get("#rb3")
+        .should("have.class", "rb3")
         .should("have.css", "border-bottom-left-radius", "10.464px")
         .should("have.css", "border-bottom-right-radius", "10.464px");
     });
     it("B Radius4", () => {
-      cy.get("#b-radius4")
-        .should("have.class", "b-radius4")
+      cy.get("#rb4")
+        .should("have.class", "rb4")
         .should("have.css", "border-bottom-left-radius", "16.816px")
         .should("have.css", "border-bottom-right-radius", "16.816px");
     });
     it("B Radius5", () => {
-      cy.get("#b-radius5")
-        .should("have.class", "b-radius5")
+      cy.get("#rb5")
+        .should("have.class", "rb5")
         .should("have.css", "border-bottom-left-radius", "27.2px")
         .should("have.css", "border-bottom-right-radius", "27.2px");
     });
     it("B Radius6", () => {
-      cy.get("#b-radius6")
-        .should("have.class", "b-radius6")
+      cy.get("#rb6")
+        .should("have.class", "rb6")
         .should("have.css", "border-bottom-left-radius", "44px")
         .should("have.css", "border-bottom-right-radius", "44px");
     });
     it("B Radius7", () => {
-      cy.get("#b-radius7")
-        .should("have.class", "b-radius7")
+      cy.get("#rb7")
+        .should("have.class", "rb7")
         .should("have.css", "border-bottom-left-radius", "71.184px")
         .should("have.css", "border-bottom-right-radius", "71.184px");
     });
 
     it("L Radius0", () => {
-      cy.get("#l-radius0")
-        .should("have.class", "l-radius0")
+      cy.get("#rl0")
+        .should("have.class", "rl0")
         .should("have.css", "border-top-left-radius", "0px")
         .should("have.css", "border-bottom-left-radius", "0px");
     });
     it("L Radius1", () => {
-      cy.get("#l-radius1")
-        .should("have.class", "l-radius1")
+      cy.get("#rl1")
+        .should("have.class", "rl1")
         .should("have.css", "border-top-left-radius", "4px")
         .should("have.css", "border-bottom-left-radius", "4px");
     });
     it("L Radius2", () => {
-      cy.get("#l-radius2")
-        .should("have.class", "l-radius2")
+      cy.get("#rl2")
+        .should("have.class", "rl2")
         .should("have.css", "border-top-left-radius", "6.464px")
         .should("have.css", "border-bottom-left-radius", "6.464px");
     });
     it("L Radius3", () => {
-      cy.get("#l-radius3")
-        .should("have.class", "l-radius3")
+      cy.get("#rl3")
+        .should("have.class", "rl3")
         .should("have.css", "border-top-left-radius", "10.464px")
         .should("have.css", "border-bottom-left-radius", "10.464px");
     });
     it("L Radius4", () => {
-      cy.get("#l-radius4")
-        .should("have.class", "l-radius4")
+      cy.get("#rl4")
+        .should("have.class", "rl4")
         .should("have.css", "border-top-left-radius", "16.816px")
         .should("have.css", "border-bottom-left-radius", "16.816px");
     });
     it("L Radius5", () => {
-      cy.get("#l-radius5")
-        .should("have.class", "l-radius5")
+      cy.get("#rl5")
+        .should("have.class", "rl5")
         .should("have.css", "border-top-left-radius", "27.2px")
         .should("have.css", "border-bottom-left-radius", "27.2px");
     });
     it("L Radius6", () => {
-      cy.get("#l-radius6")
-        .should("have.class", "l-radius6")
+      cy.get("#rl6")
+        .should("have.class", "rl6")
         .should("have.css", "border-top-left-radius", "44px")
         .should("have.css", "border-bottom-left-radius", "44px");
     });
     it("L Radius7", () => {
-      cy.get("#l-radius7")
-        .should("have.class", "l-radius7")
+      cy.get("#rl7")
+        .should("have.class", "rl7")
         .should("have.css", "border-top-left-radius", "71.184px")
         .should("have.css", "border-bottom-left-radius", "71.184px");
     });
     it("R Radius0", () => {
-      cy.get("#r-radius0")
-        .should("have.class", "r-radius0")
+      cy.get("#rr0")
+        .should("have.class", "rr0")
         .should("have.css", "border-top-right-radius", "0px")
         .should("have.css", "border-bottom-right-radius", "0px");
     });
     it("R Radius1", () => {
-      cy.get("#r-radius1")
-        .should("have.class", "r-radius1")
+      cy.get("#rr1")
+        .should("have.class", "rr1")
         .should("have.css", "border-top-right-radius", "4px")
         .should("have.css", "border-bottom-right-radius", "4px");
     });
     it("R Radius2", () => {
-      cy.get("#r-radius2")
-        .should("have.class", "r-radius2")
+      cy.get("#rr2")
+        .should("have.class", "rr2")
         .should("have.css", "border-top-right-radius", "6.464px")
         .should("have.css", "border-bottom-right-radius", "6.464px");
     });
     it("R Radius3", () => {
-      cy.get("#r-radius3")
-        .should("have.class", "r-radius3")
+      cy.get("#rr3")
+        .should("have.class", "rr3")
         .should("have.css", "border-top-right-radius", "10.464px")
         .should("have.css", "border-bottom-right-radius", "10.464px");
     });
     it("R Radius4", () => {
-      cy.get("#r-radius4")
-        .should("have.class", "r-radius4")
+      cy.get("#rr4")
+        .should("have.class", "rr4")
         .should("have.css", "border-top-right-radius", "16.816px")
         .should("have.css", "border-bottom-right-radius", "16.816px");
     });
     it("R Radius5", () => {
-      cy.get("#r-radius5")
-        .should("have.class", "r-radius5")
+      cy.get("#rr5")
+        .should("have.class", "rr5")
         .should("have.css", "border-top-right-radius", "27.2px")
         .should("have.css", "border-bottom-right-radius", "27.2px");
     });
     it("R Radius6", () => {
-      cy.get("#r-radius6")
-        .should("have.class", "r-radius6")
+      cy.get("#rr6")
+        .should("have.class", "rr6")
         .should("have.css", "border-top-right-radius", "44px")
         .should("have.css", "border-bottom-right-radius", "44px");
     });
     it("R Radius7", () => {
-      cy.get("#r-radius7")
-        .should("have.class", "r-radius7")
+      cy.get("#rr7")
+        .should("have.class", "rr7")
         .should("have.css", "border-top-right-radius", "71.184px")
         .should("have.css", "border-bottom-right-radius", "71.184px");
     });
