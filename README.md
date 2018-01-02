@@ -63,8 +63,11 @@
   - [Text overflow](#text-overflow)
 - [Utility](#utility)
   - [Visibility](#visibility)
+  - [Opacity](#opacity)
   - [Centering](#centering)
 - [Display](#display)
+  - [General CSS display styles](#general-css-display-styles)
+  - [CSS Table display styles](#css-table-display-styles)
 - [Lists](#lists)
   - [Bullet marks](#bullet-marks)
   - [Bullet placement](#bullet-placement)
@@ -90,7 +93,7 @@
 
 Powerful CSS styling made simple, fast and fun!
 
-Dyno Might CSS (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It was designed specifically to use simple and memorable Style-Notation that is specified in the "__class__" attribute.
+Dyno Might CSS (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It was designed specifically to use simple and memorable Style-Notation that is specified as a "__class__" attribute.
 
 Dyno Might CSS brings consistency to your HTML/JSX coding and allows you to quickly add CSS styles that are easy to read.
 
@@ -102,7 +105,7 @@ Dyno Might CSS resets CSS style setting using "__normalize.css__", a well accept
 
 The global Box Model is changed to use "__border-box__". This makes it easy for layout calculation and does not allow margin and padding values to grow outside the element box size.
 
-The Root Font family is set to "Roboto" with a height of 16px. This is the base (root) value used to calculate the size off other elements off. This is done by using the "__rem__" CSS unit.
+The Root Font family is set to "Roboto" with a height of 16px. This is the base value used to calculate the size of other elements. This is done by using the "__rem__" CSS unit.
 
 ### Benefits
 
@@ -111,8 +114,8 @@ Some of the features of Dyno Might CSS Toolkit you will enjoy.
 - Small size (~25KB).
 - Fast loading and blazing execution.
 - Robust and compact Style-Notation.
-- Consistent, easy to use and learn styles.
-- Designed for Designer, yet developer friendly!
+- Easy to use and learn styles.
+- Designed for Designers, yet developer friendly!
 - No side effects, works like your own custom CSS styles.
 - Tested with hundreds of Test cases (370+).
 
@@ -215,7 +218,7 @@ Style-Notations for using "content-box" and "border-box" respectively.
 <div class="bbox"> ... </div>
 ```
 
-__Recommendation__: Don't change the default Box Model for new projects.
+__Recommendation__: Do not change the default Box Model for new projects.
 
 ## CSS Borders
 
@@ -604,9 +607,11 @@ For automatic Z order positioning use "__zauto__", successive element are given 
 <span class="zauto"> ... </span>
 ```
 
-The default z-index value is 0, and goes up to 7.
+The default Z-index value is 0, and goes up to 7.
 
-Positive z-index values.
+__Pro tip__: Z indexing only work for elements with a position of "__relative__" or "__absolute__".
+
+Positive Z-index values.
 
 ```html
 <span class="z0"> ... </span>
@@ -619,7 +624,7 @@ Positive z-index values.
 <span class="z7"> ... </span>
 ```
 
-Nagative z-index values.
+Nagative Z-index values.
 
 ```html
 <span class="z-1"> ... </span>
@@ -659,7 +664,7 @@ Scale value for width and height range from 10% to 100% and incremented by 10.
 <div class="w100"> ... </div>
 ```
 
-Clear and reset an element minimum and maximum viewport size values.
+Clear and reset an element minimum and maximum Viewport size values.
 
 |Notation|Size dimension reset|
 |-|-|
@@ -1057,12 +1062,12 @@ Style-Notation "__ttnone__" should be used to reset existing text style when the
 
 ### Text wrapping
 
-This control if wrapping should occur when text overflows its viewport.
+This control if wrapping should occur when text overflows its Viewport.
 
 |Notation|Text flow mode|
 |-|-|
-|ttwrap|Wrap text outside its viewport|
-|ttnowrap|Allow text to flow outside its viewport|
+|ttwrap|Wrap text outside its Viewport|
+|ttnowrap|Allow text to flow outside its Viewport|
 
 ```html
 <div class="ttwrap"> ... </div>
@@ -1071,19 +1076,19 @@ This control if wrapping should occur when text overflows its viewport.
 
 ### Text overflow
 
-Specify text overflow behaviour when it is bigger than its display viewport.
+Specify text overflow behaviour when it is bigger than its display Viewport.
 
 |Notation|Text flow mode|
 |-|-|
-|ttoverflow|Allow text to overflow viewport|
+|ttoverflow|Allow text to overflow Viewport|
 |ttoverflow-auto|Add a scroll-bar when text overflows|
-|ttclip|Hide overflowed text outside viewport|
+|ttclip|Hide overflowed text outside Viewport|
 |ttscroll|Add a scroll-bar when text overflows|
 
 ```html
 <div class="ttoverflow"> Allow overflow </div>
 <div class="ttoverflow-auto"> Add scroll-bar when needed </div>
-<div class="ttclip"> Clip text outside viewport </div>
+<div class="ttclip"> Clip text outside Viewport </div>
 <div class="ttscroll"> Add scroll-bar </div>
 ```
 
@@ -1091,9 +1096,9 @@ Text overflow control for vertical direction, when lines wrap around.
 
 |Notation|Text vertical flow mode|
 |-|-|
-|ttoverflowy|Allow text to overflow viewport|
+|ttoverflowy|Allow text to overflow Viewport|
 |ttoverflowy-auto|Add a scroll-bar when text overflows|
-|ttclipy|Hide overflowed text outside viewport|
+|ttclipy|Hide overflowed text outside Viewport|
 |ttscrolly|Add a scroll-bar when text overflows|
 
 ```html
@@ -1107,9 +1112,9 @@ Text overflow control for horizontal direction.
 
 |Notation|Text horizontal flow mode|
 |-|-|
-|ttoverflowx|Allow text to overflow viewport|
+|ttoverflowx|Allow text to overflow Viewport|
 |ttoverflowx-auto|Add a scroll-bar when text overflows|
-|ttclipx|Hide overflowed text outside viewport|
+|ttclipx|Hide overflowed text outside Viewport|
 |ttscrollx|Add a scroll-bar when text overflows|
 
 ```html
@@ -1135,6 +1140,25 @@ Hide or show an element without affecting layout. Other displayed element will n
 ```html
 <div class="visible"> ... </div>
 <div class="invisible"> ... </div>
+```
+
+### Opacity
+
+Control the opacity of an element, and its descendents. A value or "0" (zero), is not visible, and a value of 7 is completely visible.
+
+|Notation|Value|Opacity|
+|-|-|-|
+|opacity|0-7|Higher value is more opaque|
+
+```html
+<div class="opacity0"> ... </div>
+<div class="opacity1"> ... </div>
+<div class="opacity2"> ... </div>
+<div class="opacity3"> ... </div>
+<div class="opacity4"> ... </div>
+<div class="opacity5"> ... </div>
+<div class="opacity6"> ... </div>
+<div class="opacity7"> ... </div>
 ```
 
 ### Centering
@@ -1171,17 +1195,18 @@ All descendant elements of hidden element are also removed.
 
 __Note:__ Styles "__hide__" is an alias for "__dnone__".
 
+### General CSS display styles
+
 |Notation|CSS display style|
 |-|-|
 |dnone|none|
 |dinline|inline|
-|dinline-block|inline-block|
+|diblock|inline-block|
 |dblock|block|
 |dflex|flex|
-|dinline-flex|inline-flex|
+|diflex|inline-flex|
 |dgrid|grid|
-|dinline-grid|inline-grid|
-
+|digrid|inline-grid|
 
 ```html
 <div class="dnone"> ... </div>
@@ -1192,6 +1217,60 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 <div class="dinline-flex"> ... </div>
 <div class="dgrid"> ... </div>
 <div class="dinline-grid"> ... </div>
+```
+
+### CSS Table display styles
+
+|Notation|CSS display style|
+|-|-|
+|dtable|table|
+|dtr|table-row|
+|dtd|table-cell|
+|dtcol|table-column|
+|dtcolg|table-column-group|
+|dtcap|table-caption|
+|dthead|table-header-group|
+|dtbody|table-row-group|
+|dtfoot|table-footer-group
+
+```html
+<div class="dtable"> ... </div>
+<div class="dtr"> ... </div>
+<div class="dtd"> ... </div>
+<div class="dtcol"> ... </div>
+<div class="dtcolg"> ... </div>
+<div class="dtcap"> ... </div>
+<div class="dthead"> ... </div>
+<div class="dtbody"> ... </div>
+<div class="dtfoot"> ... </div>
+```
+
+Using CSS table to layout a HTML Form.
+
+![Form](./images/form.png)
+
+```html
+<div class="bg w30 m4">
+  <form class="dtable w100 pr4">
+    <p class="dtcap ml3 pt3">Enter your full name and age.</p>
+    <div class="dtr">
+      <label class="pl3 dtd wauto" for="fname">First name:</label>
+      <input class="dtd w100" type="text" id="fname">
+    </div>
+    <div class="dtr">
+      <label class="pl3 dtd wauto" for="lname">Last name:</label>
+      <input class="dtd w100" type="text" id="lname">
+    </div>
+    <div class="dtr">
+      <label class="pl3 dtd wauto" for="age">Age:</label>
+      <input class="dtd w100" type="text" id="age">
+    </div>
+    <div class="dtr ttr">
+      <span class="dtd"></span>
+      <button class="dtd">Save</button>
+    </div>
+  </form>
+</div>
 ```
 
 ## Lists
@@ -1294,12 +1373,12 @@ The Style-Notation for Flexbox make it easy to do layout.
 
 ### Direction
 
-|Notation|Direction|
-|-|-|
-|fbl|Row (left)|
-|fbr|Row reverse (right)|
-|fbd|Column (down)|
-|fbu|Column reverse (up)|
+|Notation|Direction|Axis|
+|-|-|-|
+|fbl|Row (left)|Main|
+|fbr|Row reverse (right)|Main|
+|fbu|Column reverse (up)|Cross|
+|fbd|Column (down)|Cross|
 
 ```html
 <div class="fbl"> ... </div>
@@ -1315,7 +1394,6 @@ The Style-Notation for Flexbox make it easy to do layout.
 |fbw|Flex wrap|
 |fbnw|Flex no wrap|
 |fbrw|Flex reverse wrap|
-
 
 ```html
 <div class="fbw"> ... </div>
