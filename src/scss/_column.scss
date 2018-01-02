@@ -1,0 +1,21 @@
+// Base screen size starting with 2 columns is 1920px === 120rem
+$col_size: 120rem / 2;
+
+@for $count from 1 to 7 {
+  // Break points grid width sizes: 960, 640, 480, 384, 320, 274, 240
+  .col#{$count} {
+    column-count: $count;
+  }
+  .colf#{$count} {
+    column-width: #{$col_size / $count};
+  }
+}
+
+// Golden Ratio starting and skiping 2
+$col_gaps: 0, 3.236, 5.236, 8.47, 13.701, 22.18, 35.889, 58.069;
+@each $gap in $col_gaps {
+  $i: index($col_gaps, $gap);
+  .colgap#{$i - 1} {
+    column-gap: #{$gap}px;
+  }
+}
