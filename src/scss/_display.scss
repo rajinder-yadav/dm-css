@@ -6,10 +6,33 @@
   display: none !important;
 }
 
-$display_notations: none, inline, inline-block, block, flex, inline-flex, grid, inline-grid, table, table-row, table-cell;
-
-@each $n in $display_notations {
-  .d#{$n} {
-    display: $n !important;
+$display_notations: (
+  none: none, 
+  inline: inline,
+  iblock: inline-block, 
+  block: block, 
+  flex: flex, 
+  iflex: inline-flex, 
+  grid: grid, 
+  igrid: inline-grid, 
+  table: table, 
+  tr: table-row, 
+  td: table-cell, 
+  tcol: table-column,
+  tcolg: table-column-group,
+  tcap: table-caption,
+  thead: table-header-group, 
+  tbody: table-row-group, 
+  tfoot: table-footer-group
+);
+@each $notation, $style in $display_notations {
+  .d#{$notation} {
+    display: $style !important;
   }
+}
+.dtcapt {
+  caption-side: top !important;
+}
+.dtcapb {
+  caption-side: bottom !important;
 }
