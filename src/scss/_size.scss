@@ -21,10 +21,10 @@ $size_scales: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
   }
 }
 .hauto {
-  height: auto;
+  height: auto !important;
 }
 .wauto {
-  width: auto;
+  width: auto !important;
 }
 .wnomax {
   max-height: none !important;

@@ -2,41 +2,41 @@
 $bullet_notations: none, disc, square, circle, decimal;
 @each $b in $bullet_notations {
   .ls#{$b} {
-    list-style-type: $b !important;
+    list-style-type: $b;
   }
 }
 .lsalpha {
-  list-style-type: lower-alpha !important;
+  list-style-type: lower-alpha;
 }
 .lsroman {
-  list-style-type: lower-roman !important;
+  list-style-type: lower-roman;
 }
 // Location of bullet
 .lsinside {
-  list-style-position: inside !important;
+  list-style-position: inside;
 }
 .lsoutside {
-  list-style-position: outside !important;
+  list-style-position: outside;
 }
 // List orientation row or column
 .lsrow {
   list-style-type: none;
-  display: inline !important;
+  display: inline;
   li {
-    display: inline !important;
+    display: inline;
   }
 }
 .lscol {
-  display: block !important;
   list-style-type: none;
+  display: block;
   li {
-    display:list-item block !important;
+    display:list-item block;
   }
 }
 ul.lsreset {
   display: block !important;
-  list-style-type: initial !important;
-  list-style-position: initial !important;
+  list-style-type: revert !important;
+  list-style-position: revert !important;
   li {
     display:list-item block !important;
   }
@@ -44,7 +44,7 @@ ul.lsreset {
 ol.lsreset {
   display: block !important;
   list-style-type: decimal !important;
-  list-style-position: initial !important;
+  list-style-position: revert !important;
   li {
     display:list-item block !important;
   }
