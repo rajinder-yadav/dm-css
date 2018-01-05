@@ -95,3 +95,29 @@
 .ttscrollx {
   overflow-x: scroll !important;
 }
+.ttwb {
+  word-break: normal !important;
+}
+.ttwba {
+  word-break: break-all !important;
+}
+$line_heights: 0, 1, 1.25, 1.37, 1.5, 1.67, 1.85, 2;
+@each $h in $line_heights {
+  $i: index($line_heights, $h);
+  .ttlh#{$i - 1} {
+    line-height: #{$h}rem !important;
+  }
+}
+$nline_heights: 0.85, 0.67, 0.5, 0.37, 0.25, 0.15, 0.07;
+@each $h in $nline_heights {
+  $i: index($nline_heights, $h);
+  .ttlh-#{$i} {
+    line-height: #{$h}rem !important;
+  }
+}
+.ttltr {
+  direction: ltr !important;
+}
+.ttrtl {
+  direction: rtl !important;
+}
