@@ -8,7 +8,7 @@
     display: none !important;
   }
   .show-xs {
-    display: initial !important;
+    display: revert !important;
   }
 }
 // sm
@@ -17,7 +17,7 @@
     display: none !important;
   }
   .show-sm, .show-xs {
-    display: initial !important;
+    display: revert !important;
   }
 }
 // md
@@ -26,7 +26,7 @@
     display: none !important;
   }
   .show-md, .show-sm, .show-xs {
-    display: initial !important;
+    display: revert !important;
   }
 }
 // lg
@@ -35,7 +35,7 @@
     display: none !important;
   }
   .show-lg, .show-md, .show-sm, .show-xs {
-    display: initial !important;
+    display: revert !important;
   }
 }
 // xl
@@ -44,6 +44,6 @@
     display: none !important;
   }
   .show-xl, .show-lg, .show-md, .show-sm, .show-xs {
-    display: initial !important;
+    display: revert !important;
   }
 }
