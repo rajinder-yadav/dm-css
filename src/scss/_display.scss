@@ -1,6 +1,6 @@
 // Display (supported)
 .show {
-  display: initial !important;
+  display: revert !important;
 }
 .hide {
   display: none !important;
@@ -31,8 +31,8 @@ $display_notations: (
   }
 }
 .dtcapt {
-  caption-side: top !important;
+  caption-side: top;
 }
 .dtcapb {
-  caption-side: bottom !important;
+  caption-side: bottom;
 }
