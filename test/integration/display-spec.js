@@ -7,7 +7,7 @@ describe("Display", () => {
   it("show", () => {
     cy.get("#show")
       .should("have.class", "show")
-      .should("have.css", "display", "inline")
+      .should("have.css", "display", "block")
       .should("be.visible");
   });
   it("hide", () => {
