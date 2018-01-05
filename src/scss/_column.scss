@@ -10,12 +10,20 @@ $col_size: 120rem / 2;
     column-width: #{$col_size / $count};
   }
 }
-
+.colauto {
+  column-width: auto;
+}
+.colfauto {
+  column-width: auto;
+}
+.colsa {
+  column-span: all;
+}
 // Golden Ratio starting and skiping 2
-$col_gaps: 0, 3.236, 5.236, 8.47, 13.701, 22.18, 35.889, 58.069;
+$col_gaps: 0, 0.1875, 0.3125, 0.5, 0.875, 1.375, 2.25, 3.625;
 @each $gap in $col_gaps {
   $i: index($col_gaps, $gap);
   .colgap#{$i - 1} {
-    column-gap: #{$gap}px;
+    column-gap: #{$gap}rem;
   }
 }
