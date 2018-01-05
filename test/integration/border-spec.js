@@ -421,26 +421,26 @@ describe("Border Style-Notation", () => {
     it("r4", () => {
       cy.get("#r4")
         .should("have.class", "r4")
-        .should("have.css", "border-top-left-radius", "16.816px")
-        .should("have.css", "border-top-right-radius", "16.816px")
-        .should("have.css", "border-bottom-left-radius", "16.816px")
-        .should("have.css", "border-bottom-right-radius", "16.816px");
+        .should("have.css", "border-top-left-radius", "16.944px")
+        .should("have.css", "border-top-right-radius", "16.944px")
+        .should("have.css", "border-bottom-left-radius", "16.944px")
+        .should("have.css", "border-bottom-right-radius", "16.944px");
     });
     it("r5", () => {
       cy.get("#r5")
         .should("have.class", "r5")
-        .should("have.css", "border-top-left-radius", "27.2px")
-        .should("have.css", "border-top-right-radius", "27.2px")
-        .should("have.css", "border-bottom-left-radius", "27.2px")
-        .should("have.css", "border-bottom-right-radius", "27.2px");
+        .should("have.css", "border-top-left-radius", "27.408px")
+        .should("have.css", "border-top-right-radius", "27.408px")
+        .should("have.css", "border-bottom-left-radius", "27.408px")
+        .should("have.css", "border-bottom-right-radius", "27.408px");
     });
     it("r6", () => {
       cy.get("#r6")
         .should("have.class", "r6")
-        .should("have.css", "border-top-left-radius", "44px")
-        .should("have.css", "border-top-right-radius", "44px")
-        .should("have.css", "border-bottom-left-radius", "44px")
-        .should("have.css", "border-bottom-right-radius", "44px");
+        .should("have.css", "border-top-left-radius", "44.32px")
+        .should("have.css", "border-top-right-radius", "44.32px")
+        .should("have.css", "border-bottom-left-radius", "44.32px")
+        .should("have.css", "border-bottom-right-radius", "44.32px");
     });
     it("r7", () => {
       cy.get("#r7")
@@ -476,17 +476,17 @@ describe("Border Style-Notation", () => {
     it("TL Radius4", () => {
       cy.get("#rtl4")
         .should("have.class", "rtl4")
-        .should("have.css", "border-top-left-radius", "16.816px");
+        .should("have.css", "border-top-left-radius", "16.944px");
     });
     it("TL Radius5", () => {
       cy.get("#rtl5")
         .should("have.class", "rtl5")
-        .should("have.css", "border-top-left-radius", "27.2px");
+        .should("have.css", "border-top-left-radius", "27.408px");
     });
     it("TL Radius6", () => {
       cy.get("#rtl6")
         .should("have.class", "rtl6")
-        .should("have.css", "border-top-left-radius", "44px");
+        .should("have.css", "border-top-left-radius", "44.32px");
     });
     it("TL Radius7", () => {
       cy.get("#rtl7")
@@ -517,17 +517,17 @@ describe("Border Style-Notation", () => {
     it("TR Radius4", () => {
       cy.get("#rtr4")
         .should("have.class", "rtr4")
-        .should("have.css", "border-top-right-radius", "16.816px");
+        .should("have.css", "border-top-right-radius", "16.944px");
     });
     it("TR Radius5", () => {
       cy.get("#rtr5")
         .should("have.class", "rtr5")
-        .should("have.css", "border-top-right-radius", "27.2px");
+        .should("have.css", "border-top-right-radius", "27.408px");
     });
     it("TR Radius6", () => {
       cy.get("#rtr6")
         .should("have.class", "rtr6")
-        .should("have.css", "border-top-right-radius", "44px");
+        .should("have.css", "border-top-right-radius", "44.32px");
     });
     it("TR Radius7", () => {
       cy.get("#rtr7")
@@ -558,17 +558,17 @@ describe("Border Style-Notation", () => {
     it("BL Radius4", () => {
       cy.get("#rbl4")
         .should("have.class", "rbl4")
-        .should("have.css", "border-bottom-left-radius", "16.816px");
+        .should("have.css", "border-bottom-left-radius", "16.944px");
     });
     it("BL Radius5", () => {
       cy.get("#rbl5")
         .should("have.class", "rbl5")
-        .should("have.css", "border-bottom-left-radius", "27.2px");
+        .should("have.css", "border-bottom-left-radius", "27.408px");
     });
     it("BL Radius6", () => {
       cy.get("#rbl6")
         .should("have.class", "rbl6")
-        .should("have.css", "border-bottom-left-radius", "44px");
+        .should("have.css", "border-bottom-left-radius", "44.32px");
     });
     it("BL Radius7", () => {
       cy.get("#rbl7")
@@ -599,17 +599,17 @@ describe("Border Style-Notation", () => {
     it("BR Radius4", () => {
       cy.get("#rbr4")
         .should("have.class", "rbr4")
-        .should("have.css", "border-bottom-right-radius", "16.816px");
+        .should("have.css", "border-bottom-right-radius", "16.944px");
     });
     it("BR Radius5", () => {
       cy.get("#rbr5")
         .should("have.class", "rbr5")
-        .should("have.css", "border-bottom-right-radius", "27.2px");
+        .should("have.css", "border-bottom-right-radius", "27.408px");
     });
     it("BR Radius6", () => {
       cy.get("#rbr6")
         .should("have.class", "rbr6")
-        .should("have.css", "border-bottom-right-radius", "44px");
+        .should("have.css", "border-bottom-right-radius", "44.32px");
     });
     it("BR Radius7", () => {
       cy.get("#rbr7")
@@ -647,20 +647,20 @@ describe("Border Style-Notation", () => {
     it("T Radius4", () => {
       cy.get("#rt4")
         .should("have.class", "rt4")
-        .should("have.css", "border-top-left-radius", "16.816px")
-        .should("have.css", "border-top-right-radius", "16.816px");
+        .should("have.css", "border-top-left-radius", "16.944px")
+        .should("have.css", "border-top-right-radius", "16.944px");
     });
     it("T Radius5", () => {
       cy.get("#rt5")
         .should("have.class", "rt5")
-        .should("have.css", "border-top-left-radius", "27.2px")
-        .should("have.css", "border-top-right-radius", "27.2px");
+        .should("have.css", "border-top-left-radius", "27.408px")
+        .should("have.css", "border-top-right-radius", "27.408px");
     });
     it("T Radius6", () => {
       cy.get("#rt6")
         .should("have.class", "rt6")
-        .should("have.css", "border-top-left-radius", "44px")
-        .should("have.css", "border-top-right-radius", "44px");
+        .should("have.css", "border-top-left-radius", "44.32px")
+        .should("have.css", "border-top-right-radius", "44.32px");
     });
     it("T Radius7", () => {
       cy.get("#rt7")
@@ -696,20 +696,20 @@ describe("Border Style-Notation", () => {
     it("B Radius4", () => {
       cy.get("#rb4")
         .should("have.class", "rb4")
-        .should("have.css", "border-bottom-left-radius", "16.816px")
-        .should("have.css", "border-bottom-right-radius", "16.816px");
+        .should("have.css", "border-bottom-left-radius", "16.944px")
+        .should("have.css", "border-bottom-right-radius", "16.944px");
     });
     it("B Radius5", () => {
       cy.get("#rb5")
         .should("have.class", "rb5")
-        .should("have.css", "border-bottom-left-radius", "27.2px")
-        .should("have.css", "border-bottom-right-radius", "27.2px");
+        .should("have.css", "border-bottom-left-radius", "27.408px")
+        .should("have.css", "border-bottom-right-radius", "27.408px");
     });
     it("B Radius6", () => {
       cy.get("#rb6")
         .should("have.class", "rb6")
-        .should("have.css", "border-bottom-left-radius", "44px")
-        .should("have.css", "border-bottom-right-radius", "44px");
+        .should("have.css", "border-bottom-left-radius", "44.32px")
+        .should("have.css", "border-bottom-right-radius", "44.32px");
     });
     it("B Radius7", () => {
       cy.get("#rb7")
@@ -745,20 +745,20 @@ describe("Border Style-Notation", () => {
     it("L Radius4", () => {
       cy.get("#rl4")
         .should("have.class", "rl4")
-        .should("have.css", "border-top-left-radius", "16.816px")
-        .should("have.css", "border-bottom-left-radius", "16.816px");
+        .should("have.css", "border-top-left-radius", "16.944px")
+        .should("have.css", "border-bottom-left-radius", "16.944px");
     });
     it("L Radius5", () => {
       cy.get("#rl5")
         .should("have.class", "rl5")
-        .should("have.css", "border-top-left-radius", "27.2px")
-        .should("have.css", "border-bottom-left-radius", "27.2px");
+        .should("have.css", "border-top-left-radius", "27.408px")
+        .should("have.css", "border-bottom-left-radius", "27.408px");
     });
     it("L Radius6", () => {
       cy.get("#rl6")
         .should("have.class", "rl6")
-        .should("have.css", "border-top-left-radius", "44px")
-        .should("have.css", "border-bottom-left-radius", "44px");
+        .should("have.css", "border-top-left-radius", "44.32px")
+        .should("have.css", "border-bottom-left-radius", "44.32px");
     });
     it("L Radius7", () => {
       cy.get("#rl7")
@@ -793,20 +793,20 @@ describe("Border Style-Notation", () => {
     it("R Radius4", () => {
       cy.get("#rr4")
         .should("have.class", "rr4")
-        .should("have.css", "border-top-right-radius", "16.816px")
-        .should("have.css", "border-bottom-right-radius", "16.816px");
+        .should("have.css", "border-top-right-radius", "16.944px")
+        .should("have.css", "border-bottom-right-radius", "16.944px");
     });
     it("R Radius5", () => {
       cy.get("#rr5")
         .should("have.class", "rr5")
-        .should("have.css", "border-top-right-radius", "27.2px")
-        .should("have.css", "border-bottom-right-radius", "27.2px");
+        .should("have.css", "border-top-right-radius", "27.408px")
+        .should("have.css", "border-bottom-right-radius", "27.408px");
     });
     it("R Radius6", () => {
       cy.get("#rr6")
         .should("have.class", "rr6")
-        .should("have.css", "border-top-right-radius", "44px")
-        .should("have.css", "border-bottom-right-radius", "44px");
+        .should("have.css", "border-top-right-radius", "44.32px")
+        .should("have.css", "border-bottom-right-radius", "44.32px");
     });
     it("R Radius7", () => {
       cy.get("#rr7")
