@@ -41,10 +41,10 @@
 .ttcaps {
   text-transform: capitalize !important;
 }
-.ttupcase {
+.ttup {
   text-transform: uppercase !important;
 }
-.ttlowcase {
+.ttlow {
   text-transform: lowercase !important;
 }
 .ttnone  {
@@ -59,10 +59,10 @@
   white-space: nowrap !important;
 }
 // How to deal with overflow content
-.ttoverflow {
+.ttof {
   overflow: visible !important;
 }
-.ttoverflow-auto {
+.ttofa {
   overflow: auto !important;
 }
 .ttclip {
@@ -71,10 +71,10 @@
 .ttscroll {
   overflow: scroll !important;
 }
-.ttoverflowy {
+.ttofy {
   overflow-y: visible !important;
 }
-.ttoverflowy-auto {
+.ttofya {
   overflow-y: auto !important;
 }
 .ttclipy {
@@ -83,10 +83,10 @@
 .ttscrolly {
   overflow-y: scroll !important;
 }
-.ttoverflowx {
+.ttofx {
   overflow-x: visible !important;
 }
-.ttoverflowx-auto {
+.ttofxa {
   overflow-x: auto !important;
 }
 .ttclipx {
