@@ -1,4 +1,5 @@
 // Heading scaled based on Major Third Ratio.
+// WARNING! .h is also used for height sizes for values from 10 - 100.
 $heading_scale: 3.052, 2.441, 1.953, 1.563, 1.25, 1;
 @each $hval in $heading_scale {
   $i: index($heading_scale, $hval);
