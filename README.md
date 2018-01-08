@@ -12,16 +12,18 @@
 
 - [Introduction](#introduction)
 - [CSS Resets](#css-resets)
-  - [Benefits](#benefits)
-  - [Basic usage](#basic-usage)
+- [Benefits](#benefits)
+- [Basic usage](#basic-usage)
 - [Setup](#setup)
   - [Starter HTML file](#starter-html-file)
   - [Install as NPM module](#install-as-npm-module)
   - [Use the CDN](#use-the-cdn)
-  - [Box Model](#box-model)
+- [Mental model for Style-Notation](#mental-model-for-style-notation)
+  - [Sacred Seven](#sacred-seven)
+- [Box Model](#box-model)
 - [CSS Borders](#css-borders)
   - [Border values](#border-values)
-  - [Border Style-Notation](#border-style-notation)
+  - [Border](#border)
   - [Border top](#border-top)
   - [Border bottom](#border-bottom)
   - [Border left](#border-left)
@@ -29,26 +31,26 @@
   - [Border top and bottom sides](#border-top-and-bottom-sides)
   - [Border left and right sides](#border-left-and-right-sides)
   - [Removing Borders](#removing-borders)
-- [Border Radius](#border-radius)
-- [Radius on all corners](#radius-on-all-corners)
+  - [Border Radius](#border-radius)
+  - [Radius on all corners](#radius-on-all-corners)
   - [Corner Radius](#corner-radius)
   - [Face Radius](#face-radius)
   - [Border line style](#border-line-style)
   - [Circle Radius](#circle-radius)
   - [Pill styles borders](#pill-styles-borders)
 - [Positioning an Element](#positioning-an-element)
-- [Position](#position)
+  - [Position](#position)
   - [Z-Index](#z-index)
 - [Size](#size)
 - [Spacing](#spacing)
-  - [Padding](#padding)
+- [Padding](#padding)
   - [Padding top](#padding-top)
   - [Padding bottom](#padding-bottom)
   - [Padding left](#padding-left)
   - [Padding right](#padding-right)
   - [Padding top and bottom sides](#padding-top-and-bottom-sides)
   - [Padding left and right sides](#padding-left-and-right-sides)
-  - [Margins](#margins)
+- [Margins](#margins)
 - [Font](#font)
   - [Height scaling up](#height-scaling-up)
   - [Heading](#heading)
@@ -63,7 +65,7 @@
   - [Text overflow](#text-overflow)
   - [Text Word break](#text-word-break)
   - [Text line height](#text-line-height)
-- [Text direction](#text-direction)
+  - [Text direction](#text-direction)
 - [Utility](#utility)
   - [Visibility](#visibility)
   - [Opacity](#opacity)
@@ -76,21 +78,21 @@
 - [Lists](#lists)
   - [Bullet marks](#bullet-marks)
   - [Bullet placement](#bullet-placement)
-- [List orientation](#list-orientation)
+  - [List orientation](#list-orientation)
   - [List style reset](#list-style-reset)
 - [Floats](#floats)
   - [Clearfix](#clearfix)
 - [CSS Columns](#css-columns)
 - [Flexbox](#flexbox)
-  - [Direction](#direction)
+  - [Flex direction](#flex-direction)
   - [Wrap mode](#wrap-mode)
   - [Justify main axis](#justify-main-axis)
   - [Justify cross axis](#justify-cross-axis)
   - [Vertical align content](#vertical-align-content)
   - [Item vertical align](#item-vertical-align)
-  - [Ordering](#ordering)
-  - [Growing](#growing)
-  - [Shrinking](#shrinking)
+  - [Flex ordering](#flex-ordering)
+  - [Growing Flex item](#growing-flex-item)
+  - [Shrinking Flex item](#shrinking-flex-item)
 - [Grid](#grid)
 - [Responsive Design](#responsive-design)
 
@@ -113,7 +115,7 @@ The global Box Model is changed to use "__border-box__". This makes it easy for 
 
 The Root Font family is set to "Roboto" with a height of 16px. This is the base value used to calculate the size of other elements. This is done by using the "__rem__" CSS unit.
 
-### Benefits
+## Benefits
 
 Some of the features of Dyno Might CSS Toolkit you will enjoy.
 
@@ -125,7 +127,7 @@ Some of the features of Dyno Might CSS Toolkit you will enjoy.
 - No side effects, works like your own custom CSS styles.
 - Tested with hundreds of Test cases (370+).
 
-### Basic usage
+## Basic usage
 
 Dyno Might CSS Style-Notation are added to the "__class__" attribute of an element's HTML Tag.
 
@@ -213,7 +215,28 @@ Example usage for Dyno Might CSS version 2.0.0.
 <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.0/css/dm.min.css" rel="stylesheet">
 ```
 
-### Box Model
+## Mental model for Style-Notation
+
+Here are some general mnemonics to help make sense and remember the style notation used. The Style-Notation weew intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this also helps keep the overall line length much shoter than if long descriptive words were used as Style-Notation.
+
+|Mnemonic|Description|
+|-|-|
+|t|Top|
+|b|Bottom|
+|l|Left|
+|r|Right|
+|x|Left and right (horizontal), with Flexbox "x" means expand (stretch)|
+|y|Top and bottom (vertical)|
+
+![mental model](./images/mnemonix-box.png)
+
+For each Style-Notation category, its mnemonic (lable) will be listed. This will help with early retention, and over general use of a few times the Style-Notation will become muscle memory.
+
+### Sacred Seven
+
+Dyno Might CSS adhears to the "__Sacred Seven__" when it comes to value ranges. A value of zero "0", is used to reset or clear the style.
+
+## Box Model
 
 Dyno Might CSS defaults to using the "__border-box__" Box Model. You can however change this.
 
@@ -252,6 +275,22 @@ The postfix value for a border denotes the thickness of the border line.
 
 A value of "0" (zero) indicates no border. You would use this to remove borders from a element that may already have borders.
 
+__Mnemonic__: b = border
+
+|Notation|Values|Border sides|
+|-|-|-|
+|b|0-7|Border on all sides|
+|bt|0-7|Border on top|
+|bb|0-7|Border on bottom|
+|bl|0-7|Border on left|
+|br|0-7|Border on right|
+|by|0-7|Border on top and bottom|
+|bx|0-7|Border on left and right|
+
+### Border
+
+Border thickness value ranger from 0 to 7.
+
 ![borders](images/borders.png)
 
 ```html
@@ -265,21 +304,9 @@ A value of "0" (zero) indicates no border. You would use this to remove borders 
 <div class="b7"> ... </div>
 ```
 
-### Border Style-Notation
-
-Border thickness value ranger from 0 to 7.
-
-|Notation|Values|Border sides|
-|-|-|-|
-|b|0-7|Border on all sides|
-|bt|0-7|Border on top|
-|bb|0-7|Border on bottom|
-|bl|0-7|Border on left|
-|br|0-7|Border on right|
-|by|0-7|Border on top and bottom|
-|bx|0-7|Border on left and right|
-
 ### Border top
+
+__Mnemonic__: b = border
 
 ![border](images/border-top.png)
 
@@ -296,6 +323,8 @@ Border thickness value ranger from 0 to 7.
 
 ### Border bottom
 
+__Mnemonic__: b = border
+
 ![border](images/border-bottom.png)
 
 ```html
@@ -310,6 +339,8 @@ Border thickness value ranger from 0 to 7.
 ```
 
 ### Border left
+
+__Mnemonic__: b = border
 
 ![border](images/border-left.png)
 
@@ -326,6 +357,8 @@ Border thickness value ranger from 0 to 7.
 
 ### Border right
 
+__Mnemonic__: b = border
+
 ![border](images/border-right.png)
 
 ```html
@@ -341,6 +374,8 @@ Border thickness value ranger from 0 to 7.
 
 ### Border top and bottom sides
 
+__Mnemonic__: b = border
+
 ![by1](images/by.png)
 
 ```html
@@ -355,6 +390,8 @@ Border thickness value ranger from 0 to 7.
 ```
 
 ### Border left and right sides
+
+__Mnemonic__: b = border
 
 ![bx1](images/bx.png)
 
@@ -374,6 +411,8 @@ Border thickness value ranger from 0 to 7.
 There may be times you wish to remove a border from one or all sides.
 
 To do this, use a value of "0" (zero) with one of border Style-Notation.
+
+__Mnemonic__: b = border
 
 ```html
 <div class="b0"> ... </div>
@@ -395,7 +434,7 @@ You can use a combination of border styles to add then remove borders.
 
 Add borders to all sides and clear the border on the right side.
 
-## Border Radius
+### Border Radius
 
 Border corners can be given a radius value to round out the corners.
 
@@ -404,11 +443,13 @@ Border corners can be given a radius value to round out the corners.
 
 A radius value of "0" (zero) will reset "round" borders to have square corners.
 
+__Mnemonic__: r = radius
+
 |Notation|Values|Radius side|
 |-|-|-|
 |r|0-7|All radius|
 
-## Radius on all corners
+### Radius on all corners
 
 ![radius](images/radius.png)
 
@@ -431,6 +472,8 @@ Radius size is always consistent as shown below for larger dimensions.
 
 You can set the border value for each individual corner using the following Style-Notation.
 
+__Mnemonic__: r = radius
+
 |Notation|Values|Radius corner|
 |-|-|-|
 |rtl|0-7|Top left|
@@ -450,6 +493,8 @@ You can set the border value for each individual corner using the following Styl
 ### Face Radius
 
 The face radius covers each side of the Box Model to have round corners.
+
+__Mnemonic__: r = radius
 
 |Notation|Values|Radius face|
 |-|-|-|
@@ -570,7 +615,7 @@ Most browsers all an element to be re-positioned relative to its default positio
 
 Dyno Might CSS make positioning elements simple.
 
-## Position
+### Position
 
 An element position property can be changed to one of the following CSS styles.
 
@@ -605,6 +650,8 @@ An element position property can be changed to one of the following CSS styles.
 ### Z-Index
 
 Specify the Z order of element positioning. Positive Z values move an element in-front of stacked element, while negative Z value move an element behind stacked elements.
+
+__Mnemonic__: z = Z-Index
 
 |Notation|Values|Z Index|
 |-|-|-|
@@ -653,6 +700,8 @@ Set the size of the element "__viewport__".
 
 Scale value for width and height range from 10% to 100% and incremented by 10.
 
+__Mnemonic__: w = width, h = height
+
 |Notation|Values|Size dimension|
 |-|-|-|
 |w|10-100|Set width percentage|
@@ -676,6 +725,8 @@ Scale value for width and height range from 10% to 100% and incremented by 10.
 ```
 
 Clear and reset an element minimum and maximum Viewport size values.
+
+__Mnemonic__: w = width, h = height
 
 |Notation|Size dimension reset|
 |-|-|
@@ -713,7 +764,9 @@ In CSS, inline elements like "__\<span\>__" or "__\<i\>__" inherit their height 
 
 Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimately how this will affect setting their width and height. Otherwise this can lead to some confusion as it will seem the style changes are not working.
 
-### Padding
+## Padding
+
+__Mnemonic__: p = padding
 
 |Notation|Values|Padding sides|
 |-|-|-|
@@ -744,6 +797,8 @@ Add padding to the top.
 
 ![pad top](/images/pad-top.png)
 
+__Mnemonic__: p = padding
+
 ```html
 <div class="pt0">Padding top size 0</div>
 <div class="pt1">Padding top size 1</div>
@@ -760,6 +815,8 @@ Add padding to the top.
 Add padding to the bottom.
 
 ![pad bottom](/images/pad-bottom.png)
+
+__Mnemonic__: p = padding
 
 ```html
 <div class="pb0">Padding bottom size 0</div>
@@ -778,6 +835,8 @@ Add padding to the left.
 
 ![pad left](/images/pad-left.png)
 
+__Mnemonic__: p = padding
+
 ```html
 <div class="pl0">Padding left size 0</div>
 <div class="pl1">Padding left size 1</div>
@@ -794,6 +853,8 @@ Add padding to the left.
 Add padding to the right.
 
 ![pad right](/images/pad-right.png)
+
+__Mnemonic__: p = padding
 
 ```html
 <div class="pr0">Padding right size 0</div>
@@ -812,6 +873,8 @@ Add padding to the both the top and bottom sides.
 
 ![pad y](/images/pad-y.png)
 
+__Mnemonic__: p = padding
+
 ```html
 <span class="py0">Padding top and bottom size 0</span>
 <span class="py1">Padding top and bottom size 1</span>
@@ -829,6 +892,8 @@ Add padding to the both the left and right sides.
 
 ![pad x](/images/pad-x.png)
 
+__Mnemonic__: p = padding
+
 ```html
 <span class="px0">Padding left and right size 0</span>
 <span class="px1">Padding left and right size 1</span>
@@ -840,9 +905,11 @@ Add padding to the both the left and right sides.
 <span class="px7">Padding left and right size 7</span>
 ```
 
-### Margins
+## Margins
 
 Set the margin area surrounding an element.
+
+__Mnemonic__: m = margin
 
 |Notation|Values|Margin sides|
 |-|-|-|
@@ -869,6 +936,8 @@ Add margin to all side, size values range from 0 to 7 and follow the Golden Rati
 
 Set margin to auto, size is determined from available space.
 
+__Mnemonic__: m = margin
+
 |Notation|Margin location|
 |-|-|
 |mxa|Auto margins left and right|
@@ -886,6 +955,8 @@ Set margin to auto, size is determined from available space.
 Font heights follows the "__Perfect Third__" scale, ranging from 1 to 7.
 
 A font scale of 1 has a font height equal to the root element, which is set to 16px from the font family of Roboto.
+
+__Mnemonic__: fh = Font height
 
 |Notation|Values|Font scaling|
 |-|-|-|
@@ -947,6 +1018,8 @@ You will notice in the Style-Notation, scaled down fonts have a leading "-" dash
 
 ![font heights](images/font-heights2.png)
 
+__Mnemonic__: fh = Font height
+
 ```html
 <div class="fh-1">Font height 1</div>
 <div class="fh-2">Font height 2</div>
@@ -958,6 +1031,8 @@ You will notice in the Style-Notation, scaled down fonts have a leading "-" dash
 ```
 
 ### Font styles
+
+__Mnemonic__: fs = Font style
 
 |Notation|Font styles|
 |-|-|
@@ -987,6 +1062,8 @@ The weight range is from 100 to 900, and increases thickness (thin to bolder). N
 
 __Note__: Values increment by 100.
 
+__Mnemonic__: fw = Font weight
+
 |Notation|Values|Font weight|
 |-|-|-|
 |fw|100-900|Set the font boldness (thickness) value|
@@ -1011,6 +1088,8 @@ Here are a few handy CS styles for working with text.
 
 The following Style-Notations are used to justify text.
 
+__Mnemonic__: tt = Text transform
+
 |Notation|Text transform|
 |-|-|
 |ttl|Left align text|
@@ -1032,6 +1111,8 @@ __Note__: For text justification to work, the test must span multiple lines.
 ### Text vertical alignments
 
 Specify the vertical alignment of an inline or table-cell box.
+
+__Mnemonic__: tt = Text transform
 
 |Notation|Vertical alignment|
 |-|-|
@@ -1059,6 +1140,8 @@ Specify the vertical alignment of an inline or table-cell box.
 
 ![tt](images/text-transform.png)
 
+__Mnemonic__: tt = Text transform
+
 |Notation|Text transform|
 |-|-|
 |ttcaps|Capitalize text|
@@ -1079,6 +1162,8 @@ Style-Notation "__ttnone__" should be used to reset existing text style when the
 
 This control if wrapping should occur when text overflows its Viewport.
 
+__Mnemonic__: tt = Text transform
+
 |Notation|Text flow mode|
 |-|-|
 |ttwrap|Wrap text outside its Viewport|
@@ -1092,6 +1177,8 @@ This control if wrapping should occur when text overflows its Viewport.
 ### Text overflow
 
 Specify text overflow behaviour when it is bigger than its display Viewport.
+
+__Mnemonic__: tt = Text transform
 
 |Notation|Text flow mode|
 |-|-|
@@ -1109,6 +1196,8 @@ Specify text overflow behaviour when it is bigger than its display Viewport.
 
 Text overflow control for vertical direction, when lines wrap around.
 
+__Mnemonic__: tt = Text transform
+
 |Notation|Text vertical flow mode|
 |-|-|
 |ttofy|Allow text to overflow Viewport|
@@ -1124,6 +1213,8 @@ Text overflow control for vertical direction, when lines wrap around.
 ```
 
 Text overflow control for horizontal direction.
+
+__Mnemonic__: tt = Text transform
 
 |Notation|Text horizontal flow mode|
 |-|-|
@@ -1143,6 +1234,8 @@ Text overflow control for horizontal direction.
 
 Control where breaking occurs when end of line is reached.
 
+__Mnemonic__: tt = Text transform
+
 |Notation|Text word break|
 |-|-|
 |ttwb|Break word on space|
@@ -1156,6 +1249,8 @@ Control where breaking occurs when end of line is reached.
 ### Text line height
 
 Set the line height.
+
+__Mnemonic__: tt = Text transform
 
 |Notation|Values|Line height|
 |-|-|-|
@@ -1187,7 +1282,7 @@ Decreasing line heights.
 <div class="ttlh-7"> ... </div>
 ```
 
-## Text direction
+### Text direction
 
 Set the direction of text based on language.
 
@@ -1274,6 +1369,8 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 
 ### General CSS display styles
 
+__Mnemonic__: d = display
+
 |Notation|CSS display style|
 |-|-|
 |dnone|none|
@@ -1297,6 +1394,8 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 ```
 
 ### CSS Table display styles
+
+__Mnemonic__: dt = display table
 
 |Notation|CSS Table display style|
 |-|-|
@@ -1323,6 +1422,8 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 ```
 
 ### Table Caption placement
+
+__Mnemonic__: dtcap = display table caption
 
 |Notation|CSS Table caption|
 |-|-|
@@ -1370,6 +1471,8 @@ Style to apply to both order and un-ordered list and its list items.
 
 ### Bullet marks
 
+__Mnemonic__: ls = List style
+
 |Notation|Bullet style|
 |-|-|
 |lsnone|No bullet|
@@ -1394,6 +1497,8 @@ Style to apply to both order and un-ordered list and its list items.
 
 Placement of the bullet for list items.
 
+__Mnemonic__: ls = List style
+
 |Notation|Bullet placement|
 |-|-|
 |lsin|Bullet placed on the inside|
@@ -1404,9 +1509,11 @@ Placement of the bullet for list items.
 <div class="lsout"> Outside </div>
 ```
 
-## List orientation
+### List orientation
 
 Change list orientation and hide bullets.
+
+__Mnemonic__: ls = List style
 
 |Notation|List orientation|
 |-|-|
@@ -1422,6 +1529,8 @@ Change list orientation and hide bullets.
 
 Reset list style, undoing applied list style changes.
 
+__Mnemonic__: ls = List style
+
 |Notation|List style|
 |-|-|
 |lsreset|Clear list to its default|
@@ -1433,6 +1542,8 @@ Reset list style, undoing applied list style changes.
 ## Floats
 
 Positioning element by floating to the one side.
+
+__Mnemonic__: fl = float
 
 |Notation|Float direction|
 |-|-|-|
@@ -1464,6 +1575,8 @@ Apply clearfix settings.
 
 Columns are the fast and simply way to work with text layout as seen in publication.
 
+__Mnemonic__: col = column
+
 |Notation|Values|Description|
 |col|1-7|Dynamic size, fixed columns|
 |colf|1-7|Fixed width dimension based columns|
@@ -1481,7 +1594,9 @@ If you want to maintain a fixed with for each column, and have the column count 
 
 The Style-Notation for Flexbox make it easy to do layout.
 
-### Direction
+### Flex direction
+
+__Mnemonic__: fb = Flexbox
 
 |Notation|Flex direction|Axis|
 |-|-|-|
@@ -1499,6 +1614,8 @@ The Style-Notation for Flexbox make it easy to do layout.
 
 ### Wrap mode
 
+__Mnemonic__: fb = Flexbox
+
 |Notation|Wrap mode|
 |-|-|
 |fbw|Flex wrap|
@@ -1512,6 +1629,8 @@ The Style-Notation for Flexbox make it easy to do layout.
 ```
 
 ### Justify main axis
+
+__Mnemonic__: fb = Flexbox
 
 |Notation|Justification along Main Axis|
 |-|-|
@@ -1531,6 +1650,8 @@ The Style-Notation for Flexbox make it easy to do layout.
 
 ### Justify cross axis
 
+__Mnemonic__: fb = Flexbox
+
 |Notation|Justification Cross Axis|
 |-|-|
 |fbis|Justify items start|
@@ -1548,6 +1669,8 @@ The Style-Notation for Flexbox make it easy to do layout.
 ```
 
 ### Vertical align content
+
+__Mnemonic__: fb = Flexbox
 
 |Notation|Align content|
 |-|-|
@@ -1569,6 +1692,8 @@ The Style-Notation for Flexbox make it easy to do layout.
 
 ### Item vertical align
 
+__Mnemonic__: fb = Flexbox
+
 |Notation|Item self alignment|
 |-|-|
 |fbsa|Align self auto|
@@ -1587,9 +1712,11 @@ The Style-Notation for Flexbox make it easy to do layout.
 <div class="fbsx"> ... </div>
 ```
 
-### Ordering
+### Flex ordering
 
 Positive order positions.
+
+__Mnemonic__: fb = Flexbox
 
 |Notation|Values|Flex item order|
 |-|-|-|
@@ -1618,14 +1745,15 @@ Negative order positions.
 <div class="fbo-7"> ... </div>
 ```
 
-### Growing
+### Growing Flex item
 
 Grow a Flexbox item.
+
+__Mnemonic__: fb = Flexbox
 
 |Notation|Values|Flex item sizing|
 |-|-|-|
 |fb|0-7|Flex item grow|
-|fb-|1-7|Flex item shrink|
 
 ```html
 <div class="fb0"> ... </div>
@@ -1638,9 +1766,15 @@ Grow a Flexbox item.
 <div class="fb7"> ... </div>
 ```
 
-### Shrinking
+### Shrinking Flex item
 
 Shrink a Flexbox item.
+
+__Mnemonic__: fb = Flexbox
+
+|Notation|Values|Flex item sizing|
+|-|-|-|
+|fb-|1-7|Flex item shrink|
 
 ```html
 <div class="fb-1"> ... </div>
