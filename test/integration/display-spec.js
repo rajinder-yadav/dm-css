@@ -67,9 +67,9 @@ describe("Display", () => {
       .should("have.class", "dtr")
       .should("have.css", "display", "table-row");
   });
-  it("dtd", () => {
-    cy.get("#dtd")
-      .should("have.class", "dtd")
+  it("dtc", () => {
+    cy.get("#dtc")
+      .should("have.class", "dtc")
       .should("have.css", "display", "table-cell");
   });
 

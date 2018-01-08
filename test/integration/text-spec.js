@@ -57,11 +57,11 @@ describe("Text", () => {
         .should("have.css", "text-transform", "capitalize");
     });
     it("Uppercase", () => {
-      cy.get(".ttupcase")
+      cy.get(".ttup")
         .should("have.css", "text-transform", "uppercase");
     });
     it("Lowercase", () => {
-      cy.get(".ttlowcase")
+      cy.get(".ttlow")
         .should("have.css", "text-transform", "lowercase");
     });
     it("None", () => {
@@ -83,12 +83,12 @@ describe("Text", () => {
 
   context("Overflow control", () => {
     it("Overflow", () => {
-      cy.get(".ttoverflow")
+      cy.get(".ttof")
         .should("have.css", "overflow-x", "visible")
         .should("have.css", "overflow-y", "visible");
     });
     it("Overflow auto", () => {
-      cy.get(".ttoverflow-auto")
+      cy.get(".ttofa")
         .should("have.css", "overflow-x", "auto")
         .should("have.css", "overflow-y", "auto");
     });
@@ -103,11 +103,11 @@ describe("Text", () => {
         .should("have.css", "overflow-y", "scroll");
     });
     it("Overflow y", () => {
-      cy.get(".ttoverflowy")
+      cy.get(".ttofy")
         .should("have.css", "overflow-y", "visible");
     });
     it("Overflow y auto", () => {
-      cy.get(".ttoverflowy-auto")
+      cy.get(".ttofya")
         .should("have.css", "overflow-y", "auto");
     });
     it("Clip y", () => {
@@ -119,11 +119,11 @@ describe("Text", () => {
         .should("have.css", "overflow-y", "scroll");
     });
     it("Overflow x", () => {
-      cy.get(".ttoverflowx")
+      cy.get(".ttofx")
         .should("have.css", "overflow-x", "visible");
     });
     it("Overflow x auto", () => {
-      cy.get(".ttoverflowx-auto")
+      cy.get(".ttofxa")
         .should("have.css", "overflow-x", "auto");
     });
     it("Clip x", () => {
