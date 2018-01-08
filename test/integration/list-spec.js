@@ -112,32 +112,32 @@ describe("List Style-Notation", () => {
   context("Bullet placement", () => {
 
     it("inside ol", () => {
-      cy.get("ol.lsinside")
-        .should("have.class", "lsinside")
+      cy.get("ol.lsin")
+        .should("have.class", "lsin")
         .should("have.css", "list-style-position", "inside");
-      cy.get("ol.lsinside>li:first-child")
+      cy.get("ol.lsin>li:first-child")
         .should("have.css", "list-style-position", "inside");
     });
     it("outside ol", () => {
-      cy.get("ol.lsoutside")
-        .should("have.class", "lsoutside")
+      cy.get("ol.lsout")
+        .should("have.class", "lsout")
         .should("have.css", "list-style-position", "outside");
-      cy.get("ol.lsoutside>li:first-child")
+      cy.get("ol.lsout>li:first-child")
         .should("have.css", "list-style-position", "outside");
     });
 
     it("inside ul", () => {
-      cy.get("ul.lsinside")
-        .should("have.class", "lsinside")
+      cy.get("ul.lsin")
+        .should("have.class", "lsin")
         .should("have.css", "list-style-position", "inside");
-      cy.get("ul.lsinside>li:first-child")
+      cy.get("ul.lsin>li:first-child")
         .should("have.css", "list-style-position", "inside");
     });
     it("outside ul", () => {
-      cy.get("ul.lsoutside")
-        .should("have.class", "lsoutside")
+      cy.get("ul.lsout")
+        .should("have.class", "lsout")
         .should("have.css", "list-style-position", "outside");
-      cy.get("ul.lsoutside>li:first-child")
+      cy.get("ul.lsout>li:first-child")
         .should("have.css", "list-style-position", "outside");
     });
   });

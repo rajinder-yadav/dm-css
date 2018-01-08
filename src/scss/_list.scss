@@ -12,10 +12,10 @@ $bullet_notations: none, disc, square, circle, decimal;
   list-style-type: lower-roman;
 }
 // Location of bullet
-.lsinside {
+.lsin{
   list-style-position: inside;
 }
-.lsoutside {
+.lsout{
   list-style-position: outside;
 }
 // List orientation row or column
