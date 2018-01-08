@@ -6,6 +6,7 @@ $col_size: 120rem / 2;
   .col#{$count} {
     column-count: $count;
   }
+  // Fixed width size
   .colf#{$count} {
     column-width: #{$col_size / $count};
   }
@@ -13,13 +14,10 @@ $col_size: 120rem / 2;
 .colauto {
   column-width: auto;
 }
-.colfauto {
-  column-width: auto;
-}
 .colsa {
   column-span: all;
 }
-// Golden Ratio starting and skiping 2
+// Golden Ratio column gap sizes
 $col_gaps: 0, 0.1875, 0.3125, 0.5, 0.875, 1.375, 2.25, 3.625;
 @each $gap in $col_gaps {
   $i: index($col_gaps, $gap);
