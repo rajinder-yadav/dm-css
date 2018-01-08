@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone!
 
-![Version](https://img.shields.io/badge/dm--css-v1.0.10-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.0.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -61,6 +61,9 @@
   - [Text transformation styles](#text-transformation-styles)
   - [Text wrapping](#text-wrapping)
   - [Text overflow](#text-overflow)
+  - [Text Word break](#text-word-break)
+  - [Text line height](#text-line-height)
+- [Text direction](#text-direction)
 - [Utility](#utility)
   - [Visibility](#visibility)
   - [Opacity](#opacity)
@@ -68,6 +71,8 @@
 - [Display](#display)
   - [General CSS display styles](#general-css-display-styles)
   - [CSS Table display styles](#css-table-display-styles)
+  - [Table Caption placement](#table-caption-placement)
+  - [Layout example](#layout-example)
 - [Lists](#lists)
   - [Bullet marks](#bullet-marks)
   - [Bullet placement](#bullet-placement)
@@ -75,6 +80,7 @@
   - [List style reset](#list-style-reset)
 - [Floats](#floats)
   - [Clearfix](#clearfix)
+- [CSS Columns](#css-columns)
 - [Flexbox](#flexbox)
   - [Direction](#direction)
   - [Wrap mode](#wrap-mode)
@@ -172,7 +178,7 @@ You can use the following HTML file to start with.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.10/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.0/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -201,10 +207,10 @@ To use the CDN, add the following __\<link\>__ Tag to your __index.html__ file, 
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 1.0.10.
+Example usage for Dyno Might CSS version 2.0.0.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@1.0.10/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.0/css/dm.min.css" rel="stylesheet">
 ```
 
 ### Box Model
@@ -212,6 +218,11 @@ Example usage for Dyno Might CSS version 1.0.10.
 Dyno Might CSS defaults to using the "__border-box__" Box Model. You can however change this.
 
 Style-Notations for using "content-box" and "border-box" respectively.
+
+|Notation|Box model|Note|
+|-|-|-|
+|cbox|Content box| |
+|bbox|Border box|default|
 
 ```html
 <div class="cbox"> ... </div>
@@ -418,7 +429,7 @@ Radius size is always consistent as shown below for larger dimensions.
 
 ### Corner Radius
 
-You can set the border value for each individula corner using the following Style-Notation.
+You can set the border value for each individual corner using the following Style-Notation.
 
 |Notation|Values|Radius corner|
 |-|-|-|
@@ -593,7 +604,7 @@ An element position property can be changed to one of the following CSS styles.
 
 ### Z-Index
 
-Specify the Z order of element positioning. Positive Z values move an element infront of stacked element, while negative Z value move an element behind stacked elements.
+Specify the Z order of element positioning. Positive Z values move an element in-front of stacked element, while negative Z value move an element behind stacked elements.
 
 |Notation|Values|Z Index|
 |-|-|-|
@@ -624,7 +635,7 @@ Positive Z-index values.
 <span class="z7"> ... </span>
 ```
 
-Nagative Z-index values.
+Negative Z-index values.
 
 ```html
 <span class="z-1"> ... </span>
@@ -1028,6 +1039,8 @@ Specify the vertical alignment of an inline or table-cell box.
 |ttvm|Vertical align middle|
 |ttvbl|Vertical align baseline|
 |ttvb|Vertical align bottom|
+|ttvtt|Vertical align text top|
+|ttvtb|Vertical align text bottom|
 |ttsub|Vertical align sub-script|
 |ttsuper|Vertical align super-script|
 
@@ -1036,6 +1049,8 @@ Specify the vertical alignment of an inline or table-cell box.
 <div class="ttvm"> ... </div>
 <div class="ttvbl"> ... </div>
 <div class="ttvb"> ... </div>
+<div class="ttvtt"> ... </div>
+<div class="ttvtb"> ... </div>
 <div class="ttsub"> ... </div>
 <div class="ttsuper"> ... </div>
 ```
@@ -1046,15 +1061,15 @@ Specify the vertical alignment of an inline or table-cell box.
 
 |Notation|Text transform|
 |-|-|
-|ttcaps|Capitialize text|
-|ttupcase|Make all text upper-case|
-|ttlowcase|Mark all text lower-case|
+|ttcaps|Capitalize text|
+|ttup|Make all text upper-case|
+|ttlow|Mark all text lower-case|
 |ttnone|Remove any text transform previously set|
 
 ```html
 <div class="ttcaps">text has been transformed</div>
-<div class="ttupcase">text has been transformed</div>
-<div class="ttlowcase">TEXT HAS BEEN TRANSFORMED</div>
+<div class="ttup">text has been transformed</div>
+<div class="ttlow">TEXT HAS BEEN TRANSFORMED</div>
 <div class="ttnone">Text has NOT been transformed</div>
 ```
 
@@ -1080,14 +1095,14 @@ Specify text overflow behaviour when it is bigger than its display Viewport.
 
 |Notation|Text flow mode|
 |-|-|
-|ttoverflow|Allow text to overflow Viewport|
-|ttoverflow-auto|Add a scroll-bar when text overflows|
+|ttof|Allow text to overflow Viewport|
+|ttofa|Add a scroll-bar when text overflows|
 |ttclip|Hide overflowed text outside Viewport|
 |ttscroll|Add a scroll-bar when text overflows|
 
 ```html
-<div class="ttoverflow"> Allow overflow </div>
-<div class="ttoverflow-auto"> Add scroll-bar when needed </div>
+<div class="ttof"> Allow overflow </div>
+<div class="ttofa"> Add scroll-bar when needed </div>
 <div class="ttclip"> Clip text outside Viewport </div>
 <div class="ttscroll"> Add scroll-bar </div>
 ```
@@ -1096,14 +1111,14 @@ Text overflow control for vertical direction, when lines wrap around.
 
 |Notation|Text vertical flow mode|
 |-|-|
-|ttoverflowy|Allow text to overflow Viewport|
-|ttoverflowy-auto|Add a scroll-bar when text overflows|
+|ttofy|Allow text to overflow Viewport|
+|ttofya|Add a scroll-bar when text overflows|
 |ttclipy|Hide overflowed text outside Viewport|
 |ttscrolly|Add a scroll-bar when text overflows|
 
 ```html
-<div class="ttoverflowy"> ... </div>
-<div class="ttoverflowy-auto"> ... </div>
+<div class="ttofy"> ... </div>
+<div class="ttofya"> ... </div>
 <div class="ttclipy"> ... </div>
 <div class="ttscrolly"> ... </div>
 ```
@@ -1112,16 +1127,78 @@ Text overflow control for horizontal direction.
 
 |Notation|Text horizontal flow mode|
 |-|-|
-|ttoverflowx|Allow text to overflow Viewport|
-|ttoverflowx-auto|Add a scroll-bar when text overflows|
+|ttofx|Allow text to overflow Viewport|
+|ttofxa|Add a scroll-bar when text overflows|
 |ttclipx|Hide overflowed text outside Viewport|
 |ttscrollx|Add a scroll-bar when text overflows|
 
 ```html
-<div class="ttoverflowx"> ... </div>
-<div class="ttoverflowx-auto"> ... </div>
+<div class="ttofx"> ... </div>
+<div class="ttofxa"> ... </div>
 <div class="ttclipx"> ... </div>
 <div class="ttscrollx"> ... </div>
+```
+
+### Text Word break
+
+Control where breaking occurs when end of line is reached.
+
+|Notation|Text word break|
+|-|-|
+|ttwb|Break word on space|
+|ttwba|Word with no space will break|
+
+```html
+<div class="ttwb"> ... </div>
+<div class="ttwba"> ... </div>
+```
+
+### Text line height
+
+Set the line height.
+
+|Notation|Values|Line height|
+|-|-|-|
+|ttlh|0-7|Increase line height|
+|ttlh-|1-7|Reduce line height|
+
+Increasing line heights.
+
+```html
+<div class="ttlh0"> ... </div>
+<div class="ttlh1"> ... </div>
+<div class="ttlh2"> ... </div>
+<div class="ttlh3"> ... </div>
+<div class="ttlh4"> ... </div>
+<div class="ttlh5"> ... </div>
+<div class="ttlh6"> ... </div>
+<div class="ttlh7"> ... </div>
+```
+
+Decreasing line heights.
+
+```html
+<div class="ttlh-1"> ... </div>
+<div class="ttlh-2"> ... </div>
+<div class="ttlh-3"> ... </div>
+<div class="ttlh-4"> ... </div>
+<div class="ttlh-5"> ... </div>
+<div class="ttlh-6"> ... </div>
+<div class="ttlh-7"> ... </div>
+```
+
+## Text direction
+
+Set the direction of text based on language.
+
+|Notation|Text direction|
+|-|-|
+|ltr|Left of right|
+|rtl|Right to left|
+
+```html
+<div class="ltr"> ... </div>
+<div class="rtl"> ... </div>
 ```
 
 ## Utility
@@ -1130,12 +1207,12 @@ Here are some useful Style-Notation.
 
 ### Visibility
 
-Hide or show an element without affecting layout. Other displayed element will not get repositioned.
+Hide or show an element without affecting layout. Other displayed element will not get re-positioned.
 
 |Notation|Visibility|
 |-|-|
-|visible|Display element and its descendents|
-|invisible|Hide element and its descendents|
+|visible|Display element and its descendants|
+|invisible|Hide element and its descendants|
 
 ```html
 <div class="visible"> ... </div>
@@ -1144,7 +1221,7 @@ Hide or show an element without affecting layout. Other displayed element will n
 
 ### Opacity
 
-Control the opacity of an element, and its descendents. A value or "0" (zero), is not visible, and a value of 7 is completely visible.
+Control the opacity of an element, and its descendants. A value or "0" (zero), is not visible, and a value of 7 is completely visible.
 
 |Notation|Value|Opacity|
 |-|-|-|
@@ -1185,8 +1262,8 @@ All descendant elements of hidden element are also removed.
 
 |Notation|Visibility|
 |-|-|
-|show|Add and display element and its descendents|
-|hide|Hide and remove element and its descendents|
+|show|Add and display element and its descendants|
+|hide|Hide and remove element and its descendants|
 
 ```html
 <div class="show"> ... </div>
@@ -1211,21 +1288,21 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 ```html
 <div class="dnone"> ... </div>
 <div class="dinline"> ... </div>
-<div class="dinline-block"> ... </div>
+<div class="diblock"> ... </div>
 <div class="dblock"> ... </div>
 <div class="dflex"> ... </div>
-<div class="dinline-flex"> ... </div>
+<div class="diflex"> ... </div>
 <div class="dgrid"> ... </div>
-<div class="dinline-grid"> ... </div>
+<div class="digrid"> ... </div>
 ```
 
 ### CSS Table display styles
 
-|Notation|CSS display style|
+|Notation|CSS Table display style|
 |-|-|
 |dtable|table|
 |dtr|table-row|
-|dtd|table-cell|
+|dtc|table-cell|
 |dtcol|table-column|
 |dtcolg|table-column-group|
 |dtcap|table-caption|
@@ -1236,7 +1313,7 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 ```html
 <div class="dtable"> ... </div>
 <div class="dtr"> ... </div>
-<div class="dtd"> ... </div>
+<div class="dtc"> ... </div>
 <div class="dtcol"> ... </div>
 <div class="dtcolg"> ... </div>
 <div class="dtcap"> ... </div>
@@ -1244,6 +1321,20 @@ __Note:__ Styles "__hide__" is an alias for "__dnone__".
 <div class="dtbody"> ... </div>
 <div class="dtfoot"> ... </div>
 ```
+
+### Table Caption placement
+
+|Notation|CSS Table caption|
+|-|-|
+|dtcapt|Caption top|
+|dtcapb|Caption bottom|
+
+```html
+<div class="dtcapt"> ... </div>
+<div class="dtcapb"> ... </div>
+```
+
+### Layout example
 
 Using CSS table to layout a HTML Form.
 
@@ -1254,20 +1345,20 @@ Using CSS table to layout a HTML Form.
   <form class="dtable w100 pr4">
     <p class="dtcap ml3 pt3">Enter your full name and age.</p>
     <div class="dtr">
-      <label class="pl3 dtd wauto" for="fname">First name:</label>
-      <input class="dtd w100" type="text" id="fname">
+      <label class="pl3 dtc wauto" for="fname">First name:</label>
+      <input class="dtc w100" type="text" id="fname">
     </div>
     <div class="dtr">
-      <label class="pl3 dtd wauto" for="lname">Last name:</label>
-      <input class="dtd w100" type="text" id="lname">
+      <label class="pl3 dtc wauto" for="lname">Last name:</label>
+      <input class="dtc w100" type="text" id="lname">
     </div>
     <div class="dtr">
-      <label class="pl3 dtd wauto" for="age">Age:</label>
-      <input class="dtd w100" type="text" id="age">
+      <label class="pl3 dtc wauto" for="age">Age:</label>
+      <input class="dtc w100" type="text" id="age">
     </div>
     <div class="dtr ttr">
-      <span class="dtd"></span>
-      <button class="dtd">Save</button>
+      <span class="dtc"></span>
+      <button class="dtc">Save</button>
     </div>
   </form>
 </div>
@@ -1275,7 +1366,7 @@ Using CSS table to layout a HTML Form.
 
 ## Lists
 
-Style to apply to both order and unordered list and its list items.
+Style to apply to both order and un-ordered list and its list items.
 
 ### Bullet marks
 
@@ -1303,14 +1394,14 @@ Style to apply to both order and unordered list and its list items.
 
 Placement of the bullet for list items.
 
-|Notation|List orientation|
+|Notation|Bullet placement|
 |-|-|
-|lsinside|Bullet placed on the inside|
-|lsoutside|Bullet placed on the outside|
+|lsin|Bullet placed on the inside|
+|lsout|Bullet placed on the outside|
 
 ```html
-<div class="lsinside"> Inside </div>
-<div class="lsoutside"> Outside </div>
+<div class="lsin"> Inside </div>
+<div class="lsout"> Outside </div>
 ```
 
 ## List orientation
@@ -1333,7 +1424,7 @@ Reset list style, undoing applied list style changes.
 
 |Notation|List style|
 |-|-|
-|lsreset|Clears back to their defaults|
+|lsreset|Clear list to its default|
 
 ```html
 <div class="lsreset"> ... </div>
@@ -1355,6 +1446,8 @@ Positioning element by floating to the one side.
 <div class="fln"> ... </div>
 ```
 
+__Pro Tip__: Use display "__inline-block__" to avoid having to use "__clear__" when working with "__float__".
+
 ### Clearfix
 
 Apply clearfix settings.
@@ -1367,13 +1460,30 @@ Apply clearfix settings.
 <div class="cf"> ... </div>
 ```
 
+## CSS Columns
+
+Columns are the fast and simply way to work with text layout as seen in publication.
+
+|Notation|Values|Description|
+|col|1-7|Dynamic size, fixed columns|
+|colf|1-7|Fixed width dimension based columns|
+|colgap|0-7|Gap size between columns|
+|colauto||Set column width to auto|
+|colsa||Column span all|
+
+![column](./images/column.png)
+
+If you want a fixed number of columns that vary in width based on its container size, use "__col__".
+
+If you want to maintain a fixed with for each column, and have the column count determined by the size of its container, use "__colf__".
+
 ## Flexbox
 
 The Style-Notation for Flexbox make it easy to do layout.
 
 ### Direction
 
-|Notation|Direction|Axis|
+|Notation|Flex direction|Axis|
 |-|-|-|
 |fbl|Row (left)|Main|
 |fbr|Row reverse (right)|Main|
@@ -1510,14 +1620,15 @@ Negative order positions.
 
 ### Growing
 
-Grow a flexbox item.
+Grow a Flexbox item.
 
-|Notation|Values|Flex item order|
+|Notation|Values|Flex item sizing|
 |-|-|-|
 |fb|0-7|Flex item grow|
 |fb-|1-7|Flex item shrink|
 
 ```html
+<div class="fb0"> ... </div>
 <div class="fb1"> ... </div>
 <div class="fb2"> ... </div>
 <div class="fb3"> ... </div>
@@ -1529,7 +1640,7 @@ Grow a flexbox item.
 
 ### Shrinking
 
-Shrink a flexbox item.
+Shrink a Flexbox item.
 
 ```html
 <div class="fb-1"> ... </div>
