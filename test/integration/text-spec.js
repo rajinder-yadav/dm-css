@@ -49,6 +49,14 @@ describe("Text", () => {
       cy.get(".ttvtb")
         .should("have.css", "vertical-align", "text-bottom");
     });
+    it("Text sub", () => {
+      cy.get(".ttsub")
+        .should("have.css", "vertical-align", "sub");
+    });
+    it("Text super", () => {
+      cy.get(".ttsuper")
+        .should("have.css", "vertical-align", "super");
+    });
   });
 
   context("Text transform", () => {
@@ -134,6 +142,14 @@ describe("Text", () => {
       cy.get(".ttscrollx")
         .should("have.css", "overflow-x", "scroll");
     });
+    it("Word break", () => {
+      cy.get(".ttwb")
+        .should("have.css", "word-break", "normal");
+    });
+    it("Word break all", () => {
+      cy.get(".ttwba")
+        .should("have.css", "word-break", "break-all");
+    });
   });
 
   context("Line Height", () => {
@@ -214,6 +230,18 @@ describe("Text", () => {
       cy.get(".ttlh-7")
         .should("have.class", "ttlh-7")
         .should("have.css", "line-height", "1.12px");
+    });
+  });
+  context("Word direction language", () => {
+    it("Direction LTR", () => {
+      cy.get(".ttltr")
+        .should("have.class", "ttltr")
+        .should("have.css", "direction", "ltr");
+    });
+    it("Direction RTL", () => {
+      cy.get(".ttrtl")
+        .should("have.class", "ttrtl")
+        .should("have.css", "direction", "rtl");
     });
   });
 

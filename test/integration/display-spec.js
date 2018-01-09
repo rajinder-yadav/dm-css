@@ -103,5 +103,15 @@ describe("Display", () => {
       .should("have.class", "dtfoot")
       .should("have.css", "display", "table-footer-group");
   });
+  it("dtcapt", () => {
+    cy.get("#dtcapt")
+      .should("have.class", "dtcapt")
+      .should("have.css", "caption-side", "top");
+  });
+  it("dtcapb", () => {
+    cy.get("#dtcapb")
+      .should("have.class", "dtcapb")
+      .should("have.css", "caption-side", "bottom");
+  });
 
 });
