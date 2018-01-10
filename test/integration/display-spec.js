@@ -57,60 +57,60 @@ describe("Display", () => {
       .should("have.class", "digrid")
       .should("have.css", "display", "inline-grid");
   });
-  it("dtable", () => {
-    cy.get("#dtable")
-      .should("have.class", "dtable")
+  it("table", () => {
+    cy.get("#table")
+      .should("have.class", "table")
       .should("have.css", "display", "table");
   });
-  it("dtr", () => {
-    cy.get("#dtr")
-      .should("have.class", "dtr")
+  it("tr", () => {
+    cy.get("#tr")
+      .should("have.class", "tr")
       .should("have.css", "display", "table-row");
   });
-  it("dtc", () => {
-    cy.get("#dtc")
-      .should("have.class", "dtc")
+  it("td", () => {
+    cy.get("#td")
+      .should("have.class", "td")
       .should("have.css", "display", "table-cell");
   });
 
-  it("dtcol", () => {
-    cy.get("#dtcol")
-      .should("have.class", "dtcol")
+  it("tcol", () => {
+    cy.get("#tcol")
+      .should("have.class", "tcol")
       .should("have.css", "display", "table-column");
   });
-  it("dtcolg", () => {
-    cy.get("#dtcolg")
-      .should("have.class", "dtcolg")
+  it("tcolg", () => {
+    cy.get("#tcolg")
+      .should("have.class", "tcolg")
       .should("have.css", "display", "table-column-group");
   });
-  it("dtcap", () => {
-    cy.get("#dtcap")
-      .should("have.class", "dtcap")
+  it("tcap", () => {
+    cy.get("#tcap")
+      .should("have.class", "tcap")
       .should("have.css", "display", "table-caption");
   });
-  it("dthead", () => {
-    cy.get("#dthead")
-      .should("have.class", "dthead")
+  it("thead", () => {
+    cy.get("#thead")
+      .should("have.class", "thead")
       .should("have.css", "display", "table-header-group");
   });
-  it("dtbody", () => {
-    cy.get("#dtbody")
-      .should("have.class", "dtbody")
+  it("tbody", () => {
+    cy.get("#tbody")
+      .should("have.class", "tbody")
       .should("have.css", "display", "table-row-group");
   });
-  it("dtfoot", () => {
-    cy.get("#dtfoot")
-      .should("have.class", "dtfoot")
+  it("tfoot", () => {
+    cy.get("#tfoot")
+      .should("have.class", "tfoot")
       .should("have.css", "display", "table-footer-group");
   });
-  it("dtcapt", () => {
-    cy.get("#dtcapt")
-      .should("have.class", "dtcapt")
+  it("tcapt", () => {
+    cy.get("#tcapt")
+      .should("have.class", "tcapt")
       .should("have.css", "caption-side", "top");
   });
-  it("dtcapb", () => {
-    cy.get("#dtcapb")
-      .should("have.class", "dtcapb")
+  it("tcapb", () => {
+    cy.get("#tcapb")
+      .should("have.class", "tcapb")
       .should("have.css", "caption-side", "bottom");
   });
 
