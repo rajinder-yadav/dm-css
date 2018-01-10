@@ -1395,44 +1395,44 @@ __Mnemonic__: d = display
 
 ### CSS Table display styles
 
-__Mnemonic__: dt = display table
+__Mnemonic__: t = table
 
 |Notation|CSS Table display style|
 |-|-|
-|dtable|table|
-|dtr|table-row|
-|dtc|table-cell|
-|dtcol|table-column|
-|dtcolg|table-column-group|
-|dtcap|table-caption|
-|dthead|table-header-group|
-|dtbody|table-row-group|
-|dtfoot|table-footer-group
+|table|table|
+|tr|table-row|
+|tc|table-cell|
+|tcol|table-column|
+|tcolg|table-column-group|
+|tcap|table-caption|
+|thead|table-header-group|
+|tbody|table-row-group|
+|tfoot|table-footer-group
 
 ```html
-<div class="dtable"> ... </div>
-<div class="dtr"> ... </div>
-<div class="dtc"> ... </div>
-<div class="dtcol"> ... </div>
-<div class="dtcolg"> ... </div>
-<div class="dtcap"> ... </div>
-<div class="dthead"> ... </div>
-<div class="dtbody"> ... </div>
-<div class="dtfoot"> ... </div>
+<div class="table"> ... </div>
+<div class="tr"> ... </div>
+<div class="tc"> ... </div>
+<div class="tcol"> ... </div>
+<div class="tcolg"> ... </div>
+<div class="tcap"> ... </div>
+<div class="thead"> ... </div>
+<div class="tbody"> ... </div>
+<div class="tfoot"> ... </div>
 ```
 
 ### Table Caption placement
 
-__Mnemonic__: dtcap = display table caption
+__Mnemonic__: tcap = table caption
 
 |Notation|CSS Table caption|
 |-|-|
-|dtcapt|Caption top|
-|dtcapb|Caption bottom|
+|tcapt|Caption top|
+|tcapb|Caption bottom|
 
 ```html
-<div class="dtcapt"> ... </div>
-<div class="dtcapb"> ... </div>
+<div class="tcapt"> ... </div>
+<div class="tcapb"> ... </div>
 ```
 
 ### Layout example
@@ -1443,23 +1443,23 @@ Using CSS table to layout a HTML Form.
 
 ```html
 <div class="bg w30 m4">
-  <form class="dtable w100 pr4">
-    <p class="dtcap ml3 pt3">Enter your full name and age.</p>
-    <div class="dtr">
-      <label class="pl3 dtc wauto" for="fname">First name:</label>
-      <input class="dtc w100" type="text" id="fname">
+  <form class="table w100 pr4">
+    <p class="tcap ml3 pt3">Enter your full name and age.</p>
+    <div class="tr">
+      <label class="pl3 tc wauto" for="fname">First name:</label>
+      <input class="tc w100" type="text" id="fname">
     </div>
-    <div class="dtr">
-      <label class="pl3 dtc wauto" for="lname">Last name:</label>
-      <input class="dtc w100" type="text" id="lname">
+    <div class="tr">
+      <label class="pl3 tc wauto" for="lname">Last name:</label>
+      <input class="tc w100" type="text" id="lname">
     </div>
-    <div class="dtr">
-      <label class="pl3 dtc wauto" for="age">Age:</label>
-      <input class="dtc w100" type="text" id="age">
+    <div class="tr">
+      <label class="pl3 tc wauto" for="age">Age:</label>
+      <input class="tc w100" type="text" id="age">
     </div>
-    <div class="dtr ttr">
-      <span class="dtc"></span>
-      <button class="dtc">Save</button>
+    <div class="tr ttr">
+      <span class="tc"></span>
+      <button class="tc">Save</button>
     </div>
   </form>
 </div>
