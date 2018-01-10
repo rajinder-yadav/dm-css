@@ -14,10 +14,18 @@ $display_notations: (
   flex: flex, 
   iflex: inline-flex, 
   grid: grid, 
-  igrid: inline-grid, 
+  igrid: inline-grid
+);
+@each $notation, $style in $display_notations {
+  .d#{$notation} {
+    display: $style !important;
+  }
+}
+
+$table_notations: (
   table: table, 
   tr: table-row, 
-  tc: table-cell, 
+  td: table-cell, 
   tcol: table-column,
   tcolg: table-column-group,
   tcap: table-caption,
@@ -25,14 +33,14 @@ $display_notations: (
   tbody: table-row-group, 
   tfoot: table-footer-group
 );
-@each $notation, $style in $display_notations {
-  .d#{$notation} {
+@each $notation, $style in $table_notations {
+  .#{$notation} {
     display: $style !important;
   }
 }
-.dtcapt {
+.tcapt {
   caption-side: top;
 }
-.dtcapb {
+.tcapb {
   caption-side: bottom;
 }
