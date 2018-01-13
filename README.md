@@ -84,13 +84,15 @@
   - [Clearfix](#clearfix)
 - [CSS Columns](#css-columns)
 - [Flexbox](#flexbox)
+  - [Flex Container](#flex-container)
   - [Flex direction](#flex-direction)
   - [Wrap mode](#wrap-mode)
-  - [Justify main axis](#justify-main-axis)
-  - [Justify cross axis](#justify-cross-axis)
-  - [Vertical align content](#vertical-align-content)
-  - [Item vertical align](#item-vertical-align)
+  - [Justify Main Axis](#justify-main-axis)
+  - [Justify Cross Axis](#justify-cross-axis)
+  - [Align content Cross Axis](#align-content-cross-axis)
+  - [Item align Cross Axis](#item-align-cross-axis)
   - [Flex ordering](#flex-ordering)
+  - [Flex basis](#flex-basis)
   - [Growing Flex item](#growing-flex-item)
   - [Shrinking Flex item](#shrinking-flex-item)
 - [Grid](#grid)
@@ -1578,6 +1580,7 @@ Columns are the fast and simply way to work with text layout as seen in publicat
 __Mnemonic__: col = column
 
 |Notation|Values|Description|
+|-|-|-|
 |col|1-7|Dynamic size, fixed columns|
 |colf|1-7|Fixed width dimension based columns|
 |colgap|0-7|Gap size between columns|
@@ -1594,7 +1597,29 @@ If you want to maintain a fixed with for each column, and have the column count 
 
 The Style-Notation for Flexbox make it easy to do layout.
 
+### Flex Container
+
+To create the Flex container, you must change the display property.
+
+![flex container](/images/flex-container.png)
+
+__Mnemonic__: d = display
+
+|Notation|CSS Display|
+|-|-|
+|dflex|Flex|
+|diflex|Inline flex|
+
+Making descendent items flex or inline flex items.
+
+```html
+<div class="dflex"> ... </div>
+<div class="diflex"> ... </div>
+```
+
 ### Flex direction
+
+Additional notation to use for a multi-line flex container. This will make a flex container multiline, items determine too long to fix the line will wrap onto a new line.
 
 __Mnemonic__: fb = Flexbox
 
@@ -1628,7 +1653,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbrw"> ... </div>
 ```
 
-### Justify main axis
+### Justify Main Axis
 
 __Mnemonic__: fb = Flexbox
 
@@ -1648,7 +1673,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbjb"> ... </div>
 ```
 
-### Justify cross axis
+### Justify Cross Axis
 
 __Mnemonic__: fb = Flexbox
 
@@ -1668,7 +1693,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbix"> ... </div>
 ```
 
-### Vertical align content
+### Align content Cross Axis
 
 __Mnemonic__: fb = Flexbox
 
@@ -1690,7 +1715,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbcx"> ... </div>
 ```
 
-### Item vertical align
+### Item align Cross Axis
 
 __Mnemonic__: fb = Flexbox
 
@@ -1744,6 +1769,50 @@ Negative order positions.
 <div class="fbo-6"> ... </div>
 <div class="fbo-7"> ... </div>
 ```
+
+### Flex basis
+
+The initial Flex basis is "__auto__", this style controls the initial size of the Flex item before growth or shrink is applied.
+
+This __basis__ notation should be applied to a Flex container and not a Flex item.
+
+__Mnemonic__: fbb = Flex basis
+
+|Notation|Values|Flex basis|
+|-|-|-|
+|fbb|0-7|Flex basis size|
+|fbbfill||Fill|
+|fbbmin||Min content|
+|fbbmax||Max content|
+|fbbauto||Auto|
+
+Various Flex basis size.
+
+```html
+<div class="fbb0"> ... </div>
+<div class="fbb1"> ... </div>
+<div class="fbb2"> ... </div>
+<div class="fbb3"> ... </div>
+<div class="fbb4"> ... </div>
+<div class="fbb5"> ... </div>
+<div class="fbb6"> ... </div>
+<div class="fbb7"> ... </div>
+```
+
+```html
+<div class="fbfill"> ... </div>
+<div class="fbbmin"> ... </div>
+<div class="fbbmax"> ... </div>
+<div class="fbbauto"> ... </div>
+```
+
+__Pro tip__: The following should help you understand how Flex basis works to determine size.
+
+1. Is Flex basis set to __auto__ (default value).
+   - If item __width__ is set use its width.
+   - Other use item __content size__.
+1. Is Flex basis __set to a length__, then this is the size of the item.
+1. Is Flex basis __set to 0__, then item size is ignored during calculation, equal space distribution is applied.
 
 ### Growing Flex item
 
