@@ -22,13 +22,14 @@ $display_notations: (
   }
 }
 
+// MDN Display: https://developer.mozilla.org/en-US/docs/Web/CSS/display
 $table_notations: (
   table: table, 
   tr: table-row, 
   td: table-cell, 
-  tcol: table-column,
-  tcolg: table-column-group,
   tcap: table-caption,
+  tcol: table-column,
+  tcolgroup: table-column-group,
   thead: table-header-group, 
   tbody: table-row-group, 
   tfoot: table-footer-group
