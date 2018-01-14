@@ -92,7 +92,6 @@
   - [Align content Cross Axis](#align-content-cross-axis)
   - [Item align Cross Axis](#item-align-cross-axis)
   - [Flex ordering](#flex-ordering)
-  - [Flex basis](#flex-basis)
   - [Growing Flex item](#growing-flex-item)
   - [Shrinking Flex item](#shrinking-flex-item)
 - [Grid](#grid)
@@ -1397,16 +1396,18 @@ __Mnemonic__: d = display
 
 ### CSS Table display styles
 
+Pure CSS table layout Style-Notation, work like HTML table elements, without the additional tags. This make the HTML look cleaner and less busy.
+
 __Mnemonic__: t = table
 
 |Notation|CSS Table display style|
 |-|-|
 |table|table|
 |tr|table-row|
-|tc|table-cell|
-|tcol|table-column|
-|tcolg|table-column-group|
+|td|table-cell|
 |tcap|table-caption|
+|tcol|table-column|
+|tcolgroup|table-column-group|
 |thead|table-header-group|
 |tbody|table-row-group|
 |tfoot|table-footer-group
@@ -1414,10 +1415,10 @@ __Mnemonic__: t = table
 ```html
 <div class="table"> ... </div>
 <div class="tr"> ... </div>
-<div class="tc"> ... </div>
-<div class="tcol"> ... </div>
-<div class="tcolg"> ... </div>
+<div class="td"> ... </div>
 <div class="tcap"> ... </div>
+<div class="tcol"> ... </div>
+<div class="tcolgroup"> ... </div>
 <div class="thead"> ... </div>
 <div class="tbody"> ... </div>
 <div class="tfoot"> ... </div>
@@ -1448,20 +1449,20 @@ Using CSS table to layout a HTML Form.
   <form class="table w100 pr4">
     <p class="tcap ml3 pt3">Enter your full name and age.</p>
     <div class="tr">
-      <label class="pl3 tc wauto" for="fname">First name:</label>
-      <input class="tc w100" type="text" id="fname">
+      <label class="pl3 td wauto" for="fname">First name:</label>
+      <input class="td w100" type="text" id="fname">
     </div>
     <div class="tr">
-      <label class="pl3 tc wauto" for="lname">Last name:</label>
-      <input class="tc w100" type="text" id="lname">
+      <label class="pl3 td wauto" for="lname">Last name:</label>
+      <input class="td w100" type="text" id="lname">
     </div>
     <div class="tr">
-      <label class="pl3 tc wauto" for="age">Age:</label>
-      <input class="tc w100" type="text" id="age">
+      <label class="pl3 td wauto" for="age">Age:</label>
+      <input class="td w100" type="text" id="age">
     </div>
     <div class="tr ttr">
-      <span class="tc"></span>
-      <button class="tc">Save</button>
+      <span class="td"></span>
+      <button class="td">Save</button>
     </div>
   </form>
 </div>
@@ -1769,50 +1770,6 @@ Negative order positions.
 <div class="fbo-6"> ... </div>
 <div class="fbo-7"> ... </div>
 ```
-
-### Flex basis
-
-The initial Flex basis is "__auto__", this style controls the initial size of the Flex item before growth or shrink is applied.
-
-This __basis__ notation should be applied to a Flex container and not a Flex item.
-
-__Mnemonic__: fbb = Flex basis
-
-|Notation|Values|Flex basis|
-|-|-|-|
-|fbb|0-7|Flex basis size|
-|fbbfill||Fill|
-|fbbmin||Min content|
-|fbbmax||Max content|
-|fbbauto||Auto|
-
-Various Flex basis size.
-
-```html
-<div class="fbb0"> ... </div>
-<div class="fbb1"> ... </div>
-<div class="fbb2"> ... </div>
-<div class="fbb3"> ... </div>
-<div class="fbb4"> ... </div>
-<div class="fbb5"> ... </div>
-<div class="fbb6"> ... </div>
-<div class="fbb7"> ... </div>
-```
-
-```html
-<div class="fbfill"> ... </div>
-<div class="fbbmin"> ... </div>
-<div class="fbbmax"> ... </div>
-<div class="fbbauto"> ... </div>
-```
-
-__Pro tip__: The following should help you understand how Flex basis works to determine size.
-
-1. Is Flex basis set to __auto__ (default value).
-   - If item __width__ is set use its width.
-   - Other use item __content size__.
-1. Is Flex basis __set to a length__, then this is the size of the item.
-1. Is Flex basis __set to 0__, then item size is ignored during calculation, equal space distribution is applied.
 
 ### Growing Flex item
 
