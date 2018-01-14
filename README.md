@@ -1576,7 +1576,7 @@ Apply clearfix settings.
 
 ## CSS Columns
 
-Columns are the fast and simply way to work with text layout as seen in publication.
+Columns are the fast and simply way to work with text layout as seen in publication. You can decide between using fixed width column counts, or dynamic width column count.
 
 __Mnemonic__: col = column
 
@@ -1592,7 +1592,7 @@ __Mnemonic__: col = column
 
 If you want a fixed number of columns that vary in width based on its container size, use "__col__".
 
-If you want to maintain a fixed with for each column, and have the column count determined by the size of its container, use "__colf__".
+If you want to maintain a fixed width for each column, and have the column count determined by the size of its container, use "__colf__".
 
 ## Flexbox
 
