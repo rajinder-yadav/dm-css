@@ -105,29 +105,4 @@
   .fb-#{$n} {
     flex-shrink: $n !important;
   }
-  .fbb#{$n} {
-    * {
-      flex-basis: $n !important;
-    }
-  }
-}
-.fbbfill {
-  * {
-    flex-basis: fill !important;
-  }
-}
-.fbbmin {
-  * {
-    flex-basis: min-content !important;
-  }
-}
-.fbbmax {
-  * {
-    flex-basis: max-content !important;
-  }
-}
-.fbbauto {
-  * {
-    flex-basis: auto !important;
-  }
 }
