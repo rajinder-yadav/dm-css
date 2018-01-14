@@ -1602,8 +1602,6 @@ The Style-Notation for Flexbox make it easy to do layout.
 
 To create the Flex container, you must change the display property.
 
-![flex container](/images/flex-container.png)
-
 __Mnemonic__: d = display
 
 |Notation|CSS Display|
@@ -1622,14 +1620,22 @@ Making descendent items flex or inline flex items.
 
 Additional notation to use for a multi-line flex container. This will make a flex container multiline, items determine too long to fix the line will wrap onto a new line.
 
+The default __Main__ and __Cross__ axis look like this.
+
+![flex container](/images/flex-container.png)
+
+Using the direction Style-Notations, will change the direction of the __Main__ and __Cross__ axis.
+
 __Mnemonic__: fb = Flexbox
 
-|Notation|Flex direction|Axis|
+|Notation|Flex direction|Main Axis direction|
 |-|-|-|
-|fbl|Row (left)|Main|
-|fbr|Row reverse (right)|Main|
-|fbu|Column reverse (up)|Cross|
-|fbd|Column (down)|Cross|
+|fbl|Row (left)|Left to right|
+|fbr|Row reverse (right)|Right to left|
+|fbu|Column reverse (up)|Bottom to top|
+|fbd|Column (down)|Top to bottom|
+
+__Note__: The Cross axis is always perpendicular to Main axis.
 
 ```html
 <div class="fbl"> ... </div>
