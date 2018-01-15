@@ -87,6 +87,7 @@
 - [Flexbox](#flexbox)
   - [Flex Container](#flex-container)
   - [Flex direction](#flex-direction)
+  - [Flex item flow](#flex-item-flow)
   - [Wrap mode](#wrap-mode)
   - [Justify Main Axis](#justify-main-axis)
   - [Justify Cross Axis](#justify-cross-axis)
@@ -1646,19 +1647,23 @@ __Mnemonic__: fb = Flexbox
 
 |Notation|Flex direction|Main Axis direction|
 |-|-|-|
-|fbl|Row (left)|Left to right|
-|fbr|Row reverse (right)|Right to left|
+|fbr|Row (right)|Left to right|
+|fbl|Row reverse (left)|Right to left|
 |fbu|Column reverse (up)|Bottom to top|
 |fbd|Column (down)|Top to bottom|
 
 __Note__: The Cross axis is always perpendicular to Main axis.
 
 ```html
-<div class="fbl"> ... </div>
 <div class="fbr"> ... </div>
+<div class="fbl"> ... </div>
 <div class="fbu"> ... </div>
 <div class="fbd"> ... </div>
 ```
+
+### Flex item flow
+
+![flex direction](/images/fb-direction.png)
 
 ### Wrap mode
 
@@ -1692,6 +1697,8 @@ __Mnemonic__: fb = Flexbox
 |fbja|Justify space around|
 |fbjb|Justify space between|
 
+![justify](/images/fb-justify.png)
+
 ```html
 <div class="fbjs"> ... </div>
 <div class="fbje"> ... </div>
@@ -1713,6 +1720,8 @@ __Mnemonic__: fb = Flexbox
 |fbic|Justify items center|
 |fbib|Justify items baseline|
 |fbix|Justify items stretch (eXpand)|
+
+![justify items](/images/fb-justify-items.png)
 
 ```html
 <div class="fbis"> ... </div>
@@ -1737,6 +1746,8 @@ __Mnemonic__: fb = Flexbox
 |fbcb|Align content space between|
 |fbcx|Align content stretch (eXpand)|
 
+![justify content](/images/fb-justify-content.png)
+
 ```html
 <div class="fbcs"> ... </div>
 <div class="fbce"> ... </div>
@@ -1754,20 +1765,22 @@ __Mnemonic__: fb = Flexbox
 
 |Notation|Item self alignment|
 |-|-|
-|fbsa|Align self auto|
 |fbss|Align self start|
 |fbse|Align self end|
 |fbsc|Align self center|
 |fbsb|Align self baseline|
 |fbsx|Align self stretch (eXpand)|
+|fbsa|Align self auto|
+
+![justify self](/images/fb-justify-self.png)
 
 ```html
-<div class="fbsa"> ... </div>
 <div class="fbss"> ... </div>
 <div class="fbse"> ... </div>
 <div class="fbsc"> ... </div>
 <div class="fbsb"> ... </div>
 <div class="fbsx"> ... </div>
+<div class="fbsa"> ... </div>
 ```
 
 ### Flex ordering
