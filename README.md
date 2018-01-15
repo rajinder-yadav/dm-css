@@ -1804,6 +1804,16 @@ __Mnemonic__: fb = Flexbox
 <div class="fbo7"> ... </div>
 ```
 
+__Example__: Flex item ordering.
+
+![flex order](/images/fb-order.png)
+
+```html
+<div class="fbo3">A</div>
+<div class="fbo1">B</div>
+<div class="fbo2">C</div>
+```
+
 Negative order positions.
 
 ```html
@@ -1835,6 +1845,16 @@ __Mnemonic__: fb = Flexbox
 <div class="fb5"> ... </div>
 <div class="fb6"> ... </div>
 <div class="fb7"> ... </div>
+```
+
+__Example__: Sizing Flex items.
+
+![justify size](/images/fb-sizes.png)
+
+```html
+<div class="fb0">A</div>
+<div class="fb1">B</div>
+<div class="fb2">C</div>
 ```
 
 ### Shrinking Flex item
