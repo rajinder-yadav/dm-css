@@ -20,6 +20,10 @@
 *, *:before, *:after {
   box-sizing: inherit !important;
 }
+// HTML5 element for non HTML5 browsers.
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
 
 @import 'border';
 @import 'boxmodel';
