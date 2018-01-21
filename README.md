@@ -17,7 +17,7 @@
 - [Setup](#setup)
   - [Starter HTML file](#starter-html-file)
   - [Install as NPM module](#install-as-npm-module)
-  - [Use the CDN](#use-the-cdn)
+  - [Using the CDN](#using-the-cdn)
   - [Tracking down CSS issues](#tracking-down-css-issues)
 - [Mental model for Style-Notation](#mental-model-for-style-notation)
   - [Sacred Seven](#sacred-seven)
@@ -104,7 +104,7 @@
 
 Powerful CSS styling made simple, fast and fun!
 
-__Dyno Might CSS__ (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It was designed specifically to use simple and memorable Style-Notation that is specified as a "__class__" attribute.
+__Dyno Might CSS__ (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It is designed specifically to use simple and memorable Style-Notation that is specified as a "__class__" attribute.
 
 Dyno Might CSS brings consistency to your HTML/JSX coding and allows for quick addtion of CSS styles that are easy to read.
 
@@ -112,27 +112,28 @@ Works with HTML, Angular, React and Vue.js.
 
 ## CSS Resets
 
-Dyno Might CSS resets CSS style settings using "__normalize.css__", that is a well accepted cross-browser library. The top __padding__ and __margin__ values are set to "__0__" (zero), to make calculation straight forward.
+Dyno Might CSS resets CSS styles using "__normalize.css__". In addition to this, the top __padding__ and __margin__ values are set to "__0__" (zero), to make calculation straight forward.
 
-The global Box Model is changed to use "__border-box__". This makes it easy for layout calculation and does not allow margin and padding values to grow outside the element box size.
+The global __Box Model__ is changed to use "__border-box__". This simplifies layout calculation since both margin and padding are contained inside the element's Box Model.
 
-The Root Font family is set to "Roboto" with a height of __16px__. This is the base value used to calculate the size of other elements. For consistency the "__rem__" CSS unit is used.
+The Root Font family is set to "Roboto" with a height of __16px__. This base size is used to calculate the size of other elements by using the "__rem__" CSS unit.
 
 ## Benefits
 
 Some of the features of __Dyno Might CSS__ Toolkit you will enjoy.
 
-- Small size (~25KB).
+- Small size (25 KB).
 - Fast loading and blazing execution.
-- Robust and compact Style-Notation.
-- Easy to use and learn styles.
+- Robust compact Style-Notation.
+- Easy to learn.
+- Increased productivity.
 - Designed for Designers, yet developer friendly!
 - No side effects, works like your own custom CSS styles.
 - Tested with hundreds of Test cases (394+).
 
 ## Basic usage
 
-Dyno Might CSS Style-Notation are added to the "__class__" attribute of an element's HTML Tag.
+Dyno Might CSS Style-Notation are added as "__class__" attribute to an element's HTML Tag.
 
 For example, let us say we want to center text and capitalize it. We also want a dashed border with a width of 20% of available space. The Style-Notation would look like the following.
 
@@ -150,11 +151,11 @@ The Style-Notation read from left to right adds the following CSS styles.
 1. Set border line style to dashed (default is solid).
 1. Set "__\<div\>__" element to take up 20% of available width.
 
-Notice how the Style-Notation are powerful and can be combined together to increase productivity. Also context switching betweem HTLM/JSX and the CSS style sheet is reduced for all core CSS styles.
+Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching betweem HTLM/JSX and the CSS style sheet is eliminated for all core CSS styles.
 
 ## Setup
 
-In your root HTML file, it is a good idea to add the following responsive viewport meta tag.
+In the HTML root in the head section, it is a good idea to add the following responsive viewport meta tag.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -171,7 +172,7 @@ Dyno Might CSS requires HTML5 doctype.
 
 ### Starter HTML file
 
-You can use the following HTML file to start with.
+You may use the following HTML file to start from.
 
 ```html
 <!doctype html>
@@ -191,7 +192,7 @@ You can use the following HTML file to start with.
 </html>
 ```
 
-There are two ways to install the Dyno Might CSS Toolkit as a dependency in your project.
+There are two ways to install the Dyno Might CSS Toolkit as a dependency to your project.
 
 1. Install as a NPM module.
 1. Use the CDN.
@@ -204,7 +205,7 @@ From a Node.js based project root, type:
 npm install --save dm-css
 ```
 
-### Use the CDN
+### Using the CDN
 
 To use the CDN, add the following __\<link\>__ Tag to your __index.html__ file, and enter the version of your choice.
 
@@ -225,14 +226,14 @@ If something seems off with the CSS, you can switch to using a non-compressed fr
 |CSS Files|Description|
 |-|-|
 |dm.css|Uncompressed CSS|
-|dm.prefix.css|Uncompressed with auto prefix added|
+|dm.prefix.css|Uncompressed with vendor prefix added|
 |dm.min.css|Compressed, for Production use|
 
 ## Mental model for Style-Notation
 
-The Style-Notation is intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this also helps keep the overall line length much shoter than if long descriptive words were used as Style-Notation.
+The Style-Notation is intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this helps keep the overall line length much shoter than if long descriptive words were used for Style-Notation.
 
-Here are some general __mnemonics__ to help make sense and remember the style notation used.
+Here are some general __mnemonics__ used in the naming of Style-Notations.
 
 |Mnemonic|Description|
 |-|-|
@@ -245,11 +246,11 @@ Here are some general __mnemonics__ to help make sense and remember the style no
 
 ![mental model](./images/mnemonix-box.png)
 
-For each Style-Notation category, its mnemonic (key) will be listed. This will help with early retention, and over general use the Style-Notation will become muscle memory.
+For each Style-Notation category, the mnemonic (key) will be listed to help with learning.
 
 ### Sacred Seven
 
-Dyno Might CSS adhears to the "__Sacred Seven__" when it comes to value ranges. Almost all values range from 0 to 7. A value of zero "0", is used to reset or clear the style.
+Dyno Might CSS adhears to the "__Sacred Seven__" when it comes to value ranges. Almost all values range from 0 to 7. A value of zero "0", is used to reset or clear a style.
 
 ## Box Model
 
@@ -267,7 +268,7 @@ Style-Notations for using "content-box" and "border-box" respectively.
 <div class="bbox"> ... </div>
 ```
 
-__Recommendation__: Do not change the default Box Model for new projects, and never mix Box models.
+__Recommendation__: Do not change the default Box Model for new projects, and never mix Box Models.
 
 ## CSS Borders
 
@@ -286,9 +287,9 @@ An element can be given borders on:
 
 The postfix value for a border denotes the thickness of the border line.
 
-- The supported values range is from 0 to 7.
+- The supported values range from 0 to 7.
 
-A value of "0" (zero) indicates no border. You would use it to remove borders from a element that may already have borders.
+A value of "0" (zero) indicates no border. You would use it to remove borders from an element that may already have borders.
 
 __Mnemonic__: b = border
 
@@ -304,7 +305,7 @@ __Mnemonic__: b = border
 
 ### Border
 
-Border thickness value ranger from 0 to 7.
+Border thickness value range from 0 to 7.
 
 ![borders](images/borders.png)
 
@@ -423,9 +424,7 @@ __Mnemonic__: b = border
 
 ### Removing Borders
 
-There may be times you wish to remove a border from one or all sides.
-
-To do this, use a value of "0" (zero) with one of border Style-Notation.
+There may be times you wish to remove a border from one or all sides. To do this, use a value of "0" (zero) with one of border Style-Notation.
 
 __Mnemonic__: b = border
 
@@ -541,8 +540,6 @@ Set border line style to dashed.
 |dashy|Dash on top and bottom|
 |dashx|Dash on left and right|
 
-__Border dash__
-
 ![dashes](images/dashes.png)
 
 ```html
@@ -626,7 +623,7 @@ There are four pill styles for curved borders.
 
 ## Positioning an Element
 
-Most browsers allow an element to be re-positioned relative to its default position, relative to another element, or fixed to a given location.
+Most Browsers allow an element to be re-positioned relative to its default position, relative to another element, or fixed to a given location.
 
 Dyno Might CSS makes positioning elements simple.
 
@@ -648,7 +645,7 @@ An element position property can be changed to one of the following CSS styles.
 <span class="static"> ... </span>
 ```
 
-To be used for fixed or absolute positioned elements.
+Using fixed or absolute positioning.
 
 |Notation|Position value|
 |-|-|-|
@@ -666,7 +663,7 @@ To be used for fixed or absolute positioned elements.
 
 ### Z-Index
 
-Specify the Z order of element positioning. Positive Z values move an element in-front of stacked element, while negative Z value move an element behind stacked elements.
+Set the Z order of an element. Positive Z values move an element in-front of stacked elements, while negative Z value move an element behind stacked elements.
 
 __Mnemonic__: z = Z-Index
 
@@ -676,7 +673,7 @@ __Mnemonic__: z = Z-Index
 |z-|1-7|Negative Z order|
 |zauto||Automatic positive Z order|
 
-For automatic Z order, successive elements are given a positive increasing Z order.
+For automatic Z ordering, successive elements are given a positive increasing Z order.
 
 ```html
 <span class="zauto"> ... </span>
@@ -741,7 +738,7 @@ __Mnemonic__: w = width, h = height
 <div class="w100"> ... </div>
 ```
 
-Clear and reset an element minimum and maximum Viewport size.
+Clear and reset an element's minimum and maximum Viewport size.
 
 __Mnemonic__: w = width, h = height
 
@@ -775,7 +772,6 @@ __Sizing Pro Tip__
 In CSS, inline elements like "__\<span\>__" or "__\<i\>__" inherit their height values for margin and padding from surrounding text. The height value for margin or padding for an __inline__ element cannot be changed. To be able to change these properties, you must change their display property from "__inline__" to "__inline-block__".
 
 ```html
-<p class="d-inline-block"> ... </p>
 <span class="d-inline-block"> ... </span>
 ```
 
@@ -810,8 +806,6 @@ Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
 ### Padding top
 
-Add padding to the top.
-
 ![pad top](/images/pad-top.png)
 
 __Mnemonic__: p = padding
@@ -828,8 +822,6 @@ __Mnemonic__: p = padding
 ```
 
 ### Padding bottom
-
-Add padding to the bottom.
 
 ![pad bottom](/images/pad-bottom.png)
 
@@ -848,8 +840,6 @@ __Mnemonic__: p = padding
 
 ### Padding left
 
-Add padding to the left.
-
 ![pad left](/images/pad-left.png)
 
 __Mnemonic__: p = padding
@@ -866,8 +856,6 @@ __Mnemonic__: p = padding
 ```
 
 ### Padding right
-
-Add padding to the right.
 
 ![pad right](/images/pad-right.png)
 
@@ -886,8 +874,6 @@ __Mnemonic__: p = padding
 
 ### Padding top and bottom sides
 
-Add padding to the both the top and bottom sides.
-
 ![pad y](/images/pad-y.png)
 
 __Mnemonic__: p = padding
@@ -904,8 +890,6 @@ __Mnemonic__: p = padding
 ```
 
 ### Padding left and right sides
-
-Add padding to the both the left and right sides.
 
 ![pad x](/images/pad-x.png)
 
@@ -938,7 +922,7 @@ __Mnemonic__: m = margin
 |my|0-7|Margins top and bottom|
 |mx|0-7|Margins left and right|
 
-Add margin to all side, size values range from 0 to 7 and follow the Golden Ratio.
+Add margin to all sides, size values range from 0 to 7 and follow the Golden Ratio.
 
 ```html
 <div class="m0">Margin size 0</div>
@@ -1047,7 +1031,6 @@ There are also 7 Heading Style-Notations, which display as the regular HTML head
 
 __Note__: Style-Notation provides and extra heading value for __h7__.
 
-
 ### Font styles
 
 __Mnemonic__: fs = Font style
@@ -1074,7 +1057,7 @@ __Mnemonic__: fs = Font style
 
 ### Font weight
 
-The font weight will depend on the font being used. It is used to determine the thickness of the displayed character.
+The font weight depends on the font being used. The weight determines the thickness of the displayed characters.
 
 The weight range is from 100 to 900, and increases thickness (thin to think). Not all values maybe be valid, as it depends on the font set being used.
 
@@ -1124,7 +1107,7 @@ __Mnemonic__: tt = Text transform
 <div class="ttj">This text is fully justified, more text to wrap around and justify</div>
 ```
 
-__Note__: For text justification to work, the test must span multiple lines.
+__Note__: For text justification to work, the text must span multiple lines.
 
 ### Text vertical alignments
 
@@ -1250,7 +1233,7 @@ __Mnemonic__: tt = Text transform
 
 ### Text Word break
 
-Control where breaking occurs when end of line is reached.
+Control how breaking occurs when end of line is reached.
 
 __Mnemonic__: tt = Text transform
 
@@ -1320,7 +1303,7 @@ Here are some useful Style-Notation.
 
 ### Visibility
 
-Hide or show an element without affecting layout. Other displayed element will not get re-positioned.
+Hide or show an element without affecting layout. Other displayed elements will not get re-positioned.
 
 |Notation|Visibility|
 |-|-|
@@ -1334,11 +1317,11 @@ Hide or show an element without affecting layout. Other displayed element will n
 
 ### Opacity
 
-Control the opacity of an element, and its descendants. A value or "0" (zero), is not visible, and a value of 7 is completely visible.
+Control the opacity of an element and its descendants. A value of "0" (zero), is not visible, and a value of 7 is completely visible.
 
 |Notation|Value|Opacity|
 |-|-|-|
-|opacity|0-7|Higher value is more opaque|
+|opacity|0-7|Higher value is more opaque (visible)|
 
 ```html
 <div class="opacity0"> ... </div>
@@ -1369,9 +1352,7 @@ Vertical, horizontal and full centering elements inside the container.
 
 ## Display
 
-You can hide and show the DOM node with the following styles. This will cause the element to be removed from the DOM and will affect layout.
-
-All descendant elements of hidden element are also removed.
+You can hide and show the DOM element with the following styles. This will cause the element to be removed from the DOM and will affect layout. All descendant elements of hidden element are also removed.
 
 |Notation|Visibility|
 |-|-|
@@ -1487,7 +1468,7 @@ Using CSS table to layout a HTML Form.
 
 ## Lists
 
-Style to apply to both order and un-ordered list and list items.
+Styles to apply to both order and un-ordered list and list items.
 
 ### Bullet marks
 
@@ -1593,7 +1574,7 @@ Apply clearfix settings.
 
 ## CSS Columns
 
-Columns are the fast and simply way to work with text layout as seen in publications. You can decide between using fixed width column counts, or dynamic width column count.
+Columns are the fast and simple way to work with text layout as seen in publications. You can decide between using fixed width column counts, or dynamic width column count.
 
 __Mnemonic__: col = column
 
@@ -1667,7 +1648,7 @@ __Note__: The Cross axis is always perpendicular to Main axis.
 
 ### Wrap mode
 
-Additional notation to use for a multi-line flex container. This will control Flex wrapping mode, items determine too long to fit the line can be set to wrap onto a new line.
+Additional notation to use for a multi-line Flex container. This will control Flex wrapping mode, items determine too long to fit the line can be set to wrap onto a new line.
 
 __Mnemonic__: fb = Flexbox
 
@@ -1785,7 +1766,7 @@ __Mnemonic__: fb = Flexbox
 
 ### Flex ordering
 
-Positive order positions.
+Flex items position ordering.
 
 __Mnemonic__: fb = Flexbox
 
