@@ -1,4 +1,4 @@
-# Power Packed CSS Styling for Everyone!
+# Power Packed CSS Styling for Everyone
 
 ![Version](https://img.shields.io/badge/dm--css-v2.0.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
