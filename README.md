@@ -209,6 +209,8 @@ npm install --save dm-css
 
 To use the CDN, add the following __\<link\>__ Tag to your __index.html__ file, and enter the version of your choice.
 
+__General format__
+
 ```html
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
@@ -241,7 +243,7 @@ Here are some general __mnemonics__ used in the naming of Style-Notations.
 |b|Bottom|
 |l|Left|
 |r|Right|
-|x|Left and right (horizontal), with Flexbox "x" means expand (stretch)|
+|x|Left and right (horizontal), or expand (stretch) with Flexbox|
 |y|Top and bottom (vertical)|
 
 ![mental model](./images/mnemonix-box.png)
@@ -255,8 +257,6 @@ Dyno Might CSS adhears to the "__Sacred Seven__" when it comes to value ranges. 
 ## Box Model
 
 Dyno Might CSS defaults to using the "__border-box__" Box Model. You can however change this.
-
-Style-Notations for using "content-box" and "border-box" respectively.
 
 |Notation|Box model|Note|
 |-|-|-|
@@ -459,7 +459,7 @@ A radius value of "0" (zero) will reset "round" borders to have square corners.
 
 __Mnemonic__: r = radius
 
-|Notation|Values|Radius side|
+|Notation|Values|Radius size|
 |-|-|-|
 |r|0-7|All radius|
 
@@ -488,7 +488,7 @@ You can set the border value for each individual corner using the following Styl
 
 __Mnemonic__: r = radius
 
-|Notation|Values|Radius corner|
+|Notation|Values|Border box corner|
 |-|-|-|
 |rtl|0-7|Top left|
 |rtr|0-7|Top right|
@@ -510,7 +510,7 @@ The face radius covers each side of the Box Model to have round corners.
 
 __Mnemonic__: r = radius
 
-|Notation|Values|Radius face|
+|Notation|Values|Border box face|
 |-|-|-|
 |rt|0-7|Top face|
 |rb|0-7|Bottom face|
@@ -530,7 +530,7 @@ __Mnemonic__: r = radius
 
 Set border line style to dashed.
 
-|Notation|Border line style side|
+|Notation|Border box side|
 |-|-|
 |dash|All sides|
 |dasht|Dash on top|
@@ -556,7 +556,7 @@ __Border dot__
 
 Border line style dotted.
 
-|Notation|Border line style side|
+|Notation|Border box side|
 |-|-|
 |dot|All sides|
 |dott|Dot on top|
@@ -631,7 +631,7 @@ Dyno Might CSS makes positioning elements simple.
 
 An element position property can be changed to one of the following CSS styles.
 
-|Notation|Flow positioning|
+|Notation|Description|
 |-|-|
 |absolute|Position according to closest __relative__ positioned ancestor|
 |fixed|Position relative to the Viewport|
@@ -716,7 +716,7 @@ Scale values for width and height range from 10% to 100% and incremented by 10.
 
 __Mnemonic__: w = width, h = height
 
-|Notation|Values|Size dimension|
+|Notation|Values|Description|
 |-|-|-|
 |w|10-100|Set width percentage|
 |h|10-100|Set height percentage|
@@ -781,7 +781,7 @@ Make sure you have a good understanding of CSS display types. How block and inli
 
 __Mnemonic__: p = padding
 
-|Notation|Values|Padding sides|
+|Notation|Values|Box side|
 |-|-|-|
 |p|0-7|Pad all sides|
 |pt|0-7|Pad top|
@@ -912,7 +912,7 @@ Set the margin area surrounding an element.
 
 __Mnemonic__: m = margin
 
-|Notation|Values|Margin sides|
+|Notation|Values|Box side|
 |-|-|-|
 |m|0-7|Margin all sides|
 |mt|0-7|Margin top|
@@ -939,7 +939,7 @@ By setting margin to auto, size is determined from available space.
 
 __Mnemonic__: m = margin
 
-|Notation|Margin location|
+|Notation|Box side|
 |-|-|
 |mxa|Auto margins left and right|
 |mla|Auto margins left |
@@ -1035,7 +1035,7 @@ __Note__: Style-Notation provides and extra heading value for __h7__.
 
 __Mnemonic__: fs = Font style
 
-|Notation|Font styles|
+|Notation|Font style|
 |-|-|
 |fsn|Font style none, reset all styles|
 |fsb|Bold|
@@ -1115,7 +1115,7 @@ Specify the vertical alignment of an inline or table-cell box.
 
 __Mnemonic__: tt = Text transform
 
-|Notation|Vertical alignment|
+|Notation|Description|
 |-|-|
 |ttvt|Vertical align top|
 |ttvm|Vertical align middle|
@@ -1532,7 +1532,7 @@ Reset list style, undo applied list style.
 
 __Mnemonic__: ls = List style
 
-|Notation|List style|
+|Notation|Description|
 |-|-|
 |lsreset|Clear list to its default|
 
@@ -1564,7 +1564,7 @@ __Pro Tip__: Use display "__inline-block__" to avoid having to use "__clear__" w
 
 Apply clearfix settings.
 
-|Notation|Clear float|
+|Notation|Description|
 |-|-|-|
 |cf| Clearfix|
 
@@ -1718,7 +1718,7 @@ Justify all Flex items inside a Flex container.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Align content|
+|Notation|Content alignment|
 |-|-|
 |fbcs|Align content start|
 |fbce|Align content end|
@@ -1813,7 +1813,7 @@ Grow a Flexbox item.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Values|Flex item sizing|
+|Notation|Values|Descriptioon|
 |-|-|-|
 |fb|0-7|Flex item grow|
 
@@ -1844,7 +1844,7 @@ Shrink a Flexbox item.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Values|Flex item sizing|
+|Notation|Values|Description|
 |-|-|-|
 |fb-|1-7|Flex item shrink|
 
