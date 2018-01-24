@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.0.1-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.0.2-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -184,7 +184,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.1/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.2/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -215,10 +215,10 @@ __General format__
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 2.0.1.
+Example usage for Dyno Might CSS version 2.0.2.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.1/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.2/css/dm.min.css" rel="stylesheet">
 ```
 
 ### Tracking down CSS issues
@@ -1607,9 +1607,9 @@ __Mnemonic__: d = display
 |Notation|CSS Display|
 |-|-|
 |dflex|Flex|
-|diflex|Inline flex|
+|diflex|Inline Flex|
 
-Making descendent items flex or inline flex items.
+Making descendent items Flex or inline Flex items.
 
 ```html
 <div class="dflex"> ... </div>
@@ -1620,7 +1620,7 @@ Making descendent items flex or inline flex items.
 
 The default __Main__ and __Cross__ axis look like this.
 
-![flex container](/images/flex-container.png)
+![Flex container](/images/flex-container.png)
 
 Using the direction Style-Notations, will change the direction of the __Main__ and __Cross__ axis.
 
@@ -1644,7 +1644,7 @@ __Note__: The Cross axis is always perpendicular to Main axis.
 
 ### Flex item flow
 
-![flex direction](/images/fb-direction.png)
+![Flex direction](/images/fb-direction.png)
 
 ### Wrap mode
 
@@ -1787,7 +1787,7 @@ __Mnemonic__: fb = Flexbox
 
 __Example__: Flex item ordering.
 
-![flex order](/images/fb-order.png)
+![Flex order](/images/fb-order.png)
 
 ```html
 <div class="fbo3">A</div>
