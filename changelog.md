@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.0.1 (2018-01-23)
+## 2.0.2 (2018-01-23)
 
 - Import fix for angular-cli generated project.
 
