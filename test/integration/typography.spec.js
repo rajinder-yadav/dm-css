@@ -1,7 +1,7 @@
 describe("Typography", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/typography.html");
+    cy.visit("/web-pages/typography.html");
   });
 
   context("Headings", () => {

@@ -1,7 +1,7 @@
 describe("Column", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/column.html");
+    cy.visit("/web-pages/column.html");
   });
 
   context("Columns sizes", () => {

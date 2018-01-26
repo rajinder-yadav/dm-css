@@ -1,6 +1,6 @@
 describe("Border Style-Notation", () => {
   before(() => {
-    cy.visit("/test/web-pages/border.html");
+    cy.visit("/web-pages/border.html");
   });
 
   context("Border size all sides", () => {

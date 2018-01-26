@@ -1,7 +1,7 @@
 describe("Size", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/size.html");
+    cy.visit("/web-pages/size.html");
   });
 
   context("Width", () => {

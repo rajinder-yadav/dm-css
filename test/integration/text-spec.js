@@ -1,7 +1,7 @@
 describe("Text", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/text.html");
+    cy.visit("/web-pages/text.html");
   });
 
   context("Justification", () => {
@@ -61,7 +61,7 @@ describe("Text", () => {
 
   context("Text transform", () => {
     it("Capatialize", () => {
-      cy.get(".ttcaps")
+      cy.get(".ttcap")
         .should("have.css", "text-transform", "capitalize");
     });
     it("Uppercase", () => {

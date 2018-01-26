@@ -1,7 +1,7 @@
 describe("Display", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/display.html");
+    cy.visit("/web-pages/display.html");
   });
 
   context("Display", () => {

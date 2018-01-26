@@ -1,6 +1,6 @@
 describe("Spacing", () => {
   before(() => {
-    cy.visit("/test/web-pages/spacing.html");
+    cy.visit("/web-pages/spacing.html");
   });
 
   context("Padding all", () => {

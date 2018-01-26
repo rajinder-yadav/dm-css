@@ -1,7 +1,7 @@
 describe("List Style-Notation", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/list.html");
+    cy.visit("/web-pages/list.html");
   });
 
   context("Ordered Lists", () => {

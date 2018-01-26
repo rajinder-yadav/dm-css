@@ -1,7 +1,7 @@
 describe("Size", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/boxmodel.html");
+    cy.visit("/web-pages/boxmodel.html");
   });
 
   context("Default box model", () => {

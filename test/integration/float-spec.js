@@ -1,7 +1,7 @@
 describe("Float", () => {
 
   before(() => {
-    cy.visit("/test/web-pages/float.html");
+    cy.visit("/web-pages/float.html");
   });
 
   it("Float alias left", () => {
