@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.0.2-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.0.3-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -106,7 +106,7 @@ Powerful CSS styling made simple, fast and fun!
 
 __Dyno Might CSS__ (DM-CSS) is a concise CSS Style-Notation layout and design Toolkit. It is designed specifically to use simple and memorable Style-Notation that is specified as a "__class__" attribute.
 
-Dyno Might CSS brings consistency to your HTML/JSX coding and allows for quick addtion of CSS styles that are easy to read.
+Dyno Might CSS brings consistency to your HTML/JSX coding and allows for quick addition of CSS styles that are easy to read.
 
 Works with HTML, Angular, React and Vue.js.
 
@@ -151,7 +151,7 @@ The Style-Notation read from left to right adds the following CSS styles.
 1. Set border line style to dashed (default is solid).
 1. Set "__\<div\>__" element to take up 20% of available width.
 
-Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching betweem HTLM/JSX and the CSS style sheet is eliminated for all core CSS styles.
+Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching between HTLM/JSX and the CSS style sheet is eliminated for all core CSS styles.
 
 ## Setup
 
@@ -184,7 +184,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.2/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.3/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -215,15 +215,15 @@ __General format__
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 2.0.2.
+Example usage for Dyno Might CSS version 2.0.3.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.2/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.3/css/dm.min.css" rel="stylesheet">
 ```
 
 ### Tracking down CSS issues
 
-If something seems off with the CSS, you can switch to using a non-compressed friendler CSS file for DM-CSS.
+If something seems off with the CSS, you can switch to using a non-compressed friendlier CSS file for DM-CSS.
 
 |CSS Files|Description|
 |-|-|
@@ -233,7 +233,7 @@ If something seems off with the CSS, you can switch to using a non-compressed fr
 
 ## Mental model for Style-Notation
 
-The Style-Notation is intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this helps keep the overall line length much shoter than if long descriptive words were used for Style-Notation.
+The Style-Notation is intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this helps keep the overall line length much shorter than if long descriptive words were used for Style-Notation.
 
 Here are some general __mnemonics__ used in the naming of Style-Notations.
 
@@ -252,7 +252,7 @@ For each Style-Notation category, the mnemonic (key) will be listed to help with
 
 ### Sacred Seven
 
-Dyno Might CSS adhears to the "__Sacred Seven__" when it comes to value ranges. Almost all values range from 0 to 7. A value of zero "0", is used to reset or clear a style.
+Dyno Might CSS adheres to the "__Sacred Seven__" when it comes to value ranges. Almost all values range from 0 to 7. A value of zero "0", is used to reset or clear a style.
 
 ## Box Model
 
@@ -1177,7 +1177,7 @@ __Mnemonic__: tt = Text transform
 
 ### Text overflow
 
-Specify text overflow behaviour when it is bigger than its display Viewport.
+Specify text overflow behavior when it is bigger than its display Viewport.
 
 __Mnemonic__: tt = Text transform
 
@@ -1609,7 +1609,7 @@ __Mnemonic__: d = display
 |dflex|Flex|
 |diflex|Inline Flex|
 
-Making descendent items Flex or inline Flex items.
+Making descendant items Flex or inline Flex items.
 
 ```html
 <div class="dflex"> ... </div>
@@ -1813,7 +1813,7 @@ Grow a Flexbox item.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Values|Descriptioon|
+|Notation|Values|Description|
 |-|-|-|
 |fb|0-7|Flex item grow|
 
