@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.0.3-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.0.4-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -24,7 +24,8 @@
 - [Box Model](#box-model)
 - [CSS Borders](#css-borders)
   - [Border values](#border-values)
-  - [Border](#border)
+  - [Border notations](#border-notations)
+  - [Border all sides](#border-all-sides)
   - [Border top](#border-top)
   - [Border bottom](#border-bottom)
   - [Border left](#border-left)
@@ -42,7 +43,7 @@
 - [Positioning an Element](#positioning-an-element)
   - [Position](#position)
   - [Z-Index](#z-index)
-- [Size](#size)
+- [Sizing](#sizing)
 - [Spacing](#spacing)
 - [Padding](#padding)
   - [Padding top](#padding-top)
@@ -184,7 +185,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.3/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.4/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -215,10 +216,10 @@ __General format__
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 2.0.3.
+Example usage for Dyno Might CSS version 2.0.4.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.3/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.4/css/dm.min.css" rel="stylesheet">
 ```
 
 ### Tracking down CSS issues
@@ -291,6 +292,8 @@ The postfix value for a border denotes the thickness of the border line.
 
 A value of "0" (zero) indicates no border. You would use it to remove borders from an element that may already have borders.
 
+### Border notations
+
 __Mnemonic__: b = border
 
 |Notation|Values|Border sides|
@@ -303,7 +306,7 @@ __Mnemonic__: b = border
 |by|0-7|Border on top and bottom|
 |bx|0-7|Border on left and right|
 
-### Border
+### Border all sides
 
 Border thickness value range from 0 to 7.
 
@@ -440,13 +443,13 @@ __Mnemonic__: b = border
 
 You can use a combination of border styles to add then remove borders.
 
-```html
-<div class="b2 br0"> ... </div>
-```
+![bro](images/br0.png)
 
 - Add borders to all sides and clear the border on the right side.
 
-![bro](images/br0.png)
+```html
+<div class="b2 br0"> ... </div>
+```
 
 ### Border Radius
 
@@ -708,7 +711,7 @@ Negative Z-index values.
 <span class="z-7"> ... </span>
 ```
 
-## Size
+## Sizing
 
 Set the size of the element "__viewport__".
 
@@ -772,7 +775,7 @@ __Sizing Pro Tip__
 In CSS, inline elements like "__\<span\>__" or "__\<i\>__" inherit their height values for margin and padding from surrounding text. The height value for margin or padding for an __inline__ element cannot be changed. To be able to change these properties, you must change their display property from "__inline__" to "__inline-block__".
 
 ```html
-<span class="d-inline-block"> ... </span>
+<span class="diblock"> ... </span>
 ```
 
 Make sure you have a good understanding of CSS display types. How block and inline elements get rendered and ultimately how this will affect setting their width and height. Otherwise this can lead to some confusion as it will seem as the style changes are not working.
@@ -1029,7 +1032,7 @@ There are also 7 Heading Style-Notations, which display as the regular HTML head
 <h6>Heading 6</h6>
 ```
 
-__Note__: Style-Notation provides and extra heading value for __h7__.
+__Note__: Style-Notation provides an extra heading value for __h7__.
 
 ### Font styles
 
@@ -1139,8 +1142,6 @@ __Mnemonic__: tt = Text transform
 
 ### Text transformation styles
 
-![tt](images/text-transform.png)
-
 __Mnemonic__: tt = Text transform
 
 |Notation|Text transform|
@@ -1149,6 +1150,8 @@ __Mnemonic__: tt = Text transform
 |ttup|Make all text upper-case|
 |ttlow|Mark all text lower-case|
 |ttnone|Remove any text transform previously set|
+
+![tt](images/text-transform.png)
 
 ```html
 <div class="ttcaps">text has been transformed</div>
