@@ -141,7 +141,7 @@ For example, let us say we want to center text and capitalize it. We also want a
 ![centered text](images/intro.png)
 
 ```html
-<div class="ttc ttcap b1 dash w20">centered text</div>
+<div class="ttc ttup b1 dash w20">centered text</div>
 ```
 
 The Style-Notation read from left to right adds the following CSS styles.
@@ -1146,7 +1146,7 @@ __Mnemonic__: tt = Text transform
 
 |Notation|Text transform|
 |-|-|
-|ttcaps|Capitalize text|
+|ttcap|Capitalize text|
 |ttup|Make all text upper-case|
 |ttlow|Mark all text lower-case|
 |ttnone|Remove any text transform previously set|
@@ -1154,7 +1154,7 @@ __Mnemonic__: tt = Text transform
 ![tt](images/text-transform.png)
 
 ```html
-<div class="ttcaps">text has been transformed</div>
+<div class="ttcap">text has been transformed</div>
 <div class="ttup">text has been transformed</div>
 <div class="ttlow">TEXT HAS BEEN TRANSFORMED</div>
 <div class="ttnone">Text has NOT been transformed</div>
