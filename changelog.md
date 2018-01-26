@@ -2,7 +2,7 @@
 
 ## 2.0.5 (2018-01-26)
 
-- Changed Style-Notation ttcaps to ttcap.
+- Breaking Change - Changed Style-Notation ttcaps to ttcap.
 - Fixed README.
 
 ## 2.0.4 (2018-01-25)
