@@ -1,7 +1,8 @@
 # Change Log
 
-## 2.0.2 (2018-01-23)
+## 2.0.3 (2018-01-25)
 
+- Readme spelling fixes.
 - Import fix for angular-cli generated project.
 
 ## 2.0.0 (2018-01-07)
