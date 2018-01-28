@@ -160,7 +160,7 @@ The Style-Notation read from left to right adds the following CSS styles.
 1. Set border line style to dashed (default is solid).
 1. Set "__\<div\>__" element to take up 20% of available width.
 
-Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching between HTLM/JSX and the CSS style sheet is eliminated for all core CSS styles.
+Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching between HTML/JSX and the CSS style sheet is eliminated for all core CSS styles.
 
 ### CSS resets
 
@@ -185,7 +185,7 @@ Here are some general __mnemonics__ used in the naming of Style-Notations.
 |x|Left and right (horizontal), or expand (stretch) with Flexbox|
 |y|Top and bottom (vertical)|
 
-![style model](images/mnemonix-box.png)
+![style model](images/mnemonic-box.png)
 
 For each Style-Notation category, the mnemonic (key) will be listed to help with learning.
 
