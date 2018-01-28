@@ -15,22 +15,23 @@
   - [Benefits](#benefits)
 - [Foundation](#foundation)
   - [Basic usage](#basic-usage)
-  - [CSS Resets](#css-resets)
-  - [Mental model for Style-Notation](#mental-model-for-style-notation)
+  - [CSS resets](#css-resets)
+  - [Style model](#style-model)
   - [Sacred Seven](#sacred-seven)
-  - [Tracking down CSS issues](#tracking-down-css-issues)
-- [Getting setup](#getting-setup)
-  - [Starter HTML file](#starter-html-file)
-  - [Install as NPM module](#install-as-npm-module)
+  - [Debugging](#debugging)
+- [Getting started](#getting-started-1)
+  - [Setup](#setup)
+  - [Starter HTML](#starter-html)
+  - [Using NPM module](#using-npm-module)
   - [Using the CDN](#using-the-cdn)
 - [Box Model](#box-model)
 - [Display](#display)
-  - [General CSS display styles](#general-css-display-styles)
-  - [CSS Table display styles](#css-table-display-styles)
-  - [Table Caption placement](#table-caption-placement)
+  - [General Display styles](#general-display-styles)
+  - [CSS Table styles](#css-table-styles)
+  - [CSS Table Caption](#css-table-caption)
   - [Layout example](#layout-example)
 - [Sizing](#sizing)
-  - [Percentage based sizing](#percentage-based-sizing)
+  - [Percentage based](#percentage-based)
   - [Resetting sizing](#resetting-sizing)
 - [Spacing](#spacing)
 - [Padding](#padding)
@@ -38,18 +39,20 @@
   - [Padding bottom](#padding-bottom)
   - [Padding left](#padding-left)
   - [Padding right](#padding-right)
-  - [Padding top and bottom sides](#padding-top-and-bottom-sides)
-  - [Padding left and right sides](#padding-left-and-right-sides)
+  - [Padding vertical](#padding-vertical)
+  - [Padding horizontal](#padding-horizontal)
 - [Margins](#margins)
   - [Margin top](#margin-top)
   - [Margin bottom](#margin-bottom)
   - [Margin left](#margin-left)
   - [Margin right](#margin-right)
-  - [Margin top and bottom sides](#margin-top-and-bottom-sides)
-  - [Margin left and right sides](#margin-left-and-right-sides)
-- [Positioning an Element](#positioning-an-element)
-  - [Position](#position)
-  - [Z-Index](#z-index)
+  - [Margin vertical](#margin-vertical)
+  - [Margin horizontal](#margin-horizontal)
+  - [Auto Margin](#auto-margin)
+- [Positioning](#positioning)
+  - [Position types](#position-types)
+  - [Position location](#position-location)
+  - [Z Index](#z-index)
 - [Font](#font)
   - [Height scaling up](#height-scaling-up)
   - [Height scaling down](#height-scaling-down)
@@ -59,7 +62,7 @@
 - [Text](#text)
   - [Text justification](#text-justification)
   - [Text vertical alignments](#text-vertical-alignments)
-  - [Text transformation styles](#text-transformation-styles)
+  - [Text transformation](#text-transformation)
   - [Text wrapping](#text-wrapping)
   - [Text overflow](#text-overflow)
   - [Text Word break](#text-word-break)
@@ -73,16 +76,15 @@
   - [Border bottom](#border-bottom)
   - [Border left](#border-left)
   - [Border right](#border-right)
-  - [Border top and bottom sides](#border-top-and-bottom-sides)
-  - [Border left and right sides](#border-left-and-right-sides)
+  - [Border vertical](#border-vertical)
+  - [Border horizontal](#border-horizontal)
   - [Removing Borders](#removing-borders)
   - [Border Radius](#border-radius)
-  - [Radius on all corners](#radius-on-all-corners)
   - [Corner Radius](#corner-radius)
   - [Face Radius](#face-radius)
   - [Border line style](#border-line-style)
   - [Circle Radius](#circle-radius)
-  - [Pill styles Borders](#pill-styles-borders)
+  - [Pill style Borders](#pill-style-borders)
 - [Lists](#lists)
   - [Bullet marks](#bullet-marks)
   - [Bullet placement](#bullet-placement)
@@ -92,22 +94,21 @@
   - [Centering](#centering)
   - [Visibility](#visibility)
   - [Opacity](#opacity)
-- [Layouts](#layouts)
-  - [Floats](#floats)
-    - [Clearfix](#clearfix)
-  - [CSS Columns](#css-columns)
-  - [Flexbox](#flexbox)
-    - [Flex Container](#flex-container)
-    - [Flex direction](#flex-direction)
-    - [Flex item flow](#flex-item-flow)
-    - [Wrap mode](#wrap-mode)
-    - [Justify Main Axis](#justify-main-axis)
-    - [Justify Cross Axis](#justify-cross-axis)
-    - [Align content Cross Axis](#align-content-cross-axis)
-    - [Item align Cross Axis](#item-align-cross-axis)
-    - [Flex ordering](#flex-ordering)
-    - [Growing Flex item](#growing-flex-item)
-    - [Shrinking Flex item](#shrinking-flex-item)
+- [Floats](#floats)
+  - [Clearfix](#clearfix)
+- [CSS Columns](#css-columns)
+- [Flexbox](#flexbox)
+  - [Flex Container](#flex-container)
+  - [Flex direction](#flex-direction)
+  - [Flex item flow](#flex-item-flow)
+  - [Wrap mode](#wrap-mode)
+  - [Justify Main Axis](#justify-main-axis)
+  - [Justify Cross Axis](#justify-cross-axis)
+  - [Align content Cross Axis](#align-content-cross-axis)
+  - [Item align Cross Axis](#item-align-cross-axis)
+  - [Flex ordering](#flex-ordering)
+  - [Growing Flex item](#growing-flex-item)
+  - [Shrinking Flex item](#shrinking-flex-item)
   - [Grid](#grid)
   - [Responsive Design](#responsive-design)
 
@@ -161,7 +162,7 @@ The Style-Notation read from left to right adds the following CSS styles.
 
 Notice the power of Style-Notation and how it is additive, resulting in increased productivity. Context switching between HTLM/JSX and the CSS style sheet is eliminated for all core CSS styles.
 
-### CSS Resets
+### CSS resets
 
 Dyno Might CSS resets CSS styles using "__normalize.css__". In addition to this, the top __padding__ and __margin__ values are set to "__0__" (zero), to make calculation straight forward.
 
@@ -169,7 +170,7 @@ The global __Box Model__ is changed to use "__border-box__". This simplifies lay
 
 The Root Font family is set to "Roboto" with a height of __16px__. This base size is used to calculate the size of other elements by using the "__rem__" CSS unit.
 
-### Mental model for Style-Notation
+### Style model
 
 The Style-Notation is intentionally designed to be short, so one may be productive with less typing. When several notations are applied, this helps keep the overall line length much shorter than if long descriptive words were used for Style-Notation.
 
@@ -192,7 +193,7 @@ For each Style-Notation category, the mnemonic (key) will be listed to help with
 
 Dyno Might CSS adheres to the "__Sacred Seven__" when it comes to value ranges. Almost all values range from 0 to 7. A value of zero "0", is used to reset or clear a style.
 
-### Tracking down CSS issues
+### Debugging
 
 If something seems off with the CSS, you can switch to using a non-compressed friendlier CSS file for DM-CSS.
 
@@ -202,7 +203,9 @@ If something seems off with the CSS, you can switch to using a non-compressed fr
 |dm.prefix.css|Uncompressed with vendor prefix added|
 |dm.min.css|Compressed, for Production use|
 
-## Getting setup
+## Getting started
+
+### Setup
 
 In the HTML root in the head section, it is a good idea to add the following responsive viewport meta tag.
 
@@ -219,7 +222,7 @@ Dyno Might CSS requires HTML5 doctype.
 </html>
 ```
 
-### Starter HTML file
+### Starter HTML
 
 You may use the following HTML file to start from.
 
@@ -246,7 +249,7 @@ There are two ways to install the Dyno Might CSS Toolkit as a dependency to your
 1. Install as a NPM module.
 1. Use the CDN.
 
-### Install as NPM module
+### Using NPM module
 
 From a Node.js based project root, type:
 
@@ -302,7 +305,7 @@ You can hide and show the DOM element with the following styles. This will cause
 
 __Note:__ Styles "__hide__" is an alias for "__dnone__", prefer to use __hide__ as it is more clear what we expect to happen.
 
-### General CSS display styles
+### General Display styles
 
 __Mnemonic__: d = display
 
@@ -328,7 +331,7 @@ __Mnemonic__: d = display
 <div class="digrid"> ... </div>
 ```
 
-### CSS Table display styles
+### CSS Table styles
 
 Pure CSS table layout Style-Notation works like its HTML table counterpart, without the additional tags. This makes the HTML cleaner and less busy.
 
@@ -358,7 +361,7 @@ __Mnemonic__: t = table
 <div class="tfoot"> ... </div>
 ```
 
-### Table Caption placement
+### CSS Table Caption
 
 __Mnemonic__: tcap = table caption
 
@@ -408,7 +411,7 @@ Set the size of the element "__viewport__".
 
 Scale values for width and height range from 10% to 100% and incremented by 10.
 
-### Percentage based sizing
+### Percentage based
 
 __Mnemonic__: w = width, h = height
 
@@ -576,38 +579,38 @@ __Mnemonic__: p = padding
 <div class="pr7">Padding right size 7</div>
 ```
 
-### Padding top and bottom sides
+### Padding vertical
 
 ![pad y](/images/pad-y.png)
 
 __Mnemonic__: p = padding
 
 ```html
-<span class="py0">Padding top and bottom size 0</span>
-<span class="py1">Padding top and bottom size 1</span>
-<span class="py2">Padding top and bottom size 2</span>
-<span class="py3">Padding top and bottom size 3</span>
-<span class="py4">Padding top and bottom size 4</span>
-<span class="py5">Padding top and bottom size 5</span>
-<span class="py6">Padding top and bottom size 6</span>
-<span class="py7">Padding top and bottom size 7</span>
+<span class="py0">Padding vertical 0</span>
+<span class="py1">Padding vertical 1</span>
+<span class="py2">Padding vertical 2</span>
+<span class="py3">Padding vertical 3</span>
+<span class="py4">Padding vertical 4</span>
+<span class="py5">Padding vertical 5</span>
+<span class="py6">Padding vertical 6</span>
+<span class="py7">Padding vertical 7</span>
 ```
 
-### Padding left and right sides
+### Padding horizontal
 
 ![pad x](/images/pad-x.png)
 
 __Mnemonic__: p = padding
 
 ```html
-<span class="px0">Padding left and right size 0</span>
-<span class="px1">Padding left and right size 1</span>
-<span class="px2">Padding left and right size 2</span>
-<span class="px3">Padding left and right size 3</span>
-<span class="px4">Padding left and right size 4</span>
-<span class="px5">Padding left and right size 5</span>
-<span class="px6">Padding left and right size 6</span>
-<span class="px7">Padding left and right size 7</span>
+<span class="px0">Padding horizontal 0</span>
+<span class="px1">Padding horizontal 1</span>
+<span class="px2">Padding horizontal 2</span>
+<span class="px3">Padding horizontal 3</span>
+<span class="px4">Padding horizontal 4</span>
+<span class="px5">Padding horizontal 5</span>
+<span class="px6">Padding horizontal 6</span>
+<span class="px7">Padding horizontal 7</span>
 ```
 
 ## Margins
@@ -707,39 +710,41 @@ __Mnemonic__: m = margin
 <div class="mr7">Margin right size 7</div>
 ```
 
-### Margin top and bottom sides
+### Margin vertical
 
 ![pad y](/images/pad-y.png)
 
 __Mnemonic__: m = margin
 
 ```html
-<span class="my0">Margin top and bottom size 0</span>
-<span class="my1">Margin top and bottom size 1</span>
-<span class="my2">Margin top and bottom size 2</span>
-<span class="my3">Margin top and bottom size 3</span>
-<span class="my4">Margin top and bottom size 4</span>
-<span class="my5">Margin top and bottom size 5</span>
-<span class="my6">Margin top and bottom size 6</span>
-<span class="my7">Margin top and bottom size 7</span>
+<span class="my0">Margin vertical 0</span>
+<span class="my1">Margin vertical 1</span>
+<span class="my2">Margin vertical 2</span>
+<span class="my3">Margin vertical 3</span>
+<span class="my4">Margin vertical 4</span>
+<span class="my5">Margin vertical 5</span>
+<span class="my6">Margin vertical 6</span>
+<span class="my7">Margin vertical 7</span>
 ```
 
-### Margin left and right sides
+### Margin horizontal
 
 ![pad x](/images/pad-x.png)
 
 __Mnemonic__: m = margin
 
 ```html
-<span class="mx0">Margin left and right size 0</span>
-<span class="mx1">Margin left and right size 1</span>
-<span class="mx2">Margin left and right size 2</span>
-<span class="mx3">Margin left and right size 3</span>
-<span class="mx4">Margin left and right size 4</span>
-<span class="mx5">Margin left and right size 5</span>
-<span class="mx6">Margin left and right size 6</span>
-<span class="mx7">Margin left and right size 7</span>
+<span class="mx0">Margin horizontal 0</span>
+<span class="mx1">Margin horizontal 1</span>
+<span class="mx2">Margin horizontal 2</span>
+<span class="mx3">Margin horizontal 3</span>
+<span class="mx4">Margin horizontal 4</span>
+<span class="mx5">Margin horizontal 5</span>
+<span class="mx6">Margin horizontal 6</span>
+<span class="mx7">Margin horizontal 7</span>
 ```
+
+### Auto Margin
 
 By setting margin to auto, size is determined from available space.
 
@@ -757,13 +762,13 @@ __Mnemonic__: m = margin
 <div class="mra">Auto right</div>
 ```
 
-## Positioning an Element
+## Positioning
 
 Most Browsers allow an element to be re-positioned relative to its default position, relative to another element, or fixed to a given location.
 
 Dyno Might CSS makes positioning elements simple.
 
-### Position
+### Position types
 
 An element position property can be changed to one of the following CSS styles.
 
@@ -781,6 +786,8 @@ An element position property can be changed to one of the following CSS styles.
 <span class="static"> ... </span>
 ```
 
+### Position location
+
 Using fixed or absolute positioning.
 
 |Notation|Position value|
@@ -797,7 +804,7 @@ Using fixed or absolute positioning.
 <span class="right"> ... </span>
 ```
 
-### Z-Index
+### Z Index
 
 Set the Z order of an element. Positive Z values move an element in-front of stacked elements, while negative Z value move an element behind stacked elements.
 
@@ -1030,7 +1037,7 @@ __Mnemonic__: tt = Text transform
 <div class="ttsuper"> ... </div>
 ```
 
-### Text transformation styles
+### Text transformation
 
 __Mnemonic__: tt = Text transform
 
@@ -1310,7 +1317,7 @@ __Mnemonic__: b = border
 <div class="br7"> ... </div>
 ```
 
-### Border top and bottom sides
+### Border vertical
 
 __Mnemonic__: b = border
 
@@ -1327,7 +1334,7 @@ __Mnemonic__: b = border
 <div class="by7"> ... </div>
 ```
 
-### Border left and right sides
+### Border horizontal
 
 __Mnemonic__: b = border
 
@@ -1384,8 +1391,6 @@ __Mnemonic__: r = radius
 |Notation|Values|Radius size|
 |-|-|-|
 |r|0-7|All radius|
-
-### Radius on all corners
 
 ![radius](images/radius.png)
 
@@ -1526,7 +1531,7 @@ Below are three boxes with pixel dimensions of: 80x40, 80x80, 40x80.
 <div class="box3 b1 circle"> ... </div>
 ```
 
-### Pill styles Borders
+### Pill style Borders
 
 There are four pill styles for curved borders.
 
@@ -1670,9 +1675,7 @@ Control the opacity of an element and its descendants. A value of "0" (zero), is
 <div class="opacity7"> ... </div>
 ```
 
-## Layouts
-
-### Floats
+## Floats
 
 Positioning element by floating to one side.
 
@@ -1692,7 +1695,7 @@ __Mnemonic__: fl = float
 
 __Pro Tip__: Use display "__inline-block__" to avoid having to use "__clear__" when working with "__float__".
 
-#### Clearfix
+### Clearfix
 
 Apply clearfix settings.
 
@@ -1704,7 +1707,7 @@ Apply clearfix settings.
 <div class="cf"> ... </div>
 ```
 
-### CSS Columns
+## CSS Columns
 
 Columns are the fast and simple way to work with text layout as seen in publications. You can decide between using fixed width column counts, or dynamic width column count.
 
@@ -1726,11 +1729,11 @@ If you want a fixed number of columns that vary in width based on its container 
 
 If you want to maintain a fixed width for each column, and have the column count determined by the size of its container, use "__colf__".
 
-### Flexbox
+## Flexbox
 
 The Style-Notation for Flexbox makes it easy to do layout.
 
-#### Flex Container
+### Flex Container
 
 To create a Flex container, you must change the display property.
 
@@ -1748,7 +1751,7 @@ Making descendant items Flex or inline Flex items.
 <div class="diflex"> ... </div>
 ```
 
-#### Flex direction
+### Flex direction
 
 The default __Main__ and __Cross__ axis look like this.
 
@@ -1774,11 +1777,11 @@ __Note__: The Cross axis is always perpendicular to Main axis.
 <div class="fbd"> ... </div>
 ```
 
-#### Flex item flow
+### Flex item flow
 
 ![Flex direction](/images/fb-direction.png)
 
-#### Wrap mode
+### Wrap mode
 
 Additional notation to use for a multi-line Flex container. This will control Flex wrapping mode, items determine too long to fit the line can be set to wrap onto a new line.
 
@@ -1796,7 +1799,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbrw"> ... </div>
 ```
 
-#### Justify Main Axis
+### Justify Main Axis
 
 Justify Flex items along the Main axis.
 
@@ -1820,7 +1823,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbjb"> ... </div>
 ```
 
-#### Justify Cross Axis
+### Justify Cross Axis
 
 Vertically justify Flex items along their Cross axis.
 
@@ -1844,7 +1847,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbix"> ... </div>
 ```
 
-#### Align content Cross Axis
+### Align content Cross Axis
 
 Justify all Flex items inside a Flex container.
 
@@ -1870,7 +1873,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbcx"> ... </div>
 ```
 
-#### Item align Cross Axis
+### Item align Cross Axis
 
 Justify single Flex item along the Cross axis.
 
@@ -1896,7 +1899,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbsa"> ... </div>
 ```
 
-#### Flex ordering
+### Flex ordering
 
 Flex items position ordering.
 
@@ -1939,7 +1942,7 @@ Negative order positions.
 <div class="fbo-7"> ... </div>
 ```
 
-#### Growing Flex item
+### Growing Flex item
 
 Grow a Flexbox item.
 
@@ -1970,7 +1973,7 @@ __Example__: Sizing Flex items.
 <div class="fb2">C</div>
 ```
 
-#### Shrinking Flex item
+### Shrinking Flex item
 
 Shrink a Flexbox item.
 
