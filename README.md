@@ -10,25 +10,25 @@
 
 <!-- TOC -->
 
-- [Getting started](#getting-started)
+- [Dyno Might CSS](#dyno-might-css)
   - [Introduction](#introduction)
   - [Benefits](#benefits)
-- [Foundation](#foundation)
+- [Fundamentals](#fundamentals)
   - [Basic usage](#basic-usage)
   - [CSS resets](#css-resets)
   - [Style model](#style-model)
   - [Sacred Seven](#sacred-seven)
   - [Debugging](#debugging)
-- [Getting started](#getting-started-1)
+- [Getting started](#getting-started)
   - [Setup](#setup)
   - [Starter HTML](#starter-html)
   - [Using NPM module](#using-npm-module)
   - [Using the CDN](#using-the-cdn)
-- [Box Model](#box-model)
+- [Box model](#box-model)
 - [Display](#display)
   - [General Display styles](#general-display-styles)
   - [CSS Table styles](#css-table-styles)
-  - [CSS Table Caption](#css-table-caption)
+  - [CSS Table caption](#css-table-caption)
   - [Layout example](#layout-example)
 - [Sizing](#sizing)
   - [Percentage based](#percentage-based)
@@ -41,7 +41,7 @@
   - [Padding right](#padding-right)
   - [Padding vertical](#padding-vertical)
   - [Padding horizontal](#padding-horizontal)
-- [Margins](#margins)
+- [Margin](#margin)
   - [Margin top](#margin-top)
   - [Margin bottom](#margin-bottom)
   - [Margin left](#margin-left)
@@ -102,18 +102,18 @@
   - [Flex direction](#flex-direction)
   - [Flex item flow](#flex-item-flow)
   - [Wrap mode](#wrap-mode)
-  - [Justify Main Axis](#justify-main-axis)
-  - [Justify Cross Axis](#justify-cross-axis)
-  - [Align content Cross Axis](#align-content-cross-axis)
-  - [Item align Cross Axis](#item-align-cross-axis)
+  - [Justify Main axis](#justify-main-axis)
+  - [Justify Cross axis](#justify-cross-axis)
+  - [Align content Cross axis](#align-content-cross-axis)
+  - [Item align Cross axis](#item-align-cross-axis)
   - [Flex ordering](#flex-ordering)
   - [Growing Flex item](#growing-flex-item)
   - [Shrinking Flex item](#shrinking-flex-item)
   - [Grid](#grid)
-  - [Responsive Design](#responsive-design)
+  - [Responsive design](#responsive-design)
 
 <!-- /TOC -->
-## Getting started
+## Dyno Might CSS
 
 ### Introduction
 
@@ -138,7 +138,7 @@ Some of the features of __Dyno Might CSS__ Toolkit you will enjoy.
 - No side effects, works like your own custom CSS styles.
 - Tested with hundreds of Test cases (394+).
 
-## Foundation
+## Fundamentals
 
 ### Basic usage
 
@@ -273,7 +273,7 @@ Example usage for Dyno Might CSS version 2.0.5.
 <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.5/css/dm.min.css" rel="stylesheet">
 ```
 
-## Box Model
+## Box model
 
 Dyno Might CSS defaults to using the "__border-box__" Box Model. You can however change this.
 
@@ -361,7 +361,7 @@ __Mnemonic__: t = table
 <div class="tfoot"> ... </div>
 ```
 
-### CSS Table Caption
+### CSS Table caption
 
 __Mnemonic__: tcap = table caption
 
@@ -613,7 +613,7 @@ __Mnemonic__: p = padding
 <span class="px7">Padding horizontal 7</span>
 ```
 
-## Margins
+## Margin
 
 Set the margin area surrounding an element.
 
@@ -1761,7 +1761,7 @@ Using the direction Style-Notations, will change the direction of the __Main__ a
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Flex direction|Main Axis direction|
+|Notation|Flex direction|Main axis direction|
 |-|-|-|
 |fbr|Row (right)|Left to right|
 |fbl|Row reverse (left)|Right to left|
@@ -1799,13 +1799,13 @@ __Mnemonic__: fb = Flexbox
 <div class="fbrw"> ... </div>
 ```
 
-### Justify Main Axis
+### Justify Main axis
 
 Justify Flex items along the Main axis.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Justification along Main Axis|
+|Notation|Justification along Main axis|
 |-|-|
 |fbjs|Justify start|
 |fbje|Justify end|
@@ -1823,13 +1823,13 @@ __Mnemonic__: fb = Flexbox
 <div class="fbjb"> ... </div>
 ```
 
-### Justify Cross Axis
+### Justify Cross axis
 
 Vertically justify Flex items along their Cross axis.
 
 __Mnemonic__: fb = Flexbox
 
-|Notation|Justification Cross Axis|
+|Notation|Justification Cross axis|
 |-|-|
 |fbis|Justify items start|
 |fbie|Justify items end|
@@ -1847,7 +1847,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbix"> ... </div>
 ```
 
-### Align content Cross Axis
+### Align content Cross axis
 
 Justify all Flex items inside a Flex container.
 
@@ -1873,7 +1873,7 @@ __Mnemonic__: fb = Flexbox
 <div class="fbcx"> ... </div>
 ```
 
-### Item align Cross Axis
+### Item align Cross axis
 
 Justify single Flex item along the Cross axis.
 
@@ -1997,6 +1997,6 @@ __Mnemonic__: fb = Flexbox
 
 - WIP
 
-### Responsive Design
+### Responsive design
 
 - WIP
