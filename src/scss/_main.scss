@@ -24,6 +24,10 @@
 article, aside, footer, header, main, nav, section {
   display: block;
 }
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 @import 'border';
 @import 'boxmodel';
