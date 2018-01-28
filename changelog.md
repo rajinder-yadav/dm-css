@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.0.6 (2010-)
+
+- Add fix to help with sizing.
+- README sections reorganized, image path fixed, improved image labels.
+
 ## 2.0.5 (2018-01-26)
 
 - Breaking Change - Changed Style-Notation ttcaps to ttcap.
