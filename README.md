@@ -185,7 +185,7 @@ Here are some general __mnemonics__ used in the naming of Style-Notations.
 |x|Left and right (horizontal), or expand (stretch) with Flexbox|
 |y|Top and bottom (vertical)|
 
-![mental model](images/mnemonix-box.png)
+![style model](images/mnemonix-box.png)
 
 For each Style-Notation category, the mnemonic (key) will be listed to help with learning.
 
@@ -379,7 +379,7 @@ __Mnemonic__: tcap = table caption
 
 Using CSS table to layout a HTML Form.
 
-![Form](images/form.png)
+![input form](images/form.png)
 
 ```html
 <div class="bg w30 m4">
@@ -513,7 +513,7 @@ Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
 ### Padding top
 
-![pad top](images/pad-top.png)
+![padding top](images/pad-top.png)
 
 __Mnemonic__: p = padding
 
@@ -530,7 +530,7 @@ __Mnemonic__: p = padding
 
 ### Padding bottom
 
-![pad bottom](images/pad-bottom.png)
+![padding bottom](images/pad-bottom.png)
 
 __Mnemonic__: p = padding
 
@@ -547,7 +547,7 @@ __Mnemonic__: p = padding
 
 ### Padding left
 
-![pad left](images/pad-left.png)
+![padding left](images/pad-left.png)
 
 __Mnemonic__: p = padding
 
@@ -564,7 +564,7 @@ __Mnemonic__: p = padding
 
 ### Padding right
 
-![pad right](images/pad-right.png)
+![padding right](images/pad-right.png)
 
 __Mnemonic__: p = padding
 
@@ -581,7 +581,7 @@ __Mnemonic__: p = padding
 
 ### Padding vertical
 
-![pad y](images/pad-y.png)
+![padding vertical](images/pad-y.png)
 
 __Mnemonic__: p = padding
 
@@ -598,7 +598,7 @@ __Mnemonic__: p = padding
 
 ### Padding horizontal
 
-![pad x](images/pad-x.png)
+![padding horizontal](images/pad-x.png)
 
 __Mnemonic__: p = padding
 
@@ -644,7 +644,7 @@ Add margin to all sides, size values range from 0 to 7 and follow the Golden Rat
 
 ### Margin top
 
-![pad top](images/pad-top.png)
+![margin top](images/pad-top.png)
 
 __Mnemonic__: m = margin
 
@@ -661,7 +661,7 @@ __Mnemonic__: m = margin
 
 ### Margin bottom
 
-![pad bottom](images/pad-bottom.png)
+![margin bottom](images/pad-bottom.png)
 
 __Mnemonic__: m = margin
 
@@ -678,7 +678,7 @@ __Mnemonic__: m = margin
 
 ### Margin left
 
-![pad left](images/pad-left.png)
+![margin left](images/pad-left.png)
 
 __Mnemonic__: m = margin
 
@@ -695,7 +695,7 @@ __Mnemonic__: m = margin
 
 ### Margin right
 
-![pad right](images/pad-right.png)
+![margin right](images/pad-right.png)
 
 __Mnemonic__: m = margin
 
@@ -712,7 +712,7 @@ __Mnemonic__: m = margin
 
 ### Margin vertical
 
-![pad y](images/pad-y.png)
+![margin vertical](images/pad-y.png)
 
 __Mnemonic__: m = margin
 
@@ -729,7 +729,7 @@ __Mnemonic__: m = margin
 
 ### Margin horizontal
 
-![pad x](images/pad-x.png)
+![margin horizontal](images/pad-x.png)
 
 __Mnemonic__: m = margin
 
@@ -910,7 +910,7 @@ There are also 7 Heading Style-Notations, which display as the regular HTML head
 - Headings have been changed to use the "__Major Third__" scale.
 - For headings you can also use the regular HTML __h1__ to __h6__ tags.
 
-![font heights](images/headings.png)
+![headings](images/headings.png)
 
 ```html
 <div class="h1">Font height 1</div>
@@ -1048,7 +1048,7 @@ __Mnemonic__: tt = Text transform
 |ttlow|Mark all text lower-case|
 |ttnone|Remove any text transform previously set|
 
-![tt](images/text-transform.png)
+![text transform](images/text-transform.png)
 
 ```html
 <div class="ttcap">text has been transformed</div>
@@ -1253,7 +1253,7 @@ Border thickness value range from 0 to 7.
 
 __Mnemonic__: b = border
 
-![border](images/border-top.png)
+![border top](images/border-top.png)
 
 ```html
 <div class="bt0"> ... </div>
@@ -1270,7 +1270,7 @@ __Mnemonic__: b = border
 
 __Mnemonic__: b = border
 
-![border](images/border-bottom.png)
+![border bottom](images/border-bottom.png)
 
 ```html
 <div class="bb0"> ... </div>
@@ -1287,7 +1287,7 @@ __Mnemonic__: b = border
 
 __Mnemonic__: b = border
 
-![border](images/border-left.png)
+![border left](images/border-left.png)
 
 ```html
 <div class="bl0"> ... </div>
@@ -1304,7 +1304,7 @@ __Mnemonic__: b = border
 
 __Mnemonic__: b = border
 
-![border](images/border-right.png)
+![border right](images/border-right.png)
 
 ```html
 <div class="br0"> ... </div>
@@ -1321,7 +1321,7 @@ __Mnemonic__: b = border
 
 __Mnemonic__: b = border
 
-![by1](images/by.png)
+![border vertical](images/by.png)
 
 ```html
 <div class="by0"> ... </div>
@@ -1338,7 +1338,7 @@ __Mnemonic__: b = border
 
 __Mnemonic__: b = border
 
-![bx1](images/bx.png)
+![border horizontal](images/bx.png)
 
 ```html
 <div class="bx0"> ... </div>
@@ -1369,7 +1369,7 @@ __Mnemonic__: b = border
 
 You can use a combination of border styles to add then remove borders.
 
-![bro](images/br0.png)
+![border removal](images/br0.png)
 
 - Add borders to all sides and clear the border on the right side.
 
@@ -1407,7 +1407,7 @@ __Mnemonic__: r = radius
 
 Radius size is always consistent as shown below for larger dimensions.
 
-![radius2](images/radius2.png)
+![radius](images/radius2.png)
 
 ### Corner Radius
 
@@ -1422,7 +1422,7 @@ __Mnemonic__: r = radius
 |rbl|0-7|Bottom left|
 |rbr|0-7|Bottom right|
 
-![corner-radius](images/corner-radius.png)
+![corner radius](images/corner-radius.png)
 
 ```html
 <div class="b1 rtl5">Top left radius</div>
@@ -1444,7 +1444,7 @@ __Mnemonic__: r = radius
 |rl|0-7|Left face|
 |rr|0-7|Right face|
 
-![face-radius](images/face-radius.png)
+![face radius](images/face-radius.png)
 
 ```html
 <div class="b1 rt5">Radius top face</div>
@@ -1467,7 +1467,7 @@ Set border line style to dashed.
 |dashy|Dash on top and bottom|
 |dashx|Dash on left and right|
 
-![dashes](images/dashes.png)
+![border line dashed](images/dashes.png)
 
 ```html
 <div class="b2 dash"> ... </div>
@@ -1755,7 +1755,7 @@ Making descendant items Flex or inline Flex items.
 
 The default __Main__ and __Cross__ axis look like this.
 
-![Flex container](images/flex-container.png)
+![flex container](images/flex-container.png)
 
 Using the direction Style-Notations, will change the direction of the __Main__ and __Cross__ axis.
 
@@ -1779,7 +1779,7 @@ __Note__: The Cross axis is always perpendicular to Main axis.
 
 ### Flex item flow
 
-![Flex direction](images/fb-direction.png)
+![flex direction](images/fb-direction.png)
 
 ### Wrap mode
 
@@ -1922,7 +1922,7 @@ __Mnemonic__: fb = Flexbox
 
 __Example__: Flex item ordering.
 
-![Flex order](images/fb-order.png)
+![flex order](images/fb-order.png)
 
 ```html
 <div class="fbo3">A</div>
