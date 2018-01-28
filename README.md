@@ -185,7 +185,7 @@ Here are some general __mnemonics__ used in the naming of Style-Notations.
 |x|Left and right (horizontal), or expand (stretch) with Flexbox|
 |y|Top and bottom (vertical)|
 
-![mental model](./images/mnemonix-box.png)
+![mental model](images/mnemonix-box.png)
 
 For each Style-Notation category, the mnemonic (key) will be listed to help with learning.
 
@@ -379,7 +379,7 @@ __Mnemonic__: tcap = table caption
 
 Using CSS table to layout a HTML Form.
 
-![Form](./images/form.png)
+![Form](images/form.png)
 
 ```html
 <div class="bg w30 m4">
@@ -513,7 +513,7 @@ Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
 ### Padding top
 
-![pad top](/images/pad-top.png)
+![pad top](images/pad-top.png)
 
 __Mnemonic__: p = padding
 
@@ -530,7 +530,7 @@ __Mnemonic__: p = padding
 
 ### Padding bottom
 
-![pad bottom](/images/pad-bottom.png)
+![pad bottom](images/pad-bottom.png)
 
 __Mnemonic__: p = padding
 
@@ -547,7 +547,7 @@ __Mnemonic__: p = padding
 
 ### Padding left
 
-![pad left](/images/pad-left.png)
+![pad left](images/pad-left.png)
 
 __Mnemonic__: p = padding
 
@@ -564,7 +564,7 @@ __Mnemonic__: p = padding
 
 ### Padding right
 
-![pad right](/images/pad-right.png)
+![pad right](images/pad-right.png)
 
 __Mnemonic__: p = padding
 
@@ -581,7 +581,7 @@ __Mnemonic__: p = padding
 
 ### Padding vertical
 
-![pad y](/images/pad-y.png)
+![pad y](images/pad-y.png)
 
 __Mnemonic__: p = padding
 
@@ -598,7 +598,7 @@ __Mnemonic__: p = padding
 
 ### Padding horizontal
 
-![pad x](/images/pad-x.png)
+![pad x](images/pad-x.png)
 
 __Mnemonic__: p = padding
 
@@ -644,7 +644,7 @@ Add margin to all sides, size values range from 0 to 7 and follow the Golden Rat
 
 ### Margin top
 
-![pad top](/images/pad-top.png)
+![pad top](images/pad-top.png)
 
 __Mnemonic__: m = margin
 
@@ -661,7 +661,7 @@ __Mnemonic__: m = margin
 
 ### Margin bottom
 
-![pad bottom](/images/pad-bottom.png)
+![pad bottom](images/pad-bottom.png)
 
 __Mnemonic__: m = margin
 
@@ -678,7 +678,7 @@ __Mnemonic__: m = margin
 
 ### Margin left
 
-![pad left](/images/pad-left.png)
+![pad left](images/pad-left.png)
 
 __Mnemonic__: m = margin
 
@@ -695,7 +695,7 @@ __Mnemonic__: m = margin
 
 ### Margin right
 
-![pad right](/images/pad-right.png)
+![pad right](images/pad-right.png)
 
 __Mnemonic__: m = margin
 
@@ -712,7 +712,7 @@ __Mnemonic__: m = margin
 
 ### Margin vertical
 
-![pad y](/images/pad-y.png)
+![pad y](images/pad-y.png)
 
 __Mnemonic__: m = margin
 
@@ -729,7 +729,7 @@ __Mnemonic__: m = margin
 
 ### Margin horizontal
 
-![pad x](/images/pad-x.png)
+![pad x](images/pad-x.png)
 
 __Mnemonic__: m = margin
 
@@ -1723,7 +1723,7 @@ __Mnemonic__: col = column
 
 __Example__: Text using 3 columns.
 
-![column](./images/column.png)
+![column](images/column.png)
 
 If you want a fixed number of columns that vary in width based on its container size, use "__col__".
 
@@ -1755,7 +1755,7 @@ Making descendant items Flex or inline Flex items.
 
 The default __Main__ and __Cross__ axis look like this.
 
-![Flex container](/images/flex-container.png)
+![Flex container](images/flex-container.png)
 
 Using the direction Style-Notations, will change the direction of the __Main__ and __Cross__ axis.
 
@@ -1779,7 +1779,7 @@ __Note__: The Cross axis is always perpendicular to Main axis.
 
 ### Flex item flow
 
-![Flex direction](/images/fb-direction.png)
+![Flex direction](images/fb-direction.png)
 
 ### Wrap mode
 
@@ -1813,7 +1813,7 @@ __Mnemonic__: fb = Flexbox
 |fbja|Justify space around|
 |fbjb|Justify space between|
 
-![justify](/images/fb-justify.png)
+![justify](images/fb-justify.png)
 
 ```html
 <div class="fbjs"> ... </div>
@@ -1837,7 +1837,7 @@ __Mnemonic__: fb = Flexbox
 |fbib|Justify items baseline|
 |fbix|Justify items stretch (eXpand)|
 
-![justify items](/images/fb-justify-items.png)
+![justify items](images/fb-justify-items.png)
 
 ```html
 <div class="fbis"> ... </div>
@@ -1862,7 +1862,7 @@ __Mnemonic__: fb = Flexbox
 |fbcb|Align content space between|
 |fbcx|Align content stretch (eXpand)|
 
-![justify content](/images/fb-justify-content.png)
+![justify content](images/fb-justify-content.png)
 
 ```html
 <div class="fbcs"> ... </div>
@@ -1888,7 +1888,7 @@ __Mnemonic__: fb = Flexbox
 |fbsx|Align self stretch (eXpand)|
 |fbsa|Align self auto|
 
-![justify self](/images/fb-justify-self.png)
+![justify self](images/fb-justify-self.png)
 
 ```html
 <div class="fbss"> ... </div>
@@ -1922,7 +1922,7 @@ __Mnemonic__: fb = Flexbox
 
 __Example__: Flex item ordering.
 
-![Flex order](/images/fb-order.png)
+![Flex order](images/fb-order.png)
 
 ```html
 <div class="fbo3">A</div>
@@ -1965,7 +1965,7 @@ __Mnemonic__: fb = Flexbox
 
 __Example__: Sizing Flex items.
 
-![justify size](/images/fb-sizes.png)
+![justify size](images/fb-sizes.png)
 
 ```html
 <div class="fb0">A</div>
