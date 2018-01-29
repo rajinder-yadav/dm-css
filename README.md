@@ -444,13 +444,13 @@ Fixed width and height sizes are based on the root font using the "__rem__" unit
 
 |Notation|Values|Description|
 |-|-|-|
-|wf|1-35|Width based on rem|
-|hf|1-35|Height based on rem|
+|wf|1-35|Fixed rem based width|
+|hf|1-35|Fixed rem based height|
 
 ```html
 <div class="wf10"> ... </div>
 <div class="hf25"> ... </div>
-````
+```
 
 ### Resetting sizing
 
