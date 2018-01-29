@@ -33,3 +33,12 @@ $size_scales: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
 .hnomax {
   max-width: none !important;
 }
+// Font relative fixed sizes
+@for $size from 1 through 35 {
+  .hf#{$size} {
+    height: #{$size}rem;
+  }
+  .wf#{$size} {
+    width: #{$size}rem;
+  }
+}
