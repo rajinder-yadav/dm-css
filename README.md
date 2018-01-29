@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.0.6-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.1.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -32,6 +32,7 @@
   - [Layout example](#layout-example)
 - [Sizing](#sizing)
   - [Percentage based](#percentage-based)
+  - [Fixed unit based](#fixed-unit-based)
   - [Resetting sizing](#resetting-sizing)
 - [Spacing](#spacing)
 - [Padding](#padding)
@@ -236,7 +237,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.6/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.1.0/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -267,10 +268,10 @@ __General format__
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 2.0.6.
+Example usage for Dyno Might CSS version 2.1.0.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@2.0.6/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.1.0/css/dm.min.css" rel="stylesheet">
 ```
 
 ## Box model
@@ -436,6 +437,20 @@ __Mnemonic__: w = width, h = height
 <div class="w90"> ... </div>
 <div class="w100"> ... </div>
 ```
+
+### Fixed unit based
+
+Fixed width and height sizes are based on the root font using the "__rem__" unit.
+
+|Notation|Values|Description|
+|-|-|-|
+|wf|1-35|Width based on rem|
+|hf|1-35|Height based on rem|
+
+```html
+<div class="wf10"> ... </div>
+<div class="hf25"> ... </div>
+````
 
 ### Resetting sizing
 
@@ -1770,11 +1785,13 @@ __Mnemonic__: fb = Flexbox
 
 __Note__: The Cross axis is always perpendicular to Main axis.
 
+The direction Style-Notation must be added to a Flex container.
+
 ```html
-<div class="fbr"> ... </div>
-<div class="fbl"> ... </div>
-<div class="fbu"> ... </div>
-<div class="fbd"> ... </div>
+<div class="dflex fbr"> ... </div>
+<div class="dflex fbl"> ... </div>
+<div class="dflex fbu"> ... </div>
+<div class="dflex fbd"> ... </div>
 ```
 
 ### Flex item flow
@@ -1793,10 +1810,12 @@ __Mnemonic__: fb = Flexbox
 |fbnw|Flex no wrap|
 |fbrw|Flex reverse wrap|
 
+The wrap Style-Notation must be added to a Flex container.
+
 ```html
-<div class="fbw"> ... </div>
-<div class="fbnw"> ... </div>
-<div class="fbrw"> ... </div>
+<div class="dflex fbw"> ... </div>
+<div class="dflex fbnw"> ... </div>
+<div class="dflex fbrw"> ... </div>
 ```
 
 ### Justify Main axis
@@ -1815,12 +1834,14 @@ __Mnemonic__: fb = Flexbox
 
 ![justify](images/fb-justify.png)
 
+The justify Style-Notation must be added to a Flex container.
+
 ```html
-<div class="fbjs"> ... </div>
-<div class="fbje"> ... </div>
-<div class="fbjc"> ... </div>
-<div class="fbja"> ... </div>
-<div class="fbjb"> ... </div>
+<div class="dflex fbjs"> ... </div>
+<div class="dflex fbje"> ... </div>
+<div class="dflex fbjc"> ... </div>
+<div class="dflex fbja"> ... </div>
+<div class="dflex fbjb"> ... </div>
 ```
 
 ### Justify Cross axis
