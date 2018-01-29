@@ -1,95 +1,95 @@
 // Flex direction
 .fbr {
-  flex-direction: row !important;
+  flex-direction: row;
 }
 .fbl {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
 }
 .fbd {
-  flex-direction: column !important;
+  flex-direction: column;
 }
 .fbu {
-  flex-direction: column-reverse !important;
+  flex-direction: column-reverse;
 }
 // Wrap mode
 .fbnw {
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
 }
 .fbw {
-  flex-wrap: wrap !important;
+  flex-wrap: wrap;
 }
 .fbrw {
-  flex-wrap: wrap-reverse !important;
+  flex-wrap: wrap-reverse;
 }
 // Justify along Main axis
 .fbjs {
-  justify-content: flex-start !important;
+  justify-content: flex-start;
 }
 .fbje {
-  justify-content: flex-end !important;
+  justify-content: flex-end;
 }
 .fbjc {
-  justify-content: center !important;
+  justify-content: center;
 }
 .fbja {
-  justify-content: space-around !important;
+  justify-content: space-around;
 }
 .fbjb {
-  justify-content: space-between !important;
+  justify-content: space-between;
 }
 // Justify along Cross axis
 .fbis {
-  align-items: flex-start !important;
+  align-items: flex-start;
 }
 .fbie {
-  align-items: flex-end !important;
+  align-items: flex-end;
 }
 .fbic {
-  align-items: center !important;
+  align-items: center;
 }
 .fbib {
-  align-items: baseline !important;
+  align-items: baseline;
 }
 .fbix {
-  align-items: stretch !important;
+  align-items: stretch;
 }
 // Justify everything
 .fbcs {
-  align-content: flex-start !important;
+  align-content: flex-start;
 }
 .fbce {
-  align-content: flex-end !important;
+  align-content: flex-end;
 }
 .fbcc {
-  align-content: center !important;
+  align-content: center;
 }
 .fbcb {
-  align-content: space-between !important;
+  align-content: space-between;
 }
 .fbca {
-  align-content: space-around !important;
+  align-content: space-around;
 }
 .fbcx {
-  align-content: stretch !important;
+  align-content: stretch;
 }
 // Justify item self
 .fbsa {
-  align-self: auto !important;
+  align-self: auto;
 }
 .fbss {
-  align-self: flex-start !important;
+  align-self: flex-start;
 }
 .fbse {
-  align-self: flex-end !important;
+  align-self: flex-end;
 }
 .fbsc {
-  align-self: center !important;
+  align-self: center;
 }
 .fbsb {
-  align-self: baseline !important;
+  align-self: baseline;
 }
 .fbsx {
-  align-self: stretch !important;
+  align-self: stretch;
 }
 // Flex order, grow, shrink
 @for $n from 0 through 7 {
