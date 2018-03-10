@@ -1,6 +1,14 @@
 # Change Log
 
-## 2.0.6 (2010-)
+## 2.1.0 (2018-03-10)
+
+- Added fixed font sizing notation for width and height.
+
+### Breaking changes
+
+- All padding and margin now reset to zero, before only top margin and padding were set to zero.
+
+## 2.0.6 (2018-01-28)
 
 - Add fix to help with sizing.
 - README sections reorganized, image path fixed, improved image labels.
