@@ -165,7 +165,7 @@ Notice the power of Style-Notation and how it is additive, resulting in increase
 
 ### CSS resets
 
-Dyno Might CSS resets CSS styles using "__normalize.css__". In addition to this, the top __padding__ and __margin__ values are set to "__0__" (zero), to make calculation straight forward.
+Dyno Might CSS resets CSS styles using "__normalize.css__". In addition to this, the __padding__ and __margin__ values are all set to "__0__" (zero), to make calculation straight forward.
 
 The global __Box Model__ is changed to use "__border-box__". This simplifies layout calculation since both margin and padding are contained inside the element's Box Model.
 
@@ -493,6 +493,8 @@ Make sure you have a good understanding of CSS display types. How block and inli
 The Box Model that Dyno Might CSS uses is "__border-box__". For more info on Box Model see [MDN box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing).
 
 ![border box](images/box-model.png)
+
+By default both "__padding__" and "__margin__" values for each side has been set to zero. This allows for simple straight-forward layout calculation, giving you the control when and how much padding or space to add to each HTML element.
 
 The Style-Notation for spacing allows setting the __margin__ and __padding__ used by an element.
 
