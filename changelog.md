@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.1 (2018-03-11)
+
+- Bug fix, removed "__important__" from reset of padding and margin for all elements.
+  This fixes a bug in Material Design sidenav component.
+
 ## 2.1.0 (2018-03-10)
 
 - Added fixed font sizing notation for width and height.
