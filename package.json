@@ -1,6 +1,6 @@
 {
   "name": "dm-css",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Dyno Might CSS - Fast Compact CSS Toolkit for everyone!",
   "keywords": [
     "css",
@@ -20,6 +20,6 @@
     "url": "https://github.com/rajinder-yadav/dm-css"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.1"
   }
 }
