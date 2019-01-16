@@ -1,13 +1,12 @@
 # Change Log
 
-## 2.1.2 (2018-12-07)
+## 2.1.6 (2019-01-16)
 
-- NPM Module updated.
-
+- Fixed normalize.css dependency error, copied file into project.
 ## 2.1.1 (2018-03-11)
 
 - Bug fix, removed "__important__" from reset of padding and margin for all elements.
-- This fixes a bug in Material Design sidenav component.
+  This fixes a bug in Material Design sidenav component.
 
 ## 2.1.0 (2018-03-10)
 

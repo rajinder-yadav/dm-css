@@ -1,21 +1,25 @@
-// Make sure 'npm i -S normalize.css'
-@import url(normalize.css/normalize.css);
-
 // Default font 'Roboto'
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// Copied from nnormalize.css 8.0.1
+@import 'normalize';
+
+// Make sure 'npm i -S normalize.css'
+// @import url(normalize.css/normalize.css);
+// @import url('~/normalize.css');
+
+// Calculation simplified when only bottom
+// margin and padding need to be considered.
+* {
+  padding: 0;
+  margin: 0;
+}
 // The Root element (rem) size is based off the font size of 16px.
 // Reset box model to use border-box calculation.
 :root {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
   box-sizing: border-box !important;
-}
-// Calculation simplified when only bottom 
-// margin and padding need to be considered.
-* {
-  padding: 0;
-  margin: 0;
 }
 *, *:before, *:after {
   box-sizing: inherit !important;
