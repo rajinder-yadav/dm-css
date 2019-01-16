@@ -1,8 +1,9 @@
 # Change Log
 
-## 2.1.6 (2019-01-16)
+## 2.1.7 (2019-01-16)
 
 - Fixed normalize.css dependency error, copied file into project.
+
 ## 2.1.1 (2018-03-11)
 
 - Bug fix, removed "__important__" from reset of padding and margin for all elements.
