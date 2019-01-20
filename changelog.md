@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.1.7 (2019-01-16)
+## 2.1.8 (2019-01-20)
 
 - Fixed normalize.css dependency error, copied file into project.
 
