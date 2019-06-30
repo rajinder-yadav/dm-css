@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.1.9-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.2.1-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -165,11 +165,17 @@ Notice the power of Style-Notation and how it is additive, resulting in increase
 
 ### CSS resets
 
-Dyno Might CSS resets CSS styles using "__normalize.css__". In addition to this, the __padding__ and __margin__ values are all set to "__0__" (zero), to make calculation straight forward.
+The Root Font family is set to "Roboto" with a height of __16px__. This base size is used to calculate the size of other elements by using the "__rem__" CSS unit.
+
+Dyno Might CSS resets CSS styles by resetting __margin__ and __padding__.
+
+1. The __padding__ values are reset to "__0__" (zero).
+1. The __margin__ top is given a value of 0.25rem (4px).
+1. All other margin values are reset to "__0__" (zero).
+
+This is done to make layout calculations straight forward.
 
 The global __Box Model__ is changed to use "__border-box__". This simplifies layout calculation since both margin and padding are contained inside the element's Box Model.
-
-The Root Font family is set to "Roboto" with a height of __16px__. This base size is used to calculate the size of other elements by using the "__rem__" CSS unit.
 
 ### Style model
 
@@ -237,7 +243,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.1.9/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.2.1/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
@@ -268,10 +274,10 @@ __General format__
 <link href="https://cdn.jsdelivr.net/npm/dm-css@<version>/css/dm.min.css" rel="stylesheet">
 ```
 
-Example usage for Dyno Might CSS version 2.1.9.
+Example usage for Dyno Might CSS version 2.2.1.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/dm-css@2.1.9/css/dm.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/dm-css@2.2.1/css/dm.min.css" rel="stylesheet">
 ```
 
 ## Box model

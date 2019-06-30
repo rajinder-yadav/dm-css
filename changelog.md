@@ -1,8 +1,25 @@
 # Change Log
 
-## 2.1.8 (2019-01-20)
+## 2.2.1 (2019-06-29)
 
-- Fixed normalize.css dependency error, copied file into project.
+- Fixed normilize css margin, no set to 0 (zero).
+
+## 2.2.0 (2019-01-22)
+
+__Breaking change in CSS reset, minor change may affect layout.__
+
+- Changed how CSS reset in done. Line height is set to a multiplier of 1.
+- Margin top is set to 0.25rem (4px).
+- Other margin values are set to zero.
+- Corrected ol, ul indentation.
+- Corrected list style none indentation.
+
+Note: Padding values remain unchanged at zero.
+
+## 2.1.10 (2019-01-20)
+
+- Removed reliance on normalize.css.
+- Corrected list item indentation.
 
 ## 2.1.1 (2018-03-11)
 

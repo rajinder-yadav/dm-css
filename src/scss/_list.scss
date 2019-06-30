@@ -5,6 +5,9 @@ $bullet_notations: none, disc, square, circle, decimal;
     list-style-type: $b;
   }
 }
+.lsnone {
+  margin-left: 1rem;
+}
 .lsalpha {
   list-style-type: lower-alpha;
 }
