@@ -4,11 +4,11 @@ $heading_scale: 3.052, 2.441, 1.953, 1.563, 1.25, 1;
 @each $hval in $heading_scale {
   $i: index($heading_scale, $hval);
   h#{$i}, .h#{$i} {
-    font-size: #{$hval}rem !important;
+    font-size: #{$hval}rem;
   }
 }
 .h7 {
-  font-size: 0.889rem !important;
+  font-size: 0.889rem;
 }
 // Font size using Golden Ratio 1.618, calculated values truncated.
 // $fheight_pscale: 1, 1.618, 3.236, 4.854, 6.472, 8.09, 9.708;
@@ -19,7 +19,7 @@ $fheight_pscale: 1, 1.333, 1.778, 2.370, 3.160, 4.214, 5.619, 7.491;
 @each $fval in $fheight_pscale {
   $i: index($fheight_pscale, $fval);
   .fh#{$i} {
-    font-size: #{$fval}rem !important;
+    font-size: #{$fval}rem;
   }
 }
 
@@ -27,36 +27,36 @@ $fheight_nscale: 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3;
 @each $fval in $fheight_nscale {
   $i: index($fheight_nscale, $fval);
   .fh-#{$i} {
-    font-size: #{$fval}rem !important;
+    font-size: #{$fval}rem;
   }
 }
 // Font styles
 .fsn {
-  font-style: normal !important;
-  font-weight: normal !important;
-  text-decoration: none !important;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
 }
 .fsi {
-  font-style: italic !important;
+  font-style: italic;
 }
 .fsb {
-  font-weight: bold !important;
+  font-weight: bold;
 }
 .fsu {
-  text-decoration-line: underline !important;
-  text-decoration-style: solid !important;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 .fss {
-  text-decoration-line: line-through !important;
-  text-decoration-style: solid !important;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
 }
 .fsw {
-  text-decoration-line: underline !important;
-  text-decoration-style: wavy !important;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 // Font weights 100 - 900
 @for $n from 1 through 9 {
   .fw#{$n * 100} {
-    font-weight: $n * 100 !important;
+    font-weight: $n * 100;
   }
 }

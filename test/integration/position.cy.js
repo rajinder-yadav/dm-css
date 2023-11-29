@@ -89,6 +89,11 @@ describe("Size", () => {
         .should("have.class", "absolute static")
         .should("have.css", "position", "static");
     });
+    it("Sticky", () => {
+      cy.get("#sticky")
+        .should("have.class", "sticky")
+        .should("have.css", "position", "sticky");
+    });
   });
 
   context("Fixed position", () => {

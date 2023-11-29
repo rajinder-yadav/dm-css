@@ -1,8 +1,8 @@
 .visible {
-  visibility: visible !important;
+  visibility: visible;
 }
 .invisible {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 .centerx {
   display: flex;
@@ -18,13 +18,13 @@
   justify-content: center;
 }
 .opacity0 {
-  opacity: 0 !important;
+  opacity: 0;
 }
 .opacity1 {
-  opacity: 0.05 !important;
+  opacity: 0.05;
 }
 @for $opacity from 0 to 5 {
   .opacity#{$opacity + 2} {
-    opacity: 0.1 + 0.18 * $opacity !important;
+    opacity: 0.1 + 0.18 * $opacity;
   }
 }

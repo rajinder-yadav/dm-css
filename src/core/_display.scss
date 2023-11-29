@@ -1,42 +1,42 @@
 // Display (supported)
 .show {
-  display: revert !important;
+  display: revert;
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 
 $display_notations: (
-  none: none, 
+  none: none,
   inline: inline,
-  iblock: inline-block, 
-  block: block, 
-  flex: flex, 
-  iflex: inline-flex, 
-  grid: grid, 
+  iblock: inline-block,
+  block: block,
+  flex: flex,
+  iflex: inline-flex,
+  grid: grid,
   igrid: inline-grid
 );
 @each $notation, $style in $display_notations {
   .d#{$notation} {
-    display: $style !important;
+    display: $style;
   }
 }
 
 // MDN Display: https://developer.mozilla.org/en-US/docs/Web/CSS/display
 $table_notations: (
-  table: table, 
-  tr: table-row, 
-  td: table-cell, 
+  table: table,
+  tr: table-row,
+  td: table-cell,
   tcap: table-caption,
   tcol: table-column,
   tcolgroup: table-column-group,
-  thead: table-header-group, 
-  tbody: table-row-group, 
+  thead: table-header-group,
+  tbody: table-row-group,
   tfoot: table-footer-group
 );
 @each $notation, $style in $table_notations {
   .#{$notation} {
-    display: $style !important;
+    display: $style;
   }
 }
 .tcapt {

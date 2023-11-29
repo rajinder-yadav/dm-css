@@ -37,18 +37,18 @@ $bullet_notations: none, disc, square, circle, decimal;
   }
 }
 ul.lsreset {
-  display: block !important;
-  list-style-type: revert !important;
-  list-style-position: revert !important;
+  display: block;
+  list-style-type: revert;
+  list-style-position: revert;
   li {
-    display:list-item block !important;
+    display:list-item block;
   }
 }
 ol.lsreset {
-  display: block !important;
-  list-style-type: decimal !important;
-  list-style-position: revert !important;
+  display: block;
+  list-style-type: decimal;
+  list-style-position: revert;
   li {
-    display:list-item block !important;
+    display:list-item block;
   }
 }

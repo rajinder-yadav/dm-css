@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.2.1-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.3.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 ![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
@@ -170,8 +170,7 @@ The Root Font family is set to "Roboto" with a height of __16px__. This base siz
 Dyno Might CSS resets CSS styles by resetting __margin__ and __padding__.
 
 1. The __padding__ values are reset to "__0__" (zero).
-1. The __margin__ top is given a value of 0.25rem (4px).
-1. All other margin values are reset to "__0__" (zero).
+1. The __margin__ values are reset to "__0__" (zero).
 
 This is done to make layout calculations straight forward.
 

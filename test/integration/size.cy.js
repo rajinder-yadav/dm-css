@@ -321,4 +321,29 @@ describe("Size", () => {
     });
   });
 
+  context.only("Screen Auto NoMax", () => {
+    it("hauto", () => {
+      cy.get(".hauto")
+        .should("have.class", "hauto");
+      // .should("have.css", "height", "auto");
+    });
+    it("hscreen", () => {
+      cy.get(".hscreen")
+        .should("have.class", "hscreen")
+        .should("not.have.css", "height", "100px")
+        .should("not.have.css", "height", "0px");
+    });
+    it("wauto", () => {
+      cy.get(".wauto")
+        .should("have.class", "wauto");
+      // .should("have.css", "height", "auto");
+    });
+    it("wscreen", () => {
+      cy.get(".wscreen")
+        .should("have.class", "wscreen")
+        .should("not.have.css", "width", "100px")
+        .should("not.have.css", "width", "0px");
+    });
+  });
+
 });

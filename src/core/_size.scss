@@ -1,37 +1,39 @@
+@use "sass:math";
+
 // Width fixed
 // WARNING! Do not change .h to have a range between 1 to 7, this is reserver for headings.
 $size_scales: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
 @each $n in $size_scales {
   .w#{$n} {
-    width: #{$n}% !important;
+    width: math.percentage(math.div($n, 100));
   }
   .wmin#{$n} {
-    min-width: #{$n}% !important;
+    min-width: math.percentage(math.div($n, 100));
   }
   .wmax#{$n} {
-    max-width: #{$n}% !important;
+    max-width: math.percentage(math.div($n, 100));
   }
   .h#{$n} {
-    height: #{$n}% !important;
+    height: math.percentage(math.div($n, 100));
   }
   .hmin#{$n} {
-    min-height: #{$n}% !important;
+    min-height: math.percentage(math.div($n, 100));
   }
   .hmax#{$n} {
-    max-height: #{$n}% !important;
+    max-height: math.percentage(math.div($n, 100));
   }
 }
 .hauto {
-  height: auto !important;
+  height: auto;
+}
+.hscreen {
+  height: 100vh;
 }
 .wauto {
-  width: auto !important;
+  width: auto;
 }
-.wnomax {
-  max-height: none !important;
-}
-.hnomax {
-  max-width: none !important;
+.wscreen {
+  width: 100vw;
 }
 // Font relative fixed sizes
 @for $size from 1 through 35 {

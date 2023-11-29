@@ -1,5 +1,7 @@
+@use "sass:math";
+
 // Base screen size starting with 2 columns is 1920px === 120rem
-$col_size: 120rem / 2;
+$col_size: math.div(120rem, 2);
 
 @for $count from 1 to 7 {
   // Break points grid width sizes: 960, 640, 480, 384, 320, 274, 240
@@ -8,7 +10,7 @@ $col_size: 120rem / 2;
   }
   // Fixed width size
   .colf#{$count} {
-    column-width: #{$col_size / $count};
+    column-width: #{math.div($col_size, $count)};
   }
 }
 .colauto {

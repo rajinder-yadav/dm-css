@@ -94,15 +94,15 @@
 // Flex order, grow, shrink
 @for $n from 0 through 7 {
   .fbo#{$n} {
-    order: $n !important;
+    order: $n;
   }
   .fbo-#{$n} {
-    order: -#{$n} !important;
+    order: -#{$n};
   }
   .fb#{$n} {
-    flex-grow: $n !important;
+    flex-grow: $n;
   }
   .fb-#{$n} {
-    flex-shrink: $n !important;
+    flex-shrink: $n;
   }
 }

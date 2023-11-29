@@ -1,44 +1,44 @@
 // Border thickness
 @for $size from 0 through 7 {
-  .b#{$size} { 
+  .b#{$size} {
     border: #{$size}px solid;
   }
-  .bt#{$size} { 
+  .bt#{$size} {
     border-top: #{$size}px solid;
   }
-  .bb#{$size} { 
+  .bb#{$size} {
     border-bottom: #{$size}px solid;
   }
-  .bl#{$size} { 
+  .bl#{$size} {
     border-left: #{$size}px solid;
   }
-  .br#{$size} { 
+  .br#{$size} {
     border-right: #{$size}px solid;
   }
-  .by#{$size} { 
+  .by#{$size} {
     border-top: #{$size}px solid;
     border-bottom: #{$size}px solid;
   }
-  .bx#{$size} { 
+  .bx#{$size} {
     border-left: #{$size}px solid;
     border-right: #{$size}px solid;
   }
 }
 // Specialized borders
 .circle {
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 .pill1 {
-  border-radius: 10% / 50% !important;
+  border-radius: 10% / 50%;
 }
 .pill2 {
-  border-radius: 15% / 50% !important;
+  border-radius: 15% / 50%;
 }
 .pill3 {
-  border-radius: 20% / 50% !important;
+  border-radius: 20% / 50%;
 }
 .pill4 {
-  border-radius: 25% / 50% !important;
+  border-radius: 25% / 50%;
 }
 // Border radius using Golden Ratio 1.618, calculated values truncated.
 $radius_scale: 0, 0.25, 0.404, 0.654, 1.059, 1.713, 2.77, 4.449;
@@ -46,35 +46,35 @@ $radius_scale: 0, 0.25, 0.404, 0.654, 1.059, 1.713, 2.77, 4.449;
   $i: index($radius_scale, $rval);
 
   .r#{$i - 1} {
-    border-radius: #{$rval}rem; 
+    border-radius: #{$rval}rem;
   }
   .rtl#{$i - 1} {
-    border-top-left-radius: #{$rval}rem; 
+    border-top-left-radius: #{$rval}rem;
   }
   .rtr#{$i - 1} {
-    border-top-right-radius: #{$rval}rem; 
+    border-top-right-radius: #{$rval}rem;
   }
   .rbl#{$i - 1} {
-    border-bottom-left-radius: #{$rval}rem; 
+    border-bottom-left-radius: #{$rval}rem;
   }
   .rbr#{$i - 1} {
-    border-bottom-right-radius: #{$rval}rem; 
+    border-bottom-right-radius: #{$rval}rem;
   }
   .rt#{$i - 1} {
-    border-top-left-radius: #{$rval}rem; 
-    border-top-right-radius: #{$rval}rem; 
+    border-top-left-radius: #{$rval}rem;
+    border-top-right-radius: #{$rval}rem;
   }
   .rb#{$i - 1} {
-    border-bottom-left-radius: #{$rval}rem; 
-    border-bottom-right-radius: #{$rval}rem; 
+    border-bottom-left-radius: #{$rval}rem;
+    border-bottom-right-radius: #{$rval}rem;
   }
   .rl#{$i - 1} {
-    border-top-left-radius: #{$rval}rem; 
-    border-bottom-left-radius: #{$rval}rem; 
+    border-top-left-radius: #{$rval}rem;
+    border-bottom-left-radius: #{$rval}rem;
   }
   .rr#{$i - 1} {
-    border-top-right-radius: #{$rval}rem; 
-    border-bottom-right-radius: #{$rval}rem; 
+    border-top-right-radius: #{$rval}rem;
+    border-bottom-right-radius: #{$rval}rem;
   }
 }
 // Border line styles

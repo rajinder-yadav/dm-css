@@ -1,0 +1,44 @@
+// Position values
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+// Z index positions
+.zauto {
+  z-index: auto;
+}
+.z0 {
+  z-index: 0;
+}
+@for $n from 1 through 7 {
+  .z#{$n} {
+    z-index: $n;
+  }
+  .z-#{$n} {
+    z-index: -#{$n};
+  }
+}
+// Position
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.static {
+  position: static;
+}
+.sticky {
+  position: sticky;
+}
