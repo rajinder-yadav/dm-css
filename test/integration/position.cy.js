@@ -1,6 +1,5 @@
 describe("Size", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/position.html");
   });
 
@@ -91,6 +90,7 @@ describe("Size", () => {
         .should("have.css", "position", "static");
     });
   });
+
   context("Fixed position", () => {
     it("Top right", () => {
       cy.get("#f1>div:first-child")
@@ -177,7 +177,7 @@ describe("Size", () => {
         .should("have.class", "z-4");
       cy.get("#z-4>div:first-child").next()
         .should("have.class", "z0");
-  });
+    });
     it("Index -5", () => {
       cy.get("#z-5>div:first-child")
         .should("have.class", "z-5");
@@ -208,4 +208,5 @@ describe("Size", () => {
         .should("have.class", "zauto");
     });
   });
+
 });

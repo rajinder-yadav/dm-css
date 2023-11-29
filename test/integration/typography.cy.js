@@ -1,6 +1,5 @@
 describe("Typography", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/typography.html");
   });
 
@@ -200,4 +199,5 @@ describe("Typography", () => {
         .should("have.css", "font-weight", "900");
     });
   });
+
 });

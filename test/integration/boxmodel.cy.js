@@ -1,11 +1,10 @@
 describe("Size", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/boxmodel.html");
   });
 
   context("Default box model", () => {
-    it("Size 100%", () => {
+    it("Size 100%: default1", () => {
       cy.get("#default1")
         .should("not.have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -17,7 +16,7 @@ describe("Size", () => {
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: default2", () => {
       cy.get("#default2")
         .should("not.have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -29,7 +28,7 @@ describe("Size", () => {
         .should("have.css", "height", "98px")
         .should("have.css", "width", "98px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: default3", () => {
       cy.get("#default3")
         .should("not.have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -44,7 +43,7 @@ describe("Size", () => {
   });
 
   context("Border box", () => {
-    it("Size 100%", () => {
+    it("Size 100%: bb1", () => {
       cy.get("#bb1")
         .should("have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -56,7 +55,7 @@ describe("Size", () => {
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: bb2", () => {
       cy.get("#bb2")
         .should("have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -68,7 +67,7 @@ describe("Size", () => {
         .should("have.css", "height", "98px")
         .should("have.css", "width", "98px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: bb3", () => {
       cy.get("#bb3")
         .should("have.class", "bbox")
         .should("have.css", "box-sizing", "border-box")
@@ -83,7 +82,7 @@ describe("Size", () => {
   });
 
   context("Content box", () => {
-    it("Size 100%", () => {
+    it("Size 100%: cb1", () => {
       cy.get("#cb1")
         .should("have.class", "cbox")
         .should("have.css", "box-sizing", "content-box")
@@ -95,7 +94,7 @@ describe("Size", () => {
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: cb2", () => {
       cy.get("#cb2")
         .should("have.class", "cbox")
         .should("have.css", "box-sizing", "content-box")
@@ -107,7 +106,7 @@ describe("Size", () => {
         .should("have.css", "height", "100px")
         .should("have.css", "width", "100px");
     });
-    it("Size 100%", () => {
+    it("Size 100%: cb3", () => {
       cy.get("#cb3")
         .should("have.class", "cbox")
         .should("have.css", "box-sizing", "content-box")
@@ -120,4 +119,5 @@ describe("Size", () => {
         .should("have.css", "width", "100px");
     });
   });
+
 });

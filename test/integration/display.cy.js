@@ -1,11 +1,9 @@
 describe("Display", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/display.html");
   });
 
   context("Display", () => {
-
     it("show", () => {
       cy.get("#show")
         .should("have.class", "show")
@@ -60,6 +58,7 @@ describe("Display", () => {
         .should("have.css", "display", "inline-grid");
     });
   });
+
   context("Table display", () => {
     it("table", () => {
       cy.get("#table")
@@ -76,7 +75,6 @@ describe("Display", () => {
         .should("have.class", "td")
         .should("have.css", "display", "table-cell");
     });
-
     it("tcol", () => {
       cy.get("#tcol")
         .should("have.class", "tcol")

@@ -1,6 +1,5 @@
 describe("Size", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/size.html");
   });
 
@@ -268,6 +267,7 @@ describe("Size", () => {
         .should("have.css", "min-height", "100%");
     });
   });
+
   context("Maximum height", () => {
     it("Size 10%", () => {
       cy.get(".hmax10")
@@ -320,4 +320,5 @@ describe("Size", () => {
         .should("have.css", "max-height", "100%");
     });
   });
+
 });

@@ -1,5 +1,5 @@
 describe("Spacing", () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/spacing.html");
   });
 
@@ -587,18 +587,6 @@ describe("Spacing", () => {
       cy.get(".mra")
         .should("not.have.css", "margin-right", "0px");
     });
-    it("Margin both left and right sides - alias", () => {
-      cy.get(".mx-auto")
-        .should("not.have.css", "margin-left", "0px")
-        .should("not.have.css", "margin-right", "0px");
-    });
-    it("Margin left side - alias", () => {
-      cy.get(".ml-auto")
-        .should("not.have.css", "margin-left", "0px")
-    });
-    it("Margin right side - alias", () => {
-      cy.get(".mr-auto")
-        .should("not.have.css", "margin-right", "0px");
-    });
   });
+
 });

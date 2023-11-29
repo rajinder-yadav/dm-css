@@ -1,6 +1,5 @@
 describe("Size", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/utility.html");
   });
 
@@ -73,4 +72,5 @@ describe("Size", () => {
         .should("have.css", "opacity", "1");
     });
   });
+
 });

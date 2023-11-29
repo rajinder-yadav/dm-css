@@ -1,6 +1,5 @@
 describe("Column", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/column.html");
   });
 
@@ -135,4 +134,5 @@ describe("Column", () => {
         .should("have.css", "column-span", "all");
     });
   });
+
 });

@@ -1,6 +1,5 @@
 describe("List Style-Notation", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/list.html");
   });
 
@@ -57,7 +56,6 @@ describe("List Style-Notation", () => {
   });
 
   context("Unordered Lists", () => {
-
     it("none ul", () => {
       cy.get("ul.lsnone")
         .should("have.class", "lsnone")
@@ -110,7 +108,6 @@ describe("List Style-Notation", () => {
   });
 
   context("Bullet placement", () => {
-
     it("inside ol", () => {
       cy.get("ol.lsin")
         .should("have.class", "lsin")
@@ -143,7 +140,6 @@ describe("List Style-Notation", () => {
   });
 
   context("List orientation", () => {
-
     it("row ol", () => {
       cy.get("ol.lsrow")
         .should("have.class", "lsrow")
@@ -158,7 +154,6 @@ describe("List Style-Notation", () => {
       cy.get("ul.lsrow>li:first-child")
         .should("have.css", "display", "inline");
     });
-
     it("col ol", () => {
       cy.get("ol.lscol")
         .should("have.class", "lscol")
@@ -176,7 +171,6 @@ describe("List Style-Notation", () => {
   });
 
   context("List reset", () => {
-
     it("reset row ol", () => {
       cy.get("ol.lsrow.lsreset")
         .should("have.class", "lsreset")
@@ -250,4 +244,5 @@ describe("List Style-Notation", () => {
         .should("have.css", "display", "list-item");
     });
   });
+
 });

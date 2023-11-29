@@ -1,6 +1,5 @@
 describe("Float", () => {
-
-  before(() => {
+  beforeEach(() => {
     cy.visit("/web-pages/float.html");
   });
 
@@ -19,4 +18,5 @@ describe("Float", () => {
       .should("have.class", "fln")
       .should("have.css", "float", "none");
   });
+
 });
