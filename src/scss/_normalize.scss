@@ -4,9 +4,7 @@
   padding: 0;
   margin: 0;
 }
-ol, ul {
-  margin-left: 2.25rem;
-}
+
 // The Root element (rem) size is based off the font size of 16px.
 // Reset box model to use border-box calculation.
 :root {
@@ -16,6 +14,10 @@ ol, ul {
 }
 *, *:before, *:after {
   box-sizing: inherit !important;
+}
+
+ol, ul {
+  margin-left: 2.25rem;
 }
 // HTML5 element for non HTML5 browsers.
 article, aside, footer, header, main, nav, section {
@@ -77,4 +79,7 @@ sub {
 }
 sup {
   top: -0.5em;
+}
+small {
+  font-size: 80%;
 }
