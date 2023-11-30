@@ -880,7 +880,7 @@ __Mnemonic__: z = Z-Index
 |Notation|Values|Z Index|
 |-|-|-|
 |z|0-10|Positive Z order|
-|z-|1-7|Negative Z order|
+|z-|1-10|Negative Z order|
 |zauto||Automatic positive Z order|
 
 For automatic Z ordering, successive elements are given a positive increasing Z order.
@@ -904,6 +904,9 @@ Positive Z-index values.
 <span class="z5"> ... </span>
 <span class="z6"> ... </span>
 <span class="z7"> ... </span>
+<span class="z8"> ... </span>
+<span class="z9"> ... </span>
+<span class="z10"> ... </span>
 ```
 
 Negative Z-index values.
@@ -916,6 +919,9 @@ Negative Z-index values.
 <span class="z-5"> ... </span>
 <span class="z-6"> ... </span>
 <span class="z-7"> ... </span>
+<span class="z-8"> ... </span>
+<span class="z-9"> ... </span>
+<span class="z-10"> ... </span>
 ```
 
 ## Font
@@ -1725,11 +1731,11 @@ Hide or show an element without affecting layout. Other displayed elements will 
 
 ### Opacity
 
-Control the opacity of an element and its descendants. A value of "0" (zero), is not visible, and a value of 7 is completely visible.
+Control the opacity of an element and its descendants. A value of "0" (zero), is not visible, and a value of 10 is completely visible.
 
 |Notation|Value|Opacity|
 |-|-|-|
-|opacity|0-7|Higher value is more opaque (visible)|
+|opacity|0-10|Higher value is more opaque (visible)|
 
 ```html
 <div class="opacity0"> ... </div>
@@ -1740,6 +1746,9 @@ Control the opacity of an element and its descendants. A value of "0" (zero), is
 <div class="opacity5"> ... </div>
 <div class="opacity6"> ... </div>
 <div class="opacity7"> ... </div>
+<div class="opacity8"> ... </div>
+<div class="opacity9"> ... </div>
+<div class="opacity10"> ... </div>
 ```
 
 ## Floats
