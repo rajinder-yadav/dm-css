@@ -1,0 +1,26 @@
+@use "sass:math"
+
+// Base screen size starting with 2 columns is 1920px === 120rem
+$col_size: math.div(120rem, 2)
+
+@for $count from 1 to 7
+  // Break points grid width sizes: 960, 640, 480, 384, 320, 274, 240
+  .col#{$count}
+    column-count: $count
+
+  // Fixed width size
+  .colf#{$count}
+    column-width: math.div($col_size, $count)
+
+.colauto
+  column-width: auto
+
+.colsa
+  column-span: all
+
+// Golden Ratio column gap sizes
+$col_gaps: 0, 0.1875, 0.3125, 0.5, 0.875, 1.375, 2.25, 3.625
+@each $gap in $col_gaps
+  $i: index($col_gaps, $gap)
+  .colgap#{$i - 1}
+    column-gap: #{$gap}rem

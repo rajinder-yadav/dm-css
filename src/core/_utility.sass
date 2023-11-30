@@ -1,0 +1,28 @@
+.visible
+  visibility: visible
+
+.invisible
+  visibility: hidden
+
+.centerx
+  display: flex
+  justify-content: center
+
+.centery
+  display: flex
+  align-items: center
+
+.center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.opacity0
+  opacity: 0
+
+.opacity1
+  opacity: 0.05
+
+@for $opacity from 0 to 5
+  .opacity#{$opacity + 2}
+    opacity: 0.1 + 0.18 * $opacity

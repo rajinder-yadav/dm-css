@@ -1,47 +1,44 @@
 // Calculation simplified when only bottom
 // margin and padding need to be considered.
-* {
-  padding: 0;
-  margin: 0;
-}
+*
+  padding: 0
+  margin: 0
 
 // The Root element (rem) size is based off the font size of 16px.
 // Reset box model to use border-box calculation.
-:root {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+:root
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
 
 // HTML5 element for non HTML5 browsers.
-article, aside, footer, header, main, nav, section {
-  display: block;
-}
-html, body {
-  height: 100%;
-  width: 100%;
-}
+article, aside, footer, header, main, nav, section
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
 
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
-  line-height: 1; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
+html
+  line-height: 1 /* 1 */
+  -webkit-text-size-adjust: 100% /* 2 */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
+hr
+  box-sizing: content-box /* 1 */
+  height: 0 /* 1 */
+  overflow: visible /* 2 */
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -49,34 +46,33 @@ hr {
 pre,
 code,
 kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
+samp
+  font-family: monospace, monospace /* 1 */
+  font-size: 1em /* 2 */
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
-strong {
-  font-weight: bolder;
-}
+strong
+  font-weight: bolder
+
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
 sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
-small {
-  font-size: 80%;
-}
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sub
+  bottom: -0.25em
+
+sup
+  top: -0.5em
+
+small
+  font-size: 80%

@@ -1,0 +1,48 @@
+// List bullet styles
+$bullet_notations: none, disc, square, circle, decimal
+@each $b in $bullet_notations
+  .ls#{$b}
+    list-style-type: $b
+
+.lsnone
+  margin-left: 1rem
+
+.lsalpha
+  list-style-type: lower-alpha
+
+.lsroman
+  list-style-type: lower-roman
+
+// Location of bullet
+.lsin
+  list-style-position: inside
+
+.lsout
+  list-style-position: outside
+
+// List orientation row or column
+.lsrow
+  list-style-type: none
+  display: inline
+  li
+    display: inline
+
+.lscol
+  list-style-type: none
+  display: block
+  li
+    display: list-item block
+
+ul.lsreset
+  display: block
+  list-style-type: revert
+  list-style-position: revert
+  li
+    display: list-item block
+
+ol.lsreset
+  display: block
+  list-style-type: decimal
+  list-style-position: revert
+  li
+    display: list-item block

@@ -1,0 +1,120 @@
+// Justification
+.ttl
+  text-align: left
+
+.ttc
+  text-align: center
+
+.ttr
+  text-align: right
+
+.ttj
+  text-align: justify
+  text-justify: auto
+
+// Vertical alignment
+.ttvt
+  vertical-align: top
+
+.ttvm
+  vertical-align: middle
+
+.ttvbl
+  vertical-align: baseline
+
+.ttvb
+  vertical-align: bottom
+
+.ttvtb
+  vertical-align: text-bottom
+
+.ttvtt
+  vertical-align: text-top
+
+.ttsub
+  vertical-align: sub
+
+.ttsuper
+  vertical-align: super
+
+// Character transformation
+.ttcap
+  text-transform: capitalize
+
+.ttup
+  text-transform: uppercase
+
+.ttlow
+  text-transform: lowercase
+
+.ttnone
+  text-transform: none
+
+// Text wrapping
+.ttwrap
+  overflow-wrap: break-word
+
+.ttnowrap
+  overflow-wrap: normal
+  white-space: nowrap
+
+// How to deal with overflow content
+.ttof
+  overflow: visible
+
+.ttofa
+  overflow: auto
+
+.ttclip
+  overflow: hidden
+
+.ttscroll
+  overflow: scroll
+
+.ttofy
+  overflow-y: visible
+
+.ttofya
+  overflow-y: auto
+
+.ttclipy
+  overflow-y: hidden
+
+.ttscrolly
+  overflow-y: scroll
+
+.ttofx
+  overflow-x: visible
+
+.ttofxa
+  overflow-x: auto
+
+.ttclipx
+  overflow-x: hidden
+
+.ttscrollx
+  overflow-x: scroll
+
+.ttwb
+  word-break: normal
+
+.ttwba
+  word-break: break-all
+
+$line_heights: 0, 1, 1.25, 1.37, 1.5, 1.67, 1.85, 2
+@each $h in $line_heights
+  $i: index($line_heights, $h)
+  .ttlh#{$i - 1}
+    line-height: #{$h}rem
+
+$nline_heights: 0.85, 0.67, 0.5, 0.37, 0.25, 0.15, 0.07
+@each $h in $nline_heights
+  $i: index($nline_heights, $h)
+  .ttlh-#{$i}
+    line-height: #{$h}rem
+
+.ttltr
+  direction: ltr
+
+.ttrtl
+  direction: rtl
