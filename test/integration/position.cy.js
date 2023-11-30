@@ -156,6 +156,24 @@ describe("Size", () => {
       cy.get("#z7>div:first-child").next()
         .should("have.class", "z0");
     });
+    it("Index 8", () => {
+      cy.get("#z8>div:first-child")
+        .should("have.class", "z8");
+      cy.get("#z8>div:first-child").next()
+        .should("have.class", "z0");
+    });
+    it("Index 9", () => {
+      cy.get("#z9>div:first-child")
+        .should("have.class", "z9");
+      cy.get("#z9>div:first-child").next()
+        .should("have.class", "z0");
+    });
+    it("Index 10", () => {
+      cy.get("#z10>div:first-child")
+        .should("have.class", "z10");
+      cy.get("#z10>div:first-child").next()
+        .should("have.class", "z0");
+    });
   });
 
   context("Z Index negative", () => {
@@ -199,6 +217,24 @@ describe("Size", () => {
       cy.get("#z-7>div:first-child")
         .should("have.class", "z-7");
       cy.get("#z-7>div:first-child").next()
+        .should("have.class", "z0");
+    });
+    it("Index -8", () => {
+      cy.get("#z-8>div:first-child")
+        .should("have.class", "z-8");
+      cy.get("#z-8>div:first-child").next()
+        .should("have.class", "z0");
+    });
+    it("Index -9", () => {
+      cy.get("#z-9>div:first-child")
+        .should("have.class", "z-9");
+      cy.get("#z-9>div:first-child").next()
+        .should("have.class", "z0");
+    });
+    it("Index -10", () => {
+      cy.get("#z-10>div:first-child")
+        .should("have.class", "z-10");
+      cy.get("#z-10>div:first-child").next()
         .should("have.class", "z0");
     });
   });
