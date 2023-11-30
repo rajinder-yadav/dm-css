@@ -60,6 +60,27 @@ describe("Spacing", () => {
         .should("have.css", "padding-left", "71.184px")
         .should("have.css", "padding-right", "71.184px");
     });
+    it("All sides 8", () => {
+      cy.get(".p8")
+        .should("have.css", "padding-top", "115.2px")
+        .should("have.css", "padding-bottom", "115.2px")
+        .should("have.css", "padding-left", "115.2px")
+        .should("have.css", "padding-right", "115.2px");
+    });
+    it("All sides 9", () => {
+      cy.get(".p9")
+        .should("have.css", "padding-top", "186.4px")
+        .should("have.css", "padding-bottom", "186.4px")
+        .should("have.css", "padding-left", "186.4px")
+        .should("have.css", "padding-right", "186.4px");
+    });
+    it("All sides 10", () => {
+      cy.get(".p10")
+        .should("have.css", "padding-top", "303.2px")
+        .should("have.css", "padding-bottom", "303.2px")
+        .should("have.css", "padding-left", "303.2px")
+        .should("have.css", "padding-right", "303.2px");
+    });
   });
 
   context("Padding top", () => {
@@ -94,6 +115,18 @@ describe("Spacing", () => {
     it("Top 7", () => {
       cy.get(".pt7")
         .should("have.css", "padding-top", "71.184px");
+    });
+    it("Top 8", () => {
+      cy.get(".pt8")
+        .should("have.css", "padding-top", "115.2px");
+    });
+    it("Top 9", () => {
+      cy.get(".pt9")
+        .should("have.css", "padding-top", "186.4px");
+    });
+    it("Top 10", () => {
+      cy.get(".pt10")
+        .should("have.css", "padding-top", "303.2px");
     });
   });
 
@@ -130,6 +163,18 @@ describe("Spacing", () => {
       cy.get(".pb7")
         .should("have.css", "padding-bottom", "71.184px");
     });
+    it("Bottom 8", () => {
+      cy.get(".pb8")
+        .should("have.css", "padding-bottom", "115.2px");
+    });
+    it("Bottom 9", () => {
+      cy.get(".pb9")
+        .should("have.css", "padding-bottom", "186.4px");
+    });
+    it("Bottom 10", () => {
+      cy.get(".pb10")
+        .should("have.css", "padding-bottom", "303.2px");
+    });
   });
 
   context("Padding left", () => {
@@ -165,6 +210,18 @@ describe("Spacing", () => {
       cy.get(".pl7")
         .should("have.css", "padding-left", "71.184px");
     });
+    it("Left 8", () => {
+      cy.get(".pl8")
+        .should("have.css", "padding-left", "115.2px");
+    });
+    it("Left 9", () => {
+      cy.get(".pl9")
+        .should("have.css", "padding-left", "186.4px");
+    });
+    it("Left 10", () => {
+      cy.get(".pl10")
+        .should("have.css", "padding-left", "303.2px");
+    });
   });
 
   context("Padding right", () => {
@@ -199,6 +256,18 @@ describe("Spacing", () => {
     it("Right 7", () => {
       cy.get(".pr7")
         .should("have.css", "padding-right", "71.184px");
+    });
+    it("Right 8", () => {
+      cy.get(".pr8")
+        .should("have.css", "padding-right", "115.2px");
+    });
+    it("Right 9", () => {
+      cy.get(".pr9")
+        .should("have.css", "padding-right", "186.4px");
+    });
+    it("Right 10", () => {
+      cy.get(".pr10")
+        .should("have.css", "padding-right", "303.2px");
     });
   });
 
@@ -243,6 +312,21 @@ describe("Spacing", () => {
         .should("have.css", "padding-top", "71.184px")
         .should("have.css", "padding-bottom", "71.184px");
     });
+    it("Top and bottom 8", () => {
+      cy.get(".py8")
+        .should("have.css", "padding-top", "115.2px")
+        .should("have.css", "padding-bottom", "115.2px");
+    });
+    it("Top and bottom 9", () => {
+      cy.get(".py9")
+        .should("have.css", "padding-top", "186.4px")
+        .should("have.css", "padding-bottom", "186.4px");
+    });
+    it("Top and bottom 10", () => {
+      cy.get(".py10")
+        .should("have.css", "padding-top", "303.2px")
+        .should("have.css", "padding-bottom", "303.2px");
+    });
   });
 
   context("Padding left and right", () => {
@@ -285,6 +369,21 @@ describe("Spacing", () => {
       cy.get(".px7")
         .should("have.css", "padding-left", "71.184px")
         .should("have.css", "padding-right", "71.184px");
+    });
+    it("Left and right 8", () => {
+      cy.get(".px8")
+        .should("have.css", "padding-left", "115.2px")
+        .should("have.css", "padding-right", "115.2px");
+    });
+    it("Left and right 9", () => {
+      cy.get(".px9")
+        .should("have.css", "padding-left", "186.4px")
+        .should("have.css", "padding-right", "186.4px");
+    });
+    it("Left and right 10", () => {
+      cy.get(".px10")
+        .should("have.css", "padding-left", "303.2px")
+        .should("have.css", "padding-right", "303.2px");
     });
   });
 
@@ -345,6 +444,27 @@ describe("Spacing", () => {
         .should("have.css", "margin-left", "71.184px")
         .should("have.css", "margin-right", "71.184px");
     });
+    it("Margin all sides 8", () => {
+      cy.get(".m8")
+        .should("have.css", "margin-top", "115.2px")
+        .should("have.css", "margin-bottom", "115.2px")
+        .should("have.css", "margin-left", "115.2px")
+        .should("have.css", "margin-right", "115.2px");
+    });
+    it("Margin all sides 9", () => {
+      cy.get(".m9")
+        .should("have.css", "margin-top", "186.4px")
+        .should("have.css", "margin-bottom", "186.4px")
+        .should("have.css", "margin-left", "186.4px")
+        .should("have.css", "margin-right", "186.4px");
+    });
+    it("Margin all sides 10", () => {
+      cy.get(".m10")
+        .should("have.css", "margin-top", "303.2px")
+        .should("have.css", "margin-bottom", "303.2px")
+        .should("have.css", "margin-left", "303.2px")
+        .should("have.css", "margin-right", "303.2px");
+    });
   });
 
   context("Margin top", () => {
@@ -379,6 +499,18 @@ describe("Spacing", () => {
     it("Margin on top 7", () => {
       cy.get(".mt7")
         .should("have.css", "margin-top", "71.184px");
+    });
+    it("Margin on top 8", () => {
+      cy.get(".mt8")
+        .should("have.css", "margin-top", "115.2px");
+    });
+    it("Margin on top 9", () => {
+      cy.get(".mt9")
+        .should("have.css", "margin-top", "186.4px");
+    });
+    it("Margin on top 10", () => {
+      cy.get(".mt10")
+        .should("have.css", "margin-top", "303.2px");
     });
   });
 
@@ -415,6 +547,18 @@ describe("Spacing", () => {
       cy.get(".mb7")
         .should("have.css", "margin-bottom", "71.184px");
     });
+    it("Margin on bottom 8", () => {
+      cy.get(".mb8")
+        .should("have.css", "margin-bottom", "115.2px");
+    });
+    it("Margin on bottom 9", () => {
+      cy.get(".mb9")
+        .should("have.css", "margin-bottom", "186.4px");
+    });
+    it("Margin on bottom 10", () => {
+      cy.get(".mb10")
+        .should("have.css", "margin-bottom", "303.2px");
+    });
   });
 
   context("Margin left", () => {
@@ -450,6 +594,18 @@ describe("Spacing", () => {
       cy.get(".ml7")
         .should("have.css", "margin-left", "71.184px");
     });
+    it("Margin on left 8", () => {
+      cy.get(".ml8")
+        .should("have.css", "margin-left", "115.2px");
+    });
+    it("Margin on left 9", () => {
+      cy.get(".ml9")
+        .should("have.css", "margin-left", "186.4px");
+    });
+    it("Margin on left 10", () => {
+      cy.get(".ml10")
+        .should("have.css", "margin-left", "303.2px");
+    });
   });
 
   context("Margin right", () => {
@@ -484,6 +640,18 @@ describe("Spacing", () => {
     it("Margin on right 7", () => {
       cy.get(".mr7")
         .should("have.css", "margin-right", "71.184px");
+    });
+    it("Margin on right 8", () => {
+      cy.get(".mr8")
+        .should("have.css", "margin-right", "115.2px");
+    });
+    it("Margin on right 9", () => {
+      cy.get(".mr9")
+        .should("have.css", "margin-right", "186.4px");
+    });
+    it("Margin on right 10", () => {
+      cy.get(".mr10")
+        .should("have.css", "margin-right", "303.2px");
     });
   });
 
@@ -528,6 +696,21 @@ describe("Spacing", () => {
         .should("have.css", "margin-top", "71.184px")
         .should("have.css", "margin-bottom", "71.184px");
     });
+    it("Margin on top and bottom 8", () => {
+      cy.get(".my8")
+        .should("have.css", "margin-top", "115.2px")
+        .should("have.css", "margin-bottom", "115.2px");
+    });
+    it("Margin on top and bottom 9", () => {
+      cy.get(".my9")
+        .should("have.css", "margin-top", "186.4px")
+        .should("have.css", "margin-bottom", "186.4px");
+    });
+    it("Margin on top and bottom 10", () => {
+      cy.get(".my10")
+        .should("have.css", "margin-top", "303.2px")
+        .should("have.css", "margin-bottom", "303.2px");
+    });
   });
 
   context("Margin left and right", () => {
@@ -571,21 +754,43 @@ describe("Spacing", () => {
         .should("have.css", "margin-left", "71.184px")
         .should("have.css", "margin-right", "71.184px");
     });
+    it("Margin on left and right 8", () => {
+      cy.get(".mx8")
+        .should("have.css", "margin-left", "115.2px")
+        .should("have.css", "margin-right", "115.2px");
+    });
+    it("Margin on left and right 9", () => {
+      cy.get(".mx9")
+        .should("have.css", "margin-left", "186.4px")
+        .should("have.css", "margin-right", "186.4px");
+    });
+    it("Margin on left and right 10", () => {
+      cy.get(".mx10")
+        .should("have.css", "margin-left", "303.2px")
+        .should("have.css", "margin-right", "303.2px");
+    });
   });
 
   context("Auto margin", () => {
     it("Margin both left and right sides 0", () => {
-      cy.get(".mxa")
+      cy.get(".ma")
+        .should("not.have.css", "margin-left", "0px")
+        .should("not.have.css", "margin-right", "0px");
+    });
+    it("Margin left sides", () => {
+      cy.get(".max")
         .should("not.have.css", "margin-left", "0px")
         .should("not.have.css", "margin-right", "0px");
     });
     it("Margin left side", () => {
-      cy.get(".mla")
+      cy.get(".mal")
         .should("not.have.css", "margin-left", "0px")
+        .should("have.css", "margin-right", "0px");
     });
     it("Margin right side", () => {
-      cy.get(".mra")
-        .should("not.have.css", "margin-right", "0px");
+      cy.get(".mar")
+        .should("not.have.css", "margin-right", "0px")
+        .should("have.css", "margin-left", "0px");
     });
   });
 
