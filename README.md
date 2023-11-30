@@ -2,7 +2,6 @@
 
 ![Version](https://img.shields.io/badge/dm--css-v2.3.0-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
-![Dependencies](https://david-dm.org/rajinder-yadav/dm-css.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 
@@ -503,7 +502,7 @@ By default both "__padding__" and "__margin__" values for each side has been set
 
 The Style-Notation for spacing allows setting the __margin__ and __padding__ used by an element.
 
-- Padding and margin scale values range from 0 to 7.
+- Padding and margin scale values range from 0 to 10.
 - Scale values follow the Golden Ratio.
 
 ## Padding
@@ -512,13 +511,13 @@ __Mnemonic__: p = padding
 
 |Notation|Values|Box side|
 |-|-|-|
-|p|0-7|Pad all sides|
-|pt|0-7|Pad top|
-|pb|0-7|Pad bottom|
-|pl|0-7|Pad left|
-|pr|0-7|Pad right|
-|py|0-7|Pad top and bottom|
-|px|0-7|Pad left and right|
+|p|0-10|Pad all sides|
+|pt|0-10|Pad top|
+|pb|0-10|Pad bottom|
+|pl|0-10|Pad left|
+|pr|0-10|Pad right|
+|py|0-10|Pad top and bottom|
+|px|0-10|Pad left and right|
 
 Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
@@ -531,6 +530,9 @@ Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 <div class="p5">Padding size 5</div>
 <div class="p6">Padding size 6</div>
 <div class="p7">Padding size 7</div>
+<div class="p8">Padding size 87</div>
+<div class="p9">Padding size 9</div>
+<div class="p10">Padding size 10</div>
 ```
 
 ### Padding top
@@ -548,6 +550,9 @@ __Mnemonic__: p = padding
 <div class="pt5">Padding top size 5</div>
 <div class="pt6">Padding top size 6</div>
 <div class="pt7">Padding top size 7</div>
+<div class="pt8">Padding top size 8</div>
+<div class="pt9">Padding top size 9</div>
+<div class="pt10">Padding top size 10</div>
 ```
 
 ### Padding bottom
@@ -565,6 +570,9 @@ __Mnemonic__: p = padding
 <div class="pb5">Padding bottom size 5</div>
 <div class="pb6">Padding bottom size 6</div>
 <div class="pb7">Padding bottom size 7</div>
+<div class="pb8">Padding bottom size 8</div>
+<div class="pb9">Padding bottom size 9</div>
+<div class="pb10">Padding bottom size 10</div>
 ```
 
 ### Padding left
@@ -582,6 +590,9 @@ __Mnemonic__: p = padding
 <div class="pl5">Padding left size 5</div>
 <div class="pl6">Padding left size 6</div>
 <div class="pl7">Padding left size 7</div>
+<div class="pl8">Padding left size 8</div>
+<div class="pl9">Padding left size 9</div>
+<div class="pl10">Padding left size 10</div>
 ```
 
 ### Padding right
@@ -599,6 +610,9 @@ __Mnemonic__: p = padding
 <div class="pr5">Padding right size 5</div>
 <div class="pr6">Padding right size 6</div>
 <div class="pr7">Padding right size 7</div>
+<div class="pr8">Padding right size 8</div>
+<div class="pr9">Padding right size 9</div>
+<div class="pr10">Padding right size 10</div>
 ```
 
 ### Padding vertical
@@ -616,6 +630,9 @@ __Mnemonic__: p = padding
 <span class="py5">Padding vertical 5</span>
 <span class="py6">Padding vertical 6</span>
 <span class="py7">Padding vertical 7</span>
+<span class="py8">Padding vertical 8</span>
+<span class="py9">Padding vertical 9</span>
+<span class="py10">Padding vertical 10</span>
 ```
 
 ### Padding horizontal
@@ -633,6 +650,9 @@ __Mnemonic__: p = padding
 <span class="px5">Padding horizontal 5</span>
 <span class="px6">Padding horizontal 6</span>
 <span class="px7">Padding horizontal 7</span>
+<span class="px8">Padding horizontal 8</span>
+<span class="px9">Padding horizontal 9</span>
+<span class="px10">Padding horizontal 10</span>
 ```
 
 ## Margin
@@ -643,13 +663,13 @@ __Mnemonic__: m = margin
 
 |Notation|Values|Box side|
 |-|-|-|
-|m|0-7|Margin all sides|
-|mt|0-7|Margin top|
-|mb|0-7|Margin bottom|
-|ml|0-7|Margin left|
-|mr|0-7|Margin right|
-|my|0-7|Margins top and bottom|
-|mx|0-7|Margins left and right|
+|m|0-10|Margin all sides|
+|mt|0-10|Margin top|
+|mb|0-10|Margin bottom|
+|ml|0-10|Margin left|
+|mr|0-10|Margin right|
+|my|0-10|Margins top and bottom|
+|mx|0-10|Margins left and right|
 
 Add margin to all sides, size values range from 0 to 7 and follow the Golden Ratio.
 
@@ -662,6 +682,9 @@ Add margin to all sides, size values range from 0 to 7 and follow the Golden Rat
 <div class="m5">Margin size 5</div>
 <div class="m6">Margin size 6</div>
 <div class="m7">Margin size 7</div>
+<div class="m8">Margin size 8</div>
+<div class="m9">Margin size 9</div>
+<div class="m10">Margin size 10</div>
 ```
 
 ### Margin top
@@ -679,6 +702,9 @@ __Mnemonic__: m = margin
 <div class="mt5">Margin top size 5</div>
 <div class="mt6">Margin top size 6</div>
 <div class="mt7">Margin top size 7</div>
+<div class="mt8">Margin top size 8</div>
+<div class="mt9">Margin top size 9</div>
+<div class="mt10">Margin top size 10</div>
 ```
 
 ### Margin bottom
@@ -696,6 +722,9 @@ __Mnemonic__: m = margin
 <div class="mb5">Margin bottom size 5</div>
 <div class="mb6">Margin bottom size 6</div>
 <div class="mb7">Margin bottom size 7</div>
+<div class="mb8">Margin bottom size 8</div>
+<div class="mb9">Margin bottom size 9</div>
+<div class="mb10">Margin bottom size 10</div>
 ```
 
 ### Margin left
@@ -713,6 +742,9 @@ __Mnemonic__: m = margin
 <div class="ml5">Margin left size 5</div>
 <div class="ml6">Margin left size 6</div>
 <div class="ml7">Margin left size 7</div>
+<div class="ml8">Margin left size 8</div>
+<div class="ml9">Margin left size 9</div>
+<div class="ml10">Margin left size 10</div>
 ```
 
 ### Margin right
@@ -730,6 +762,9 @@ __Mnemonic__: m = margin
 <div class="mr5">Margin right size 5</div>
 <div class="mr6">Margin right size 6</div>
 <div class="mr7">Margin right size 7</div>
+<div class="mr8">Margin right size 8</div>
+<div class="mr9">Margin right size 9</div>
+<div class="mr10">Margin right size 10</div>
 ```
 
 ### Margin vertical
@@ -747,6 +782,9 @@ __Mnemonic__: m = margin
 <span class="my5">Margin vertical 5</span>
 <span class="my6">Margin vertical 6</span>
 <span class="my7">Margin vertical 7</span>
+<span class="my8">Margin vertical 8</span>
+<span class="my9">Margin vertical 9</span>
+<span class="my10">Margin vertical 10</span>
 ```
 
 ### Margin horizontal
@@ -764,6 +802,9 @@ __Mnemonic__: m = margin
 <span class="mx5">Margin horizontal 5</span>
 <span class="mx6">Margin horizontal 6</span>
 <span class="mx7">Margin horizontal 7</span>
+<span class="mx8">Margin horizontal 8</span>
+<span class="mx9">Margin horizontal 9</span>
+<span class="mx10">Margin horizontal 10</span>
 ```
 
 ### Auto Margin
@@ -774,14 +815,18 @@ __Mnemonic__: m = margin
 
 |Notation|Box side|
 |-|-|
-|mxa|Auto margins left and right|
-|mla|Auto margins left |
-|mra|Auto margins right|
+|ma|Auto margins horizontal and vertical|
+|max|Auto margins left and right|
+|may|Auto margins top and bottom|
+|mal|Auto margins left |
+|mar|Auto margins right|
 
 ```html
-<div class="mxa">Auto</div>
-<div class="mla">Auto left</div>
-<div class="mra">Auto right</div>
+<div class="ma">Auto</div>
+<div class="max">Auto horizontal</div>
+<div class="may">Auto vertial</div>
+<div class="mal">Auto left</div>
+<div class="mar">Auto right</div>
 ```
 
 ## Positioning
@@ -834,7 +879,7 @@ __Mnemonic__: z = Z-Index
 
 |Notation|Values|Z Index|
 |-|-|-|
-|z|0-7|Positive Z order|
+|z|0-10|Positive Z order|
 |z-|1-7|Negative Z order|
 |zauto||Automatic positive Z order|
 
