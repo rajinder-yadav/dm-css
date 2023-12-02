@@ -31,3 +31,7 @@ README.odt
 README.pdf
 build.sh
 dev-notes.md
+
+*.tgz
+example.cy.js
+cypress/downloads/downloads.html
