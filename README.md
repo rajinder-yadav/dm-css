@@ -129,7 +129,7 @@ Works with HTML, Angular, React and Vue.js.
 
 Some of the features of __Dyno Might CSS__ Toolkit you will enjoy.
 
-- Small size (25 KB).
+- Small size (21 KB).
 - Fast loading and blazing execution.
 - Robust compact Style-Notation.
 - Easy to learn.
