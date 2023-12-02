@@ -37,7 +37,7 @@ $size_scales: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 // Font relative fixed sizes
 @for $size from 1 through 35
   .hf#{$size}
-    height: #{$size}rem
+    height: $size * 1rem
 
   .wf#{$size}
-    width: #{$size}rem
+    width: $size * 1rem

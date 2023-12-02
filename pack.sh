@@ -2,7 +2,9 @@
 
 # NOTE: Use "npm pack --dry-run" to see what would happen.
 
-cp package.json package.tmp.json
+npm run build
+
+mv package.json package.tmp.json
 cp package.pub.json package.json
 if [ "$1" == "dry" ]; then
   echo "===== DRY RUN ===="
@@ -10,4 +12,7 @@ if [ "$1" == "dry" ]; then
 else
   npm pack
 fi
-cp package.tmp.json package.json && rm package.tmp.json
+
+npm i -g dm-css-2.3.0.tgz
+
+mv package.tmp.json package.json

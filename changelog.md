@@ -1,5 +1,21 @@
 # Change Log
 
+## 2.3.0 (2023-11-28)
+
+- Updated NPM packages.
+- Migrated to Cypress 13.6
+- Fixed Cyrpess tests.
+- Removed usage on !important
+- Fixed some failing test due to size calculation changes by Cypress.
+- Deleted state tests.
+- Corrected README about margin-top value.
+- Replaced node-sass (deprecated) with sass.
+- Fixed unit tests using dividion and percentage.
+- New margin auto variants
+- Padding and margin now have go from 0-10.
+- New Z index levels.
+- New opacity levels.
+
 ## 2.2.1 (2019-06-29)
 
 - Fixed normilize css margin, no set to 0 (zero).

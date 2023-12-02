@@ -23,4 +23,4 @@ $col_gaps: 0, 0.1875, 0.3125, 0.5, 0.875, 1.375, 2.25, 3.625
 @each $gap in $col_gaps
   $i: index($col_gaps, $gap)
   .colgap#{$i - 1}
-    column-gap: #{$gap}rem
+    column-gap: $gap * 1rem
