@@ -1,15 +1,20 @@
+// The Root element (rem) size is based off the font size of 16px.
+// Reset box model to use border-box calculation.
+:root
+  font-family: 'Open Sans', 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  box-sizing: border-box
+
 // Calculation simplified when only bottom
 // margin and padding need to be considered.
 *
   padding: 0
-  margin: 0
+  margin: 0 0 var(--global-bottom-margin) 0
 
-// The Root element (rem) size is based off the font size of 16px.
-// Reset box model to use border-box calculation.
-:root
-  font-family: 'Roboto', sans-serif
-  font-size: 16px
-  box-sizing: border-box
+h1, h2, h3, h4, h5, h6
+  margin-bottom: var(--header-bottom-margin)
 
 *, *:before, *:after
   box-sizing: inherit
