@@ -15,6 +15,11 @@
 - Padding and margin now have go from 0-10.
 - New Z index levels.
 - New opacity levels.
+- Global bottom margins set to 0.25rem using css variable "--global-bottom-margin".
+- Header bottom margins set to 0.5rem using css variable "--header-bottom-margin".
+- Default font changed to "Open Sans" noraml style, 400 weight.
+- Added missing test to check CSS normalized values.
+- Fixed isues with NPM script.
 
 ## 2.2.1 (2019-06-29)
 
