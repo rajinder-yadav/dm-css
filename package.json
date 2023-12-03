@@ -3,7 +3,8 @@
   "version": "2.3.1",
   "description": "Dyno Might CSS - Fast Compact CSS Toolkit for everyone!",
   "scripts": {
-    "start": "gazeall --npms 'prebuild build postbuild web webrefresh' 'src/**/*' 'test/**/*'",
+    "start": "run-p dev web",
+    "dev": "gazeall -V -s 'prebuild build postbuild webrefresh' 'src/**/*' 'test/**/*'",
     "web": "browser-sync start --config bs-config.js",
     "webrefresh": "browser-sync reload",
     "test": "cypress open",
