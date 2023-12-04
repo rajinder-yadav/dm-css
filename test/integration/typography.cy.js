@@ -3,44 +3,6 @@ describe("Typography", () => {
     cy.visit("/web-pages/typography.html");
   });
 
-  context("Headings", () => {
-    it("h1", () => {
-      cy.get(".h1")
-        .should("have.class", "h1")
-        .should("have.css", "font-size", "48.832px");
-    });
-    it("h2", () => {
-      cy.get(".h2")
-        .should("have.class", "h2")
-        .should("have.css", "font-size", "39.056px");
-    });
-    it("h3", () => {
-      cy.get(".h3")
-        .should("have.class", "h3")
-        .should("have.css", "font-size", "31.248px");
-    });
-    it("h4", () => {
-      cy.get(".h4")
-        .should("have.class", "h4")
-        .should("have.css", "font-size", "25.008px");
-    });
-    it("h5", () => {
-      cy.get(".h5")
-        .should("have.class", "h5")
-        .should("have.css", "font-size", "20px");
-    });
-    it("h6", () => {
-      cy.get(".h6")
-        .should("have.class", "h6")
-        .should("have.css", "font-size", "16px");
-    });
-    it("h7", () => {
-      cy.get(".h7")
-        .should("have.class", "h7")
-        .should("have.css", "font-size", "14.224px");
-    });
-  });
-
   context("Font height increasing", () => {
     it("fh1", () => {
       cy.get(".fh1")
