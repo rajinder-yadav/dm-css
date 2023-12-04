@@ -1,5 +1,5 @@
 // Border thickness
-@for $size from 0 through 7
+@for $size from 0 through 10
   .b#{$size}
     border: $size * 1px solid
 
@@ -40,7 +40,7 @@
   border-radius: 25% / 50%
 
 // Border radius using Golden Ratio 1.618, calculated values truncated.
-$radius_scale: 0, 0.25, 0.404, 0.654, 1.059, 1.713, 2.77, 4.449
+$radius_scale: 0, 0.250, 0.404, 0.655, 1.059, 1.714, 2.773, 4.486, 7.259, 11.745, 19.003
 @each $rval in $radius_scale
   $i: index($radius_scale, $rval)
 
@@ -76,49 +76,97 @@ $radius_scale: 0, 0.25, 0.404, 0.654, 1.059, 1.713, 2.77, 4.449
     border-bottom-right-radius: $rval * 1rem
 
 // Border line styles
-.dash
+.bdash
   border-style: dashed
 
-.dasht
+.bdasht
   border-top-style: dashed
 
-.dashb
+.bdashb
   border-bottom-style: dashed
 
-.dashl
+.bdashl
   border-left-style: dashed
 
-.dashr
+.bdashr
   border-right-style: dashed
 
-.dashy
+.bdashy
   border-top-style: dashed
   border-bottom-style: dashed
 
-.dashx
+.bdashx
   border-left-style: dashed
   border-right-style: dashed
 
-// Border line styles
-.dot
+// Border list styles
+.bdot
   border-style: dotted
 
-.dott
+.bdott
   border-top-style: dotted
 
-.dotb
+.bdotb
   border-bottom-style: dotted
 
-.dotl
+.bdotl
   border-left-style: dotted
 
-.dotr
+.bdotr
   border-right-style: dotted
 
-.doty
+.bdoty
   border-top-style: dotted
   border-bottom-style: dotted
 
-.dotx
+.bdotx
   border-left-style: dotted
   border-right-style: dotted
+
+// Border list styles
+.bsolid
+  border-style: solid
+
+.bsolidt
+  border-top-style: solid
+
+.bsolidb
+  border-bottom-style: solid
+
+.bsolidl
+  border-left-style: solid
+
+.bsolidr
+  border-right-style: solid
+
+.bsolidy
+  border-top-style: solid
+  border-bottom-style: solid
+
+.bsolidx
+  border-left-style: solid
+  border-right-style: solid
+
+// Border list styles
+.bdouble
+  border-style: double
+
+.bdoublet
+  border-top-style: double
+
+.bdoubleb
+  border-bottom-style: double
+
+.bdoublel
+  border-left-style: double
+
+.bdoubler
+  border-right-style: double
+
+.bdoubley
+  border-top-style: double
+  border-bottom-style: double
+
+.bdoublex
+  border-left-style: double
+  border-right-style: double
