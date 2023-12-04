@@ -1,3 +1,5 @@
+// Check _display.sass for flex containers
+
 // Flex direction
 .fbr
   flex-direction: row
@@ -8,7 +10,7 @@
 .fbd
   flex-direction: column
 
-.fbu
+.fbp
   flex-direction: column-reverse
 
 // Wrap mode
@@ -22,26 +24,41 @@
   flex-wrap: wrap-reverse
 
 // Justify along Main axis
-.fbjs
+.fbjfs
   justify-content: flex-start
 
-.fbje
+.fbjfe
   justify-content: flex-end
+
+.fbjs
+  justify-content: start
 
 .fbjc
   justify-content: center
 
-.fbja
+.fbjl
+  justify-content: left
+
+.fbjr
+  justify-content: right
+
+.fbje
+  justify-content: end
+
+.fbjsa
   justify-content: space-around
 
-.fbjb
+.fbjsb
   justify-content: space-between
 
+.fbjse
+  justify-content: space-evenly
+
 // Justify along Cross axis
-.fbis
+.fbifs
   align-items: flex-start
 
-.fbie
+.fbife
   align-items: flex-end
 
 .fbic
@@ -54,19 +71,19 @@
   align-items: stretch
 
 // Justify everything
-.fbcs
+.fbcfs
   align-content: flex-start
 
-.fbce
+.fbcfe
   align-content: flex-end
 
 .fbcc
   align-content: center
 
-.fbcb
+.fbcsb
   align-content: space-between
 
-.fbca
+.fbcsa
   align-content: space-around
 
 .fbcx
@@ -76,10 +93,10 @@
 .fbsa
   align-self: auto
 
-.fbss
+.fbsfs
   align-self: flex-start
 
-.fbse
+.fbsfe
   align-self: flex-end
 
 .fbsc
@@ -92,15 +109,15 @@
   align-self: stretch
 
 // Flex order, grow, shrink
-@for $n from 0 through 7
+@for $n from 0 through 10
   .fbo#{$n}
     order: $n
 
   .fbo-#{$n}
     order: -$n
 
-  .fb#{$n}
+  .fbg#{$n}
     flex-grow: $n
 
-  .fb-#{$n}
+  .fbg-#{$n}
     flex-shrink: $n
