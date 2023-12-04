@@ -93,32 +93,32 @@ describe("Column", () => {
     it("Gap 2", () => {
       cy.get(".colgap2")
         .should("have.class", "colgap2")
-        .should("have.css", "column-gap", "5px");
+        .should("have.css", "column-gap", "4.848px");
     });
     it("Gap 3", () => {
       cy.get(".colgap3")
         .should("have.class", "colgap3")
-        .should("have.css", "column-gap", "8px");
+        .should("have.css", "column-gap", "7.856px");
     });
     it("Gap 4", () => {
       cy.get(".colgap4")
         .should("have.class", "colgap4")
-        .should("have.css", "column-gap", "14px");
+        .should("have.css", "column-gap", "12.704px");
     });
     it("Gap 5", () => {
       cy.get(".colgap5")
         .should("have.class", "colgap5")
-        .should("have.css", "column-gap", "22px");
+        .should("have.css", "column-gap", "20.56px");
     });
     it("Gap 6", () => {
       cy.get(".colgap6")
         .should("have.class", "colgap6")
-        .should("have.css", "column-gap", "36px");
+        .should("have.css", "column-gap", "33.264px");
     });
     it("Gap 7", () => {
       cy.get(".colgap7")
         .should("have.class", "colgap7")
-        .should("have.css", "column-gap", "58px");
+        .should("have.css", "column-gap", "53.84px");
     });
   });
 
