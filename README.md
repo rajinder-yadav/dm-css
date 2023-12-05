@@ -136,7 +136,7 @@ Some of the features of __Dyno Might CSS__ Toolkit you will enjoy.
 - Increased productivity.
 - Designed for Designers, yet developer friendly!
 - No side effects, works like your own custom CSS styles.
-- Tested with hundreds of Test cases (394+).
+- Tested with hundreds of Test cases (604).
 
 ## Fundamentals
 
