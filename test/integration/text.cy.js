@@ -165,32 +165,47 @@ describe("Text", () => {
     it("Line height: ttlh2", () => {
       cy.get(".ttlh2")
         .should("have.class", "ttlh2")
-        .should("have.css", "line-height", "17.6px");
+        .should("have.css", "line-height", "17.7667px");
     });
     it("Line height: ttlh3", () => {
       cy.get(".ttlh3")
         .should("have.class", "ttlh3")
-        .should("have.css", "line-height", "19.2px");
+        .should("have.css", "line-height", "19.5167px");
     });
     it("Line height: ttlh4", () => {
       cy.get(".ttlh4")
         .should("have.class", "ttlh4")
-        .should("have.css", "line-height", "20.8px");
+        .should("have.css", "line-height", "21.2833px");
     });
     it("Line height: ttlh5", () => {
       cy.get(".ttlh5")
         .should("have.class", "ttlh5")
-        .should("have.css", "line-height", "22.4px");
+        .should("have.css", "line-height", "23.0333px");
     });
     it("Line height: ttlh6", () => {
       cy.get(".ttlh6")
         .should("have.class", "ttlh6")
-        .should("have.css", "line-height", "24px");
+        .should("have.css", "line-height", "24.8px");
     });
     it("Line height: ttlh7", () => {
       cy.get(".ttlh7")
         .should("have.class", "ttlh7")
-        .should("have.css", "line-height", "25.6px");
+        .should("have.css", "line-height", "26.5667px");
+    });
+    it("Line height: ttlh8", () => {
+      cy.get(".ttlh8")
+        .should("have.class", "ttlh8")
+        .should("have.css", "line-height", "28.3167px");
+    });
+    it("Line height: ttlh9", () => {
+      cy.get(".ttlh9")
+        .should("have.class", "ttlh9")
+        .should("have.css", "line-height", "30.0833px");
+    });
+    it("Line height: ttlh10", () => {
+      cy.get(".ttlh10")
+        .should("have.class", "ttlh10")
+        .should("have.css", "line-height", "32px");
     });
   });
 
@@ -232,6 +247,21 @@ describe("Text", () => {
       cy.get(".ttlh-7")
         .should("have.class", "ttlh-7")
         .should("have.css", "line-height", "5.43333px");
+    });
+    it("Line height: ttlh-8", () => {
+      cy.get(".ttlh-8")
+        .should("have.class", "ttlh-8")
+        .should("have.css", "line-height", "4.06667px");
+    });
+    it("Line height: ttlh-9", () => {
+      cy.get(".ttlh-9")
+        .should("have.class", "ttlh-9")
+        .should("have.css", "line-height", "2.6px");
+    });
+    it("Line height: ttlh-10", () => {
+      cy.get(".ttlh-10")
+        .should("have.class", "ttlh-10")
+        .should("have.css", "line-height", "1.11667px");
     });
   });
 
