@@ -19,7 +19,7 @@ $col_size: math.div(120rem, 2)
   column-span: all
 
 // Golden Ratio column gap sizes
-$col_gaps: 0, 0.1875, 0.303, 0.491, 0.794, 1.285, 2.079, 3.365, 5.444, 8.809, 14.252
+$col_gaps: 0, 0.1875, 0.303, 0.491, 0.794, 1.285, 2.079, 3.365,
 @each $gap in $col_gaps
   $i: index($col_gaps, $gap)
   .colgap#{$i - 1}
