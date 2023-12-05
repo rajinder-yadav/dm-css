@@ -1,17 +1,11 @@
 // List bullet styles
-$bullet_notations: none, disc, square, circle, decimal
-@each $b in $bullet_notations
-  .ls#{$b}
-    list-style-type: $b
+$bullet_notations: (none: none, disc: disc, square: square, circle: circle, decimal: decimal, alpha: lower-alpha, roman: lower-roman )
+@each $notation, $style in $bullet_notations
+  .ls#{$notation}
+    list-style-type: $style
 
 .lsnone
   margin-left: 1rem
-
-.lsalpha
-  list-style-type: lower-alpha
-
-.lsroman
-  list-style-type: lower-roman
 
 // Location of bullet
 .lsin
