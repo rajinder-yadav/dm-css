@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.3.0 (2023-11-28)
+## 2.3.0 (2023-12-05)
 
 - Updated NPM packages.
 - Migrated to Cypress 13.6
@@ -15,11 +15,23 @@
 - Padding and margin now have go from 0-10.
 - New Z index levels.
 - New opacity levels.
-- Global bottom margins set to 0.25rem using css variable "--global-bottom-margin".
-- Header bottom margins set to 0.5rem using css variable "--header-bottom-margin".
+- Global bottom margins set to 0.25rem using css variable "--global-bottom-margin"
+- Header bottom margins set to 0.5rem using css variable "--header-bottom-margin"
 - Default font changed to "Open Sans" noraml style, 400 weight.
 - Added missing test to check CSS normalized values.
 - Fixed isues with NPM script.
+- Opacity now start at zero and goes up to 10.
+- More levels added to border.
+- Radius scale changed and more added.
+- Border names changed dot to bdot
+- Border names changed dash to bdash
+- New borders bsolider and bdouble
+- Column gaps level value changed.
+- Boxing size default to border-box for all elements.
+- Padding and margin scales changed.
+- Line heights changed.
+- Deleted .h{i} as alias for heading sizes, .h already used for height.
+- Text line height scales corrected.
 
 ## 2.2.1 (2019-06-29)
 
