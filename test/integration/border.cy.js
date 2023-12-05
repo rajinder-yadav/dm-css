@@ -68,6 +68,30 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-left-width", "7px")
         .should("have.css", "border-right-width", "7px");
     });
+    it("Border size 8px", () => {
+      cy.get("#b8")
+        .should("have.class", "b8")
+        .should("have.css", "border-top-width", "8px")
+        .should("have.css", "border-bottom-width", "8px")
+        .should("have.css", "border-left-width", "8px")
+        .should("have.css", "border-right-width", "8px");
+    });
+    it("Border size 9px", () => {
+      cy.get("#b9")
+        .should("have.class", "b9")
+        .should("have.css", "border-top-width", "9px")
+        .should("have.css", "border-bottom-width", "9px")
+        .should("have.css", "border-left-width", "9px")
+        .should("have.css", "border-right-width", "9px");
+    });
+    it("Border size 10px", () => {
+      cy.get("#b10")
+        .should("have.class", "b10")
+        .should("have.css", "border-top-width", "10px")
+        .should("have.css", "border-bottom-width", "10px")
+        .should("have.css", "border-left-width", "10px")
+        .should("have.css", "border-right-width", "10px");
+    });
   });
 
   context("Border size top", () => {
@@ -110,6 +134,21 @@ describe("Border Style-Notation", () => {
       cy.get("#bt7")
         .should("have.class", "bt7")
         .should("have.css", "border-top-width", "7px");
+    });
+    it("Border top size 8px", () => {
+      cy.get("#bt8")
+        .should("have.class", "bt8")
+        .should("have.css", "border-top-width", "8px");
+    });
+    it("Border top size 9px", () => {
+      cy.get("#bt9")
+        .should("have.class", "bt9")
+        .should("have.css", "border-top-width", "9px");
+    });
+    it("Border top size 9px", () => {
+      cy.get("#bt10")
+        .should("have.class", "bt10")
+        .should("have.css", "border-top-width", "10px");
     });
   });
 
@@ -154,6 +193,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "bb7")
         .should("have.css", "border-bottom-width", "7px");
     });
+    it("Border bottom size 8px", () => {
+      cy.get("#bb8")
+        .should("have.class", "bb8")
+        .should("have.css", "border-bottom-width", "8px");
+    });
+    it("Border bottom size 9px", () => {
+      cy.get("#bb9")
+        .should("have.class", "bb9")
+        .should("have.css", "border-bottom-width", "9px");
+    });
+    it("Border bottom size 10px", () => {
+      cy.get("#bb10")
+        .should("have.class", "bb10")
+        .should("have.css", "border-bottom-width", "10px");
+    });
   });
 
   context("Border size left", () => {
@@ -197,6 +251,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "bl7")
         .should("have.css", "border-left-width", "7px");
     });
+    it("Border left size 8px", () => {
+      cy.get("#bl8")
+        .should("have.class", "bl8")
+        .should("have.css", "border-left-width", "8px");
+    });
+    it("Border left size 9px", () => {
+      cy.get("#bl9")
+        .should("have.class", "bl9")
+        .should("have.css", "border-left-width", "9px");
+    });
+    it("Border left size 10px", () => {
+      cy.get("#bl10")
+        .should("have.class", "bl10")
+        .should("have.css", "border-left-width", "10px");
+    });
   });
 
   context("Border size right", () => {
@@ -239,6 +308,21 @@ describe("Border Style-Notation", () => {
       cy.get("#br7")
         .should("have.class", "br7")
         .should("have.css", "border-right-width", "7px");
+    });
+    it("Border right size 8px", () => {
+      cy.get("#br8")
+        .should("have.class", "br8")
+        .should("have.css", "border-right-width", "8px");
+    });
+    it("Border right size 9px", () => {
+      cy.get("#br9")
+        .should("have.class", "br9")
+        .should("have.css", "border-right-width", "9px");
+    });
+    it("Border right size 10px", () => {
+      cy.get("#br10")
+        .should("have.class", "br10")
+        .should("have.css", "border-right-width", "10px");
     });
   });
 
@@ -291,6 +375,24 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-left-width", "7px")
         .should("have.css", "border-right-width", "7px");
     });
+    it("Border left-right size 8px", () => {
+      cy.get("#bx8")
+        .should("have.class", "bx8")
+        .should("have.css", "border-left-width", "8px")
+        .should("have.css", "border-right-width", "8px");
+    });
+    it("Border left-right size 9px", () => {
+      cy.get("#bx9")
+        .should("have.class", "bx9")
+        .should("have.css", "border-left-width", "9px")
+        .should("have.css", "border-right-width", "9px");
+    });
+    it("Border left-right size 10px", () => {
+      cy.get("#bx10")
+        .should("have.class", "bx10")
+        .should("have.css", "border-left-width", "10px")
+        .should("have.css", "border-right-width", "10px");
+    });
 
     it("Border top-bottom size 0px", () => {
       cy.get("#by0")
@@ -339,6 +441,24 @@ describe("Border Style-Notation", () => {
         .should("have.class", "by7")
         .should("have.css", "border-top-width", "7px")
         .should("have.css", "border-bottom-width", "7px");
+    });
+    it("Border top-bottom size 8px", () => {
+      cy.get("#by8")
+        .should("have.class", "by8")
+        .should("have.css", "border-top-width", "8px")
+        .should("have.css", "border-bottom-width", "8px");
+    });
+    it("Border top-bottom size 9px", () => {
+      cy.get("#by9")
+        .should("have.class", "by9")
+        .should("have.css", "border-top-width", "9px")
+        .should("have.css", "border-bottom-width", "9px");
+    });
+    it("Border top-bottom size 10px", () => {
+      cy.get("#by10")
+        .should("have.class", "by10")
+        .should("have.css", "border-top-width", "10px")
+        .should("have.css", "border-bottom-width", "10px");
     });
   });
 
@@ -450,6 +570,30 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-bottom-left-radius", "71.776px")
         .should("have.css", "border-bottom-right-radius", "71.776px");
     });
+    it("r8", () => {
+      cy.get("#r8")
+        .should("have.class", "r8")
+        .should("have.css", "border-top-left-radius", "116.144px")
+        .should("have.css", "border-top-right-radius", "116.144px")
+        .should("have.css", "border-bottom-left-radius", "116.144px")
+        .should("have.css", "border-bottom-right-radius", "116.144px");
+    });
+    it("r9", () => {
+      cy.get("#r9")
+        .should("have.class", "r9")
+        .should("have.css", "border-top-left-radius", "187.92px")
+        .should("have.css", "border-top-right-radius", "187.92px")
+        .should("have.css", "border-bottom-left-radius", "187.92px")
+        .should("have.css", "border-bottom-right-radius", "187.92px");
+    });
+    it("r10", () => {
+      cy.get("#r10")
+        .should("have.class", "r10")
+        .should("have.css", "border-top-left-radius", "304.048px")
+        .should("have.css", "border-top-right-radius", "304.048px")
+        .should("have.css", "border-bottom-left-radius", "304.048px")
+        .should("have.css", "border-bottom-right-radius", "304.048px");
+    });
   });
 
   context("Border corner radius", () => {
@@ -493,6 +637,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "rtl7")
         .should("have.css", "border-top-left-radius", "71.776px");
     });
+    it("TL Radius8", () => {
+      cy.get("#rtl8")
+        .should("have.class", "rtl8")
+        .should("have.css", "border-top-left-radius", "116.144px");
+    });
+    it("TL Radius9", () => {
+      cy.get("#rtl9")
+        .should("have.class", "rtl9")
+        .should("have.css", "border-top-left-radius", "187.92px");
+    });
+    it("TL Radius10", () => {
+      cy.get("#rtl10")
+        .should("have.class", "rtl10")
+        .should("have.css", "border-top-left-radius", "304.048px");
+    });
 
     it("TR Radius0", () => {
       cy.get("#rtr0")
@@ -533,6 +692,21 @@ describe("Border Style-Notation", () => {
       cy.get("#rtr7")
         .should("have.class", "rtr7")
         .should("have.css", "border-top-right-radius", "71.776px");
+    });
+    it("TR Radius8", () => {
+      cy.get("#rtr8")
+        .should("have.class", "rtr8")
+        .should("have.css", "border-top-right-radius", "116.144px");
+    });
+    it("TR Radius9", () => {
+      cy.get("#rtr9")
+        .should("have.class", "rtr9")
+        .should("have.css", "border-top-right-radius", "187.92px");
+    });
+    it("TR Radius10", () => {
+      cy.get("#rtr10")
+        .should("have.class", "rtr10")
+        .should("have.css", "border-top-right-radius", "304.048px");
     });
 
     it("BL Radius0", () => {
@@ -575,6 +749,21 @@ describe("Border Style-Notation", () => {
         .should("have.class", "rbl7")
         .should("have.css", "border-bottom-left-radius", "71.776px");
     });
+    it("BL Radius8", () => {
+      cy.get("#rbl8")
+        .should("have.class", "rbl8")
+        .should("have.css", "border-bottom-left-radius", "116.144px");
+    });
+    it("BL Radius9", () => {
+      cy.get("#rbl9")
+        .should("have.class", "rbl9")
+        .should("have.css", "border-bottom-left-radius", "187.92px");
+    });
+    it("BL Radius10", () => {
+      cy.get("#rbl10")
+        .should("have.class", "rbl10")
+        .should("have.css", "border-bottom-left-radius", "304.048px");
+    });
 
     it("BR Radius0", () => {
       cy.get("#rbr0")
@@ -616,7 +805,23 @@ describe("Border Style-Notation", () => {
         .should("have.class", "rbr7")
         .should("have.css", "border-bottom-right-radius", "71.776px");
     });
+    it("BR Radius8", () => {
+      cy.get("#rbr8")
+        .should("have.class", "rbr8")
+        .should("have.css", "border-bottom-right-radius", "116.144px");
+    });
+    it("BR Radius9", () => {
+      cy.get("#rbr9")
+        .should("have.class", "rbr9")
+        .should("have.css", "border-bottom-right-radius", "187.92px");
+    });
+    it("BR Radius10", () => {
+      cy.get("#rbr10")
+        .should("have.class", "rbr10")
+        .should("have.css", "border-bottom-right-radius", "304.048px");
+    });
   });
+
 
   context("Border face radius", () => {
     it("T Radius0", () => {
@@ -667,6 +872,24 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-top-left-radius", "71.776px")
         .should("have.css", "border-top-right-radius", "71.776px");
     });
+    it("T Radius8", () => {
+      cy.get("#rt8")
+        .should("have.class", "rt8")
+        .should("have.css", "border-top-left-radius", "116.144px")
+        .should("have.css", "border-top-right-radius", "116.144px");
+    });
+    it("T Radius9", () => {
+      cy.get("#rt9")
+        .should("have.class", "rt9")
+        .should("have.css", "border-top-left-radius", "187.92px")
+        .should("have.css", "border-top-right-radius", "187.92px");
+    });
+    it("T Radius10", () => {
+      cy.get("#rt10")
+        .should("have.class", "rt10")
+        .should("have.css", "border-top-left-radius", "304.048px")
+        .should("have.css", "border-top-right-radius", "304.048px");
+    });
 
     it("B Radius0", () => {
       cy.get("#rb0")
@@ -715,6 +938,24 @@ describe("Border Style-Notation", () => {
         .should("have.class", "rb7")
         .should("have.css", "border-bottom-left-radius", "71.776px")
         .should("have.css", "border-bottom-right-radius", "71.776px");
+    });
+    it("B Radius8", () => {
+      cy.get("#rb8")
+        .should("have.class", "rb8")
+        .should("have.css", "border-bottom-left-radius", "116.144px")
+        .should("have.css", "border-bottom-right-radius", "116.144px");
+    });
+    it("B Radius9", () => {
+      cy.get("#rb9")
+        .should("have.class", "rb9")
+        .should("have.css", "border-bottom-left-radius", "187.92px")
+        .should("have.css", "border-bottom-right-radius", "187.92px");
+    });
+    it("B Radius10", () => {
+      cy.get("#rb10")
+        .should("have.class", "rb10")
+        .should("have.css", "border-bottom-left-radius", "304.048px")
+        .should("have.css", "border-bottom-right-radius", "304.048px");
     });
 
     it("L Radius0", () => {
@@ -765,6 +1006,25 @@ describe("Border Style-Notation", () => {
         .should("have.css", "border-top-left-radius", "71.776px")
         .should("have.css", "border-bottom-left-radius", "71.776px");
     });
+    it("L Radius8", () => {
+      cy.get("#rl8")
+        .should("have.class", "rl8")
+        .should("have.css", "border-top-left-radius", "116.144px")
+        .should("have.css", "border-bottom-left-radius", "116.144px");
+    });
+    it("L Radius9", () => {
+      cy.get("#rl9")
+        .should("have.class", "rl9")
+        .should("have.css", "border-top-left-radius", "187.92px")
+        .should("have.css", "border-bottom-left-radius", "187.92px");
+    });
+    it("L Radius10", () => {
+      cy.get("#rl10")
+        .should("have.class", "rl10")
+        .should("have.css", "border-top-left-radius", "304.048px")
+        .should("have.css", "border-bottom-left-radius", "304.048px");
+    });
+
     it("R Radius0", () => {
       cy.get("#rr0")
         .should("have.class", "rr0")
@@ -812,6 +1072,24 @@ describe("Border Style-Notation", () => {
         .should("have.class", "rr7")
         .should("have.css", "border-top-right-radius", "71.776px")
         .should("have.css", "border-bottom-right-radius", "71.776px");
+    });
+    it("R Radius8", () => {
+      cy.get("#rr8")
+        .should("have.class", "rr8")
+        .should("have.css", "border-top-right-radius", "116.144px")
+        .should("have.css", "border-bottom-right-radius", "116.144px");
+    });
+    it("R Radius9", () => {
+      cy.get("#rr9")
+        .should("have.class", "rr9")
+        .should("have.css", "border-top-right-radius", "187.92px")
+        .should("have.css", "border-bottom-right-radius", "187.92px");
+    });
+    it("R Radius10", () => {
+      cy.get("#rr10")
+        .should("have.class", "rr10")
+        .should("have.css", "border-top-right-radius", "304.048px")
+        .should("have.css", "border-bottom-right-radius", "304.048px");
     });
   });
 
