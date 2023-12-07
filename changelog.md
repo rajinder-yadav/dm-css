@@ -32,6 +32,9 @@
 - Line heights changed.
 - Deleted .h{i} as alias for heading sizes, .h already used for height.
 - Text line height scales corrected.
+- Outline border added
+- Outline border styles added
+- Outline tested added
 
 ## 2.2.1 (2019-06-29)
 
