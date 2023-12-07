@@ -1259,4 +1259,100 @@ describe("Border Style-Notation", () => {
     });
   });
 
+  context("Outline border size all sides", () => {
+    it("None", () => {
+      cy.get("#ob0")
+        .should("have.class", "ob0")
+        .should("have.css", "outline-width", "0px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 1px", () => {
+      cy.get("#ob1")
+        .should("have.class", "ob1")
+        .should("have.css", "outline-width", "1px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 2px", () => {
+      cy.get("#ob2")
+        .should("have.class", "ob2")
+        .should("have.css", "outline-width", "2px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 3px", () => {
+      cy.get("#ob3")
+        .should("have.class", "ob3")
+        .should("have.css", "outline-width", "3px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 4px", () => {
+      cy.get("#ob4")
+        .should("have.class", "ob4")
+        .should("have.css", "outline-width", "4px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 5px", () => {
+      cy.get("#ob5")
+        .should("have.class", "ob5")
+        .should("have.css", "outline-width", "5px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 6px", () => {
+      cy.get("#ob6")
+        .should("have.class", "ob6")
+        .should("have.css", "outline-width", "6px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 7px", () => {
+      cy.get("#ob7")
+        .should("have.class", "ob7")
+        .should("have.css", "outline-width", "7px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 8px", () => {
+      cy.get("#ob8")
+        .should("have.class", "ob8")
+        .should("have.css", "outline-width", "8px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 9px", () => {
+      cy.get("#ob9")
+        .should("have.class", "ob9")
+        .should("have.css", "outline-width", "9px")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("Outline border size 10px", () => {
+      cy.get("#ob10")
+        .should("have.class", "ob10")
+        .should("have.css", "outline-width", "10px")
+        .should("have.css", "outline-style", "solid");
+    });
+  });
+
+  context("Outline border size all sides", () => {
+    it("OB Dash", () => {
+      cy.get("#obdash")
+        .should("have.class", "obdash")
+        .should("have.css", "outline-style", "dashed");
+    });
+    it("OB Dot", () => {
+      cy.get("#obdot")
+        .should("have.class", "obdot")
+        .should("have.css", "outline-style", "dotted");
+    });
+    it("OB Solid", () => {
+      cy.get("#obsolid")
+        .should("have.class", "obsolid")
+        .should("have.css", "outline-style", "solid");
+    });
+    it("OB Double", () => {
+      cy.get("#obdouble")
+        .should("have.class", "obdouble")
+        .should("have.css", "outline-style", "double");
+    });
+    it("OB Node", () => {
+      cy.get("#obnone")
+        .should("have.class", "obnone")
+        .should("have.css", "outline-style", "none");
+    });
+  });
 });
