@@ -50,32 +50,32 @@ describe("Typography", () => {
     it("fh-2", () => {
       cy.get(".fh-2")
         .should("have.class", "fh-2")
-        .should("have.css", "font-size", "12.8px");
+        .should("have.css", "font-size", "13.2px");
     });
     it("fh-3", () => {
       cy.get(".fh-3")
         .should("have.class", "fh-3")
-        .should("have.css", "font-size", "11.2px");
+        .should("have.css", "font-size", "12px");
     });
     it("fh-4", () => {
       cy.get(".fh-4")
         .should("have.class", "fh-4")
-        .should("have.css", "font-size", "9.6px");
+        .should("have.css", "font-size", "10.8px");
     });
     it("fh-5", () => {
       cy.get(".fh-5")
         .should("have.class", "fh-5")
-        .should("have.css", "font-size", "8px");
+        .should("have.css", "font-size", "9.6px");
     });
     it("fh-6", () => {
       cy.get(".fh-6")
         .should("have.class", "fh-6")
-        .should("have.css", "font-size", "6.4px");
+        .should("have.css", "font-size", "8.4px");
     });
     it("fh-7", () => {
       cy.get(".fh-7")
         .should("have.class", "fh-7")
-        .should("have.css", "font-size", "4.8px");
+        .should("have.css", "font-size", "7.2px");
     });
   });
 
