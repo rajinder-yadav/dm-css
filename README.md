@@ -1660,6 +1660,50 @@ __Mnemonic__: b = border
 <div class="b2 bdoubley"> ... </div>
 ```
 
+### Outline border notations
+
+__Mnemonic__: ob = outline border
+
+|Notation|Values|Border sides|
+|-|-|-|
+|0b|0-10|Border on all sides|
+
+Outline border thickness value range from 0 to 10.
+
+```html
+<div class="ob0"> ... </div>
+<div class="ob1"> ... </div>
+<div class="ob2"> ... </div>
+<div class="ob3"> ... </div>
+<div class="ob4"> ... </div>
+<div class="ob5"> ... </div>
+<div class="ob6"> ... </div>
+<div class="ob7"> ... </div>
+<div class="ob8"> ... </div>
+<div class="ob9"> ... </div>
+<div class="ob10"> ... </div>
+```
+
+### Outline border line style
+
+Set border line style to dashed.
+
+__Mnemonic__: ob = outline border
+
+|Notation|Border box side|
+|-|-|
+|obdash|All sides|
+|obdot|All sides|
+|obsolid|All sides|
+|obdouble|All sides|
+
+```html
+<div class="obdash"> ... </div>
+<div class="obdot"> ... </div>
+<div class="obsolid"> ... </div>
+<div class="obdouble"> ... </div>
+```
+
 ### Circle Radius
 
 To draw a circular border, use Style-Notation "__circle__".
