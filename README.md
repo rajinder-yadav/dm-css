@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.3.0-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.3.1-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
@@ -442,7 +442,7 @@ __Mnemonic__: w = width, h = height
 <div class="w100"> ... </div>
 ```
 
-### Fixed unit based
+### REM Fixed height and width
 
 Fixed width and height sizes are based on the root font using the "__rem__" unit.
 
@@ -472,8 +472,8 @@ __Mnemonic__: w = width, h = height
 |-|-|
 |hauto|Height set to auto|
 |wauto|Width set to auto|
-|hnomax|Height has no max value|
-|wnomax|Width has no max value|
+|hscreen|Height max viewport|
+|wscreen|Width max viewport|
 
 ```html
 <div class="hauto"> ... </div>
@@ -507,6 +507,8 @@ The Style-Notation for spacing allows setting the __margin__ and __padding__ use
 
 ## Padding
 
+Padding size based on the Golden Ratio multiple of the base font size. Size range from 0 to 10.
+
 __Mnemonic__: p = padding
 
 |Notation|Values|Box side|
@@ -518,8 +520,6 @@ __Mnemonic__: p = padding
 |pr|0-10|Pad right|
 |py|0-10|Pad top and bottom|
 |px|0-10|Pad left and right|
-
-Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
 ```html
 <div class="p0">Padding size 0</div>
@@ -537,9 +537,7 @@ Add padding to all sides, values range from 0 to 7 and follow the Golden Ratio.
 
 ### Padding top
 
-![padding top](images/pad-top.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: pt = padding top
 
 ```html
 <div class="pt0">Padding top size 0</div>
@@ -555,11 +553,11 @@ __Mnemonic__: p = padding
 <div class="pt10">Padding top size 10</div>
 ```
 
+![padding top](images/pad-top.png)
+
 ### Padding bottom
 
-![padding bottom](images/pad-bottom.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: pb = padding bottom
 
 ```html
 <div class="pb0">Padding bottom size 0</div>
@@ -575,11 +573,11 @@ __Mnemonic__: p = padding
 <div class="pb10">Padding bottom size 10</div>
 ```
 
+![padding bottom](images/pad-bottom.png)
+
 ### Padding left
 
-![padding left](images/pad-left.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: pl = padding left
 
 ```html
 <div class="pl0">Padding left size 0</div>
@@ -595,11 +593,11 @@ __Mnemonic__: p = padding
 <div class="pl10">Padding left size 10</div>
 ```
 
+![padding left](images/pad-left.png)
+
 ### Padding right
 
-![padding right](images/pad-right.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: pr = padding right
 
 ```html
 <div class="pr0">Padding right size 0</div>
@@ -615,11 +613,11 @@ __Mnemonic__: p = padding
 <div class="pr10">Padding right size 10</div>
 ```
 
+![padding right](images/pad-right.png)
+
 ### Padding vertical
 
-![padding vertical](images/pad-y.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: py = padding vertical
 
 ```html
 <span class="py0">Padding vertical 0</span>
@@ -635,11 +633,11 @@ __Mnemonic__: p = padding
 <span class="py10">Padding vertical 10</span>
 ```
 
+![padding vertical](images/pad-y.png)
+
 ### Padding horizontal
 
-![padding horizontal](images/pad-x.png)
-
-__Mnemonic__: p = padding
+__Mnemonic__: px = padding horizontal
 
 ```html
 <span class="px0">Padding horizontal 0</span>
@@ -655,9 +653,11 @@ __Mnemonic__: p = padding
 <span class="px10">Padding horizontal 10</span>
 ```
 
+![padding horizontal](images/pad-x.png)
+
 ## Margin
 
-Set the margin area surrounding an element.
+Margin size based on the Golden Ratio multiple of the base font size. Size range from 0 to 10.
 
 __Mnemonic__: m = margin
 
@@ -670,8 +670,6 @@ __Mnemonic__: m = margin
 |mr|0-10|Margin right|
 |my|0-10|Margins top and bottom|
 |mx|0-10|Margins left and right|
-
-Add margin to all sides, size values range from 0 to 7 and follow the Golden Ratio.
 
 ```html
 <div class="m0">Margin size 0</div>
@@ -689,9 +687,7 @@ Add margin to all sides, size values range from 0 to 7 and follow the Golden Rat
 
 ### Margin top
 
-![margin top](images/pad-top.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: m t= margin top
 
 ```html
 <div class="mt0">Margin top size 0</div>
@@ -707,11 +703,11 @@ __Mnemonic__: m = margin
 <div class="mt10">Margin top size 10</div>
 ```
 
+![margin top](images/margin-top.png)
+
 ### Margin bottom
 
-![margin bottom](images/pad-bottom.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: mb = margin bottom
 
 ```html
 <div class="mb0">Margin bottom size 0</div>
@@ -727,11 +723,11 @@ __Mnemonic__: m = margin
 <div class="mb10">Margin bottom size 10</div>
 ```
 
+![margin bottom](images/margin-bottom.png)
+
 ### Margin left
 
-![margin left](images/pad-left.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: ml = margin left
 
 ```html
 <div class="ml0">Margin left size 0</div>
@@ -747,11 +743,11 @@ __Mnemonic__: m = margin
 <div class="ml10">Margin left size 10</div>
 ```
 
+![margin left](images/margin-left.png)
+
 ### Margin right
 
-![margin right](images/pad-right.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: mr = margin right
 
 ```html
 <div class="mr0">Margin right size 0</div>
@@ -767,11 +763,11 @@ __Mnemonic__: m = margin
 <div class="mr10">Margin right size 10</div>
 ```
 
+![margin right](images/margin-right.png)
+
 ### Margin vertical
 
-![margin vertical](images/pad-y.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: my = margin vertical
 
 ```html
 <span class="my0">Margin vertical 0</span>
@@ -787,11 +783,11 @@ __Mnemonic__: m = margin
 <span class="my10">Margin vertical 10</span>
 ```
 
+![margin vertical](images/margin-y.png)
+
 ### Margin horizontal
 
-![margin horizontal](images/pad-x.png)
-
-__Mnemonic__: m = margin
+__Mnemonic__: mx = margin horizontal
 
 ```html
 <span class="mx0">Margin horizontal 0</span>
@@ -807,11 +803,13 @@ __Mnemonic__: m = margin
 <span class="mx10">Margin horizontal 10</span>
 ```
 
+![margin horizontal](images/pad-x.png)
+
 ### Auto Margin
 
 By setting margin to auto, size is determined from available space.
 
-__Mnemonic__: m = margin
+__Mnemonic__: ma = margin auto
 
 |Notation|Box side|
 |-|-|
@@ -845,12 +843,14 @@ An element position property can be changed to one of the following CSS styles.
 |fixed|Position relative to the Viewport|
 |relative|Position relative to natural position using offset value|
 |static|Default, use natural positioning|
+|sticky|Natural position until scroll max is reached, then sticks|
 
 ```html
 <span class="absolute"> ... </span>
 <span class="fixed"> ... </span>
 <span class="relative"> ... </span>
 <span class="static"> ... </span>
+<span class="sticky"> ... </span>
 ```
 
 ### Position location
@@ -926,8 +926,6 @@ Negative Z-index values.
 
 ## Font
 
-Font heights follows the "__Perfect Third__" scale, ranging from 1 to 7.
-
 A font scale of 1 has a font height equal to the root element, which is set to 16px from the font family of Roboto (unless changed).
 
 __Mnemonic__: fh = Font height
@@ -939,6 +937,8 @@ __Mnemonic__: fh = Font height
 |h  |1-7|Shrink Heading size|
 
 ### Height scaling up
+
+Positive font heights follows the "__Perfect Third__" scale, ranging from 1 to 7. Font size will grow.
 
 Higher scale values result in progressively larger fonts. Note this is the reverse of HTML heading values.
 
@@ -956,9 +956,9 @@ Higher scale values result in progressively larger fonts. Note this is the rever
 
 ### Height scaling down
 
-When a font height is scaled down, the values become a fraction of the root font height.
+Negative font height get incrementally smaller and follow a scale from 0.9 to 0.3 reduced by a fix delta of 0.1.
 
-The negative scale reduces font height successively by a factor of __10%__.
+When a font height is scaled down, the values become a fraction of the root font height.
 
 You will notice in the Style-Notation, scaled down fonts have a leading "-" dash before the value, this can be consider negative scaled values.
 
@@ -978,7 +978,7 @@ __Mnemonic__: fh = Font height
 
 ### Heading
 
-There are also 7 Heading Style-Notations, which display as the regular HTML heading tags.
+There are also 6 Heading Style-Notations, which display as the regular HTML heading tags.
 
 - Headings have been changed to use the "__Major Third__" scale.
 - For headings you can also use the regular HTML __h1__ to __h6__ tags.
@@ -986,14 +986,6 @@ There are also 7 Heading Style-Notations, which display as the regular HTML head
 ![headings](images/headings.png)
 
 ```html
-<div class="h1">Font height 1</div>
-<div class="h2">Font height 2</div>
-<div class="h3">Font height 3</div>
-<div class="h4">Font height 4</div>
-<div class="h5">Font height 5</div>
-<div class="h6">Font height 6</div>
-<div class="h7">Font height 7</div>
-
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -1054,6 +1046,8 @@ __Mnemonic__: fw = Font weight
 <div class="fw900"> ... </div>
 ```
 
+![Font weights](/images/font-weights.png)
+
 ## Text
 
 Here are a few handy CSS styles for working with text.
@@ -1086,7 +1080,7 @@ __Note__: For text justification to work, the text must span multiple lines.
 
 Specify the vertical alignment of an inline or table-cell box.
 
-__Mnemonic__: tt = Text transform
+__Mnemonic__: ttv = Text transform vertical
 
 |Notation|Description|
 |-|-|
@@ -1224,12 +1218,12 @@ __Mnemonic__: tt = Text transform
 
 Set the line height.
 
-__Mnemonic__: tt = Text transform
+__Mnemonic__: ttl = Text transform line
 
 |Notation|Values|Line height|
 |-|-|-|
-|ttlh|0-7|Increase line height|
-|ttlh-|1-7|Reduce line height|
+|ttlh|0-10|Increase line height|
+|ttlh-|1-10|Reduce line height|
 
 Increasing line heights.
 
@@ -1242,6 +1236,9 @@ Increasing line heights.
 <div class="ttlh5"> ... </div>
 <div class="ttlh6"> ... </div>
 <div class="ttlh7"> ... </div>
+<div class="ttlh8"> ... </div>
+<div class="ttlh9"> ... </div>
+<div class="ttlh10"> ... </div>
 ```
 
 Decreasing line heights.
@@ -1254,6 +1251,9 @@ Decreasing line heights.
 <div class="ttlh-5"> ... </div>
 <div class="ttlh-6"> ... </div>
 <div class="ttlh-7"> ... </div>
+<div class="ttlh-8"> ... </div>
+<div class="ttlh-9"> ... </div>
+<div class="ttlh-10"> ... </div>
 ```
 
 ### Text direction
@@ -1287,7 +1287,7 @@ An element can be given borders on:
 
 The postfix value for a border denotes the thickness of the border line.
 
-- The supported values range from 0 to 7.
+- The supported values range from 0 to 10.
 
 A value of "0" (zero) indicates no border. You would use it to remove borders from an element that may already have borders.
 
@@ -1297,17 +1297,17 @@ __Mnemonic__: b = border
 
 |Notation|Values|Border sides|
 |-|-|-|
-|b|0-7|Border on all sides|
-|bt|0-7|Border on top|
-|bb|0-7|Border on bottom|
-|bl|0-7|Border on left|
-|br|0-7|Border on right|
-|by|0-7|Border on top and bottom|
-|bx|0-7|Border on left and right|
+|b|0-10|Border on all sides|
+|bt|0-10|Border on top|
+|bb|0-10|Border on bottom|
+|bl|0-10|Border on left|
+|br|0-10|Border on right|
+|by|0-10|Border on top and bottom|
+|bx|0-10|Border on left and right|
 
 ### Border all sides
 
-Border thickness value range from 0 to 7.
+Border thickness value range from 0 to 10.
 
 ![borders](images/borders.png)
 
@@ -1320,11 +1320,14 @@ Border thickness value range from 0 to 7.
 <div class="b5"> ... </div>
 <div class="b6"> ... </div>
 <div class="b7"> ... </div>
+<div class="b8"> ... </div>
+<div class="b9"> ... </div>
+<div class="b10"> ... </div>
 ```
 
 ### Border top
 
-__Mnemonic__: b = border
+__Mnemonic__: bt = border top
 
 ![border top](images/border-top.png)
 
@@ -1337,11 +1340,14 @@ __Mnemonic__: b = border
 <div class="bt5"> ... </div>
 <div class="bt6"> ... </div>
 <div class="bt7"> ... </div>
+<div class="bt8"> ... </div>
+<div class="bt9"> ... </div>
+<div class="bt10"> ... </div>
 ```
 
 ### Border bottom
 
-__Mnemonic__: b = border
+__Mnemonic__: bb = border bottom
 
 ![border bottom](images/border-bottom.png)
 
@@ -1354,11 +1360,14 @@ __Mnemonic__: b = border
 <div class="bb5"> ... </div>
 <div class="bb6"> ... </div>
 <div class="bb7"> ... </div>
+<div class="bb8"> ... </div>
+<div class="bb9"> ... </div>
+<div class="bb10"> ... </div>
 ```
 
 ### Border left
 
-__Mnemonic__: b = border
+__Mnemonic__: bl = border left
 
 ![border left](images/border-left.png)
 
@@ -1371,11 +1380,14 @@ __Mnemonic__: b = border
 <div class="bl5"> ... </div>
 <div class="bl6"> ... </div>
 <div class="bl7"> ... </div>
+<div class="bl8"> ... </div>
+<div class="bl9"> ... </div>
+<div class="bl10"> ... </div>
 ```
 
 ### Border right
 
-__Mnemonic__: b = border
+__Mnemonic__: br = border right
 
 ![border right](images/border-right.png)
 
@@ -1388,11 +1400,14 @@ __Mnemonic__: b = border
 <div class="br5"> ... </div>
 <div class="br6"> ... </div>
 <div class="br7"> ... </div>
+<div class="br8"> ... </div>
+<div class="br9"> ... </div>
+<div class="br10"> ... </div>
 ```
 
 ### Border vertical
 
-__Mnemonic__: b = border
+__Mnemonic__: by = border vertical
 
 ![border vertical](images/by.png)
 
@@ -1405,11 +1420,14 @@ __Mnemonic__: b = border
 <div class="by5"> ... </div>
 <div class="by6"> ... </div>
 <div class="by7"> ... </div>
+<div class="by8"> ... </div>
+<div class="by9"> ... </div>
+<div class="by10"> ... </div>
 ```
 
 ### Border horizontal
 
-__Mnemonic__: b = border
+__Mnemonic__: bx = border horizontal
 
 ![border horizontal](images/bx.png)
 
@@ -1422,6 +1440,9 @@ __Mnemonic__: b = border
 <div class="bx5"> ... </div>
 <div class="bx6"> ... </div>
 <div class="bx7"> ... </div>
+<div class="bx8"> ... </div>
+<div class="bx9"> ... </div>
+<div class="bx10"> ... </div>
 ```
 
 ### Removing Borders
@@ -1463,9 +1484,7 @@ __Mnemonic__: r = radius
 
 |Notation|Values|Radius size|
 |-|-|-|
-|r|0-7|All radius|
-
-![radius](images/radius.png)
+|r|0-10|All radius|
 
 ```html
 <div class="b1 r0"> ... </div>
@@ -1476,9 +1495,18 @@ __Mnemonic__: r = radius
 <div class="b1 r5"> ... </div>
 <div class="b1 r6"> ... </div>
 <div class="b1 r7"> ... </div>
+<div class="b1 r8"> ... </div>
+<div class="b1 r9"> ... </div>
+<div class="b1 r10"> ... </div>
 ```
 
+__NOTE__: As the size gets bigger, radius value 6 and up come into play.
+
+![radius](images/radius.png)
+
 Radius size is always consistent as shown below for larger dimensions.
+
+__NOTE__: As the size gets bigger, radius value 6 and up come into play.
 
 ![radius](images/radius2.png)
 
@@ -1486,14 +1514,14 @@ Radius size is always consistent as shown below for larger dimensions.
 
 You can set the border value for each individual corner using the following Style-Notation.
 
-__Mnemonic__: r = radius
+__Mnemonic__: rt = radius top, rb = radius bottom
 
 |Notation|Values|Border box corner|
 |-|-|-|
-|rtl|0-7|Top left|
-|rtr|0-7|Top right|
-|rbl|0-7|Bottom left|
-|rbr|0-7|Bottom right|
+|rtl|0-10|Top left|
+|rtr|0-10|Top right|
+|rbl|0-10|Bottom left|
+|rbr|0-10|Bottom right|
 
 ![corner radius](images/corner-radius.png)
 
@@ -1512,10 +1540,10 @@ __Mnemonic__: r = radius
 
 |Notation|Values|Border box face|
 |-|-|-|
-|rt|0-7|Top face|
-|rb|0-7|Bottom face|
-|rl|0-7|Left face|
-|rr|0-7|Right face|
+|rt|0-10|Top face|
+|rb|0-10|Bottom face|
+|rl|0-10|Left face|
+|rr|0-10|Right face|
 
 ![face radius](images/face-radius.png)
 
@@ -1530,50 +1558,106 @@ __Mnemonic__: r = radius
 
 Set border line style to dashed.
 
+__Mnemonic__: b = border
+
 |Notation|Border box side|
 |-|-|
-|dash|All sides|
-|dasht|Dash on top|
-|dashb|Dash on bottom|
-|dashl|Dash on left|
-|dashr|Dash on right|
-|dashy|Dash on top and bottom|
-|dashx|Dash on left and right|
+|bdash|All sides|
+|bdasht|Dash on top|
+|bdashb|Dash on bottom|
+|bdashl|Dash on left|
+|bdashr|Dash on right|
+|bdashy|Dash on top and bottom|
+|bdashx|Dash on left and right|
 
 ![border line dashed](images/dashes.png)
 
 ```html
-<div class="b2 dash"> ... </div>
-<div class="b2 dasht"> ... </div>
-<div class="b2 dashb"> ... </div>
-<div class="b2 dashl"> ... </div>
-<div class="b2 dashr"> ... </div>
-<div class="b2 dashx"> ... </div>
-<div class="b2 dashy"> ... </div>
+<div class="b2 bdash"> ... </div>
+<div class="b2 bdasht"> ... </div>
+<div class="b2 bdashb"> ... </div>
+<div class="b2 bdashl"> ... </div>
+<div class="b2 bdashr"> ... </div>
+<div class="b2 bdashx"> ... </div>
+<div class="b2 bdashy"> ... </div>
 ```
 
 __Border dot__
 
 Border line style dotted.
 
+__Mnemonic__: b = border
+
 |Notation|Border box side|
 |-|-|
-|dot|All sides|
-|dott|Dot on top|
-|dotb|Dot on bottom|
-|dotl|Dot on left|
-|dotr|Dot on right|
-|doty|Dot on top and bottom|
-|datx|Dot on left and right|
+|bdot|All sides|
+|bdott|Dot on top|
+|bdotb|Dot on bottom|
+|bdotl|Dot on left|
+|bdotr|Dot on right|
+|bdoty|Dot on top and bottom|
+|bdotx|Dot on left and right|
 
 ```html
-<div class="b2 dot"> ... </div>
-<div class="b2 dott"> ... </div>
-<div class="b2 dotb"> ... </div>
-<div class="b2 dotl"> ... </div>
-<div class="b2 dotr"> ... </div>
-<div class="b2 dotx"> ... </div>
-<div class="b2 doty"> ... </div>
+<div class="b2 bdot"> ... </div>
+<div class="b2 bdott"> ... </div>
+<div class="b2 bdotb"> ... </div>
+<div class="b2 bdotl"> ... </div>
+<div class="b2 bdotr"> ... </div>
+<div class="b2 bdotx"> ... </div>
+<div class="b2 bdoty"> ... </div>
+```
+
+__Border solid__
+
+Border line style dotted.
+
+__Mnemonic__: b = border
+
+|Notation|Border box side|
+|-|-|
+|bsolid|All sides|
+|bsolidt|Dot on top|
+|bsolidb|Dot on bottom|
+|bsolidl|Dot on left|
+|bsolidr|Dot on right|
+|bsolidy|Dot on top and bottom|
+|bsolidx|Dot on left and right|
+
+```html
+<div class="b2 bsolid"> ... </div>
+<div class="b2 bsolidt"> ... </div>
+<div class="b2 bsolidb"> ... </div>
+<div class="b2 bsolidl"> ... </div>
+<div class="b2 bsolidr"> ... </div>
+<div class="b2 bsolidx"> ... </div>
+<div class="b2 bsolidy"> ... </div>
+```
+
+__Border double__
+
+Border line style dotted.
+
+__Mnemonic__: b = border
+
+|Notation|Border box side|
+|-|-|
+|bdouble|All sides|
+|bdoublet|Dot on top|
+|bdoubleb|Dot on bottom|
+|bdoublel|Dot on left|
+|bdoubler|Dot on right|
+|bdoubley|Dot on top and bottom|
+|bdoublex|Dot on left and right|
+
+```html
+<div class="b2 bdouble"> ... </div>
+<div class="b2 bdoublet"> ... </div>
+<div class="b2 bdoubleb"> ... </div>
+<div class="b2 bdoublel"> ... </div>
+<div class="b2 bdoubler"> ... </div>
+<div class="b2 bdoublex"> ... </div>
+<div class="b2 bdoubley"> ... </div>
 ```
 
 ### Circle Radius
@@ -1684,6 +1768,7 @@ __Mnemonic__: ls = List style
 ### List style reset
 
 Reset list style, undo applied list style.
+Must be applied to a "ol" or "ul" HTML element.
 
 __Mnemonic__: ls = List style
 
@@ -1692,7 +1777,8 @@ __Mnemonic__: ls = List style
 |lsreset|Clear list to its default|
 
 ```html
-<div class="lsreset"> ... </div>
+<ol class="lsreset"> ... </ol>
+<ul class="lsreset"> ... </ul>
 ```
 
 ## Utility
@@ -1736,6 +1822,8 @@ Control the opacity of an element and its descendants. A value of "0" (zero), is
 |Notation|Value|Opacity|
 |-|-|-|
 |opacity|0-10|Higher value is more opaque (visible)|
+
+![Opacity levels](/images/opacity-levels.png)
 
 ```html
 <div class="opacity0"> ... </div>
@@ -1883,38 +1971,38 @@ The wrap Style-Notation must be added to a Flex container.
 
 Justify Flex items along the Main axis.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbj = Flexbox justify
 
 |Notation|Justification along Main axis|
 |-|-|
-|fbjs|Justify start|
-|fbje|Justify end|
+|fbjfs|Justify start|
+|fbjee|Justify end|
 |fbjc|Justify center|
-|fbja|Justify space around|
-|fbjb|Justify space between|
+|fbjsa|Justify space around|
+|fbjsb|Justify space between|
 
 ![justify](images/fb-justify.png)
 
 The justify Style-Notation must be added to a Flex container.
 
 ```html
-<div class="dflex fbjs"> ... </div>
-<div class="dflex fbje"> ... </div>
+<div class="dflex fbjfs"> ... </div>
+<div class="dflex fbjfe"> ... </div>
 <div class="dflex fbjc"> ... </div>
-<div class="dflex fbja"> ... </div>
-<div class="dflex fbjb"> ... </div>
+<div class="dflex fbjsa"> ... </div>
+<div class="dflex fbjsb"> ... </div>
 ```
 
 ### Justify Cross axis
 
 Vertically justify Flex items along their Cross axis.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbi = Flexbox item
 
 |Notation|Justification Cross axis|
 |-|-|
-|fbis|Justify items start|
-|fbie|Justify items end|
+|fbifs|Justify items start|
+|fbife|Justify items end|
 |fbic|Justify items center|
 |fbib|Justify items baseline|
 |fbix|Justify items stretch (eXpand)|
@@ -1922,8 +2010,8 @@ __Mnemonic__: fb = Flexbox
 ![justify items](images/fb-justify-items.png)
 
 ```html
-<div class="fbis"> ... </div>
-<div class="fbie"> ... </div>
+<div class="fbifs"> ... </div>
+<div class="fbife"> ... </div>
 <div class="fbic"> ... </div>
 <div class="fbib"> ... </div>
 <div class="fbix"> ... </div>
@@ -1933,25 +2021,25 @@ __Mnemonic__: fb = Flexbox
 
 Justify all Flex items inside a Flex container.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbc = Flexbox content
 
 |Notation|Content alignment|
 |-|-|
-|fbcs|Align content start|
-|fbce|Align content end|
+|fbcfs|Align content start|
+|fbcfe|Align content end|
 |fbcc|Align content center|
-|fbca|Align content space around|
-|fbcb|Align content space between|
+|fbcsa|Align content space around|
+|fbcsb|Align content space between|
 |fbcx|Align content stretch (eXpand)|
 
 ![justify content](images/fb-justify-content.png)
 
 ```html
-<div class="fbcs"> ... </div>
-<div class="fbce"> ... </div>
+<div class="fbcfs"> ... </div>
+<div class="fbcfe"> ... </div>
 <div class="fbcc"> ... </div>
-<div class="fbca"> ... </div>
-<div class="fbcb"> ... </div>
+<div class="fbcsa"> ... </div>
+<div class="fbcsb"> ... </div>
 <div class="fbcx"> ... </div>
 ```
 
@@ -1959,12 +2047,12 @@ __Mnemonic__: fb = Flexbox
 
 Justify single Flex item along the Cross axis.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbs = Flexbox self
 
 |Notation|Item self alignment|
 |-|-|
-|fbss|Align self start|
-|fbse|Align self end|
+|fbsfs|Align self start|
+|fbsfe|Align self end|
 |fbsc|Align self center|
 |fbsb|Align self baseline|
 |fbsx|Align self stretch (eXpand)|
@@ -1973,8 +2061,8 @@ __Mnemonic__: fb = Flexbox
 ![justify self](images/fb-justify-self.png)
 
 ```html
-<div class="fbss"> ... </div>
-<div class="fbse"> ... </div>
+<div class="fbsfs"> ... </div>
+<div class="fbsfe"> ... </div>
 <div class="fbsc"> ... </div>
 <div class="fbsb"> ... </div>
 <div class="fbsx"> ... </div>
@@ -1985,12 +2073,12 @@ __Mnemonic__: fb = Flexbox
 
 Flex items position ordering.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbo = Flexbox order
 
 |Notation|Values|Flex item order|
 |-|-|-|
-|fbo|0-7|Flex item positive order|
-|fbo-|1-7|Flex item negative order|
+|fbo|0-10|Flex item positive order|
+|fbo-|1-10|Flex item negative order|
 
 ```html
 <div class="fbo1"> ... </div>
@@ -2000,6 +2088,9 @@ __Mnemonic__: fb = Flexbox
 <div class="fbo5"> ... </div>
 <div class="fbo6"> ... </div>
 <div class="fbo7"> ... </div>
+<div class="fbo8"> ... </div>
+<div class="fbo9"> ... </div>
+<div class="fbo10"> ... </div>
 ```
 
 __Example__: Flex item ordering.
@@ -2022,27 +2113,33 @@ Negative order positions.
 <div class="fbo-5"> ... </div>
 <div class="fbo-6"> ... </div>
 <div class="fbo-7"> ... </div>
+<div class="fbo-8"> ... </div>
+<div class="fbo-9"> ... </div>
+<div class="fbo-10"> ... </div>
 ```
 
 ### Growing Flex item
 
 Grow a Flexbox item.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbg = Flexbox grow
 
 |Notation|Values|Description|
 |-|-|-|
-|fb|0-7|Flex item grow|
+|fbg|0-10|Flex item grow|
 
 ```html
-<div class="fb0"> ... </div>
-<div class="fb1"> ... </div>
-<div class="fb2"> ... </div>
-<div class="fb3"> ... </div>
-<div class="fb4"> ... </div>
-<div class="fb5"> ... </div>
-<div class="fb6"> ... </div>
-<div class="fb7"> ... </div>
+<div class="fbg0"> ... </div>
+<div class="fbg1"> ... </div>
+<div class="fbg2"> ... </div>
+<div class="fbg3"> ... </div>
+<div class="fbg4"> ... </div>
+<div class="fbg5"> ... </div>
+<div class="fbg6"> ... </div>
+<div class="fbg7"> ... </div>
+<div class="fbg8"> ... </div>
+<div class="fbg9"> ... </div>
+<div class="fbg10"> ... </div>
 ```
 
 __Example__: Sizing Flex items.
@@ -2050,29 +2147,32 @@ __Example__: Sizing Flex items.
 ![justify size](images/fb-sizes.png)
 
 ```html
-<div class="fb0">A</div>
-<div class="fb1">B</div>
-<div class="fb2">C</div>
+<div class="fbg0">A</div>
+<div class="fbg1">B</div>
+<div class="fbg2">C</div>
 ```
 
 ### Shrinking Flex item
 
 Shrink a Flexbox item.
 
-__Mnemonic__: fb = Flexbox
+__Mnemonic__: fbg = Flexbox grow
 
 |Notation|Values|Description|
 |-|-|-|
-|fb-|1-7|Flex item shrink|
+|fbg-|1-10|Flex item shrink|
 
 ```html
-<div class="fb-1"> ... </div>
-<div class="fb-2"> ... </div>
-<div class="fb-3"> ... </div>
-<div class="fb-4"> ... </div>
-<div class="fb-5"> ... </div>
-<div class="fb-6"> ... </div>
-<div class="fb-7"> ... </div>
+<div class="fbg-1"> ... </div>
+<div class="fbg-2"> ... </div>
+<div class="fbg-3"> ... </div>
+<div class="fbg-4"> ... </div>
+<div class="fbg-5"> ... </div>
+<div class="fbg-6"> ... </div>
+<div class="fbg-7"> ... </div>
+<div class="fbg-8"> ... </div>
+<div class="fbg-9"> ... </div>
+<div class="fbg-10"> ... </div>
 ```
 
 ### Grid
