@@ -8,11 +8,14 @@
     "web": "browser-sync start --config bs-config.js",
     "webrefresh": "browser-sync reload",
     "test": "cypress open",
-    "prebuild": "shx rm -rf css",
+    "prebuild": "run-s clean unlink",
+    "clean": "shx rm -rf css",
     "build": "sass src/:css/",
-    "postbuild": "run-s prefix minify",
+    "postbuild": "run-s prefix minify link",
+    "link": "npm link",
     "prefix": "postcss css/dm.css --use autoprefixer --no-map -o css/dm.prefix.css",
-    "minify": "postcss --no-map css/dm.prefix.css -o css/dm.min.css"
+    "minify": "postcss --no-map css/dm.prefix.css -o css/dm.min.css",
+    "unlink": "npm unlink -g"
   },
   "keywords": [
     "css",
@@ -36,10 +39,11 @@
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
     "cssnano": "^6.0.1",
-    "cypress": "^13.6.0",
+    "cypress": "^13.6.1",
+    "gazeall": "^0.13.4",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
     "sass": "^1.69.5",
     "shx": "^0.3.4"
   }
