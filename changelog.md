@@ -1,12 +1,15 @@
 # Change Log
 
+## 2.3.3 (2023-03-29)
+
+- Introduced SCSS variable configuration.
+
 ## 2.3.2 (2023-12-07)
 
 - Text line height scales corrected.
 - Outline border added
 - Outline border styles added
 - Outline tested added
-- Introduced SCSS variable configuration.
 
 ## 2.3.0 (2023-12-05)
 

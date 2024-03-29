@@ -1,6 +1,6 @@
 {
   "name": "dm-css",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Dyno Might CSS - Fast Compact CSS Toolkit for everyone!",
   "scripts": {
     "start": "run-p dev web",

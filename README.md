@@ -1,6 +1,6 @@
 # Power Packed CSS Styling for Everyone
 
-![Version](https://img.shields.io/badge/dm--css-v2.3.2-blue.svg)
+![Version](https://img.shields.io/badge/dm--css-v2.3.3-blue.svg)
 ![Test](https://img.shields.io/badge/test-passing-brightgreen.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/rajinder-yadav/dm-css.svg)](https://greenkeeper.io/)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
@@ -241,7 +241,7 @@ You may use the following HTML file to start from.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- DM-CSS Toolkit -->
-    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.3.2/css/dm.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/dm-css@2.3.3/css/dm.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, Word Wide Web!</h1>
