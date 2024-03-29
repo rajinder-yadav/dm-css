@@ -6,6 +6,7 @@
 - Outline border added
 - Outline border styles added
 - Outline tested added
+- Introduced SCSS variable configuration.
 
 ## 2.3.0 (2023-12-05)
 
