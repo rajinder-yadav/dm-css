@@ -1,3 +1,5 @@
+@use "sass:math"
+
 // Position values
 .top
   top: 0
@@ -10,6 +12,19 @@
 
 .right
   right: 0
+
+// @for $n from 1 through 20
+//   .top#{5 * $n}
+//     top: math.percentage(math.div($n, 20))
+
+//   .bottom#{5 * $n}
+//     bottom: math.percentage(math.div($n, 20))
+
+//   .left#{5 * $n}
+//     left: math.percentage(math.div($n, 20))
+
+//   .right#{5 * $n}
+//     right: math.percentage(math.div($n, 20))
 
 // Z index positions
 .zauto
