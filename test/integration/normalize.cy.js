@@ -6,7 +6,7 @@ describe("Normalize", () => {
   context("Defaults", () => {
     it("root family", () => {
       cy.get(":root")
-        .should("have.css", "font-family", "Open Sans, Roboto, sans-serif")
+        .should("have.css", "font-family", "\"Open Sans\", Roboto, sans-serif")
         .should("have.css", "font-style", "normal")
         .should("have.css", "font-size", "16px")
         .should("have.css", "font-weight", "400");
@@ -97,7 +97,7 @@ describe("Normalize", () => {
     });
     it("font family", () => {
       cy.get("#h1")
-        .should("have.css", "font-family", "Open Sans, Roboto, sans-serif")
+        .should("have.css", "font-family", "\"Open Sans\", Roboto, sans-serif")
         .should("have.css", "font-style", "normal");
     });
     it("element h1 margins", () => {
@@ -116,7 +116,7 @@ describe("Normalize", () => {
     });
     it("element p font family", () => {
       cy.get("#p")
-        .should("have.css", "font-family", "Open Sans, Roboto, sans-serif")
+        .should("have.css", "font-family", "\"Open Sans\", Roboto, sans-serif")
         .should("have.css", "font-style", "normal")
         .should("have.css", "font-weight", "400")
         .should("have.css", "font-size", "16px");
