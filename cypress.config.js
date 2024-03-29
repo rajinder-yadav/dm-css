@@ -11,7 +11,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./test/plugins/index.js')(on, config)
     },
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://localhost:3100',
     specPattern: 'test/integration/**/*.cy.{js,jsx,ts,tsx}',
     supportFile: false,
   },
